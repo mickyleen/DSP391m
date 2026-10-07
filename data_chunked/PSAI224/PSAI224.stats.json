@@ -1,0 +1,25 @@
+{
+  "doc_id": "PSAI224",
+  "num_chunks": 20,
+  "total_tokens": 1118,
+  "avg_tokens": 55.9,
+  "min_tokens": 20,
+  "max_tokens": 319,
+  "chunks_by_type": {
+    "section": 9,
+    "table_row": 11
+  },
+  "num_sections": 10,
+  "sections": [
+    "Development Roadmap :nut_and_bolt: > Additional Information :heavy_plus_sign: > How did you hear about the Grants Program?",
+    "Development Roadmap :nut_and_bolt: > Milestone 1 — Implement Five Degrees ink! Contract & Front-end Modules",
+    "Development Roadmap :nut_and_bolt: > Overview",
+    "Development Status :open_book:",
+    "Five Degrees on Substrate > Ecosystem Fit",
+    "Five Degrees on Substrate > Ecosystem Fit > Contact",
+    "Five Degrees on Substrate > Ecosystem Fit > Team Code Repos",
+    "Five Degrees on Substrate > Ecosystem Fit > Team's experience",
+    "Five Degrees on Substrate > Overview",
+    "Five Degrees on Substrate > Project Details"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "doc_id": "PSAI051",
+  "num_chunks": 28,
+  "total_tokens": 7756,
+  "avg_tokens": 277.0,
+  "min_tokens": 64,
+  "max_tokens": 505,
+  "chunks_by_type": {
+    "section_split": 18,
+    "section": 10
+  },
+  "num_sections": 15,
+  "sections": [
+    "1 Introduction",
+    "1 Introduction > 2 Matching Agents with Items",
+    "1 Introduction > 2.1 Static Objective Functions",
+    "1 Introduction > 2.1 Static Objective Functions > 2.1.1 Pareto Optimality",
+    "1 Introduction > 2.1 Static Objective Functions > 2.1.2 Popularity",
+    "1 Introduction > 2.2 Dynamic and Decentralized Markets",
+    "1 Introduction > 2.3 Keyword Auctions",
+    "1 Introduction > 3 Matching Agents with other Agents",
+    "1 Introduction > 3 Matching Agents with other Agents > 3.1 Finding a Maximum Exchange",
+    "1 Introduction > 3 Matching Agents with other Agents > 3.2 Stable Roommates with Globally-Ranked Pairs",
+    "1 Introduction > 3.3 Fair Exchanges",
+    "1 Introduction > 3.3 Fair Exchanges > 3.4 Online Markets",
+    "1 Introduction > 3.3 Fair Exchanges > 3.4.1 Query-Commit Model",
+    "4 Proposed Work",
+    "References"
+  ]
+}

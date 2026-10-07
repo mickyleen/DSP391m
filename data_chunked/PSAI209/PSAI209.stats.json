@@ -1,0 +1,41 @@
+{
+  "doc_id": "PSAI209",
+  "num_chunks": 43,
+  "total_tokens": 2854,
+  "avg_tokens": 66.37,
+  "min_tokens": 20,
+  "max_tokens": 269,
+  "chunks_by_type": {
+    "section": 24,
+    "table_row": 19
+  },
+  "num_sections": 26,
+  "sections": [
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > Adoption Strategy",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > Adoption Strategy > Conclusion",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > Background",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > Budget > Overview",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > Milestone 1 — Core Simulation Engine",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > Milestone 1 — Core Simulation Engine > Deliverables",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > Milestone 1 — Core Simulation Engine > Milestone 2 — Fee Optimization and Testing",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > Milestone 1 — Core Simulation Engine > Milestone 2 — Fee Optimization and Testing > Deliverables",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > Milestone 1 — Core Simulation Engine > Milestone 3 — SDK and Integration APIs",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > Payment Details:",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > The Problem",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > The Problem > Existing tools fall short:",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > TxSim Solution",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > TxSim Solution > Competitive Advantage",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > TxSim Solution > Ecosystem Fit",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > TxSim Solution > Legal Structure",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > TxSim Solution > Target Users",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > TxSim Solution > Technical Stack",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > TxSim Solution > Why TxSim?",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > TxSim Solution > Why TxSim? > Awais Nazir — Full-Stack Developer (dApps)",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > TxSim Solution > Why TxSim? > CryptoStar7 — Blockchain & Full-Stack Developer",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > TxSim Solution > Why TxSim? > Eliud Munyala — Senior Data Engineer & ML Specialist",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > TxSim Solution > Why TxSim? > Emmanuel — Project Lead",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > TxSim Solution > Why TxSim? > Golden K. — Machine Learning Developer",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > TxSim Solution > Why TxSim? > Marko — UI/UX Designer",
+    "TxSim: Transaction Simulator and Risk Detector for Polkadot > TxSim Solution > Why TxSim? > WayToTheVenus — Smart Contract Developer"
+  ]
+}

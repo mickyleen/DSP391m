@@ -1,0 +1,373 @@
+{
+  "source": "PSAI046.pdf",
+  "page_count": 53,
+  "pages_processed": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 2,
+      "blocks": [
+        {
+          "label": "Picture",
+          "reading_order": 0,
+          "bbox": [
+            0.0,
+            0.0,
+            1632.0,
+            2112.0
+          ],
+          "confidence": 0.8916346808114599
+        }
+      ],
+      "source": "surya-ocr",
+      "images": []
+    },
+    {
+      "page": 3,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 4,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 5,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 6,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 7,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 8,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 9,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 10,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 11,
+      "source": "pdf-text-layer",
+      "images": [
+        "page_0011_image_001.jpg"
+      ]
+    },
+    {
+      "page": 12,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 13,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 14,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 15,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 16,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 17,
+      "source": "pdf-text-layer",
+      "images": [
+        "page_0017_image_001.jpg"
+      ]
+    },
+    {
+      "page": 18,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 19,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 20,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 21,
+      "source": "pdf-text-layer",
+      "images": [
+        "page_0021_image_001.jpg",
+        "page_0021_image_002.jpg"
+      ]
+    },
+    {
+      "page": 22,
+      "source": "pdf-text-layer",
+      "images": [
+        "page_0022_image_001.jpg",
+        "page_0022_image_002.jpg"
+      ]
+    },
+    {
+      "page": 23,
+      "source": "pdf-text-layer",
+      "images": [
+        "page_0023_image_001.jpg"
+      ]
+    },
+    {
+      "page": 24,
+      "source": "pdf-text-layer",
+      "images": [
+        "page_0024_image_001.jpg"
+      ]
+    },
+    {
+      "page": 25,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 26,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 27,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 28,
+      "source": "pdf-text-layer",
+      "images": [
+        "page_0028_image_001.jpg",
+        "page_0028_image_002.jpg",
+        "page_0028_image_003.jpg",
+        "page_0028_image_004.jpg",
+        "page_0028_image_005.jpg",
+        "page_0028_image_006.jpg",
+        "page_0028_image_007.jpg",
+        "page_0028_image_008.jpg",
+        "page_0028_image_009.jpg",
+        "page_0028_image_010.jpg"
+      ]
+    },
+    {
+      "page": 29,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 30,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 31,
+      "source": "pdf-text-layer",
+      "images": [
+        "page_0031_image_001.jpg"
+      ]
+    },
+    {
+      "page": 32,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 33,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 34,
+      "source": "pdf-text-layer",
+      "images": [
+        "page_0034_image_001.jpg"
+      ]
+    },
+    {
+      "page": 35,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 36,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 37,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 38,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 39,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 40,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 41,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 42,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 43,
+      "source": "pdf-text-layer",
+      "images": [
+        "page_0043_image_001.jpg"
+      ]
+    },
+    {
+      "page": 44,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 45,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 46,
+      "source": "pdf-text-layer",
+      "images": [
+        "page_0046_image_001.jpg"
+      ]
+    },
+    {
+      "page": 47,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 48,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 49,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 50,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 51,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 52,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 53,
+      "source": "pdf-text-layer",
+      "images": []
+    }
+  ],
+  "pipeline": "surya-local-v1"
+}

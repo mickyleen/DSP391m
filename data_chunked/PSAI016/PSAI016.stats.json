@@ -1,0 +1,19 @@
+{
+  "doc_id": "PSAI016",
+  "num_chunks": 5,
+  "total_tokens": 531,
+  "avg_tokens": 106.2,
+  "min_tokens": 23,
+  "max_tokens": 397,
+  "chunks_by_type": {
+    "section": 5
+  },
+  "num_sections": 5,
+  "sections": [
+    "Project Description",
+    "Project Description > Maintenance and Upgrade Plans",
+    "Project Description > Team > Relevant Experience",
+    "Project Description > Team > Team Member LinkedIn Profiles",
+    "Project Description > Team > Team Members"
+  ]
+}

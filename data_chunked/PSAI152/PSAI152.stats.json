@@ -1,0 +1,42 @@
+{
+  "doc_id": "PSAI152",
+  "num_chunks": 58,
+  "total_tokens": 3706,
+  "avg_tokens": 63.9,
+  "min_tokens": 20,
+  "max_tokens": 341,
+  "chunks_by_type": {
+    "section": 27,
+    "table_row": 30,
+    "diagram": 1
+  },
+  "num_sections": 26,
+  "sections": [
+    "Enhancing Debian Packages with ROCm GPU Acceleration",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Accounts",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Background",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Benefits to the Community > Better Software Compatibility for AMD Users",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Benefits to the Community > Better Software Compatibility for AMD Users > Improved Testing & Reliability",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Benefits to the Community > Powerful Open Science Ecosystem",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Benefits to the Community > Reduced Dependence on Proprietary Solutions",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Deliverables > Enhanced GPU Support in Existing Packages",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Deliverables > Improved autopkgtest Coverage on Debian CI and ROCm CI",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Deliverables > New Tools and Libraries for the ROCm Ecosystem",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Hardware Limitations",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Milestones",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Milestones > 1. Enabling ROCm support for Category A:",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Milestones > 2. Packaging New Tools and Libraries in Category B (Experimental):",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Milestones > 2. Packaging New Tools and Libraries in Category B (Experimental): > 3. Automated tests running on Debian CI for Category C:",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Milestones > 2. Packaging New Tools and Libraries in Category B (Experimental): > debian/tests/control (sample):",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Open-Source Contributions",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Personal Information",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Skills > Experience Gained Recently:",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Skills > Prior Experience:",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Stretch Goals",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Synopsis",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Technical Approach",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Technical Approach > Analysis:",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Technical Approach > Strategy:",
+    "Enhancing Debian Packages with ROCm GPU Acceleration > Timeline"
+  ]
+}

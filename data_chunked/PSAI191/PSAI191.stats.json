@@ -1,0 +1,30 @@
+{
+  "doc_id": "PSAI191",
+  "num_chunks": 43,
+  "total_tokens": 2771,
+  "avg_tokens": 64.44,
+  "min_tokens": 20,
+  "max_tokens": 508,
+  "chunks_by_type": {
+    "section": 13,
+    "section_split": 3,
+    "table_row": 27
+  },
+  "num_sections": 14,
+  "sections": [
+    "Additional Information :heavy_plus_sign:",
+    "Future Plans",
+    "Project Overview :page_facing_up: > Overview",
+    "Project Overview :page_facing_up: > Project Details",
+    "Project Overview :page_facing_up: > Project Details > Ecosystem Fit",
+    "Project Overview :page_facing_up: > Project Details > Image",
+    "Team :busts_in_silhouette: > Contact",
+    "Team :busts_in_silhouette: > Contact > Joseph Li",
+    "Team :busts_in_silhouette: > Contact > Legal Structure",
+    "Team :busts_in_silhouette: > Contact > Team CESS",
+    "Team :busts_in_silhouette: > Milestone 3: Implement and Integrate CESS Applications",
+    "Team :busts_in_silhouette: > Team Code Repos",
+    "Team :busts_in_silhouette: > Team Code Repos > Milestone 2: Implement Storage Mining",
+    "Team :busts_in_silhouette: > Team members"
+  ]
+}

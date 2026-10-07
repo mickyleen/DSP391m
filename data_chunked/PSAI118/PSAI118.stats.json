@@ -1,0 +1,23 @@
+{
+  "doc_id": "PSAI118",
+  "num_chunks": 10,
+  "total_tokens": 1008,
+  "avg_tokens": 100.8,
+  "min_tokens": 22,
+  "max_tokens": 486,
+  "chunks_by_type": {
+    "section_split": 3,
+    "section": 7
+  },
+  "num_sections": 8,
+  "sections": [
+    "PROJECT DESCRIPTION",
+    "PROJECT DESCRIPTION > ADDITIONAL INFORMATION",
+    "PROJECT DESCRIPTION > DEVELOPMENT ROADMAP",
+    "PROJECT DESCRIPTION > MAINTENANCE AND UPGRADE PLANS",
+    "PROJECT DESCRIPTION > MAINTENANCE AND UPGRADE PLANS > RELEVANT EXPERIENCE",
+    "PROJECT DESCRIPTION > MAINTENANCE AND UPGRADE PLANS > TEAM CODE REPOSITORIES",
+    "PROJECT DESCRIPTION > TOTAL BUDGET REQUESTED",
+    "PROJECT DESCRIPTION > VALUE"
+  ]
+}

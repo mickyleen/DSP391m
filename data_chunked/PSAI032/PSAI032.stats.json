@@ -1,0 +1,28 @@
+{
+  "doc_id": "PSAI032",
+  "num_chunks": 14,
+  "total_tokens": 1355,
+  "avg_tokens": 96.79,
+  "min_tokens": 22,
+  "max_tokens": 355,
+  "chunks_by_type": {
+    "section": 14
+  },
+  "num_sections": 14,
+  "sections": [
+    "Additional Information",
+    "Maintenance and Upgrade Plans",
+    "RFP Proposal: P2P task transcript",
+    "Relevant Experience",
+    "Relevant Experience > Team code repositories",
+    "Team Members",
+    "Team Members > Team Member LinkedIn Profiles",
+    "Value",
+    "Value > Development Roadmap",
+    "Value > Development Roadmap > Milestone 1 (1 weeks)",
+    "Value > Development Roadmap > Milestone 2 (3 weeks)",
+    "Value > Milestone 3 (2 weeks)",
+    "Value > Milestone 3 (2 weeks) > Milestone 4 (2 weeks)",
+    "Value > Milestone 5 (2 weeks)"
+  ]
+}

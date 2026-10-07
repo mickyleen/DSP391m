@@ -1,0 +1,245 @@
+[
+  {
+    "chunk_id": "PSAI015-C0000",
+    "doc_id": "PSAI015",
+    "chunk_index": 0,
+    "section": "Project Description",
+    "heading_path": [
+      "Project Description"
+    ],
+    "block_type": "section",
+    "token_count": 229,
+    "hash": "06221b3dbafef71f",
+    "text": "# Project Description\n\nWe are the team behind ipfs-search.com. For the past 5 years, we have been providing search for the IPFS. Now we see that the IPFS ecosystem is growing. We want to grow along with it.\n\nOur goal for this grant will be to take ipfs-search from beta to webscale production. We want to make our engine powerful enough to integrate with meta-search engines like DuckDuckGo and SearX as well as browsers like Brave and Opera.\n\nWe have received information that DuckDuckGo is interested in search for IPFS, but will require an API capable of handling 1000 hits per second. That is the scale we want to land at with this grant.\n\nTo prepare, we will need to increase the scalability of the engine, both the size of the index as well as the number of queries it can handle.\n\nWe recently received a grant from the EU within the Next Generation Internet (NGI) fund through NLNet, for doing the architecture of the scale-up. We still have to secure funding for the infrastructure and the implementation. This is why we turn to you."
+  },
+  {
+    "chunk_id": "PSAI015-C0001",
+    "doc_id": "PSAI015",
+    "chunk_index": 1,
+    "section": "Value",
+    "heading_path": [
+      "Project Description",
+      "Value"
+    ],
+    "block_type": "section",
+    "token_count": 348,
+    "hash": "04b52206655387bb",
+    "text": "# Project Description > Value\n\nWe are an existing, Open Source application that delivers search for the IPFS. We solve the problem of \"how do I find things on IPFS\". With support from Filecoin, we can share the wealth of content on IPFS with the world.\n\nCurrently, we are seeing that the amount of content on the IPFS is exploding and that public interest is taking off. We want to develop the service we offer to the users of IPFS. The scale-up is a vital part of this.\n\nWith this scale-up, we will be able to offer our engine as a service to other parties. This can serve as a platform from which we can continue to develop services for the distributed web in the years ahead.\n\nWhile search is a tough domain to crack (due to the fierce competition) we believe a service not driven by user surveillance is a valuable part of the Filecoin ecosystem, one that we would love to maintain and develop in the years ahead.\n\n- 1. We will have our search engine running over 100 machines (75\n\n- 2. We will be able to handle 1000 hits/s of search traffic.\n- 3. We will share the deployment setup (Ansible) dual-licensed under MIT and APACHE2.\n- 4. We will create reusable, well-documented and production-grade ansible roles for IPFS and ipfs-cluster, and if possible other components.\n- 5. We will propose integration of ipfs-search.com in DuckDuckGo, Startpage, Brave, Opera, Firefox and/or Chrome.\n- 6. We will publish at least 3 posts on our blog, detailing our approach, objectives and progress scaling out our deployment."
+  },
+  {
+    "chunk_id": "PSAI015-C0002",
+    "doc_id": "PSAI015",
+    "chunk_index": 2,
+    "section": "Milestones",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Milestones"
+    ],
+    "block_type": "section",
+    "token_count": 65,
+    "hash": "aa02e8653f8091e0",
+    "text": "# Project Description > Development Roadmap > Milestones\n\n- 1. Deployment setup for a 15-node cluster\n- 2. Reusable Ansible role for IPFS\n- 3. Extended benchmarking/reports on stability and performance of both crawler and search\n- 4. Blog post describing work done"
+  },
+  {
+    "chunk_id": "PSAI015-C0003",
+    "doc_id": "PSAI015",
+    "chunk_index": 3,
+    "section": "Budget",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Budget"
+    ],
+    "block_type": "section",
+    "token_count": 119,
+    "hash": "7c918b814846b616",
+    "text": "# Project Description > Development Roadmap > Budget\n\nDevops operations: 6 weeks x 8 hours x € 75 = € 3600 Server costs: 15 x Hetzner AX61-NVME bare metal server @ € 89 x 2 months + 10 x signup costs € 89 = € 3 560 Blogpost: 6 hours x € 75 = € 450\n\nSubtotal: € 7610 Coordination: 15% of € 7610 = € 1141.50\n\nTotal: € 8751.50"
+  },
+  {
+    "chunk_id": "PSAI015-C0004",
+    "doc_id": "PSAI015",
+    "chunk_index": 4,
+    "section": "Milestones",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Milestones"
+    ],
+    "block_type": "section",
+    "token_count": 66,
+    "hash": "ab34f265ba95dd43",
+    "text": "# Project Description > Development Roadmap > Milestones\n\n- 1. Deployment setup for a 50-node cluster\n- 2. Reusable Ansible role for ipfs-cluster\n- 3. Extended (visual) reports on stability and performance of both crawler and search\n- 4. Blog post describing work done"
+  },
+  {
+    "chunk_id": "PSAI015-C0005",
+    "doc_id": "PSAI015",
+    "chunk_index": 5,
+    "section": "Budget",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Budget"
+    ],
+    "block_type": "section",
+    "token_count": 117,
+    "hash": "646d0da6696b5840",
+    "text": "# Project Description > Development Roadmap > Budget\n\nDevops: 7 weeks x 16 hours x € 75 = € 8400 Server costs: 50 x Hetzner AX61-NVME bare metal server @ € 89 x 2 months + 35 x signup costs € 89 = € 12015 Blogpost: 6 hours x € 75 = € 450\n\nSubtotal: € 20865 Coordination: 15% of € 20865 = € 3129.75\n\nTotal: € 23994.75"
+  },
+  {
+    "chunk_id": "PSAI015-C0006",
+    "doc_id": "PSAI015",
+    "chunk_index": 6,
+    "section": "Phase 3: scale-out from a 50-node cluster to a 100 node cluster",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Phase 3: scale-out from a 50-node cluster to a 100 node cluster"
+    ],
+    "block_type": "section",
+    "token_count": 94,
+    "hash": "6bb375ad2464bdcc",
+    "text": "# Project Description > Development Roadmap > Phase 3: scale-out from a 50-node cluster to a 100 node cluster\n\n- 1. Deployment setup for 100-node cluster\n\n- 2. Extended (visual) reports on stability and performance of both crawler and search\n- 3. Blog post describing work done\n- 4. We will propose the integration of ipfs-search.com in DuckDuckGo, Brave, Firefox and Chrome."
+  },
+  {
+    "chunk_id": "PSAI015-C0007",
+    "doc_id": "PSAI015",
+    "chunk_index": 7,
+    "section": "Budget",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Budget"
+    ],
+    "block_type": "section",
+    "token_count": 137,
+    "hash": "fd6cc5032c7f5f37",
+    "text": "# Project Description > Development Roadmap > Budget\n\nDevops: 7 weeks x 32 hours x € 75 = € 16800 Server costs: 100 x Hetzner AX61-NVME bare metal server @ € 89 x 2 months + 50 x signup costs € 89 = € 22250 Blogpost: 6 hours x € 75 = € 450 Outreach to DuckDuckGo, Startpage, Brave, Opera, Firefox and/or Chrome: 24 hours x € 75 = € 1800\n\nSubtotal: € 41300 Coordination: 15% of € 39500 = € 6195"
+  },
+  {
+    "chunk_id": "PSAI015-C0008",
+    "doc_id": "PSAI015",
+    "chunk_index": 8,
+    "section": "Breakdown",
+    "heading_path": [
+      "Project Description",
+      "Breakdown"
+    ],
+    "block_type": "table_row",
+    "token_count": 34,
+    "hash": "b34aec9557ac5f79",
+    "text": "Task: Devops | Phase 1: 3600 | Phase: 8400 | 2 Phase 3: 16800 | SUM: 28800"
+  },
+  {
+    "chunk_id": "PSAI015-C0009",
+    "doc_id": "PSAI015",
+    "chunk_index": 9,
+    "section": "Breakdown",
+    "heading_path": [
+      "Project Description",
+      "Breakdown"
+    ],
+    "block_type": "table_row",
+    "token_count": 34,
+    "hash": "a15ad67b9160cd45",
+    "text": "Task: Server costs | Phase 1: 3560 | Phase: 12015 | 2 Phase 3: 22250 | SUM: 37825"
+  },
+  {
+    "chunk_id": "PSAI015-C0010",
+    "doc_id": "PSAI015",
+    "chunk_index": 10,
+    "section": "Breakdown",
+    "heading_path": [
+      "Project Description",
+      "Breakdown"
+    ],
+    "block_type": "table_row",
+    "token_count": 31,
+    "hash": "addcdc6ed644e18f",
+    "text": "Task: Blogpost | Phase 1: 450 | Phase: 450 | 2 Phase 3: 450 | SUM: 1350"
+  },
+  {
+    "chunk_id": "PSAI015-C0011",
+    "doc_id": "PSAI015",
+    "chunk_index": 11,
+    "section": "Breakdown",
+    "heading_path": [
+      "Project Description",
+      "Breakdown"
+    ],
+    "block_type": "table_row",
+    "token_count": 40,
+    "hash": "27b7007bc7b6a3c0",
+    "text": "Task: Overhead | Phase 1: 1141.5 | Phase: 3129.75 | 2 Phase 3: 6195 | SUM: 10466.25"
+  },
+  {
+    "chunk_id": "PSAI015-C0012",
+    "doc_id": "PSAI015",
+    "chunk_index": 12,
+    "section": "Breakdown",
+    "heading_path": [
+      "Project Description",
+      "Breakdown"
+    ],
+    "block_type": "table_row",
+    "token_count": 42,
+    "hash": "ce81d637f53d07d0",
+    "text": "Task: SUM (EUR) | Phase 1: 8751.5 | Phase: 23994.75 | 2 Phase 3: 47495 | SUM: 80241.25"
+  },
+  {
+    "chunk_id": "PSAI015-C0013",
+    "doc_id": "PSAI015",
+    "chunk_index": 13,
+    "section": "Maintenance and Upgrade Plans",
+    "heading_path": [
+      "Project Description",
+      "Maintenance and Upgrade Plans"
+    ],
+    "block_type": "section",
+    "token_count": 105,
+    "hash": "8ffeece1665394c5",
+    "text": "# Project Description > Maintenance and Upgrade Plans\n\nOur goal for this grant is for the project to generate significant traction. This will allow us to attract the funds required for regular maintenance, upgrades, as well as the depth investment required to reach our ultimate goal: fully decentralized search, forever.\n\nOn shorter notice, independently from but simultaneous with the scale-out, we will be working towards domain-specific search (e.g. for music and/or video) based on our existing backend infrastructure. Imagine Youtube Music or Soundcloud for IPFS."
+  },
+  {
+    "chunk_id": "PSAI015-C0014",
+    "doc_id": "PSAI015",
+    "chunk_index": 14,
+    "section": "Team",
+    "heading_path": [
+      "Project Description",
+      "Team"
+    ],
+    "block_type": "section",
+    "token_count": 197,
+    "hash": "5254d9f39ea44122",
+    "text": "# Project Description > Team\n\nMathijs de Bruin is the founder, team lead and CEO. Rooted in the Dutch hacker scene, he published his first Open Source project at 14. He co-founded the cooperative Visualspace in Amsterdam as well as Ecoaldeia Silverto, the first Smart Village in Portugal (where he is currently residing), and the Sol Nascente foundation for regenerative agroforestry.\n\nKees van Drongelen, a seasoned entrepreneur and UX/design lead. He founded his first design studio in 1993. He is co-founder and CEO of Visualspace. He teaches coding and design at the Hague Royal Academy of arts.\n\nAad Versteden is the Founder and CEO of redpencil.io. He has extensive experience leading the development of successful Open Source products.\n\nLars Magne Tungland has recently joined the project. He has a broad role, including project coordination and looking for ways to grow ipfssearch.com."
+  },
+  {
+    "chunk_id": "PSAI015-C0015",
+    "doc_id": "PSAI015",
+    "chunk_index": 15,
+    "section": "Team Member CVs/LinkedIn Profiles",
+    "heading_path": [
+      "Project Description",
+      "Team",
+      "Team Member CVs/LinkedIn Profiles"
+    ],
+    "block_type": "section",
+    "token_count": 62,
+    "hash": "e3c5a0482b404a3c",
+    "text": "# Project Description > Team > Team Member CVs/LinkedIn Profiles\n\nhttps://dokterbob.github.io/cv/ https://www.linkedin.com/in/keesvandrongelen/ https://www.linkedin.com/in/aad-versteden/ https://www.linkedin.com/in/larstungland/"
+  },
+  {
+    "chunk_id": "PSAI015-C0016",
+    "doc_id": "PSAI015",
+    "chunk_index": 16,
+    "section": "Additional Information",
+    "heading_path": [
+      "Additional Information"
+    ],
+    "block_type": "section",
+    "token_count": 48,
+    "hash": "12bf8cf92eb55850",
+    "text": "# Additional Information\n\nFunds to realize the architecture of the scale-out has already been procured through a continuation grant within the previous NLNet/NGI0 fund.\n\nThis grant merely concerns itself with the operations of DevOps and hosting."
+  }
+]

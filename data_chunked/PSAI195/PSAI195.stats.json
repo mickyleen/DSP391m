@@ -1,0 +1,29 @@
+{
+  "doc_id": "PSAI195",
+  "num_chunks": 24,
+  "total_tokens": 3711,
+  "avg_tokens": 154.62,
+  "min_tokens": 20,
+  "max_tokens": 435,
+  "chunks_by_type": {
+    "section": 11,
+    "section_split": 6,
+    "table_row": 7
+  },
+  "num_sections": 13,
+  "sections": [
+    "Additional Information :heavy_plus_sign:",
+    "Development Roadmap :nut_and_bolt: > Milestone: sBPF Runtime Feasibility & Prototype Development in PolkaVM",
+    "Development Roadmap :nut_and_bolt: > Overview",
+    "Development Status :open_book:",
+    "Future Plans",
+    "Project Overview :page_facing_up: > Data Models / API Specifications of the Core Functionality",
+    "Project Overview :page_facing_up: > Ecosystem Fit",
+    "Project Overview :page_facing_up: > Overview",
+    "Project Overview :page_facing_up: > Project Details",
+    "Project Overview :page_facing_up: > Team :busts_in_silhouette: > Contact",
+    "Project Overview :page_facing_up: > Team :busts_in_silhouette: > Legal Structure",
+    "Project Overview :page_facing_up: > Team :busts_in_silhouette: > Team members",
+    "Project Overview :page_facing_up: > Team :busts_in_silhouette: > Team's experience"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "doc_id": "PSAI001",
+  "num_chunks": 13,
+  "total_tokens": 946,
+  "avg_tokens": 72.77,
+  "min_tokens": 20,
+  "max_tokens": 255,
+  "chunks_by_type": {
+    "section": 10,
+    "diagram": 1,
+    "table_row": 2
+  },
+  "num_sections": 11,
+  "sections": [
+    "Project Description",
+    "Project Description > Dashboard Features",
+    "Project Description > Dashboard Features > Roadmap",
+    "Project Description > Dashboard Features > Roadmap > Maintenance and Upgrade Plans",
+    "Project Description > How it works > Architecture",
+    "Project Description > How it works > Benefits",
+    "Project Description > How it works > It will follow prometheus guidelines :",
+    "Project Description > How it works > Security",
+    "Project Description > How it works > lotus farcaster comes with 2 Components :",
+    "Relevant Experience",
+    "Team > Team Members"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "doc_id": "PSAI002",
+  "num_chunks": 13,
+  "total_tokens": 2616,
+  "avg_tokens": 201.23,
+  "min_tokens": 26,
+  "max_tokens": 413,
+  "chunks_by_type": {
+    "section": 10,
+    "section_split": 3
+  },
+  "num_sections": 11,
+  "sections": [
+    "Project Description",
+    "Project Description > Deliverables",
+    "Project Description > Development Roadmap > Display Videos from Global Database",
+    "Project Description > Development Roadmap > Uploading and Downloading",
+    "Project Description > Maintenance and Upgrade Plans",
+    "Project Description > Value",
+    "Project Description > Video Ownership",
+    "Project Description > Video Ownership > Basic Recommendation Software",
+    "Project Description > Video Ownership > Cardano Token and Smart Contracts",
+    "Relevant Experience",
+    "Team > Team Member LinkedIn Profiles"
+  ]
+}

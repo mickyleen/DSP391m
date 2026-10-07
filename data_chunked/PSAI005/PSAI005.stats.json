@@ -1,0 +1,26 @@
+{
+  "doc_id": "PSAI005",
+  "num_chunks": 13,
+  "total_tokens": 1384,
+  "avg_tokens": 106.46,
+  "min_tokens": 20,
+  "max_tokens": 361,
+  "chunks_by_type": {
+    "section": 13
+  },
+  "num_sections": 12,
+  "sections": [
+    "Additional Information",
+    "Development Roadmap > Maintenance and Upgrade Plans",
+    "Development Roadmap > Milestone 1",
+    "Development Roadmap > Milestone 2",
+    "Development Roadmap > Milestone 2 > Deliverables",
+    "Development Roadmap > Milestone 2 > Milestone 4",
+    "Open Grant Proposal: CryptoDocs a private Google Docs alternative backed by IPFS and Ethereum",
+    "Project Description",
+    "Project Description > Deliverables",
+    "Project Description > Value",
+    "Team Members > Relevant Experience",
+    "Team Members > Relevant Experience > Team code repositories"
+  ]
+}

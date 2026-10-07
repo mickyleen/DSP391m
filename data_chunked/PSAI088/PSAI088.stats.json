@@ -1,0 +1,34 @@
+{
+  "doc_id": "PSAI088",
+  "num_chunks": 36,
+  "total_tokens": 9905,
+  "avg_tokens": 275.14,
+  "min_tokens": 56,
+  "max_tokens": 512,
+  "chunks_by_type": {
+    "section": 14,
+    "section_split": 22
+  },
+  "num_sections": 19,
+  "sections": [
+    "1 Introduction",
+    "1 Introduction > 2 Background > 2.1 Code-Switched Automatic Speech Recognition",
+    "1 Introduction > 2 Background > 2.2 Low-Resource African Speech and Corpus Design",
+    "1 Introduction > 2 Background > 2.3 Adaptive Learning and Uncertainty Estimation",
+    "1 Introduction > 2 Background > 2.4 Evaluation Challenges in Code-Switched ASR",
+    "1 Introduction > 2.5 Research Gap",
+    "1 Introduction > 3 Methodology > 3.1 RQ1: Corpus Design for Dense African Code-Switched ASR",
+    "1 Introduction > 3 Methodology > 3.2 RQ2: Boundary-Aware Epistemic Uncertainty for Semi-Supervised Learning",
+    "1 Introduction > 3 Methodology > 3.3 RQ3: Switch-Aware Adaptation and Catastrophic Forgetting",
+    "1 Introduction > 3.4 Data Collection and Annotation Plan",
+    "3.5 Ethical Considerations",
+    "4 Experimental Setup and Baselines > 4.1 Baseline Systems",
+    "4 Experimental Setup and Baselines > 4.2 Proposed Variants",
+    "4 Experimental Setup and Baselines > 4.2 Proposed Variants > 4.3 Evaluation Metrics",
+    "Limitations",
+    "Limitations > 5 Conclusion",
+    "Limitations > References",
+    "Thesis Proposal:Self-Adaptive and Epistemic Uncertainty-Guided ASR of Dense Intra-Sentential Code-Switched Speech for African Low-Resource Languages",
+    "Thesis Proposal:Self-Adaptive and Epistemic Uncertainty-Guided ASR of Dense Intra-Sentential Code-Switched Speech for African Low-Resource Languages > Abstract"
+  ]
+}

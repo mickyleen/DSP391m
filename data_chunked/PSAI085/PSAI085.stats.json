@@ -1,0 +1,30 @@
+{
+  "doc_id": "PSAI085",
+  "num_chunks": 48,
+  "total_tokens": 9638,
+  "avg_tokens": 200.79,
+  "min_tokens": 38,
+  "max_tokens": 511,
+  "chunks_by_type": {
+    "section": 10,
+    "section_split": 23,
+    "table_row": 15
+  },
+  "num_sections": 14,
+  "sections": [
+    "2 Practical Applications of LLMs",
+    "2 Practical Applications of LLMs > 2.1 Cross-lingual Question Answering",
+    "2 Practical Applications of LLMs > 2.1 Cross-lingual Question Answering > 2.2 Domain-Adapted MT",
+    "2 Practical Applications of LLMs > 3 Evaluations of LLMs' Knowledge",
+    "2 Practical Applications of LLMs > 3 Evaluations of LLMs' Knowledge > 3.1 Consistency of Complex Reasoning",
+    "2 Practical Applications of LLMs > 3 Evaluations of LLMs' Knowledge > 3.2 Consistency of Geopolitical Knowledge",
+    "2 Practical Applications of LLMs > 3 Evaluations of LLMs' Knowledge > 3.2 Consistency of Geopolitical Knowledge > 3.3 Robustness of Multilingual Retrieval Augmented Generation",
+    "2 Practical Applications of LLMs > Acknowledgements",
+    "<span id=\"page-7-8\"></span>B Details on Metrics for BORDERLINES",
+    "References",
+    "References > A Supplementary Figures and Tables",
+    "Towards Practical and Knowledgeable LLMs for a Multilingual World: A Thesis Proposal",
+    "Towards Practical and Knowledgeable LLMs for a Multilingual World: A Thesis Proposal > 1 Introduction",
+    "Towards Practical and Knowledgeable LLMs for a Multilingual World: A Thesis Proposal > Abstract"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "doc_id": "PSAI107",
+  "num_chunks": 14,
+  "total_tokens": 1197,
+  "avg_tokens": 85.5,
+  "min_tokens": 27,
+  "max_tokens": 294,
+  "chunks_by_type": {
+    "section": 6,
+    "table_row": 8
+  },
+  "num_sections": 6,
+  "sections": [
+    "Project Description",
+    "Project Description > Maintenance and Upgrade Plans",
+    "Project Description > Relevant Experience",
+    "Project Description > Team Members",
+    "Project Description > Value",
+    "Project Description > Value > Development Roadmap"
+  ]
+}

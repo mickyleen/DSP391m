@@ -1,0 +1,25 @@
+{
+  "doc_id": "PSAI017",
+  "num_chunks": 18,
+  "total_tokens": 1253,
+  "avg_tokens": 69.61,
+  "min_tokens": 23,
+  "max_tokens": 295,
+  "chunks_by_type": {
+    "section": 9,
+    "table_row": 9
+  },
+  "num_sections": 10,
+  "sections": [
+    "Additional Information",
+    "Project Description",
+    "Project Description > Development Roadmap",
+    "Project Description > Maintenance and Upgrade Plans",
+    "Project Description > Total Budget Requested",
+    "Project Description > Value",
+    "Team > Team Member LinkedIn Profiles",
+    "Team > Team Member LinkedIn Profiles > Relevant Experience",
+    "Team > Team Member LinkedIn Profiles > Relevant Experience > Team code repositories",
+    "Team > Team Members"
+  ]
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "chunk_id": "PSAI022-C0000",
+    "doc_id": "PSAI022",
+    "chunk_index": 0,
+    "section": "Project Description",
+    "heading_path": [
+      "Project Description"
+    ],
+    "block_type": "section",
+    "token_count": 309,
+    "hash": "1bce08dfdb0f5495",
+    "text": "# Project Description\n\nOpenRPC is an API description language built for JSON-RPC. This project is to improve OpenRPC tooling such that filecoin can more easily generate and deploy documentation. As part of a previous devgrant, OpenRPC document generation was added to lotus, and has since been merged and released.\n\nAt the moment, the https://github.com/open-rpc/generator can build documentation, however the depencies it is using need to be updated (new inspector version). We also lack a quick and dirty way to start auto-generating and deploying docs alongside github releases. This has made it a little cumbersome to get open-rpc documentation deployed for lotus.\n\nThe generator also supports generating clients. The generated clients lack the ability to have headers be customizable. This is an issue for filecoin's api, which needs to be able to set the headers for auth. The clients are also cumbersome to generate/release automatically.\n\nLastly, OpenRPC needs more depth in its testing tools. It's important to know the performance impact from one change to another, and the current test-coverage tool doesn't currently output any performance data. It lacks documentation / example use cases, making it unclear what to do with it. We are also lacking supporting scripts for such usecases.\n\nThis is primarily to address the issues outlined in (this exploration document:)[https://github.com/protocol/w3dt-sudo/blob/lotusopenrpc/home/olizilla/2021-04-exploration-report-lotus-openrpc.md]"
+  },
+  {
+    "chunk_id": "PSAI022-C0001",
+    "doc_id": "PSAI022",
+    "chunk_index": 1,
+    "section": "Value",
+    "heading_path": [
+      "Project Description",
+      "Value"
+    ],
+    "block_type": "section",
+    "token_count": 250,
+    "hash": "9af420ef5c5dfe5e",
+    "text": "# Project Description > Value\n\nWhat are the benefits to getting this right?\n\nFilecoin will have best-in-slot documentation for its JSON-RPC api. A very large part of what makes it so good is having the inspector right inside the documentation. Also, having generated typescript clients automatically built and released when new lotus changes are released will take a lot of time-burden off the lotus devs.\n\nAs for the testing side, it will become easier to catch large discrepencies in performance in CI. It will also create an easy way for multiple clients to ensure that they adhere to the cannonical OpenRPC document produced by lotus. We will have documentation around the usecases for the testing tool so that it will be clear how to add test cases, as well as how to integrate it within filecoin.\n\nWe try again! There isn't anything too extravagant here that can go wrong. All the work involved is purely in complement to what already exists. No core changes will be required for this work.\n\nThere is really very few risks, but if I had to pick one, I'd say the biggest risk would be getting the auth/api key part of the generated clients right. The nice thing is that it's easy to test."
+  },
+  {
+    "chunk_id": "PSAI022-C0002",
+    "doc_id": "PSAI022",
+    "chunk_index": 2,
+    "section": "Deliverables",
+    "heading_path": [
+      "Project Description",
+      "Deliverables"
+    ],
+    "block_type": "section",
+    "token_count": 116,
+    "hash": "24819c79e5e56bbb",
+    "text": "# Project Description > Deliverables\n\nDocs Generator Update project dependencies Updated UI (with new inspector, etc) github action for generator:docs configure where to deploy (s3 or gh-pages) example project demonstrating it's use with the stat example scheduled action which generates docs based on rpc.discover results Typescript client generator updated deps Support for configurable transports (allow setting of headers) Support for configurable id type github action for generator:client:typescript Testing tool Output timing data (min, max, av. api call duration) Documentation for how to use the tool how to add test cases"
+  },
+  {
+    "chunk_id": "PSAI022-C0003",
+    "doc_id": "PSAI022",
+    "chunk_index": 3,
+    "section": "Milestone 1: Generator:Docs",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Milestone 1: Generator:Docs"
+    ],
+    "block_type": "section",
+    "token_count": 84,
+    "hash": "6c5c229d8d7950d5",
+    "text": "# Project Description > Development Roadmap > Milestone 1: Generator:Docs\n\nUpdating all the dependencies of the generated docs to resolve build issues & security updates. Generated result is using latest inspector and UI upgrades done for metamask openrpc docs. github action to generate docs and deploy them to s3 or gh-pages (with examples).\n\nEstimated Effort: 56 hours, 1 person, 5600 USD"
+  },
+  {
+    "chunk_id": "PSAI022-C0004",
+    "doc_id": "PSAI022",
+    "chunk_index": 4,
+    "section": "Milestone 2: Generator:Client",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Milestone 2: Generator:Client"
+    ],
+    "block_type": "section",
+    "token_count": 79,
+    "hash": "0b57da7e4f1f75bb",
+    "text": "# Project Description > Development Roadmap > Milestone 2: Generator:Client\n\nUpdated deps for ts client ability to configure the generated client allowing headers to be configured for filecoin api use gh action for typescript client generation & deployment copy-pastable code to enable generating and releasing clients when the api changes.\n\nEstimated Effort: 48 hours, 1 person, 4800 USD"
+  },
+  {
+    "chunk_id": "PSAI022-C0005",
+    "doc_id": "PSAI022",
+    "chunk_index": 5,
+    "section": "Milestone 3: Testing tool",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Milestone 3: Testing tool"
+    ],
+    "block_type": "section",
+    "token_count": 61,
+    "hash": "90b13eb93ac9502e",
+    "text": "# Project Description > Development Roadmap > Milestone 3: Testing tool\n\nTesting tool Output timing data (min, max, av. api call duration) Documentation for how to use the tool how to add test cases\n\nEstimated Effort: 24 hours, 1 person, 2400 USD"
+  },
+  {
+    "chunk_id": "PSAI022-C0006",
+    "doc_id": "PSAI022",
+    "chunk_index": 6,
+    "section": "Total Budget Requested",
+    "heading_path": [
+      "Project Description",
+      "Total Budget Requested"
+    ],
+    "block_type": "section",
+    "token_count": 149,
+    "hash": "75af0797397a5e5f",
+    "text": "# Project Description > Total Budget Requested\n\nI can commit 20-30 hours per week starting 04/19/2021, making this a roughly 6 week project. The estimated completion date given the proposed start date would be 05/24/2021.\n\nWe are working out a way to secure long term funding for the various OpenRPC tools. If a long term agreement, with some sort of SLA/dev support is something that interests you, I'd love to chat about how to structure it best.\n\nAside from this, OpenRPC is built and maintained as a community and volunteering-lead effort. There is growing adoption of the OpenRPC spec & tools, which will fuel more contribution and maintanence over time."
+  },
+  {
+    "chunk_id": "PSAI022-C0007",
+    "doc_id": "PSAI022",
+    "chunk_index": 7,
+    "section": "Relevant Experience",
+    "heading_path": [
+      "Team",
+      "Team Website",
+      "Relevant Experience"
+    ],
+    "block_type": "section",
+    "token_count": 54,
+    "hash": "36131fb4d229fd22",
+    "text": "# Team > Team Website > Relevant Experience\n\nXops built OpenRPC.\n\nWe've been building tooling in the blockchain space for 5 years now, having worked on wallets, dapp developer tools, and for the two years, JSON-RPC api tooling."
+  },
+  {
+    "chunk_id": "PSAI022-C0008",
+    "doc_id": "PSAI022",
+    "chunk_index": 8,
+    "section": "Team code repositories",
+    "heading_path": [
+      "Team",
+      "Team Website",
+      "Relevant Experience",
+      "Team code repositories"
+    ],
+    "block_type": "section",
+    "token_count": 68,
+    "hash": "f43efbbafd59f082",
+    "text": "# Team > Team Website > Relevant Experience > Team code repositories\n\nall of the repositories under https://github.com/open-rpc https://github.com/xops\n\nMany/most of the repositories under https://github.com/etclabscore\n\nMost notably: https://github.com/etclabscore/ethereum-json-rpcspecification"
+  },
+  {
+    "chunk_id": "PSAI022-C0009",
+    "doc_id": "PSAI022",
+    "chunk_index": 9,
+    "section": "Additional Information",
+    "heading_path": [
+      "Additional Information"
+    ],
+    "block_type": "section",
+    "token_count": 21,
+    "hash": "bdd6f7fc415fe6a1",
+    "text": "# Additional Information\n\nHope to talk soon - you can email me via belfordz66@gmail.com"
+  }
+]

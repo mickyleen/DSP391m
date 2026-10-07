@@ -1,0 +1,18 @@
+{
+  "doc_id": "PSAI193",
+  "num_chunks": 13,
+  "total_tokens": 1325,
+  "avg_tokens": 101.92,
+  "min_tokens": 30,
+  "max_tokens": 428,
+  "chunks_by_type": {
+    "section_split": 3,
+    "table_row": 9,
+    "section": 1
+  },
+  "num_sections": 2,
+  "sections": [
+    "ECOSYSTEM FIT",
+    "Future Plans At contractwizard.xyz team in protofire, our mission is to continue innovating and developing our platform to cater to the ever-changing needs of the smart contract community. We recognize the importance of providing our users with a comprehensive tool that enables them to manage all ink! smart contracts, including those they have created custom. As we continue to develop our platform, we understand the importance of building a community around it. We believe that by creating a community of users, we can facilitate the sharing of knowledge, contracts, and different approaches to problem-solving. Through our platform, users will have the ability to share their experiences, ask questions, and engage with others within the community. This will create an environment that fosters innovation and encourages collaboration, leading to the development of new and exciting ideas. Our hope is that our platform will serve as a hub for all things smart contract-related, where users can come together to learn, grow, and innovate."
+  ]
+}

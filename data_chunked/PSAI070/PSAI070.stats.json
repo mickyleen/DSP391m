@@ -1,0 +1,33 @@
+{
+  "doc_id": "PSAI070",
+  "num_chunks": 73,
+  "total_tokens": 20212,
+  "avg_tokens": 276.88,
+  "min_tokens": 20,
+  "max_tokens": 510,
+  "chunks_by_type": {
+    "section": 7,
+    "section_split": 56,
+    "table_row": 10
+  },
+  "num_sections": 17,
+  "sections": [
+    "Ethical Considerations",
+    "Ethical Considerations > References",
+    "Ethical Considerations > References > <span id=\"page-14-7\"></span>A.1 BWS Objective and Loss Function",
+    "Ethical Considerations > References > <span id=\"page-15-0\"></span>A.2 Acquisition Functions",
+    "Thesis Proposal: Measuring Prejudice at Scale",
+    "Thesis Proposal: Measuring Prejudice at Scale > 1 Introduction",
+    "Thesis Proposal: Measuring Prejudice at Scale > 2 Background and Related Work > 2.1 Construct Validity and Task Specification",
+    "Thesis Proposal: Measuring Prejudice at Scale > 2 Background and Related Work > 2.2 Annotation Paradigms: From Categorical to Comparative",
+    "Thesis Proposal: Measuring Prejudice at Scale > 2 Background and Related Work > 2.3 Active Learning and Comparative Extensions",
+    "Thesis Proposal: Measuring Prejudice at Scale > 2 Background and Related Work > 2.4 Representation Learning and Model Distillation",
+    "Thesis Proposal: Measuring Prejudice at Scale > 3.1 RO1: Generative Concept Extraction",
+    "Thesis Proposal: Measuring Prejudice at Scale > 3.1 RO1: Generative Concept Extraction > 3.2 RO2: Active Scaling for Comparative Annotation",
+    "Thesis Proposal: Measuring Prejudice at Scale > 3.3 RO2.3: Calibrated BWS Neural Scaling",
+    "Thesis Proposal: Measuring Prejudice at Scale > 3.4 RO3: Empirical Application",
+    "Thesis Proposal: Measuring Prejudice at Scale > 4 Conclusion",
+    "Thesis Proposal: Measuring Prejudice at Scale > Abstract",
+    "Thesis Proposal: Measuring Prejudice at Scale > Limitations"
+  ]
+}

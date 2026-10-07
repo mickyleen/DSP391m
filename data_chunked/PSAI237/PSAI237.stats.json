@@ -1,0 +1,29 @@
+{
+  "doc_id": "PSAI237",
+  "num_chunks": 49,
+  "total_tokens": 3761,
+  "avg_tokens": 76.76,
+  "min_tokens": 20,
+  "max_tokens": 491,
+  "chunks_by_type": {
+    "section": 11,
+    "section_split": 7,
+    "table_row": 31
+  },
+  "num_sections": 13,
+  "sections": [
+    "Additional Information :heavy_plus_sign:",
+    "Development Roadmap :nut_and_bolt:",
+    "Development Roadmap :nut_and_bolt: > Milestone 1 — Design and development of an Ink! smart contract",
+    "Development Roadmap :nut_and_bolt: > Milestone 2 — Design and development of system management tools",
+    "Development Roadmap :nut_and_bolt: > Overview",
+    "Future Plans",
+    "On-chain cash exchange > Development Status :open_book:",
+    "On-chain cash exchange > Project Overview :page_facing_up: > Contact",
+    "On-chain cash exchange > Project Overview :page_facing_up: > Ecosystem Fit",
+    "On-chain cash exchange > Project Overview :page_facing_up: > Legal Structure",
+    "On-chain cash exchange > Project Overview :page_facing_up: > Overview",
+    "On-chain cash exchange > Project Overview :page_facing_up: > Project Details",
+    "On-chain cash exchange > Project Overview :page_facing_up: > Team's experience"
+  ]
+}

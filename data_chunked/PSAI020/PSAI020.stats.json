@@ -1,0 +1,24 @@
+{
+  "doc_id": "PSAI020",
+  "num_chunks": 10,
+  "total_tokens": 1560,
+  "avg_tokens": 156.0,
+  "min_tokens": 20,
+  "max_tokens": 472,
+  "chunks_by_type": {
+    "section": 10
+  },
+  "num_sections": 10,
+  "sections": [
+    "Project Description",
+    "Project Description > Deliverables",
+    "Project Description > Deliverables > Details:",
+    "Project Description > Deliverables > Maintenance and Upgrade Plans",
+    "Project Description > Deliverables > Summary:",
+    "Project Description > Value",
+    "Team > Team Member LinkedIn Profiles",
+    "Team > Team Members",
+    "Team > Team Website > Relevant Experience",
+    "Team > Team code repositories"
+  ]
+}

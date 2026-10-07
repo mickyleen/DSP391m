@@ -1,0 +1,42 @@
+{
+  "doc_id": "PSAI174",
+  "num_chunks": 73,
+  "total_tokens": 4393,
+  "avg_tokens": 60.18,
+  "min_tokens": 20,
+  "max_tokens": 423,
+  "chunks_by_type": {
+    "section": 27,
+    "table_row": 46
+  },
+  "num_sections": 27,
+  "sections": [
+    "3. Adding tests, Javadoc, and refactoring of the whole project. (Main goal) > Current status and Requirements",
+    "3. Adding tests, Javadoc, and refactoring of the whole project. (Main goal) > Current status and Requirements > Approach",
+    "3. Adding tests, Javadoc, and refactoring of the whole project. (Main goal) > Current status and Requirements > Plan",
+    "3. Adding tests, Javadoc, and refactoring of the whole project. (Main goal) > TIMELINE",
+    "3. Adding tests, Javadoc, and refactoring of the whole project. (Main goal) > TIMELINE > In Best Case",
+    "3. Adding tests, Javadoc, and refactoring of the whole project. (Main goal) > TIMELINE > In Worst Case",
+    "After GSoC",
+    "After GSoC > Conclusion",
+    "CASTOR: Project DepClean",
+    "Career Goals",
+    "Contributions and patches for CASTOR DepClean",
+    "Current status and Requirements",
+    "Current status and Requirements > Approach",
+    "Current status and Requirements > Plan",
+    "GSoC 2021 Proposal",
+    "Personal Details",
+    "Personal Details > Area of Study in College",
+    "Preferred method of communication",
+    "Previous GSoC Participation",
+    "Previous GSoC Participation > If I am applying for various Organizations, this year",
+    "Project Details",
+    "Project Details > Approach",
+    "Project Details > Current status and Requirements",
+    "Project Details > Plan",
+    "Project Details > Targets and Description",
+    "Summer commitments other than this project",
+    "Why Me?"
+  ]
+}

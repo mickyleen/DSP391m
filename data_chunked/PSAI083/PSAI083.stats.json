@@ -1,0 +1,26 @@
+{
+  "doc_id": "PSAI083",
+  "num_chunks": 34,
+  "total_tokens": 11594,
+  "avg_tokens": 341.0,
+  "min_tokens": 64,
+  "max_tokens": 508,
+  "chunks_by_type": {
+    "section": 6,
+    "section_split": 28
+  },
+  "num_sections": 11,
+  "sections": [
+    "4 Conclusion",
+    "4 Conclusion > Limitations",
+    "<span id=\"page-5-2\"></span>Acknowledgments",
+    "<span id=\"page-5-2\"></span>Acknowledgments > References",
+    "Thesis Proposal: Targeted and Unified Cross-Lingual Unlearning from Multilingual Language Models",
+    "Thesis Proposal: Targeted and Unified Cross-Lingual Unlearning from Multilingual Language Models > 1 Introduction",
+    "Thesis Proposal: Targeted and Unified Cross-Lingual Unlearning from Multilingual Language Models > 1 Introduction > <span id=\"page-1-0\"></span>2 Targeted Unlearning > 2.1 SoTA Unlearning Methods",
+    "Thesis Proposal: Targeted and Unified Cross-Lingual Unlearning from Multilingual Language Models > 1 Introduction > <span id=\"page-1-0\"></span>2 Targeted Unlearning > 2.2 Stability Through Targeted Removal",
+    "Thesis Proposal: Targeted and Unified Cross-Lingual Unlearning from Multilingual Language Models > 1 Introduction > <span id=\"page-1-0\"></span>2 Targeted Unlearning > 2.3 Proposed Approach",
+    "Thesis Proposal: Targeted and Unified Cross-Lingual Unlearning from Multilingual Language Models > 1 Introduction > <span id=\"page-3-0\"></span>3 Multilingual Evaluation",
+    "Thesis Proposal: Targeted and Unified Cross-Lingual Unlearning from Multilingual Language Models > Abstract"
+  ]
+}

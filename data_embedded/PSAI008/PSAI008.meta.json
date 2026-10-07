@@ -1,0 +1,125 @@
+[
+  {
+    "chunk_id": "PSAI008-C0000",
+    "doc_id": "PSAI008",
+    "chunk_index": 0,
+    "section": "Project Description",
+    "heading_path": [
+      "Project Description"
+    ],
+    "block_type": "section_split",
+    "token_count": 486,
+    "hash": "c886a88e90bca88d",
+    "text": "# Project Description\n\nIt is well known that the PoRep needs huge memory resource on the label creating during the sealing PreCommit Phase 1, which is composed of the base + exp layers. One 32GB-sector label creating will consume 64GB memory, and the 64GB sector needs 128GB. If we run N jobs with N sectors in parallel, the total memory comsumption will be N 2 sector_size.\n\nIn order to seal more data of one server, the common method is to enlarge the DDR memory to TB level, which also means high cost at the same time, so it is very important to make full use of these memory resource as possible as we can.\n\nWe find it needs long time on the label caculation for every layer, which means we have too much memory not been touched within some time. For example, if we need 20 minutes to finish one layer of a 32GB-sector task, then it just needs 2GB in the first 75s, and 4GB for the first 150s in roughly estimated, etc. if we split the sector into multi blocks as following, it seems a good scenario for memory pool model in pipeline, which almost has the same performance as before.\n\njob-1: (Block 1) -> (Block 2)... -> (Block N) job-2: (Block 1) -> (Block 2)... -> (Block N)...\n\nLet's assume N jobs runing with N sectors, it will consume N 2 sector_size for all jobs working in parallel, which is the maximum threshold, and the minmum threshold case is (N + 1) * sector_size in that one job can be done with exp layer ready on every job at least. The job wil be pending when the memory pool is only making sure the fastest job fully done, and which also will be waked up once other jobs's old expansion layer released.\n\nSo the memory pool size range is as following:\n- MEM_POOL_SIZE <= N 2 sector_size\n- MEM_POOL_SIZE >= (N + 1)\n- sector_sizeo\n\nIn the use case, it would be better that MEM_POOL_SIZE can be allowed changing by enviornment. we can use the middle case for good pipeline work in default as following, - MEM_POOL_SIZE = (3 N + 1) sector_size / 2"
+  },
+  {
+    "chunk_id": "PSAI008-C0001",
+    "doc_id": "PSAI008",
+    "chunk_index": 1,
+    "section": "Project Description",
+    "heading_path": [
+      "Project Description"
+    ],
+    "block_type": "section_split",
+    "token_count": 91,
+    "hash": "367413baff2d351b",
+    "text": "allowed changing by enviornment. we can use the middle case for good pipeline work in default as following, - MEM_POOL_SIZE = (3 N + 1) sector_size / 2\n\nSummary the impelmentation as following:\n- memory pool management, such as init/acquire/release ops, etc.\n- unsafe multi blocks support.\n- multi task work on condition variables support. refactor fill_buffer, create_label_runner, etc. with multi blocks."
+  },
+  {
+    "chunk_id": "PSAI008-C0002",
+    "doc_id": "PSAI008",
+    "chunk_index": 2,
+    "section": "Project Description",
+    "heading_path": [
+      "Project Description"
+    ],
+    "block_type": "section_split",
+    "token_count": 64,
+    "hash": "0e82db73081c2bb3",
+    "text": "3 N + 1) sector_size / 2\n\nSummary the impelmentation as following:\n- memory pool management, such as init/acquire/release ops, etc.\n- unsafe multi blocks support.\n- multi task work on condition variables support. refactor fill_buffer, create_label_runner, etc. with multi blocks."
+  },
+  {
+    "chunk_id": "PSAI008-C0003",
+    "doc_id": "PSAI008",
+    "chunk_index": 3,
+    "section": "Development Roadmap",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap"
+    ],
+    "block_type": "section",
+    "token_count": 52,
+    "hash": "663b203c4ec06482",
+    "text": "# Project Description > Development Roadmap\n\nWeek 1: Complete the formal specification Week 2~3: Development Week 4: Test, Fix bugs and do some optimization Week 5: Test more and submit it for official review Week 6: Release"
+  },
+  {
+    "chunk_id": "PSAI008-C0004",
+    "doc_id": "PSAI008",
+    "chunk_index": 4,
+    "section": "Total Budget Requested",
+    "heading_path": [
+      "Project Description",
+      "Total Budget Requested"
+    ],
+    "block_type": "section",
+    "token_count": 32,
+    "hash": "7a5b74b814a8e86c",
+    "text": "# Project Description > Total Budget Requested\n\n\\$20000 The funds will be earmarked for the development of memory pool support on sealing precommit phase1."
+  },
+  {
+    "chunk_id": "PSAI008-C0005",
+    "doc_id": "PSAI008",
+    "chunk_index": 5,
+    "section": "Maintenance and Upgrade Plans",
+    "heading_path": [
+      "Project Description",
+      "Maintenance and Upgrade Plans"
+    ],
+    "block_type": "section",
+    "token_count": 47,
+    "hash": "69954eb28adcba52",
+    "text": "# Project Description > Maintenance and Upgrade Plans\n\nWe plan to continue supporting and maintaining the code for at least the next two years (24 months); At the same time, we will also consider the upgrading if the sealing algorithm is upgraded."
+  },
+  {
+    "chunk_id": "PSAI008-C0006",
+    "doc_id": "PSAI008",
+    "chunk_index": 6,
+    "section": "Team Members",
+    "heading_path": [
+      "Team",
+      "Team Members"
+    ],
+    "block_type": "section",
+    "token_count": 20,
+    "hash": "95a38eb777ef47fd",
+    "text": "# Team > Team Members\n\nmacro-ss coder-lb marco-swift alexzhenyu"
+  },
+  {
+    "chunk_id": "PSAI008-C0007",
+    "doc_id": "PSAI008",
+    "chunk_index": 7,
+    "section": "Relevant Experience",
+    "heading_path": [
+      "Team",
+      "Relevant Experience"
+    ],
+    "block_type": "section",
+    "token_count": 108,
+    "hash": "e1cdd5c3bd370481",
+    "text": "# Team > Relevant Experience\n\nOur team start to develop for IPFS & Filecoin two years ago. We are familiar with IPFS & Filecoin architecture and code, and have delevoped our optmized version of sealing code, worker task secheduling code, devops management system, and so on. From the very beginning, we have been focused on Filecoin security solutions. We research offline signature, cold wallet and multisig wallet solutions. We also develop a framework to ensure the security of devops for Filecoin clusters."
+  },
+  {
+    "chunk_id": "PSAI008-C0008",
+    "doc_id": "PSAI008",
+    "chunk_index": 8,
+    "section": "Team code repositories",
+    "heading_path": [
+      "Team",
+      "Team code repositories"
+    ],
+    "block_type": "section",
+    "token_count": 108,
+    "hash": "8ac1643fed3bf3a5",
+    "text": "# Team > Team code repositories\n\n<https://github.com/storswift> <https://github.com/storswiftlabs>\n\n![](images/_page_2_Picture_0.jpeg)\n\n> 📝 Mô tả hình ảnh: > > Hình ảnh hoàn toàn là một trang trắng, không chứa bất kỳ nội dung, hình ảnh, sơ đồ hay ký tự nào."
+  }
+]

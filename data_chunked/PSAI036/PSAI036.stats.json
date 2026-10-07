@@ -1,0 +1,36 @@
+{
+  "doc_id": "PSAI036",
+  "num_chunks": 89,
+  "total_tokens": 15449,
+  "avg_tokens": 173.58,
+  "min_tokens": 20,
+  "max_tokens": 511,
+  "chunks_by_type": {
+    "section": 21,
+    "section_split": 26,
+    "table_row": 42
+  },
+  "num_sections": 20,
+  "sections": [
+    "<span id=\"page-0-0\"></span>Thesis Proposal: A Normalization-First Framework for Sound, Complete, and Utility-Ready Open Information Extraction",
+    "<span id=\"page-0-0\"></span>Thesis Proposal: A Normalization-First Framework for Sound, Complete, and Utility-Ready Open Information Extraction > 1 Introduction",
+    "<span id=\"page-0-0\"></span>Thesis Proposal: A Normalization-First Framework for Sound, Complete, and Utility-Ready Open Information Extraction > 2 Related Work",
+    "<span id=\"page-0-0\"></span>Thesis Proposal: A Normalization-First Framework for Sound, Complete, and Utility-Ready Open Information Extraction > 2 Related Work > 2.1 OIE System Architectures",
+    "<span id=\"page-0-0\"></span>Thesis Proposal: A Normalization-First Framework for Sound, Complete, and Utility-Ready Open Information Extraction > 2 Related Work > 2.2 Representation: Structure, Granularity, and Semantic Annotations",
+    "<span id=\"page-0-0\"></span>Thesis Proposal: A Normalization-First Framework for Sound, Complete, and Utility-Ready Open Information Extraction > 2 Related Work > 2.2 Representation: Structure, Granularity, and Semantic Annotations > 2.3 Evaluation Benchmarks and Their Limitations",
+    "<span id=\"page-0-0\"></span>Thesis Proposal: A Normalization-First Framework for Sound, Complete, and Utility-Ready Open Information Extraction > 2.4 Multilinguality",
+    "<span id=\"page-0-0\"></span>Thesis Proposal: A Normalization-First Framework for Sound, Complete, and Utility-Ready Open Information Extraction > 2.5 Downstream Utility",
+    "<span id=\"page-0-0\"></span>Thesis Proposal: A Normalization-First Framework for Sound, Complete, and Utility-Ready Open Information Extraction > 3 Proposed Framework and System",
+    "<span id=\"page-0-0\"></span>Thesis Proposal: A Normalization-First Framework for Sound, Complete, and Utility-Ready Open Information Extraction > 3.6.1 Evaluation Metrics.",
+    "<span id=\"page-0-0\"></span>Thesis Proposal: A Normalization-First Framework for Sound, Complete, and Utility-Ready Open Information Extraction > <span id=\"page-4-2\"></span>3.1 Formal Definitions",
+    "<span id=\"page-0-0\"></span>Thesis Proposal: A Normalization-First Framework for Sound, Complete, and Utility-Ready Open Information Extraction > <span id=\"page-4-2\"></span>3.1 Formal Definitions > 3.2 Stage I: Linguistic Structuring and Context Resolution",
+    "<span id=\"page-0-0\"></span>Thesis Proposal: A Normalization-First Framework for Sound, Complete, and Utility-Ready Open Information Extraction > <span id=\"page-4-2\"></span>3.1 Formal Definitions > 3.2 Stage I: Linguistic Structuring and Context Resolution > 3.5 Stage IV: Canonical Alignment and Representation Consolidation",
+    "<span id=\"page-0-0\"></span>Thesis Proposal: A Normalization-First Framework for Sound, Complete, and Utility-Ready Open Information Extraction > <span id=\"page-4-2\"></span>3.1 Formal Definitions > 3.2 Stage I: Linguistic Structuring and Context Resolution > 3.6 Benchmark Construction and Evaluation Protocol",
+    "<span id=\"page-0-0\"></span>Thesis Proposal: A Normalization-First Framework for Sound, Complete, and Utility-Ready Open Information Extraction > <span id=\"page-4-2\"></span>3.1 Formal Definitions > 3.2 Stage I: Linguistic Structuring and Context Resolution > <span id=\"page-6-1\"></span>3.3 Stage II: Lossless Semantic Decomposition",
+    "<span id=\"page-0-0\"></span>Thesis Proposal: A Normalization-First Framework for Sound, Complete, and Utility-Ready Open Information Extraction > <span id=\"page-4-2\"></span>3.1 Formal Definitions > 3.2 Stage I: Linguistic Structuring and Context Resolution > <span id=\"page-6-2\"></span>3.4 Stage III: Validated Relational Signal Extraction",
+    "<span id=\"page-0-0\"></span>Thesis Proposal: A Normalization-First Framework for Sound, Complete, and Utility-Ready Open Information Extraction > Abstract",
+    "Conclusion",
+    "Limitations",
+    "Limitations > <span id=\"page-12-3\"></span><span id=\"page-12-2\"></span><span id=\"page-12-1\"></span>A Appendix"
+  ]
+}

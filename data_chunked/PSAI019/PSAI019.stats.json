@@ -1,0 +1,23 @@
+{
+  "doc_id": "PSAI019",
+  "num_chunks": 9,
+  "total_tokens": 1323,
+  "avg_tokens": 147.0,
+  "min_tokens": 28,
+  "max_tokens": 407,
+  "chunks_by_type": {
+    "section": 9
+  },
+  "num_sections": 9,
+  "sections": [
+    "Project Description",
+    "Project Description > 1. Community Partner for Filecoin Asia Hackathon Season 2021",
+    "Project Description > 2. Collaboration on other existing hackathons where",
+    "Project Description > 4. Introduction to Strategic Partners and Enterprises in Korea",
+    "Project Description > Deliverables",
+    "Project Description > Deliverables > Development Roadmap",
+    "Project Description > Team > Relevant Experience",
+    "Project Description > Team > Team Member LinkedIn Profiles",
+    "Project Description > Total Budget Requested"
+  ]
+}

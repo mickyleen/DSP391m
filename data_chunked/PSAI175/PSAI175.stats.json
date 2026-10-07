@@ -1,0 +1,39 @@
+{
+  "doc_id": "PSAI175",
+  "num_chunks": 49,
+  "total_tokens": 5777,
+  "avg_tokens": 117.9,
+  "min_tokens": 20,
+  "max_tokens": 500,
+  "chunks_by_type": {
+    "section": 20,
+    "table_row": 21,
+    "section_split": 8
+  },
+  "num_sections": 23,
+  "sections": [
+    "<span id=\"page-27-0\"></span>HOW IS THIS GOING TO PROFIT THE ORGANISATION ?",
+    "<span id=\"page-27-0\"></span>HOW IS THIS GOING TO PROFIT THE ORGANISATION ? > <span id=\"page-28-0\"></span>WHY AM I SUITABLE FOR THIS PROJECT ?",
+    "COMMITMENTS",
+    "DELIVERABLES",
+    "Digital Library Management",
+    "Digital Library Management > INDEX",
+    "Digital Library Management > PERSONAL DETAILS",
+    "OBJECTIVES > <span id=\"page-4-1\"></span>Primary :",
+    "OBJECTIVES > Secondary :",
+    "PERSONAL INSPIRATION",
+    "PREVIOUS CONTRIBUTIONS > <span id=\"page-26-1\"></span>Pull Request Opened :",
+    "PREVIOUS CONTRIBUTIONS > Issue participated/resolved",
+    "RELEVANT SKILLS",
+    "SUMMARY",
+    "SUMMARY > PROJECT INFORMATION",
+    "TECH STACK PROPOSED",
+    "TECHNICAL DESCRIPTION",
+    "TECHNICAL DESCRIPTION > Admin Side Dashboard",
+    "TECHNICAL DESCRIPTION > Connection of backend and frontend",
+    "TECHNICAL DESCRIPTION > Managing Image Information",
+    "TECHNICAL DESCRIPTION > Solution",
+    "TECHNICAL DESCRIPTION > What's the problem ?",
+    "TIMELINE"
+  ]
+}

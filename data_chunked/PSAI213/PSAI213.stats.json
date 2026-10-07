@@ -1,0 +1,39 @@
+{
+  "doc_id": "PSAI213",
+  "num_chunks": 49,
+  "total_tokens": 4117,
+  "avg_tokens": 84.02,
+  "min_tokens": 20,
+  "max_tokens": 393,
+  "chunks_by_type": {
+    "section": 22,
+    "section_split": 3,
+    "table_row": 24
+  },
+  "num_sections": 23,
+  "sections": [
+    "Additional Information :heavy_plus_sign:",
+    "Development Roadmap :nut_and_bolt: > Overview",
+    "Development Status :open_book:",
+    "Future Plans",
+    "Milestone 1 — Basic in-game NFT items standard and web-app",
+    "Milestone 2 — Extended web-app and testing games",
+    "Project Overview :page_facing_up: > Application with players interface",
+    "Project Overview :page_facing_up: > Application with players interface > Game Developers Console",
+    "Project Overview :page_facing_up: > Application with players interface > Pallet",
+    "Project Overview :page_facing_up: > Asylum overview",
+    "Project Overview :page_facing_up: > Connection library",
+    "Project Overview :page_facing_up: > Ecosystem Fit",
+    "Project Overview :page_facing_up: > Framework for ecosystem integration",
+    "Project Overview :page_facing_up: > Framework for ecosystem integration > Application with admin tools",
+    "Project Overview :page_facing_up: > Interoperability standards",
+    "Project Overview :page_facing_up: > On-chain metaverse ecosystem",
+    "Project Overview :page_facing_up: > Overview",
+    "Team members",
+    "Team members > Contact",
+    "Team members > Legal Structure",
+    "Team members > Team's experience",
+    "Team members > Team's experience > Team Code Repos",
+    "Team members > Team's experience > Team LinkedIn Profiles (if available)"
+  ]
+}

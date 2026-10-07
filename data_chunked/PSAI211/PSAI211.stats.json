@@ -1,0 +1,35 @@
+{
+  "doc_id": "PSAI211",
+  "num_chunks": 85,
+  "total_tokens": 5279,
+  "avg_tokens": 62.11,
+  "min_tokens": 21,
+  "max_tokens": 497,
+  "chunks_by_type": {
+    "section": 18,
+    "section_split": 3,
+    "table_row": 64
+  },
+  "num_sections": 19,
+  "sections": [
+    "ZERODAO NETWORK > LONG TERM",
+    "ZERODAO NETWORK > OVERVIEW",
+    "ZERODAO NETWORK > OVERVIEW > MILESTONE 1 EXAMPLE — IMPLEMENT SUBSTRATE MODULES",
+    "ZERODAO NETWORK > PROJECT OVERVIEW > OVERVIEW",
+    "ZERODAO NETWORK > PROJECT OVERVIEW > PROJECT DETAILS > Applications",
+    "ZERODAO NETWORK > PROJECT OVERVIEW > PROJECT DETAILS > Procedures of calculation",
+    "ZERODAO NETWORK > PROJECT OVERVIEW > PROJECT DETAILS > Reputation System",
+    "ZERODAO NETWORK > PROJECT OVERVIEW > PROJECT DETAILS > Social Currency",
+    "ZERODAO NETWORK > PROJECT OVERVIEW > PROJECT DETAILS > Social Network",
+    "ZERODAO NETWORK > PROJECT OVERVIEW > PROJECT DETAILS > Sybil Attack resistance",
+    "ZERODAO NETWORK > PROJECT OVERVIEW > PROJECT DETAILS > TIR( Trust-Influence-Reputation ) Algorithm",
+    "ZERODAO NETWORK > PROJECT OVERVIEW > PROJECT DETAILS > ZeroDAO social finance is the underlying economic system",
+    "ZERODAO NETWORK > PROJECT OVERVIEW > PROJECT DETAILS > challenge",
+    "ZERODAO NETWORK > PROJECT OVERVIEW > PROJECT DETAILS > collusion attack",
+    "ZERODAO NETWORK > SHORT TERM",
+    "ZERODAO NETWORK > TEAM CODE REPOS",
+    "ZERODAO NETWORK > TEAM CODE REPOS > WHITE PAPER",
+    "ZERODAO NETWORK > TEAM MEMBERS > CONTACT",
+    "ZERODAO NETWORK > TEAM'S EXPERIENCE"
+  ]
+}

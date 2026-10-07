@@ -1,0 +1,36 @@
+{
+  "doc_id": "PSAI222",
+  "num_chunks": 42,
+  "total_tokens": 3365,
+  "avg_tokens": 80.12,
+  "min_tokens": 20,
+  "max_tokens": 365,
+  "chunks_by_type": {
+    "section": 23,
+    "table_row": 19
+  },
+  "num_sections": 21,
+  "sections": [
+    "Epirus Substrate Explorer > Development Roadmap :nut_and_bolt: > Overview",
+    "Epirus Substrate Explorer > Future Plans",
+    "Epirus Substrate Explorer > Future Plans > Phase 2 - Marketable System",
+    "Epirus Substrate Explorer > Future Plans > Phase 2 - Marketable System > Business and Community",
+    "Epirus Substrate Explorer > Future Plans > Phase 2 - Marketable System > On-Going Support",
+    "Epirus Substrate Explorer > Future Plans > Phase 2 - Marketable System > Phase 3 - Web-Scale System",
+    "Epirus Substrate Explorer > Future Plans > Phase 2 - Marketable System > Tentative scope:",
+    "Epirus Substrate Explorer > Milestone 1 - Devnet MVP",
+    "Epirus Substrate Explorer > Project Overview :page_facing_up: > Architecture",
+    "Epirus Substrate Explorer > Project Overview :page_facing_up: > Database",
+    "Epirus Substrate Explorer > Project Overview :page_facing_up: > Ecosystem Fit",
+    "Epirus Substrate Explorer > Project Overview :page_facing_up: > Existing Projects",
+    "Epirus Substrate Explorer > Project Overview :page_facing_up: > Overview",
+    "Epirus Substrate Explorer > Project Overview :page_facing_up: > Potential Synergies",
+    "Epirus Substrate Explorer > Project Overview :page_facing_up: > Synergies to Explore",
+    "Epirus Substrate Explorer > Project Overview :page_facing_up: > System Components",
+    "Epirus Substrate Explorer > Project Overview :page_facing_up: > User Interface",
+    "Epirus Substrate Explorer > Project Overview :page_facing_up: > Web API",
+    "Epirus Substrate Explorer > Project Overview :page_facing_up: > Web UI",
+    "Epirus Substrate Explorer > Team :busts_in_silhouette: > Team Members",
+    "Epirus Substrate Explorer > Team :busts_in_silhouette: > Team Members > Team Code Repositories"
+  ]
+}

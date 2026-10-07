@@ -1,0 +1,27 @@
+{
+  "doc_id": "PSAI098",
+  "num_chunks": 54,
+  "total_tokens": 10481,
+  "avg_tokens": 194.09,
+  "min_tokens": 25,
+  "max_tokens": 509,
+  "chunks_by_type": {
+    "section": 10,
+    "section_split": 22,
+    "table_row": 22
+  },
+  "num_sections": 11,
+  "sections": [
+    "Neural Retriever and Go Beyond: A Thesis Proposal",
+    "Neural Retriever and Go Beyond: A Thesis Proposal > 1 Introduction",
+    "Neural Retriever and Go Beyond: A Thesis Proposal > 3.3 How to Obtain Enough Training Data?",
+    "Neural Retriever and Go Beyond: A Thesis Proposal > 3.3 How to Obtain Enough Training Data? > 3.4 How to Retrieve Information for Multi-modality Queries?",
+    "Neural Retriever and Go Beyond: A Thesis Proposal > <span id=\"page-1-0\"></span>2 Retrievers in General",
+    "Neural Retriever and Go Beyond: A Thesis Proposal > <span id=\"page-2-0\"></span>3 Research Gaps and Solutions",
+    "Neural Retriever and Go Beyond: A Thesis Proposal > <span id=\"page-2-0\"></span>3 Research Gaps and Solutions > 3.2 Is IR-oriented Pretraining Important?",
+    "Neural Retriever and Go Beyond: A Thesis Proposal > <span id=\"page-2-0\"></span>3 Research Gaps and Solutions > <span id=\"page-2-2\"></span>3.1 Is One Dense Vector Enough to Capture Information?",
+    "Neural Retriever and Go Beyond: A Thesis Proposal > <span id=\"page-5-0\"></span>4 Future Work",
+    "Neural Retriever and Go Beyond: A Thesis Proposal > <span id=\"page-5-1\"></span>5 Conclusion",
+    "Neural Retriever and Go Beyond: A Thesis Proposal > Abstract"
+  ]
+}

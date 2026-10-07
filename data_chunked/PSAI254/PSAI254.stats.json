@@ -1,0 +1,35 @@
+{
+  "doc_id": "PSAI254",
+  "num_chunks": 58,
+  "total_tokens": 3918,
+  "avg_tokens": 67.55,
+  "min_tokens": 20,
+  "max_tokens": 504,
+  "chunks_by_type": {
+    "section": 20,
+    "table_row": 38
+  },
+  "num_sections": 20,
+  "sections": [
+    "Additional Information :heavy_plus_sign: > Context of our request",
+    "Additional Information :heavy_plus_sign: > How we heard about the Grants Program?",
+    "Development Roadmap :nut_and_bolt: > Future Plans",
+    "Development Roadmap :nut_and_bolt: > Milestone 1 — Indexed Databases",
+    "Development Roadmap :nut_and_bolt: > Milestone 1 — Indexed Databases > Milestone 2 — Offchain API",
+    "Development Roadmap :nut_and_bolt: > Milestone 1 — Indexed Databases > Milestone 2 — Offchain API > Global success criteria:",
+    "Development Roadmap :nut_and_bolt: > Milestone 3 — Integration Libs",
+    "Development Roadmap :nut_and_bolt: > Milestone 3 — Integration Libs > Global success criteria:",
+    "Development Roadmap :nut_and_bolt: > Overview",
+    "Development Status :open_book:",
+    "wika.network > Contact",
+    "wika.network > Contact > Legal Structure",
+    "wika.network > Contact > Team Code Repos",
+    "wika.network > Contact > Team's experience",
+    "wika.network > Project Overview :page_facing_up: > Ecosystem Fit",
+    "wika.network > Project Overview :page_facing_up: > Overview > Make the Internet a Better Place.",
+    "wika.network > Project Overview :page_facing_up: > Overview > Why?",
+    "wika.network > Project Overview :page_facing_up: > Project Details",
+    "wika.network > Team :busts_in_silhouette: > Team members",
+    "wika.network > Team LinkedIn Profiles"
+  ]
+}

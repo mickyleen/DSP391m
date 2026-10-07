@@ -1,0 +1,36 @@
+{
+  "doc_id": "PSAI075",
+  "num_chunks": 33,
+  "total_tokens": 9332,
+  "avg_tokens": 282.79,
+  "min_tokens": 54,
+  "max_tokens": 509,
+  "chunks_by_type": {
+    "section": 18,
+    "section_split": 15
+  },
+  "num_sections": 21,
+  "sections": [
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > 1 Introduction",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > 2 Related Works",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > 2 Related Works > 2.1 Indic ASR-ST-TTS",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > 2 Related Works > 3 Key Challenges",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > 2 Related Works > 4 Motivation",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > 2 Related Works > 5 Research Questions",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > 2 Related Works > 5 Research Questions > 6 Methodology",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > 2 Related Works > 6.1.1 Real Parallel Speech Dataset",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > 2 Related Works > 6.1.1 Real Parallel Speech Dataset > 6.1.2 Synthetic Parallel Speech Dataset",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > 6.2 Model Development",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > 6.2 Model Development > 6.3 Evaluation",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > 6.3.1 Human Validation of Synthetic data",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > 6.3.1 Human Validation of Synthetic data > 6.3.2 MOS",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > 6.3.3 ASR-BLEU",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > 6.3.4 BLASER",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > 7 Thesis Contribution",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > 7 Thesis Contribution > 8 Future work",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > 9 Conclusion",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > Abstract",
+    "Thesis Proposal: Development of End-to-End Speech Translation Models for Indian Languages > Limitations"
+  ]
+}

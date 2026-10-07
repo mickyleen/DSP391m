@@ -1,0 +1,30 @@
+{
+  "doc_id": "PSAI206",
+  "num_chunks": 21,
+  "total_tokens": 1669,
+  "avg_tokens": 79.48,
+  "min_tokens": 23,
+  "max_tokens": 239,
+  "chunks_by_type": {
+    "section": 17,
+    "table_row": 4
+  },
+  "num_sections": 15,
+  "sections": [
+    "Additional Information :heavy_plus_sign:",
+    "Development Roadmap :nut_and_bolt:",
+    "Development Status :open_book:",
+    "Legal Structure",
+    "Milestone 1 - The first usable version",
+    "Overview",
+    "Project Details",
+    "Project Details > Design",
+    "Project Details > Ecosystem Fit",
+    "Project Details > Workflow",
+    "Project Overview :page_facing_up:",
+    "Team :busts_in_silhouette: > Contact",
+    "Team :busts_in_silhouette: > Team members",
+    "Team's experience",
+    "Team's experience > Dajun"
+  ]
+}

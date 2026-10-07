@@ -1,0 +1,269 @@
+[
+  {
+    "chunk_id": "PSAI018-C0000",
+    "doc_id": "PSAI018",
+    "chunk_index": 0,
+    "section": "Project Description",
+    "heading_path": [
+      "Project Description"
+    ],
+    "block_type": "section",
+    "token_count": 422,
+    "hash": "8937936b73faf332",
+    "text": "# Project Description\n\n\"Using the internet\" is transitioning from a discrete action to a continuous state. The prevailing smartphone app model and the World Wide Web weren't built for this. We need a new application paradigm for wearable and embedded computers (e.g. smartglasses). This goes beyond a just designing a new user experience model for augmented reality. As the internet pervades every corner of our physical world, the networks that deliver this content will define the trajectory of our economy, politics, culture, and shared values. We are building the Geo Web to help ensure this future is more decentralized, egalitarian, permissionless, and user-centric.\n\nThe Geo Web is a set of open protocols and property rights for anchoring digital content to physical land. It's a persistent augmented reality metaverse. Our partial common ownership (aka Harberger tax) land market is the key to creating more allocative efficiency, an engine for permissionless economic opportunities, and democratic governance on the network. Geo Web citizens license digital land parcel NFTs by paying a network fee based on their self-assessed value of the land. Other citizens can force transfer of the land by paying the current self-assessed value. This dynamic market punishes squatters and encourages productive land usage. Network fees are reinvested back into the network, rewarding builders, creators, promoters, educators, and users. The system reinforces positive network effects and can scale elegantly from early adoption to global scale. We believe that we can build a future in which our public good infrastructure out-competes centralized, private good offerings.\n\nThe Geo Web's core insight is its economic (resource allocation) model. Our focus is to keep our core protocols agnostic to the infrastructure, tools, and innovation above and below them in the technology stack. IPFS and Filecoin will play an important part in this vision. Geo Web content seekers will be geographically clustered–ideal for peer-to-peer content transmission and storage. IPFS and Filecoin integrations will help us create a more robust, censorship-resistant, and efficient network on which anyone can build and use."
+  },
+  {
+    "chunk_id": "PSAI018-C0001",
+    "doc_id": "PSAI018",
+    "chunk_index": 1,
+    "section": "Value",
+    "heading_path": [
+      "Project Description",
+      "Value"
+    ],
+    "block_type": "section",
+    "token_count": 245,
+    "hash": "72a505259dd283d3",
+    "text": "# Project Description > Value\n\nIf we get this right, the Geo Web can become the World Wide Web of the physical world. With the planned integration, IPFS and Filecoin would function as the default p2p transmission and storage protocols for our network. The value would be new users, uses cases, and tools in the ecosystem. We believe that the Geo Web can attract and onboard non-technical users that wouldn't naturally be drawn toward the distributed web. The Geo Web can also become a sustaining force for additional open-source, p2p, and distributed technology development through our Harberger tax proceeds.\n\nThe timing and speed of augmented reality adoption is unknown, so we must foster use cases that deliver value on today's devices while continuing to push the boundaries of what's possible.\n\nOur desire to implement distributed technologies could create UX hurdles that drive users toward centralized alternatives if we don't get it right. The smartphone duopoly of Apple and Google looms large. If we (or others) don't build better p2p application and network alternatives, then their OS and app store dominance will continue into the next computing paradigm. We'll end up with continued innovation suppression, rent seeking, censorship, and the attention economy."
+  },
+  {
+    "chunk_id": "PSAI018-C0002",
+    "doc_id": "PSAI018",
+    "chunk_index": 2,
+    "section": "Deliverables",
+    "heading_path": [
+      "Project Description",
+      "Deliverables"
+    ],
+    "block_type": "section",
+    "token_count": 86,
+    "hash": "d705a670429d5162",
+    "text": "# Project Description > Deliverables\n\n- 1. v1 Geo Web Spatial Browser (mobile/desktop web app)\n- 2. v2 Cadastre UI (scalable IPFS publishing, pinning, & identity management)\n- 3. Filecoin storage integration (parcel meta-data & linked content archival)\n- 4. Production-ready smart contracts for ETH L2 mainnet\n- 5. Public documentation site"
+  },
+  {
+    "chunk_id": "PSAI018-C0003",
+    "doc_id": "PSAI018",
+    "chunk_index": 3,
+    "section": "Milestone #1 - v1 Geo Web Spatial Browser",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Milestone #1 - v1 Geo Web Spatial Browser"
+    ],
+    "block_type": "section",
+    "token_count": 149,
+    "hash": "e3d4a9ed4ac6146b",
+    "text": "# Project Description > Development Roadmap > Milestone #1 - v1 Geo Web Spatial Browser\n\nLead = Vishal Design/PM = Graven Timeline = Week 1 - 4\n\nSoftware Functionality Web app accessbile at a public URL Modern desktop and mobile web browser support Uses \"GPS to land parcel to IPFS\" to lookup and automatically resolve linked content Displays current parcel/location information (parcel name, licensee, for sale price, etc) for user context Includes three user-selected viewing modes: Arbitrary URI web content Display URI User can navigate links in frame Media gallery Scroll-able carousel displaying one file at a time Show media name/title Rotatable models for 3D content Augmented reality Displays content through the camera on compatible smartphones"
+  },
+  {
+    "chunk_id": "PSAI018-C0004",
+    "doc_id": "PSAI018",
+    "chunk_index": 4,
+    "section": "Milestone #2 - v2 Cadastre UI",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Milestone #2 - v2 Cadastre UI"
+    ],
+    "block_type": "section",
+    "token_count": 162,
+    "hash": "40093dc8c6ce553e",
+    "text": "# Project Description > Development Roadmap > Milestone #2 - v2 Cadastre UI\n\nLead = Vishal Architecture Support = Cody Design/PM = Graven Timeline = Week 5 - 11\n\nSoftware Functionality Enable IPFS publishing/linking of additional media types (image, video, & audio) to the gallery Scalable linked content and Ceramic doc storage options Integration with IPFS browser node for simple, temporary local storage Integration with Textile Buckets Pinning API for user-provisioned nodes Move to Ceramic Network mainnet Limited hosted storage of Ceramic documents associated to land parcels Occasional blockchain anchoring of Ceramic documents Production identity and wallet management infrastructure 3ID Connect or hosted alternative Allow users to manage keys across wallets addresses UI performance improvements Parcel grid rendering General dependency clean-up Mapping tool optimization"
+  },
+  {
+    "chunk_id": "PSAI018-C0005",
+    "doc_id": "PSAI018",
+    "chunk_index": 5,
+    "section": "Milestone #3 - Filecoin storage",
+    "heading_path": [
+      "Project Description",
+      "Milestone #3 - Filecoin storage"
+    ],
+    "block_type": "section",
+    "token_count": 202,
+    "hash": "c5ee4a244ec8cae4",
+    "text": "# Project Description > Milestone #3 - Filecoin storage\n\nLead = Cody Design/PM = Graven Timeline = Week 1 - 2\n\nSoftware Functionality Developer specification and documentation Filecoin archival of user-provisioned Buckets from the Cadastre Includes back-up of user linked content Archive parcel meta-data *\n\nLead = Cody PM = Graven Timeline:\n- Week 3\n- 12\n\nSoftware Functionality NFT DIDs & ownership of root document (2 weeks) Define the method(s) for land parcels \"owning\" vs merely linking to downstream content Research and finalize scaling solution choice (2 weeks) Ethereum-based L2 network (Optimistic or ZK rollup solution) Port and validate current testnet contracts to L2 network (1 week) Implement land coordinate grid size that balances granularity/transaction fees on L2 (2 weeks) Establish production contract upgrade process and multi-sig (1 week) Internal security testing to prepare for an external audit (2 weeks)"
+  },
+  {
+    "chunk_id": "PSAI018-C0006",
+    "doc_id": "PSAI018",
+    "chunk_index": 6,
+    "section": "Milestone #5 - Public documentation site",
+    "heading_path": [
+      "Project Description",
+      "Milestone #3 - Filecoin storage",
+      "Milestone #5 - Public documentation site"
+    ],
+    "block_type": "section",
+    "token_count": 175,
+    "hash": "70e40bba25dec8c7",
+    "text": "# Project Description > Milestone #3 - Filecoin storage > Milestone #5 - Public documentation site\n\nLead = Graven Timeline = Week 2 - 12\n\nSoftware Functionality Gitbook-based documentation site for technical and non-technical users Documentation Sections Geo Web Intro (1 week) Introductory material for technical & nontechnical users Getting Started (3 weeks) Overview of important concepts, technical requirements for interacting with the Geo Web, & use cases Community & Governance (2 weeks) Covers organizational aspects of the project including our open org vision, DAO, use of SourceCred, & uses of network funds Developers (4 weeks) Deep dive into the details of project concepts, smart contracts, integrations (IPFS, Filecoin, Ceramic, etc), and building on the Geo Web * Infrastructure, formatting, testing, & production deployment (1 week)"
+  },
+  {
+    "chunk_id": "PSAI018-C0007",
+    "doc_id": "PSAI018",
+    "chunk_index": 7,
+    "section": "Total Budget Requested",
+    "heading_path": [
+      "Project Description",
+      "Total Budget Requested"
+    ],
+    "block_type": "table_row",
+    "token_count": 31,
+    "hash": "e64a6eb355652e81",
+    "text": ": v1 Geo | Milestone: Web Spatial | : Browser | Week: 1 | #: 4 | Budget Requested: \\$6,000"
+  },
+  {
+    "chunk_id": "PSAI018-C0008",
+    "doc_id": "PSAI018",
+    "chunk_index": 8,
+    "section": "Total Budget Requested",
+    "heading_path": [
+      "Project Description",
+      "Total Budget Requested"
+    ],
+    "block_type": "table_row",
+    "token_count": 29,
+    "hash": "89bc2530195d161d",
+    "text": ": v2 Cadastre | Milestone: UI | Week: 5 | #: 11 | Budget Requested: \\$13,125"
+  },
+  {
+    "chunk_id": "PSAI018-C0009",
+    "doc_id": "PSAI018",
+    "chunk_index": 9,
+    "section": "Total Budget Requested",
+    "heading_path": [
+      "Project Description",
+      "Total Budget Requested"
+    ],
+    "block_type": "table_row",
+    "token_count": 26,
+    "hash": "18646be57c1295b5",
+    "text": ": Filecoin | Milestone: integration | Week: 1 | #: 2 | Budget Requested: \\$4,250"
+  },
+  {
+    "chunk_id": "PSAI018-C0010",
+    "doc_id": "PSAI018",
+    "chunk_index": 10,
+    "section": "Total Budget Requested",
+    "heading_path": [
+      "Project Description",
+      "Total Budget Requested"
+    ],
+    "block_type": "table_row",
+    "token_count": 26,
+    "hash": "97880bfa0b81a0d6",
+    "text": ": Mainnet-ready | : smart contracts | Week: 3 | #: 12 | Budget Requested: \\$9,500"
+  },
+  {
+    "chunk_id": "PSAI018-C0011",
+    "doc_id": "PSAI018",
+    "chunk_index": 11,
+    "section": "Total Budget Requested",
+    "heading_path": [
+      "Project Description",
+      "Total Budget Requested"
+    ],
+    "block_type": "table_row",
+    "token_count": 28,
+    "hash": "62be88ad293ea578",
+    "text": ": Public | Milestone: documentation | : site | Week: 2 | #: 12 | Budget Requested: \\$5,500"
+  },
+  {
+    "chunk_id": "PSAI018-C0012",
+    "doc_id": "PSAI018",
+    "chunk_index": 12,
+    "section": "Total Budget Requested",
+    "heading_path": [
+      "Project Description",
+      "Total Budget Requested"
+    ],
+    "block_type": "table_row",
+    "token_count": 20,
+    "hash": "28b68fa85d52afc5",
+    "text": ": Total | Week: 1 | #: 12 | Budget Requested: \\$38,375"
+  },
+  {
+    "chunk_id": "PSAI018-C0013",
+    "doc_id": "PSAI018",
+    "chunk_index": 13,
+    "section": "Total Budget Requested",
+    "heading_path": [
+      "Project Description",
+      "Total Budget Requested"
+    ],
+    "block_type": "section",
+    "token_count": 51,
+    "hash": "9cdc28a292a0d835",
+    "text": "# Project Description > Total Budget Requested\n\nUse of Funds 88%:\n- Salaries 6%\n- Targeted community bounties/contract work\n- 6%\n- Operations (e.g. hosting, Filecoin storage, etc)"
+  },
+  {
+    "chunk_id": "PSAI018-C0014",
+    "doc_id": "PSAI018",
+    "chunk_index": 14,
+    "section": "Maintenance and Upgrade Plans",
+    "heading_path": [
+      "Project Description",
+      "Maintenance and Upgrade Plans"
+    ],
+    "block_type": "section",
+    "token_count": 172,
+    "hash": "39a28beaef1d6003",
+    "text": "# Project Description > Maintenance and Upgrade Plans\n\nOur goal is to bootstrap the project into a sustainable open organization that uses Harberger tax funds to support core development, incentivize creators to build on the platform, and reward users for their participation in the network. We believe the nature of our project lends itself to creating permissionless opportunities, but we will likely augment that with a full-time core team.\n\nWe are committed to exit to community. We especially want to give Geo Web citizens a voice in the allocation of their \"taxes\" (at the appropriate level) and envision a democratically governed Geo Web DAO.\n\nThis Filecoin grant would go a long way toward realizing and accelerating our mission, but we're committed to building, maintaining, and upgrading this project for the long-haul, regardless.\n\n- Graven Prest Cody Hatfield\n- V. Vishal"
+  },
+  {
+    "chunk_id": "PSAI018-C0015",
+    "doc_id": "PSAI018",
+    "chunk_index": 15,
+    "section": "Team Member LinkedIn Profiles",
+    "heading_path": [
+      "Project Description",
+      "Team Member LinkedIn Profiles"
+    ],
+    "block_type": "section",
+    "token_count": 57,
+    "hash": "755bac1bd41a62b2",
+    "text": "# Project Description > Team Member LinkedIn Profiles\n\nhttps://www.linkedin.com/in/gravenprest/ https://www.linkedin.com/in/codyhatfield/ https://github.com/10dimensions & https://www.sites.google.com/view/synthesise/home?authuser=0"
+  },
+  {
+    "chunk_id": "PSAI018-C0016",
+    "doc_id": "PSAI018",
+    "chunk_index": 16,
+    "section": "Relevant Experience",
+    "heading_path": [
+      "Project Description",
+      "Relevant Experience"
+    ],
+    "block_type": "section",
+    "token_count": 276,
+    "hash": "55cea16a6c0e2e0a",
+    "text": "# Project Description > Relevant Experience\n\nGraven Prest - Graven is an experienced founder and product leader. He was previously COO of an IoT edge computing platform startup. He's spent his career managing technical teams and products across industries. His idea for the Geo Web started with the realization that fair/efficient allocation of land was being ignored on geo-spatial augmented reality platforms and has morphed into an obsession about the mechanism design, governance, and user experience of the next internet paradigm.\n\nCody Hatfield - Cody is a builder and a problem-solver. He was the co-founder of various small software startups and a senior engineer at a VC-backed startup before dedicating himself full-time to Web3 a little over a year ago. Cody has been the architect and driving force for Geo Web development since the project started at HackFS in 2020. His expertise includes smart contracts, the IPFS ecosystem, and iOS. In 2020, he received and completed an IPFS microgrant to store iOS backups on IPFS.\n\nV. Vishal - Vishal is a mechanical and software engineer with a passion for emerging technology including AR, VR, robotics, machine vision, and artificial intelligence. He previously helped build the spatial browser apps for a different geo-spatial AR project. He has built numerous professional and exploratory projects focused on AR, mapping, and spatial computing."
+  },
+  {
+    "chunk_id": "PSAI018-C0017",
+    "doc_id": "PSAI018",
+    "chunk_index": 17,
+    "section": "Team code repositories",
+    "heading_path": [
+      "Project Description",
+      "Team code repositories"
+    ],
+    "block_type": "section",
+    "token_count": 32,
+    "hash": "9975a4ed903751ad",
+    "text": "# Project Description > Team code repositories\n\nhttps://github.com/Geo-Web-Project https://github.com/codynhat https://github.com/10dimensions"
+  },
+  {
+    "chunk_id": "PSAI018-C0018",
+    "doc_id": "PSAI018",
+    "chunk_index": 18,
+    "section": "Additional Information",
+    "heading_path": [
+      "Additional Information"
+    ],
+    "block_type": "section",
+    "token_count": 115,
+    "hash": "13534de887c901f2",
+    "text": "# Additional Information\n\nCody and Graven met at the ETHDenver dWeb Summit in 2020 and have pushed the idea of the Geo Web forward through participation in HackFS, the Gitcoin Apollo Fellowship, and engagement with other IPFS/Filecoin ecosystem members like Ceramic Network & Textile. We are passionate about the distributed web and believe we have found our calling for where we can contribute. Regardless of the relative success of the Geo Web, the work that we contribute and the ideas that we explore can benefit the entire Filecoin, distributed web, and blockchain ecosystems."
+  }
+]

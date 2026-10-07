@@ -1,0 +1,959 @@
+from pathlib import Path
+import json
+import re
+from collections import Counter
+
+
+# ============================================================
+# 1. CONFIGURATION
+# ============================================================
+
+BASE_DIR = Path(r"D:\fall26\DSP_PROJECT")
+
+RAW_DIR = BASE_DIR / "data" / "raw"
+CLEAN_DIR = BASE_DIR / "data" / "cleaned"
+
+# Tạo thư mục output nếu chưa tồn tại
+CLEAN_DIR.mkdir(parents=True, exist_ok=True)
+
+
+# ============================================================
+# 2. TEXT NORMALIZATION
+# ============================================================
+
+def normalize_text(text):
+    """
+    Chuẩn hóa xuống dòng và khoảng trắng.
+    Không thay đổi nội dung có ý nghĩa.
+    """
+
+    if not text:
+        return ""
+
+    # Chuẩn hóa line ending
+    text = text.replace("\r\n", "\n")
+    text = text.replace("\r", "\n")
+
+    # Thay tab bằng khoảng trắng
+    text = text.replace("\t", " ")
+
+    # Loại bỏ khoảng trắng dư ở cuối dòng
+    lines = []
+
+    for line in text.split("\n"):
+        line = re.sub(r"[ \t]+$", "", line)
+        lines.append(line)
+
+    text = "\n".join(lines)
+
+    # Không cho quá 2 dòng trống liên tiếp
+    text = re.sub(r"\n{3,}", "\n\n", text)
+
+    return text.strip()
+
+
+# ============================================================
+# 3. REMOVE OCR NOISE
+# ============================================================
+
+def remove_ocr_noise(text):
+    """
+    Xóa các ký tự/dòng OCR rõ ràng là noise.
+    Không xóa số liệu nội dung.
+    """
+
+    lines = text.split("\n")
+    cleaned = []
+
+    for line in lines:
+        s = line.strip()
+
+        # Bỏ dòng rỗng
+        if not s:
+            cleaned.append("")
+            continue
+
+        # Các dòng chỉ gồm ký tự OCR rác
+        if re.fullmatch(r"[\|\¢°•·~_=+\-–—]+", s):
+            continue
+
+        # Các dòng chỉ gồm dấu chấm / ký hiệu
+        if re.fullmatch(r"[\.\,\:\;\|\-_=]+", s):
+            continue
+
+        # OCR tạo ra ký tự lẻ
+        if re.fullmatch(r"[¢°•·|]{1,3}", s):
+            continue
+
+        cleaned.append(line)
+
+    return "\n".join(cleaned)
+
+
+# ============================================================
+# 4. CLEAN OCR BULLETS
+# ============================================================
+
+def clean_ocr_bullets(text):
+    """
+    Xử lý các bullet bị OCR sai.
+
+    Ví dụ:
+        ¢ lotus-exporter-farcaster
+        ° ressources inexpensive
+        e A Grafana dashboard
+
+    Chuyển thành:
+        lotus-exporter-farcaster
+        ressources inexpensive
+        A Grafana dashboard
+
+    Không cố đoán bullet thật sự để tránh làm sai dữ liệu.
+    """
+
+    lines = text.split("\n")
+    cleaned = []
+
+    for line in lines:
+
+        # Ký tự OCR ở đầu dòng
+        line = re.sub(
+            r"^\s*[¢°•·]\s*",
+            "",
+            line
+        )
+
+        # Một số trường hợp OCR biến bullet thành "e"
+        # Chỉ xử lý khi "e" đứng riêng ở đầu dòng
+        line = re.sub(
+            r"^\s*e\s+(?=[A-Za-z])",
+            "",
+            line
+        )
+
+        cleaned.append(line)
+
+    return "\n".join(cleaned)
+
+
+# ============================================================
+# 5. REMOVE DOCUMENT / FILE IDENTIFIERS
+# ============================================================
+
+def remove_document_id_line(text):
+    """
+    Xóa các dòng mà toàn bộ nội dung chỉ là document/file ID.
+
+    Ví dụ:
+        fil_001
+        file_001
+        file001
+        fil-001
+        file-001
+        PSAI001
+        PSAI_001
+        PSAI-001
+    """
+
+    lines = text.split("\n")
+    cleaned = []
+
+    patterns = [
+        r"(?:fil|file)[_\-\s]?\d{1,6}",
+        r"PSAI[_\-\s]?\d{1,6}",
+    ]
+
+    for line in lines:
+
+        s = line.strip()
+
+        if not s:
+            cleaned.append(line)
+            continue
+
+        is_id = False
+
+        for pattern in patterns:
+            if re.fullmatch(pattern, s, flags=re.IGNORECASE):
+                is_id = True
+                break
+
+        if is_id:
+            continue
+
+        cleaned.append(line)
+
+    return "\n".join(cleaned)
+
+
+def remove_inline_document_ids(text):
+    """
+    Xóa document ID khi nó xuất hiện trong câu.
+
+    Ví dụ:
+        file001
+        file_001
+        PSAI001
+
+    Nhưng không xóa các số bình thường như:
+        400+ miners
+        30+ users
+        2 weeks
+    """
+
+    patterns = [
+        r"\bfil[_\-\s]?\d{1,6}\b",
+        r"\bfile[_\-\s]?\d{1,6}\b",
+        r"\bPSAI[_\-\s]?\d{1,6}\b",
+    ]
+
+    for pattern in patterns:
+        text = re.sub(
+            pattern,
+            "",
+            text,
+            flags=re.IGNORECASE
+        )
+
+    return text
+
+
+# ============================================================
+# 6. REMOVE SUBMISSION / TEMPLATE INSTRUCTIONS
+# ============================================================
+
+def remove_submission_instructions(text):
+    """
+    Xóa các câu hướng dẫn của template proposal
+    không phải nội dung thực tế của proposal.
+    """
+
+    patterns = [
+
+        # Submit proposal
+        r"^\s*to submit a proposal.*$",
+
+        # Template instructions
+        r"^\s*please create a pr against this template.*$",
+        r"^\s*please title your file.*$",
+
+        # Project name instruction
+        r"^\s*the name of your project\.?\s*$",
+        r"^\s*replacing title with the name of your project\.?.*$",
+
+        # Common template instruction
+        r"^\s*please fill in.*$",
+        r"^\s*please complete.*$",
+        r"^\s*please provide.*$",
+    ]
+
+    lines = text.split("\n")
+    cleaned = []
+
+    for line in lines:
+
+        remove = False
+
+        for pattern in patterns:
+            if re.match(
+                pattern,
+                line.strip(),
+                flags=re.IGNORECASE
+            ):
+                remove = True
+                break
+
+        if not remove:
+            cleaned.append(line)
+
+    return "\n".join(cleaned)
+
+
+# ============================================================
+# 7. REMOVE DOCUMENT METADATA
+# ============================================================
+
+def remove_document_metadata(text):
+    """
+    Xóa metadata/template fields không cần cho NLP annotation.
+
+    Ví dụ:
+        Open Grant Proposal:
+        Name of Project:
+        Proposal Category:
+        Proposer:
+        Team Members:
+        Team Website:
+    """
+
+    patterns = [
+
+        r"^\s*Open Grant Proposal\s*:.*$",
+        r"^\s*Name of Project\s*:.*$",
+        r"^\s*Proposal Category\s*:.*$",
+        r"^\s*Proposer\s*:.*$",
+        r"^\s*Team Members?\s*:.*$",
+        r"^\s*Team Website\s*:.*$",
+
+        # Open-source/template question
+        r"^\s*Do you agree to open source.*$",
+        r"^\s*RFP and dual-license.*$",
+
+    ]
+
+    lines = text.split("\n")
+    cleaned = []
+
+    for line in lines:
+
+        remove = False
+
+        for pattern in patterns:
+
+            if re.match(
+                pattern,
+                line.strip(),
+                flags=re.IGNORECASE
+            ):
+                remove = True
+                break
+
+        if not remove:
+            cleaned.append(line)
+
+    return "\n".join(cleaned)
+
+
+# ============================================================
+# 8. REMOVE TEMPLATE TITLE
+# ============================================================
+
+def remove_template_title(text):
+    """
+    Một số proposal có title/template name nằm riêng,
+    ví dụ:
+
+        Farcaster
+
+    Nếu nó xuất hiện ở đầu document thì loại bỏ.
+    """
+
+    lines = text.split("\n")
+
+    # Chỉ kiểm tra vùng đầu document
+    max_check = min(15, len(lines))
+
+    cleaned = []
+
+    for i, line in enumerate(lines):
+
+        s = line.strip()
+
+        if i < max_check:
+
+            if re.fullmatch(
+                r"Farcaster",
+                s,
+                flags=re.IGNORECASE
+            ):
+                continue
+
+        cleaned.append(line)
+
+    return "\n".join(cleaned)
+
+
+# ============================================================
+# 9. REMOVE EMAIL / URL / TEAM INFO
+# ============================================================
+
+def remove_contact_information(text):
+    """
+    Xóa email và URL.
+
+    Chỉ sử dụng nếu email/URL không cần cho bài toán NLP.
+    """
+
+    # Email
+    text = re.sub(
+        r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b",
+        "",
+        text
+    )
+
+    # URL
+    text = re.sub(
+        r"https?://\S+|www\.\S+",
+        "",
+        text,
+        flags=re.IGNORECASE
+    )
+
+    return text
+
+
+def remove_team_information(text):
+    """
+    Xóa phần Team nếu mục tiêu dataset chỉ tập trung
+    vào Objective / Requirement / Activity / Expected Result.
+
+    Chỉ xóa từ heading Team trở đi nếu Team là section cuối.
+    """
+
+    lines = text.split("\n")
+
+    cleaned = []
+
+    skip = False
+
+    for line in lines:
+
+        s = line.strip()
+
+        # Phát hiện heading Team
+        if re.fullmatch(
+            r"Team(?:\s+Members?)?",
+            s,
+            flags=re.IGNORECASE
+        ):
+            skip = True
+            continue
+
+        if not skip:
+            cleaned.append(line)
+
+    return "\n".join(cleaned)
+
+
+# ============================================================
+# 10. FIND REPEATED HEADER / FOOTER
+# ============================================================
+
+def find_repeated_lines(all_pages):
+    """
+    Tìm các dòng lặp lại trên nhiều page.
+
+    Ví dụ:
+        Open Grant Proposal
+        Page 1
+        Page 2
+        Filecoin Foundation
+    """
+
+    counter = Counter()
+
+    total_pages = len(all_pages)
+
+    for page_text in all_pages:
+
+        seen_on_page = set()
+
+        for line in page_text.split("\n"):
+
+            s = line.strip()
+
+            if not s:
+                continue
+
+            # Không xét các dòng quá dài
+            if len(s) > 150:
+                continue
+
+            # Chỉ tính dòng xuất hiện một lần trên mỗi page
+            if s not in seen_on_page:
+                counter[s] += 1
+                seen_on_page.add(s)
+
+    # Một dòng xuất hiện >= 2 page
+    repeated = set()
+
+    for line, count in counter.items():
+
+        if count >= 2:
+            repeated.add(line)
+
+    return repeated
+
+
+def remove_repeated_header_footer(text, repeated_lines):
+    """
+    Xóa các dòng lặp lại giữa nhiều page.
+    """
+
+    if not repeated_lines:
+        return text
+
+    lines = text.split("\n")
+    cleaned = []
+
+    for line in lines:
+
+        s = line.strip()
+
+        if s in repeated_lines:
+            continue
+
+        cleaned.append(line)
+
+    return "\n".join(cleaned)
+
+
+# ============================================================
+# 11. CLEAN TABLE OCR ARTIFACTS
+# ============================================================
+
+def clean_table_artifacts(text):
+    """
+    Xử lý một số artifact thường gặp khi OCR bảng.
+
+    Không cố reconstruct bảng vì có thể làm sai nội dung.
+    """
+
+    # Xóa khoảng trắng trước punctuation
+    text = re.sub(
+        r"\s+([,.;:])",
+        r"\1",
+        text
+    )
+
+    # Nhiều khoảng trắng
+    text = re.sub(
+        r"[ ]{2,}",
+        " ",
+        text
+    )
+
+    return text
+
+
+# ============================================================
+# 12. CONSERVATIVE LINE BREAK CLEANING
+# ============================================================
+
+def clean_line_breaks(text):
+    """
+    Ghép các dòng bị xuống dòng sai do OCR.
+
+    Không ghép nếu dòng trước/sau có vẻ là:
+        heading
+        bullet
+        table
+        list
+    """
+
+    lines = text.split("\n")
+
+    result = []
+
+    for line in lines:
+
+        current = line.strip()
+
+        if not current:
+            result.append("")
+            continue
+
+        if not result:
+            result.append(current)
+            continue
+
+        previous = result[-1].strip()
+
+        # Không ghép với dòng trống
+        if not previous:
+            result.append(current)
+            continue
+
+        # Không ghép heading
+        if (
+            len(previous) < 80
+            and (
+                previous.endswith(":")
+                or previous.isupper()
+            )
+        ):
+            result.append(current)
+            continue
+
+        # Không ghép bullet/list
+        if re.match(
+            r"^[-*•▪◦]\s+",
+            current
+        ):
+            result.append(current)
+            continue
+
+        # Nếu dòng trước kết thúc punctuation → giữ nguyên
+        if re.search(
+            r"[.!?:;)\]}]$",
+            previous
+        ):
+            result.append(current)
+            continue
+
+        # Nếu current bắt đầu giống heading
+        if (
+            len(current) < 80
+            and current[:1].isupper()
+            and not previous.endswith(",")
+        ):
+            result.append(current)
+            continue
+
+        # Nếu previous/curr giống bảng
+        if "|" in previous or "|" in current:
+            result.append(current)
+            continue
+
+        # Ghép hai dòng
+        result[-1] = previous + " " + current
+
+    return "\n".join(result)
+
+
+# ============================================================
+# 13. FINAL NORMALIZATION
+# ============================================================
+
+def final_normalization(text):
+    """
+    Chuẩn hóa lần cuối.
+    """
+
+    # Khoảng trắng
+    text = re.sub(
+        r"[ \t]+",
+        " ",
+        text
+    )
+
+    # Khoảng trắng trước punctuation
+    text = re.sub(
+        r"\s+([,.;:!?])",
+        r"\1",
+        text
+    )
+
+    # Quá nhiều dòng trống
+    text = re.sub(
+        r"\n{3,}",
+        "\n\n",
+        text
+    )
+
+    return text.strip()
+
+
+# ============================================================
+# 14. CLEAN ONE PAGE
+# ============================================================
+
+def clean_page(text, repeated_lines):
+    """
+    Pipeline xử lý một page.
+
+    TEXT CLEANING
+        ↓
+    METADATA REMOVAL
+    """
+
+    if not text:
+        return ""
+
+    # --------------------------------------------------------
+    # TEXT CLEANING
+    # --------------------------------------------------------
+
+    text = normalize_text(text)
+
+    text = remove_ocr_noise(text)
+
+    text = clean_ocr_bullets(text)
+
+    text = remove_document_id_line(text)
+
+    text = remove_inline_document_ids(text)
+
+    text = clean_table_artifacts(text)
+
+    text = remove_repeated_header_footer(
+        text,
+        repeated_lines
+    )
+
+    text = clean_line_breaks(text)
+
+    # --------------------------------------------------------
+    # METADATA REMOVAL
+    # --------------------------------------------------------
+
+    text = remove_submission_instructions(text)
+
+    text = remove_document_metadata(text)
+
+    text = remove_template_title(text)
+
+    # --------------------------------------------------------
+    # FINAL
+    # --------------------------------------------------------
+
+    text = final_normalization(text)
+
+    return text
+
+
+# ============================================================
+# 15. PROCESS ONE JSON FILE
+# ============================================================
+
+def process_file(raw_file):
+    """
+    Đọc một raw JSON → clean JSON.
+    """
+
+    print(f"\nProcessing: {raw_file.name}")
+
+    try:
+
+        with open(
+            raw_file,
+            "r",
+            encoding="utf-8"
+        ) as f:
+
+            data = json.load(f)
+
+    except Exception as e:
+
+        print(f"ERROR reading {raw_file.name}: {e}")
+        return False
+
+    # --------------------------------------------------------
+    # Get pages
+    # --------------------------------------------------------
+
+    pages = data.get("pages", [])
+
+    if not pages:
+
+        print("WARNING: No pages found.")
+
+        return False
+
+    # --------------------------------------------------------
+    # Collect original page texts
+    # --------------------------------------------------------
+
+    all_page_texts = []
+
+    for page in pages:
+
+        text = page.get("text", "")
+
+        all_page_texts.append(text)
+
+    # --------------------------------------------------------
+    # Detect repeated headers/footers
+    # --------------------------------------------------------
+
+    repeated_lines = find_repeated_lines(
+        all_page_texts
+    )
+
+    # --------------------------------------------------------
+    # Clean pages
+    # --------------------------------------------------------
+
+    cleaned_pages = []
+
+    for page in pages:
+
+        page_number = page.get(
+            "page",
+            len(cleaned_pages) + 1
+        )
+
+        original_text = page.get(
+            "text",
+            ""
+        )
+
+        cleaned_text = clean_page(
+            original_text,
+            repeated_lines
+        )
+
+        cleaned_pages.append({
+            "page": page_number,
+            "text": cleaned_text
+        })
+
+    # --------------------------------------------------------
+    # Build output
+    # --------------------------------------------------------
+
+    output_data = {
+        "document_id": data.get(
+            "document_id",
+            raw_file.stem
+        ),
+
+        "source_file": data.get(
+            "source_file",
+            ""
+        ),
+
+        "page_count": len(cleaned_pages),
+
+        "pages": cleaned_pages
+    }
+
+    # --------------------------------------------------------
+    # Output filename
+    # --------------------------------------------------------
+
+    output_name = raw_file.name
+
+    if output_name.endswith("_raw.json"):
+        output_name = output_name.replace(
+            "_raw.json",
+            "_cleaned.json"
+        )
+    else:
+        output_name = (
+            raw_file.stem +
+            "_cleaned.json"
+        )
+
+    output_file = CLEAN_DIR / output_name
+
+    # --------------------------------------------------------
+    # Save
+    # --------------------------------------------------------
+
+    with open(
+        output_file,
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        json.dump(
+            output_data,
+            f,
+            ensure_ascii=False,
+            indent=2
+        )
+
+    print(
+        f"Saved: {output_file.name}"
+    )
+
+    return True
+
+
+# ============================================================
+# 16. PROCESS ALL FILES
+# ============================================================
+
+def main():
+
+    print("=" * 70)
+    print("PSAI TEXT CLEANING + METADATA REMOVAL")
+    print("=" * 70)
+
+    print(f"RAW DIR    : {RAW_DIR}")
+    print(f"CLEAN DIR  : {CLEAN_DIR}")
+
+    # --------------------------------------------------------
+    # Check input directory
+    # --------------------------------------------------------
+
+    if not RAW_DIR.exists():
+
+        print(
+            f"\nERROR: Raw directory does not exist:\n"
+            f"{RAW_DIR}"
+        )
+
+        return
+
+    # --------------------------------------------------------
+    # Find JSON files
+    # --------------------------------------------------------
+
+    raw_files = sorted(
+        RAW_DIR.glob("*_raw.json")
+    )
+
+    if not raw_files:
+
+        print(
+            "\nNo *_raw.json files found."
+        )
+
+        return
+
+    print(
+        f"\nFound {len(raw_files)} raw files."
+    )
+
+    # --------------------------------------------------------
+    # Process
+    # --------------------------------------------------------
+
+    success = 0
+    failed = 0
+
+    for raw_file in raw_files:
+
+        try:
+
+            result = process_file(
+                raw_file
+            )
+
+            if result:
+                success += 1
+            else:
+                failed += 1
+
+        except Exception as e:
+
+            failed += 1
+
+            print(
+                f"ERROR processing "
+                f"{raw_file.name}: {e}"
+            )
+
+    # --------------------------------------------------------
+    # Summary
+    # --------------------------------------------------------
+
+    print("\n" + "=" * 70)
+    print("PROCESSING COMPLETE")
+    print("=" * 70)
+
+    print(
+        f"Total files : {len(raw_files)}"
+    )
+
+    print(
+        f"Success     : {success}"
+    )
+
+    print(
+        f"Failed      : {failed}"
+    )
+
+    print(
+        f"Output      : {CLEAN_DIR}"
+    )
+
+
+# ============================================================
+# 17. RUN
+# ============================================================
+
+if __name__ == "__main__":
+    main()

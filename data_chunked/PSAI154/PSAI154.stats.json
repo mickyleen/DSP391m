@@ -1,0 +1,42 @@
+{
+  "doc_id": "PSAI154",
+  "num_chunks": 27,
+  "total_tokens": 3274,
+  "avg_tokens": 121.26,
+  "min_tokens": 21,
+  "max_tokens": 389,
+  "chunks_by_type": {
+    "section": 26,
+    "diagram": 1
+  },
+  "num_sections": 27,
+  "sections": [
+    "2. Academic Benchmark Implementation",
+    "2.1 Custom Benchmark Implementation",
+    "2.2 Responsible AI Benchmarks",
+    "3. Automation Scripts",
+    "4. Visualization and Reporting",
+    "4. Visualization and Reporting > 5. Documentation and Tutorials",
+    "4. Visualization and Reporting > 5. Documentation and Tutorials > 5.1 Open Source and Community Contribution",
+    "4. Visualization and Reporting > Core Benchmark Framework (core/benchmark.py)",
+    "4. Visualization and Reporting > Model Loader Implementation (core/model_loader.py)",
+    "4. Visualization and Reporting > Overall Architecture > gemma_benchmark/",
+    "4. Visualization and Reporting > Utility for Metrics Calculation (utils/metrics.py)",
+    "4. Visualization and Reporting > Utility for Metrics Calculation (utils/metrics.py) > Benchmark Task Implementation (tasks/mmlu.py)",
+    "4. Visualization and Reporting > Utility for Metrics Calculation (utils/metrics.py) > Benchmark Task Implementation (tasks/mmlu.py) > Efficiency Benchmark Implementation (tasks/efficiency.py)",
+    "4. Visualization and Reporting > Visualization Module (visualization/charts.py)",
+    "4. Visualization and Reporting > Visualization Module (visualization/charts.py) > Main Driver Script (scripts/run_benchmark.py)",
+    "Comprehensive Benchmark Suite for Evaluating Gemma Models > Introduction",
+    "Comprehensive Benchmark Suite for Evaluating Gemma Models > Note: The benchmarking suite described in this proposal has been implemented and is available as an open-source repository on GitHub:",
+    "Comprehensive Benchmark Suite for Evaluating Gemma Models > Relevant Experience and Interest",
+    "Milestone 1: Core Framework and Basic Benchmarks (Target: Week 4)",
+    "Milestone 1: Core Framework and Basic Benchmarks (Target: Week 4) > Pull Requests",
+    "Milestone 1: Core Framework and Basic Benchmarks (Target: Week 4) > Resources Required",
+    "Milestone 1: Core Framework and Basic Benchmarks (Target: Week 4) > Timeline",
+    "Testing Plan",
+    "Testing Plan > Technical Risks:",
+    "Work Plan",
+    "Work Plan > 1. Core Benchmark Framework",
+    "Work Plan > 1. Core Benchmark Framework > 1.1 Efficiency Evaluation"
+  ]
+}

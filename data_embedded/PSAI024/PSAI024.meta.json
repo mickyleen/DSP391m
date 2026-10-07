@@ -1,0 +1,116 @@
+[
+  {
+    "chunk_id": "PSAI024-C0000",
+    "doc_id": "PSAI024",
+    "chunk_index": 0,
+    "section": "Project Description",
+    "heading_path": [
+      "Project Description"
+    ],
+    "block_type": "section",
+    "token_count": 135,
+    "hash": "bb1b0623de0a69d2",
+    "text": "# Project Description\n\nThis is an VR platform desiged for oculus quest, that allow artist drawing in 3d space then upload their articles to filecoin to have encrypted identification, in this your article will have their own value as realistic.\n\nYou can select the painting brushes, colors, patterns as you wish to start your creation, you can also browse your's and other one's gallery as in reality, continue your creation is it was not done before, and also buy other one's articles to build your own art collection. All of articles that uploaded to cloud will have it's own unique identification which encryped by filecoin, will make your creation valued!"
+  },
+  {
+    "chunk_id": "PSAI024-C0001",
+    "doc_id": "PSAI024",
+    "chunk_index": 1,
+    "section": "Value",
+    "heading_path": [
+      "Project Description",
+      "Value"
+    ],
+    "block_type": "section",
+    "token_count": 131,
+    "hash": "f27774975e66e353",
+    "text": "# Project Description > Value\n\nFor each articles should have their own value as in reality, in our VR platoform we store articles as a file, so with filecoin can make it happen!\n\nWhat are the benefits to getting this right? With this we can make a platform that make virtual art valuable! What are the risks if you don't get it right? Loses some of my time. What are the risks that will make executing on this project difficult? As far as I am seeing right now, there's no technical challenages, maybe have some diffcultes on marketing but we will publish it at Oculus Store so hopefully helps."
+  },
+  {
+    "chunk_id": "PSAI024-C0002",
+    "doc_id": "PSAI024",
+    "chunk_index": 2,
+    "section": "Deliverables",
+    "heading_path": [
+      "Project Description",
+      "Deliverables"
+    ],
+    "block_type": "section",
+    "token_count": 61,
+    "hash": "81e93e43969c3232",
+    "text": "# Project Description > Deliverables\n\nA VR applicaitoin which able run at Oculus Quset 1 and 2, will allow artists painting/sculpting/drawing in VR space with many brushes, colors, patterns, and store articles to a file which will be encryped by filecoin."
+  },
+  {
+    "chunk_id": "PSAI024-C0003",
+    "doc_id": "PSAI024",
+    "chunk_index": 3,
+    "section": "Maintenance and Upgrade Plans",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Maintenance and Upgrade Plans"
+    ],
+    "block_type": "section",
+    "token_count": 30,
+    "hash": "a3aece4eac569a1d",
+    "text": "# Project Description > Development Roadmap > Maintenance and Upgrade Plans\n\nMake more way to inspire artisans, and collect feedback to continuesly improve our product."
+  },
+  {
+    "chunk_id": "PSAI024-C0004",
+    "doc_id": "PSAI024",
+    "chunk_index": 4,
+    "section": "Team Member LinkedIn Profiles",
+    "heading_path": [
+      "Project Description",
+      "Team Member LinkedIn Profiles"
+    ],
+    "block_type": "section",
+    "token_count": 25,
+    "hash": "91871ff1ea33805f",
+    "text": "# Project Description > Team Member LinkedIn Profiles\n\nShuo Pang https://www.linkedin.com/in/pangshuo1981/"
+  },
+  {
+    "chunk_id": "PSAI024-C0005",
+    "doc_id": "PSAI024",
+    "chunk_index": 5,
+    "section": "Team Website",
+    "heading_path": [
+      "Project Description",
+      "Team Website"
+    ],
+    "block_type": "section",
+    "token_count": 20,
+    "hash": "ba9fa225c8ac3a0f",
+    "text": "# Project Description > Team Website\n\nhttps://www.linkedin.com/in/pangshuo1981/"
+  },
+  {
+    "chunk_id": "PSAI024-C0006",
+    "doc_id": "PSAI024",
+    "chunk_index": 6,
+    "section": "Relevant Experience",
+    "heading_path": [
+      "Project Description",
+      "Team Website",
+      "Relevant Experience"
+    ],
+    "block_type": "section",
+    "token_count": 101,
+    "hash": "6625e0fac69f084a",
+    "text": "# Project Description > Team Website > Relevant Experience\n\nI have years of experiences on design and develop on VR/AR/MR/HCI/Game field, you can visit my youtube channel: https://www.youtube.com/channel/UCLD570AMpZspz5-RueCA1-Q\n\nFilecoin for me is a good practice in encrypto field, I think with fabilous VR experience and valued articles, able to greately motivate artisans or ametures create their own works on my platform."
+  },
+  {
+    "chunk_id": "PSAI024-C0007",
+    "doc_id": "PSAI024",
+    "chunk_index": 7,
+    "section": "Team code repositories",
+    "heading_path": [
+      "Project Description",
+      "Team Website",
+      "Team code repositories"
+    ],
+    "block_type": "section",
+    "token_count": 23,
+    "hash": "9bfc84ddadaaeb76",
+    "text": "# Project Description > Team Website > Team code repositories\n\nhttps://github.com/aldenpang/vartisans"
+  }
+]

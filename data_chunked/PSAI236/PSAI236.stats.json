@@ -1,0 +1,33 @@
+{
+  "doc_id": "PSAI236",
+  "num_chunks": 31,
+  "total_tokens": 3126,
+  "avg_tokens": 100.84,
+  "min_tokens": 21,
+  "max_tokens": 490,
+  "chunks_by_type": {
+    "section": 16,
+    "section_split": 3,
+    "table_row": 12
+  },
+  "num_sections": 17,
+  "sections": [
+    "Development Roadmap :nut_and_bolt: > Milestone 1",
+    "Development Roadmap :nut_and_bolt: > Overview",
+    "Ecosystem Fit",
+    "Future Plans",
+    "Project Details",
+    "Project Details > Catch-up Mechanism",
+    "Project Details > POST /api/subscriptions/{id}",
+    "Project Details > Service Configuration",
+    "Project Details > Storage",
+    "Project Details > Supported Substrate Clients",
+    "Project Details > Tech Stack",
+    "Project Details > XCM Execution Fail",
+    "Project Overview",
+    "Team :busts_in_silhouette: > Contact",
+    "Team :busts_in_silhouette: > Legal Structure",
+    "Team :busts_in_silhouette: > Team Code Repos",
+    "Team :busts_in_silhouette: > Team members"
+  ]
+}

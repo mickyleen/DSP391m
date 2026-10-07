@@ -1,0 +1,43 @@
+{
+  "doc_id": "PSAI227",
+  "num_chunks": 162,
+  "total_tokens": 10071,
+  "avg_tokens": 62.17,
+  "min_tokens": 20,
+  "max_tokens": 500,
+  "chunks_by_type": {
+    "section": 28,
+    "table_row": 134
+  },
+  "num_sections": 28,
+  "sections": [
+    "Additional Information :heavy_plus_sign:",
+    "Development Roadmap :nut_and_bolt:",
+    "Development Roadmap :nut_and_bolt: > Milestone 1 — Implement Data Spaces and Composable Access Rules",
+    "Development Roadmap :nut_and_bolt: > Milestone 2 - Proxy/Gateway Nodes",
+    "Development Roadmap :nut_and_bolt: > Milestone 3 - Storage System",
+    "Development Roadmap :nut_and_bolt: > Overview",
+    "Development Status :open_book:",
+    "Future Plans",
+    "Milestone 4 - iris.js Javascript SDK",
+    "Project Overview :page_facing_up:",
+    "Project Overview :page_facing_up: > Composable Access Rules and Data Access Authentication via a Rule Executor",
+    "Project Overview :page_facing_up: > Ecosystem Fit",
+    "Project Overview :page_facing_up: > IRIS SDK",
+    "Project Overview :page_facing_up: > Limitations and Expectations",
+    "Project Overview :page_facing_up: > Overview",
+    "Project Overview :page_facing_up: > Project Details",
+    "Project Overview :page_facing_up: > Project Details > Data Spaces",
+    "Project Overview :page_facing_up: > Project Details > Terminology",
+    "Project Overview :page_facing_up: > Proxy Nodes and offchain clients for data ingestion/ejection",
+    "Project Overview :page_facing_up: > Proxy Nodes and offchain clients for data ingestion/ejection > Encryption/Decryption",
+    "Project Overview :page_facing_up: > Proxy Nodes and offchain clients for data ingestion/ejection > Storage System Integration",
+    "Project Overview :page_facing_up: > hot-cold-storage",
+    "Team :busts_in_silhouette: > Brian Thamm",
+    "Team :busts_in_silhouette: > Team LinkedIn Profiles (if available)",
+    "Team :busts_in_silhouette: > Team members",
+    "Team :busts_in_silhouette: > Team members > Sebastian Spitzer",
+    "Team :busts_in_silhouette: > Team members > Tom Richard",
+    "Team :busts_in_silhouette: > Team members > Tony Riemer"
+  ]
+}

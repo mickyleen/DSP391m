@@ -1,0 +1,27 @@
+{
+  "source": "PSAI032.pdf",
+  "page_count": 3,
+  "pages_processed": [
+    0,
+    1,
+    2
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 2,
+      "source": "pdf-text-layer",
+      "images": []
+    },
+    {
+      "page": 3,
+      "source": "pdf-text-layer",
+      "images": []
+    }
+  ],
+  "pipeline": "surya-local-v1"
+}

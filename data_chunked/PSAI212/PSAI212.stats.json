@@ -1,0 +1,34 @@
+{
+  "doc_id": "PSAI212",
+  "num_chunks": 60,
+  "total_tokens": 3429,
+  "avg_tokens": 57.15,
+  "min_tokens": 20,
+  "max_tokens": 439,
+  "chunks_by_type": {
+    "section": 19,
+    "table_row": 41
+  },
+  "num_sections": 19,
+  "sections": [
+    "Ajuna Network Follow up > Ecosystem Fit",
+    "Ajuna Network Follow up > Ecosystem Fit > Contact",
+    "Ajuna Network Follow up > Ecosystem Fit > Legal Structure",
+    "Ajuna Network Follow up > Ecosystem Fit > Team's experience",
+    "Ajuna Network Follow up > Milestone 1: SubstrateNetApi — Rework and Documentation of the Substrate .NET API",
+    "Ajuna Network Follow up > Milestone 2: GameEngine — Implement Basic GameEngine Domain Driven Design (DDD) & Implement Basic Bot's for Load and Game Testing",
+    "Ajuna Network Follow up > Milestone 3: Unity — Substrate SDK for Unity, Documentation, Templates and Tutorial Video",
+    "Ajuna Network Follow up > Milestone 4: Complete Game \"Connect four\", as Tutorial from scratch on Substrate and Unity playable on Mobile (Player vs. Player)",
+    "Ajuna Network Follow up > Project Details",
+    "Ajuna Network Follow up > Project Details > An overview of the technology stack to be used",
+    "Ajuna Network Follow up > Project Details > Documentation of core components, protocols, architecture etc. to be deployed",
+    "Ajuna Network Follow up > Project Details > Generic Game Pallets",
+    "Ajuna Network Follow up > Project Details > PoC/MVP or other relevant prior work or research on the topic",
+    "Ajuna Network Follow up > Project Overview :page_facing_up:",
+    "Ajuna Network Follow up > Project Overview :page_facing_up: > DEMO (from May 2021)",
+    "Ajuna Network Follow up > Project Overview :page_facing_up: > Introduction (A brief description of the project.)",
+    "Ajuna Network Follow up > Team Code Repos",
+    "Ajuna Network Follow up > Team LinkedIn Profiles",
+    "Future Plans"
+  ]
+}

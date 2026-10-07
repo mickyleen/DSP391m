@@ -1,0 +1,28 @@
+{
+  "doc_id": "PSAI096",
+  "num_chunks": 26,
+  "total_tokens": 6916,
+  "avg_tokens": 266.0,
+  "min_tokens": 35,
+  "max_tokens": 510,
+  "chunks_by_type": {
+    "section": 8,
+    "section_split": 18
+  },
+  "num_sections": 13,
+  "sections": [
+    "Referring Expressions in Human-Robot Common Ground: A Thesis Proposal",
+    "Referring Expressions in Human-Robot Common Ground: A Thesis Proposal > 1 Introduction",
+    "Referring Expressions in Human-Robot Common Ground: A Thesis Proposal > 2 Background",
+    "Referring Expressions in Human-Robot Common Ground: A Thesis Proposal > 3 Research Goals and Questions",
+    "Referring Expressions in Human-Robot Common Ground: A Thesis Proposal > 3 Research Goals and Questions > 3.1 Obtaining and Interpreting Data containing Common Ground Interactions",
+    "Referring Expressions in Human-Robot Common Ground: A Thesis Proposal > 3 Research Goals and Questions > 3.2 Examining Reference-Making",
+    "Referring Expressions in Human-Robot Common Ground: A Thesis Proposal > 3 Research Goals and Questions > 3.2 Examining Reference-Making > 3.3 Examining the Robot Interlocutor",
+    "Referring Expressions in Human-Robot Common Ground: A Thesis Proposal > 3 Research Goals and Questions > 3.2 Examining Reference-Making > SQ3 What linguistic patterns of referring expressions arise as common ground is built up?",
+    "Referring Expressions in Human-Robot Common Ground: A Thesis Proposal > 3 Research Goals and Questions > RQ To what extent does common ground influence the pragmatic use of referring expressions in Human-Robot Interaction?",
+    "Referring Expressions in Human-Robot Common Ground: A Thesis Proposal > 3 Research Goals and Questions > SQ8 How do we evaluate agent behaviour?",
+    "Referring Expressions in Human-Robot Common Ground: A Thesis Proposal > 4 Conclusion",
+    "Referring Expressions in Human-Robot Common Ground: A Thesis Proposal > 4 Conclusion > References",
+    "Referring Expressions in Human-Robot Common Ground: A Thesis Proposal > Abstract"
+  ]
+}

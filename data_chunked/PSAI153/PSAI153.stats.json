@@ -1,0 +1,32 @@
+{
+  "doc_id": "PSAI153",
+  "num_chunks": 19,
+  "total_tokens": 2656,
+  "avg_tokens": 139.79,
+  "min_tokens": 20,
+  "max_tokens": 365,
+  "chunks_by_type": {
+    "section": 18,
+    "table_row": 1
+  },
+  "num_sections": 17,
+  "sections": [
+    "1 Which Project Idea Sparks Your Interest and Why?",
+    "10 TL;DR",
+    "10 TL;DR > 11 Selected Modules for Upgrade",
+    "10 TL;DR > 12 Biography/About Me",
+    "10 TL;DR > Optional Modules (Bandwidth Permitting)",
+    "2 Implementation Plan",
+    "2 Implementation Plan > 2.1 Development Methodology",
+    "2 Implementation Plan > 2.2 Implementation Steps",
+    "2 Implementation Plan > 3 Weekly Timeline",
+    "4 Expected Deliverables",
+    "6 Which aspect of the project idea do you see as the most difficult?",
+    "7 Which aspect of the project idea do you see as the easiest?",
+    "8 Which portion of the project idea will you start with?",
+    "9 How will you deal with project, task, and time management? Will you utilize any software?",
+    "Personal Information",
+    "Personal Information > GSOC Information",
+    "Personal Information > Question based on knowledge of Git:"
+  ]
+}

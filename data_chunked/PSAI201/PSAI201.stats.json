@@ -1,0 +1,29 @@
+{
+  "doc_id": "PSAI201",
+  "num_chunks": 24,
+  "total_tokens": 2160,
+  "avg_tokens": 90.0,
+  "min_tokens": 23,
+  "max_tokens": 357,
+  "chunks_by_type": {
+    "section": 15,
+    "table_row": 9
+  },
+  "num_sections": 14,
+  "sections": [
+    "Project Overview > Ecosystem Fit",
+    "Project Overview > Overview",
+    "Project Overview > Project Details > 5. Validation",
+    "Project Overview > Project Details > Implementation",
+    "Project Overview > Project Details > Sign in Participants",
+    "Project Overview > Project Details > Verification Steps:",
+    "Project Overview > Project Details > Workflow",
+    "Project Overview > Project Details > } explains:",
+    "Team :busts_in_silhouette: > Contact",
+    "Team :busts_in_silhouette: > Future Plans",
+    "Team :busts_in_silhouette: > Legal Structure",
+    "Team :busts_in_silhouette: > Team Code Repos",
+    "Team :busts_in_silhouette: > Team members",
+    "Team :busts_in_silhouette: > Team's experience"
+  ]
+}

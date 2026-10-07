@@ -1,0 +1,41 @@
+{
+  "doc_id": "PSAI064",
+  "num_chunks": 116,
+  "total_tokens": 29558,
+  "avg_tokens": 254.81,
+  "min_tokens": 20,
+  "max_tokens": 510,
+  "chunks_by_type": {
+    "section": 22,
+    "section_split": 68,
+    "table_row": 26
+  },
+  "num_sections": 25,
+  "sections": [
+    "2 The Module Calculus",
+    "2 The Module Calculus > Lemma 2.1",
+    "4.1 Properties of Contextual Equivalence",
+    "5 Correctness",
+    "5.1 Abstraction Preservation",
+    "6 Definitional Extensions",
+    "6 Definitional Extensions > 7 Formalization",
+    "6 Definitional Extensions > 8 Additional Discussion of Related Work",
+    "9 Conclusion",
+    "A The Term and Subsignature Translations",
+    "B Compatibility",
+    "Fully Abstract Module Compilation > 1 Introduction",
+    "Fully Abstract Module Compilation > Abstract",
+    "Lemma 4.6 (Closed instances)",
+    "Lemma 4.7 (Conditional equivalence)",
+    "Proof Sketch",
+    "Proof Sketch > 5.2 Full Abstraction",
+    "Proof Sketch > Proof Sketch",
+    "Proof Sketch > Proof Sketch > 5.3 The Role of the Value Restriction",
+    "Proof Sketch > Theorem 5.7 (Dynamic correctness)",
+    "Theorem 2.4 (Determinism)",
+    "Theorem 2.4 (Determinism) > 3 Phase Separation",
+    "Γ `<sup>I</sup> M : σ e",
+    "Γ `<sup>I</sup> M : σ e > 4 Contextual Equivalence",
+    "Γ `<sup>I</sup> M : σ e > Definition 4.2 Suppose R is an indexed dynamic relation."
+  ]
+}

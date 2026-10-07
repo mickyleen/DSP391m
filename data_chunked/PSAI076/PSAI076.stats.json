@@ -1,0 +1,39 @@
+{
+  "doc_id": "PSAI076",
+  "num_chunks": 109,
+  "total_tokens": 14740,
+  "avg_tokens": 135.23,
+  "min_tokens": 20,
+  "max_tokens": 509,
+  "chunks_by_type": {
+    "section": 16,
+    "section_split": 27,
+    "table_row": 66
+  },
+  "num_sections": 23,
+  "sections": [
+    "1 Introduction",
+    "1 Introduction > 2 Background > 2.1 Knowledge Graphs, Ontologies, and Queryability",
+    "1 Introduction > 2 Background > 2.2 Knowledge Graph Construction as a Coding Problem",
+    "1 Introduction > 2.3 Robustness-Value Extractability Tradeoff",
+    "1 Introduction > 3 Problem Formulation > 3.1 Value Extraction Querying",
+    "1 Introduction > 3 Problem Formulation > 3.2 Knowledge Graph Construction",
+    "1 Introduction > 3.3 Conceptual Objective",
+    "4 Preliminary Experiments > 4.1 System implementation",
+    "4 Preliminary Experiments > 4.1 System implementation > <span id=\"page-5-0\"></span>Algorithm 1 Re-verbalization-based Aggregation",
+    "4 Preliminary Experiments > 4.1 System implementation > <span id=\"page-6-0\"></span>Algorithm 2 MATCH(q, d): Recursive Subgraph Matching with Aggregation",
+    "4 Preliminary Experiments > 4.2 Dataset and Task Setup",
+    "4 Preliminary Experiments > 4.2 Dataset and Task Setup > 4.3 Experimental Results",
+    "4 Preliminary Experiments > 5 Discussion and Future Directions",
+    "4 Preliminary Experiments > 6 Conclusion",
+    "4 Preliminary Experiments > 7 Limitations",
+    "4 Preliminary Experiments > <span id=\"page-11-0\"></span>A Contextual RAG Baselines",
+    "4 Preliminary Experiments > <span id=\"page-12-0\"></span>B Prompt Template for Entity Normalization",
+    "4 Preliminary Experiments > <span id=\"page-12-0\"></span>B Prompt Template for Entity Normalization > Entity Normalization Prompt Template",
+    "4 Preliminary Experiments > References",
+    "<span id=\"page-13-0\"></span>C Prompt Template for Open Knowledge Graph Extraction",
+    "<span id=\"page-13-0\"></span>C Prompt Template for Open Knowledge Graph Extraction > Open Information Extraction Prompt Template",
+    "Thesis Proposal: On the Granularity-Robustness Trade-off in Text-Derived Knowledge Graphs",
+    "Thesis Proposal: On the Granularity-Robustness Trade-off in Text-Derived Knowledge Graphs > Abstract"
+  ]
+}

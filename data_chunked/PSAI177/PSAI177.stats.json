@@ -1,0 +1,31 @@
+{
+  "doc_id": "PSAI177",
+  "num_chunks": 18,
+  "total_tokens": 2777,
+  "avg_tokens": 154.28,
+  "min_tokens": 26,
+  "max_tokens": 441,
+  "chunks_by_type": {
+    "section": 15,
+    "section_split": 3
+  },
+  "num_sections": 16,
+  "sections": [
+    "",
+    "ABSTRACT",
+    "COMMITMENT",
+    "HOW IS IT GOING TO BENEFIT THE ORGANISATION?",
+    "PERSONAL DETAILS",
+    "PERSONAL INSPIRATION",
+    "TECH STACK PROPOSED",
+    "TECHNICAL DETAILS > 1. How can we automatically build the right question from the property label only?",
+    "TECHNICAL DETAILS > 2. How can we automatically build question-query templates that feature one or more of the following?",
+    "TECHNICAL DETAILS > 2. How can we automatically build question-query templates that feature one or more of the following? > 1. Augmenting existing Data:",
+    "TECHNICAL DETAILS > 2. How can we automatically build question-query templates that feature one or more of the following? > 2. Improving the NSpM :",
+    "TECHNICAL DETAILS > 2. How can we automatically build question-query templates that feature one or more of the following? > Image : Back-Translation algorithm",
+    "TECHNICAL DETAILS > 2. How can we automatically build question-query templates that feature one or more of the following? > Sentence Level :",
+    "TECHNICAL DETAILS > 2. How can we automatically build question-query templates that feature one or more of the following? > Template Generator + NSpM :",
+    "TECHNICAL DETAILS > 2. How can we automatically build question-query templates that feature one or more of the following? > Word Level :",
+    "WHY AM I SUITABLE FOR THE PROJECT?"
+  ]
+}

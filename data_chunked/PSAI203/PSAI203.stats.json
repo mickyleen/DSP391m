@@ -1,0 +1,26 @@
+{
+  "doc_id": "PSAI203",
+  "num_chunks": 37,
+  "total_tokens": 1920,
+  "avg_tokens": 51.89,
+  "min_tokens": 20,
+  "max_tokens": 311,
+  "chunks_by_type": {
+    "section": 11,
+    "table_row": 26
+  },
+  "num_sections": 11,
+  "sections": [
+    "Profond.ai - No Code Builder for artists and developers to build, validate, and scale their dApp. > Additional Information :heavy_plus_sign:",
+    "Profond.ai - No Code Builder for artists and developers to build, validate, and scale their dApp. > Development Roadmap :nut_and_bolt: > Milestone 1 — No code smart contract builder",
+    "Profond.ai - No Code Builder for artists and developers to build, validate, and scale their dApp. > Development Roadmap :nut_and_bolt: > Overview",
+    "Profond.ai - No Code Builder for artists and developers to build, validate, and scale their dApp. > Development Status :open_book:",
+    "Profond.ai - No Code Builder for artists and developers to build, validate, and scale their dApp. > Future Plans",
+    "Profond.ai - No Code Builder for artists and developers to build, validate, and scale their dApp. > Project Overview :page_facing_up: > Ecosystem Fit",
+    "Profond.ai - No Code Builder for artists and developers to build, validate, and scale their dApp. > Project Overview :page_facing_up: > Overview",
+    "Profond.ai - No Code Builder for artists and developers to build, validate, and scale their dApp. > Project Overview :page_facing_up: > Project Details",
+    "Profond.ai - No Code Builder for artists and developers to build, validate, and scale their dApp. > Team members",
+    "Profond.ai - No Code Builder for artists and developers to build, validate, and scale their dApp. > Team members > Team Code Repos",
+    "Profond.ai - No Code Builder for artists and developers to build, validate, and scale their dApp. > Team members > Team LinkedIn Profiles (if available)"
+  ]
+}

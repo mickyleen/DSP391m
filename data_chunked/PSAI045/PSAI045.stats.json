@@ -1,0 +1,26 @@
+{
+  "doc_id": "PSAI045",
+  "num_chunks": 25,
+  "total_tokens": 1344,
+  "avg_tokens": 53.76,
+  "min_tokens": 22,
+  "max_tokens": 141,
+  "chunks_by_type": {
+    "section": 10,
+    "table_row": 15
+  },
+  "num_sections": 11,
+  "sections": [
+    "2. Required System Outputs",
+    "2. Required System Outputs > 3.1 Playing Field Detection",
+    "2. Required System Outputs > 3.2 Homography and Minimap Coordinates",
+    "2. Required System Outputs > 3.3 Ball Detection and Classification",
+    "2. Required System Outputs > 3.4 Semantic Segmentation",
+    "2. Required System Outputs > 3.5 Tracking and Pocket-Aware Extension",
+    "4. Assumptions and Robustness Plan",
+    "4. Assumptions and Robustness Plan > 5. Performance Measurement",
+    "7. Development Milestones",
+    "7. Development Milestones > 8. Planned Delivery",
+    "Sport Video Analysis for Billiard Matches > 1. Introduction"
+  ]
+}

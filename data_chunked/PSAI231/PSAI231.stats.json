@@ -1,0 +1,32 @@
+{
+  "doc_id": "PSAI231",
+  "num_chunks": 33,
+  "total_tokens": 4302,
+  "avg_tokens": 130.36,
+  "min_tokens": 21,
+  "max_tokens": 495,
+  "chunks_by_type": {
+    "section": 14,
+    "section_split": 5,
+    "table_row": 14
+  },
+  "num_sections": 16,
+  "sections": [
+    "MyBank Network > Additional Information",
+    "MyBank Network > Credit Scoring System Explanation",
+    "MyBank Network > Credit Scoring System Explanation > Directionality Of Transactions",
+    "MyBank Network > Credit Scoring System Explanation > Homepage",
+    "MyBank Network > Credit Scoring System Explanation > Social Location",
+    "MyBank Network > Development Status",
+    "MyBank Network > Ecosystem Fit",
+    "MyBank Network > Future Plans",
+    "MyBank Network > Milestone 1 — Implement Platform Bank",
+    "MyBank Network > MyDeX",
+    "MyBank Network > Overview",
+    "MyBank Network > Platform Bank",
+    "MyBank Network > Project Overview > Overview",
+    "MyBank Network > Team Members",
+    "MyBank Network > Team's Experience",
+    "MyBank Network > Team's Experience > Dean"
+  ]
+}

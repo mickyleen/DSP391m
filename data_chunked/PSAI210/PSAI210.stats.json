@@ -1,0 +1,35 @@
+{
+  "doc_id": "PSAI210",
+  "num_chunks": 78,
+  "total_tokens": 5383,
+  "avg_tokens": 69.01,
+  "min_tokens": 21,
+  "max_tokens": 390,
+  "chunks_by_type": {
+    "section": 19,
+    "section_split": 3,
+    "table_row": 56
+  },
+  "num_sections": 19,
+  "sections": [
+    "Additional Information :heavy_plus_sign:",
+    "Development Roadmap :nut_and_bolt: > Milestone 1 — Fennel/Whiteflag Web Application",
+    "Development Roadmap :nut_and_bolt: > Overview",
+    "Development Status :open_book:",
+    "Future Plans",
+    "Milestone 2 — Full Whiteflag",
+    "Project Overview :page_facing_up: > Overview",
+    "Project Overview :page_facing_up: > Preface",
+    "Project Overview :page_facing_up: > Project Details",
+    "Team :busts_in_silhouette: > Contact",
+    "Team :busts_in_silhouette: > Ed Hertzog",
+    "Team :busts_in_silhouette: > Isaac Adams",
+    "Team :busts_in_silhouette: > Legal Structure",
+    "Team :busts_in_silhouette: > Mateusz Plaza",
+    "Team :busts_in_silhouette: > Sean Batzel",
+    "Team :busts_in_silhouette: > Team LinkedIn Profiles (if available)",
+    "Team :busts_in_silhouette: > Team LinkedIn Profiles (if available) > Code Name Description",
+    "Team :busts_in_silhouette: > Team LinkedIn Profiles (if available) > Ecosystem Fit",
+    "Team :busts_in_silhouette: > Team members"
+  ]
+}

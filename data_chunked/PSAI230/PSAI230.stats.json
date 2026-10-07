@@ -1,0 +1,34 @@
+{
+  "doc_id": "PSAI230",
+  "num_chunks": 35,
+  "total_tokens": 2910,
+  "avg_tokens": 83.14,
+  "min_tokens": 21,
+  "max_tokens": 405,
+  "chunks_by_type": {
+    "section": 17,
+    "section_split": 3,
+    "table_row": 15
+  },
+  "num_sections": 18,
+  "sections": [
+    "Additional Information :heavy_plus_sign:",
+    "Development Roadmap :nut_and_bolt: > Milestone 1 — Implement Ink! Problem Builder, Solution and Compiler",
+    "Development Roadmap :nut_and_bolt: > Milestone 2 — Educational Modules and Extension",
+    "Development Roadmap :nut_and_bolt: > Milestone 2 — Educational Modules and Extension > Milestone 3 — Hiring Module",
+    "Development Roadmap :nut_and_bolt: > Overview",
+    "Project Overview :page_facing_up: > Ecosystem Fit",
+    "Project Overview :page_facing_up: > Ecosystem Fit > Alberto Cevallos - Contributor",
+    "Project Overview :page_facing_up: > Ecosystem Fit > Ali Serag - Lead Smart Contracts Developer",
+    "Project Overview :page_facing_up: > Ecosystem Fit > Bolat Khojayev - Lead Full-stack Developer",
+    "Project Overview :page_facing_up: > Ecosystem Fit > Contact",
+    "Project Overview :page_facing_up: > Ecosystem Fit > Legal Structure",
+    "Project Overview :page_facing_up: > Ecosystem Fit > Relevance to Polkadot and Substrate",
+    "Project Overview :page_facing_up: > Ecosystem Fit > Team Code Repos",
+    "Project Overview :page_facing_up: > Overview",
+    "Project Overview :page_facing_up: > Project Details > Features",
+    "Project Overview :page_facing_up: > Project Details > Mockups:",
+    "Project Overview :page_facing_up: > Project Details > Technology Stack",
+    "Project Overview :page_facing_up: > Team LinkedIn Profiles (if available)"
+  ]
+}

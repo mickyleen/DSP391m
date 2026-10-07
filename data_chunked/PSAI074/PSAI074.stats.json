@@ -1,0 +1,36 @@
+{
+  "doc_id": "PSAI074",
+  "num_chunks": 63,
+  "total_tokens": 12285,
+  "avg_tokens": 195.0,
+  "min_tokens": 20,
+  "max_tokens": 510,
+  "chunks_by_type": {
+    "section": 17,
+    "section_split": 25,
+    "table_row": 21
+  },
+  "num_sections": 20,
+  "sections": [
+    "1 Introduction",
+    "<span id=\"page-1-0\"></span>Confidence Trajectory Analysis for LLM Tool-Use Agents",
+    "<span id=\"page-1-0\"></span>Confidence Trajectory Analysis for LLM Tool-Use Agents > 2.2 LLM Agents and Tool Use",
+    "<span id=\"page-1-0\"></span>Confidence Trajectory Analysis for LLM Tool-Use Agents > 2.2 LLM Agents and Tool Use > 2.3 Confidence Calibration for Agentic Systems",
+    "<span id=\"page-1-0\"></span>Confidence Trajectory Analysis for LLM Tool-Use Agents > 2.2 LLM Agents and Tool Use > 2.4 Action Aggregation and Abstraction",
+    "<span id=\"page-1-0\"></span>Confidence Trajectory Analysis for LLM Tool-Use Agents > 2.2 LLM Agents and Tool Use > 2.4 Action Aggregation and Abstraction > 3.1 Aim 1: Action-Level Confidence Estimation",
+    "<span id=\"page-1-0\"></span>Confidence Trajectory Analysis for LLM Tool-Use Agents > 3.2 Aim 2: Semantic Action Typing",
+    "<span id=\"page-1-0\"></span>Confidence Trajectory Analysis for LLM Tool-Use Agents > 3.2 Aim 2: Semantic Action Typing > 3.3 Aim 3: Temporal Pattern Mining for Failure Prediction",
+    "<span id=\"page-1-0\"></span>Confidence Trajectory Analysis for LLM Tool-Use Agents > 3.2 Aim 2: Semantic Action Typing > <span id=\"page-5-0\"></span>4 Preliminary Results",
+    "<span id=\"page-1-0\"></span>Confidence Trajectory Analysis for LLM Tool-Use Agents > 3.2 Aim 2: Semantic Action Typing > <span id=\"page-5-0\"></span>4 Preliminary Results > <span id=\"page-5-1\"></span>4.1 Aim 1 Foundation: Recurrent Confidence Chains",
+    "<span id=\"page-1-0\"></span>Confidence Trajectory Analysis for LLM Tool-Use Agents > 3.2 Aim 2: Semantic Action Typing > <span id=\"page-5-0\"></span>4 Preliminary Results > <span id=\"page-6-0\"></span>4.3 Pilot Study: Semantic Action Aggregation for Tool-Use Trajectories",
+    "<span id=\"page-1-0\"></span>Confidence Trajectory Analysis for LLM Tool-Use Agents > 3.2 Aim 2: Semantic Action Typing > <span id=\"page-5-0\"></span>4 Preliminary Results > <span id=\"page-6-1\"></span>4.2 Aim 3 Foundation: STL-Based Confidence Pattern Mining",
+    "<span id=\"page-1-0\"></span>Confidence Trajectory Analysis for LLM Tool-Use Agents > 7 Limitations",
+    "<span id=\"page-1-0\"></span>Confidence Trajectory Analysis for LLM Tool-Use Agents > <span id=\"page-1-1\"></span>2 Related Work > 2.1 Uncertainty Quantification in LLM Reasoning",
+    "<span id=\"page-1-0\"></span>Confidence Trajectory Analysis for LLM Tool-Use Agents > <span id=\"page-7-0\"></span>5 Research Plan",
+    "<span id=\"page-1-0\"></span>Confidence Trajectory Analysis for LLM Tool-Use Agents > <span id=\"page-7-0\"></span>5 Research Plan > 6 Conclusion",
+    "<span id=\"page-1-0\"></span>Confidence Trajectory Analysis for LLM Tool-Use Agents > Ethics Statement",
+    "<span id=\"page-1-0\"></span>Confidence Trajectory Analysis for LLM Tool-Use Agents > References",
+    "Abstract",
+    "Thesis Proposal: When Does an Agent Know It Is Lost? Confidence Trajectory Analysis for Tool-Using LLMs"
+  ]
+}

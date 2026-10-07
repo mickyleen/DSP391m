@@ -1,0 +1,30 @@
+{
+  "doc_id": "PSAI194",
+  "num_chunks": 16,
+  "total_tokens": 1718,
+  "avg_tokens": 107.38,
+  "min_tokens": 21,
+  "max_tokens": 332,
+  "chunks_by_type": {
+    "section": 15,
+    "table_row": 1
+  },
+  "num_sections": 15,
+  "sections": [
+    "ISO20022 Ecosystem Research and Technical Design > Project Overview :page_facing_up: > Overview",
+    "ISO20022 Ecosystem Research and Technical Design > Project Overview :page_facing_up: > Project Details",
+    "ISO20022 Ecosystem Research and Technical Design > Team :busts_in_silhouette: > Big Tip for LiteScan",
+    "ISO20022 Ecosystem Research and Technical Design > Team :busts_in_silhouette: > Contact",
+    "ISO20022 Ecosystem Research and Technical Design > Team :busts_in_silhouette: > Development Roadmap :nut_and_bolt: > Milestone 1 — Ecosystem Research and Technical Design",
+    "ISO20022 Ecosystem Research and Technical Design > Team :busts_in_silhouette: > Development Roadmap :nut_and_bolt: > Overview",
+    "ISO20022 Ecosystem Research and Technical Design > Team :busts_in_silhouette: > Future Plans",
+    "ISO20022 Ecosystem Research and Technical Design > Team :busts_in_silhouette: > Legal Structure",
+    "ISO20022 Ecosystem Research and Technical Design > Team :busts_in_silhouette: > Misc:",
+    "ISO20022 Ecosystem Research and Technical Design > Team :busts_in_silhouette: > Non rust contributions:",
+    "ISO20022 Ecosystem Research and Technical Design > Team :busts_in_silhouette: > Previous Related W3F Grants",
+    "ISO20022 Ecosystem Research and Technical Design > Team :busts_in_silhouette: > References",
+    "ISO20022 Ecosystem Research and Technical Design > Team :busts_in_silhouette: > Team Code Repos",
+    "ISO20022 Ecosystem Research and Technical Design > Team :busts_in_silhouette: > Team members",
+    "ISO20022 Ecosystem Research and Technical Design > Team :busts_in_silhouette: > Team's experience"
+  ]
+}

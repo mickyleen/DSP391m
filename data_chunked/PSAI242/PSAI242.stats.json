@@ -1,0 +1,27 @@
+{
+  "doc_id": "PSAI242",
+  "num_chunks": 19,
+  "total_tokens": 1495,
+  "avg_tokens": 78.68,
+  "min_tokens": 20,
+  "max_tokens": 345,
+  "chunks_by_type": {
+    "section": 12,
+    "table_row": 7
+  },
+  "num_sections": 12,
+  "sections": [
+    "Polkadot Smart Chain > Additional Information :heavy_plus_sign: > How did you hear about the Grants Program?",
+    "Polkadot Smart Chain > Development Roadmap :nut_and_bolt: > Overview",
+    "Polkadot Smart Chain > Development Status :open_book:",
+    "Polkadot Smart Chain > Future Plans",
+    "Polkadot Smart Chain > Project Overview :page_facing_up: > Ecosystem Fit",
+    "Polkadot Smart Chain > Project Overview :page_facing_up: > Ecosystem Fit > Contact",
+    "Polkadot Smart Chain > Project Overview :page_facing_up: > Ecosystem Fit > Legal Structure",
+    "Polkadot Smart Chain > Project Overview :page_facing_up: > Ecosystem Fit > Team Code Repos",
+    "Polkadot Smart Chain > Project Overview :page_facing_up: > Ecosystem Fit > Team's experience",
+    "Polkadot Smart Chain > Project Overview :page_facing_up: > Overview",
+    "Polkadot Smart Chain > Project Overview :page_facing_up: > Project Details",
+    "Polkadot Smart Chain > Team LinkedIn Profiles (if available)"
+  ]
+}

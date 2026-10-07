@@ -1,0 +1,36 @@
+{
+  "doc_id": "PSAI023",
+  "num_chunks": 25,
+  "total_tokens": 3994,
+  "avg_tokens": 159.76,
+  "min_tokens": 43,
+  "max_tokens": 441,
+  "chunks_by_type": {
+    "section": 25
+  },
+  "num_sections": 22,
+  "sections": [
+    "Additional Information",
+    "Project Description",
+    "Project Description > Background on Nitro virtual channels",
+    "Project Description > Development Roadmap > Comments on project schedule",
+    "Project Description > Development Roadmap > Milestone 1 — Optimized Nitro specification",
+    "Project Description > Development Roadmap > Milestone 1 — Optimized Nitro specification > Existing work",
+    "Project Description > Development Roadmap > Milestone 2: Updated Nitro Protocol's \"exit format\"",
+    "Project Description > Development Roadmap > Milestone 2: Updated Nitro Protocol's \"exit format\" > Deliverables",
+    "Project Description > Development Roadmap > Milestone 2: Updated Nitro Protocol's \"exit format\" > Existing work",
+    "Project Description > Development Roadmap > Milestone 2: Updated Nitro Protocol's \"exit format\" > Milestone 3: Optimized Virtual Funding Protocol implementation",
+    "Project Description > Development Roadmap > Milestone 4: Formal verification of optimized Nitro",
+    "Project Description > Development Roadmap > Milestone 4: Formal verification of optimized Nitro > (Optional) Milestone 6: FIP to add optimized Nitro to Filecoin",
+    "Project Description > Development Roadmap > Milestone 4: Formal verification of optimized Nitro > Deliverables",
+    "Project Description > Development Roadmap > Milestone 4: Formal verification of optimized Nitro > Existing work",
+    "Project Description > Development Roadmap > Milestone 4: Formal verification of optimized Nitro > Milestone 5: Optimized Nitro on the EVM",
+    "Project Description > Maintenance and Upgrade Plans",
+    "Project Description > Proposed work",
+    "Project Description > Relevant Experience",
+    "Project Description > Team code repositories",
+    "Project Description > Total Budget Requested",
+    "Project Description > Value",
+    "Project Description > Value > What are the risks that will make executing on this project difficult?"
+  ]
+}

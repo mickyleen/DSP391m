@@ -1,0 +1,24 @@
+{
+  "doc_id": "PSAI056",
+  "num_chunks": 10,
+  "total_tokens": 1721,
+  "avg_tokens": 172.1,
+  "min_tokens": 20,
+  "max_tokens": 458,
+  "chunks_by_type": {
+    "section": 10
+  },
+  "num_sections": 10,
+  "sections": [
+    "Computer Vision",
+    "Computer Vision > Game Logic",
+    "Graphics",
+    "Graphics > Communication",
+    "Graphics > Communication > Hardware",
+    "Graphics > Communication > Hardware > Timeline",
+    "Graphics > Stretch Goals",
+    "Introduction",
+    "Introduction > Architecture",
+    "Introduction > Block Diagram"
+  ]
+}

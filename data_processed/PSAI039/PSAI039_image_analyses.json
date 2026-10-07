@@ -1,0 +1,82 @@
+{
+  "_page_6_Diagram_2.jpeg": {
+    "safe_filename": "_page_6_Diagram_2.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_6_Diagram_5.jpeg": {
+    "safe_filename": "_page_6_Diagram_5.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_7_Diagram_2.jpeg": {
+    "safe_filename": "_page_7_Diagram_2.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_7_Diagram_5.jpeg": {
+    "safe_filename": "_page_7_Diagram_5.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_11_Diagram_6.jpeg": {
+    "safe_filename": "_page_11_Diagram_6.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_12_Diagram_0.jpeg": {
+    "safe_filename": "_page_12_Diagram_0.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_13_Diagram_0.jpeg": {
+    "safe_filename": "_page_13_Diagram_0.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_14_Figure_0.jpeg": {
+    "safe_filename": "_page_14_Figure_0.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_15_Figure_0.jpeg": {
+    "safe_filename": "_page_15_Figure_0.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_16_Diagram_6.jpeg": {
+    "safe_filename": "_page_16_Diagram_6.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_17_Figure_0.jpeg": {
+    "safe_filename": "_page_17_Figure_0.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_20_Figure_4.jpeg": {
+    "safe_filename": "_page_20_Figure_4.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_21_Figure_0.jpeg": {
+    "safe_filename": "_page_21_Figure_0.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_21_Figure_4.jpeg": {
+    "safe_filename": "_page_21_Figure_4.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_24_Diagram_8.jpeg": {
+    "safe_filename": "_page_24_Diagram_8.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_27_Diagram_6.jpeg": {
+    "safe_filename": "_page_27_Diagram_6.jpeg",
+    "description": "Sơ đồ biểu diễn một hệ thống hàng đợi song song (queuing system) với các nút xử lý đại diện cho các thành phố khác nhau. \n\nSơ đồ bao gồm các thành phần chính sau:\n- **Các nút xử lý (Servers):** Được biểu diễn bằng các hình tròn ở phía dưới, chứa tên các thành phố lần lượt từ trái sang phải là: \"New York\", \"New Jersey\", \"Chicago\", và \"Los Angeles\". Giữa nút \"Chicago\" và \"Los Angeles\" có dấu ba chấm nằm ngang biểu thị hệ thống còn có các nút trung gian khác. Dưới mỗi nút tròn có một mũi tên hướng xuống biểu thị luồng đầu ra (output) sau khi xử lý.\n- **Hàng đợi (Queues):** Phía trên mỗi nút tròn là một biểu tượng hàng đợi gồm 3 ngăn xếp nằm ngang, đại diện cho bộ đệm lưu trữ các yêu cầu đang chờ xử lý.\n- **Luồng đầu vào (Inputs):** Phía trên cùng là các mũi tên chỉ luồng công việc đi vào các hàng đợi:\n  - Có các mũi tên thẳng đứng đi trực tiếp vào từng hàng đợi riêng lẻ.\n  - Có các đường rẽ nhánh từ một điểm nguồn phía trên đi vào nhiều hàng đợi khác nhau (ví dụ: một nguồn phân phối vào cả \"New York\" và \"New Jersey\"; một nguồn khác phân phối vào cả \"New York\", \"New Jersey\" và \"Chicago\"; một nguồn khác phân phối vào \"Chicago\" và \"Los Angeles\"). Điều này thể hiện cơ chế phân phối tải hoặc định tuyến yêu cầu đến các hàng đợi khác nhau.",
+    "ocr": "New York\nNew Jersey\nChicago\n...\nLos Angeles"
+  }
+}

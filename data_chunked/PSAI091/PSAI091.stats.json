@@ -1,0 +1,34 @@
+{
+  "doc_id": "PSAI091",
+  "num_chunks": 30,
+  "total_tokens": 8170,
+  "avg_tokens": 272.33,
+  "min_tokens": 51,
+  "max_tokens": 508,
+  "chunks_by_type": {
+    "section": 16,
+    "section_split": 14
+  },
+  "num_sections": 19,
+  "sections": [
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal",
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal > 1 NLP, Language, and Meaning",
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal > 1.1 Thesis Proposal",
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal > 1.1 Thesis Proposal > 2.4 Semantic Holism and Atomism",
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal > 1.1 Thesis Proposal > 2.4 Semantic Holism and Atomism > <span id=\"page-2-1\"></span>2.5 Objectivism and Experientialism",
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal > 1.1 Thesis Proposal > <span id=\"page-1-0\"></span>2 NLP and Philosophy of Language",
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal > 1.1 Thesis Proposal > <span id=\"page-1-0\"></span>2 NLP and Philosophy of Language > 2.1 The Distributional Hypothesis",
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal > 1.1 Thesis Proposal > <span id=\"page-1-0\"></span>2 NLP and Philosophy of Language > 2.2 The Use Theory of Meaning",
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal > 1.1 Thesis Proposal > <span id=\"page-1-0\"></span>2 NLP and Philosophy of Language > 2.3 Structuralism",
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal > 2.6 Meaning and Understanding",
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal > 2.6 Meaning and Understanding > <span id=\"page-2-2\"></span>2.7 Conclusion: Properties of Meaning",
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal > 4 Conclusion and Future Work",
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal > <span id=\"page-2-0\"></span>3 Properties of Word Embeddings",
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal > <span id=\"page-2-0\"></span>3 Properties of Word Embeddings > 3.1 Semantic properties",
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal > <span id=\"page-2-0\"></span>3 Properties of Word Embeddings > 3.2 Word2vec and Semantic Holism",
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal > <span id=\"page-2-0\"></span>3 Properties of Word Embeddings > 3.3 Independent Component Analysis",
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal > <span id=\"page-5-4\"></span>5 Acknowledgements",
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal > <span id=\"page-5-4\"></span>5 Acknowledgements > References",
+    "Representations of Meaning in Neural Networks for NLP: a Thesis Proposal > Abstract"
+  ]
+}

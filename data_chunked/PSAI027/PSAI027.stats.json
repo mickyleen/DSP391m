@@ -1,0 +1,25 @@
+{
+  "doc_id": "PSAI027",
+  "num_chunks": 12,
+  "total_tokens": 1122,
+  "avg_tokens": 93.5,
+  "min_tokens": 30,
+  "max_tokens": 322,
+  "chunks_by_type": {
+    "section": 12
+  },
+  "num_sections": 11,
+  "sections": [
+    "Deliverables",
+    "Development Roadmap > 1. Development of NEAR smart contract",
+    "Development Roadmap > 2) Development of PriStorage web application",
+    "Development Roadmap > Team:",
+    "Maintenance and Upgrade Plans",
+    "Project Description",
+    "Project Description > Value",
+    "RFP Proposal: PriStorage",
+    "Relevant Experience",
+    "Team > Team Members",
+    "Total Budget Requested"
+  ]
+}

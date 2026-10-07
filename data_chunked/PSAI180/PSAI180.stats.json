@@ -1,0 +1,42 @@
+{
+  "doc_id": "PSAI180",
+  "num_chunks": 64,
+  "total_tokens": 5059,
+  "avg_tokens": 79.05,
+  "min_tokens": 20,
+  "max_tokens": 496,
+  "chunks_by_type": {
+    "section": 25,
+    "table_row": 36,
+    "section_split": 3
+  },
+  "num_sections": 26,
+  "sections": [
+    "ABSTRACT",
+    "Community Bonding Period (17 May - 7 June)",
+    "Community Bonding Period (17 May - 7 June) > Final Evaluation (August 16 -August 23)",
+    "Community Bonding Period (17 May - 7 June) > First Evaluation (July 12 -July 16)",
+    "Community Bonding Period (17 May - 7 June) > Task: Drop Qt X11 Extras dependency and Replace Boost Random in DImg framework (1 week)",
+    "Community Bonding Period (17 May - 7 June) > Task: Fix Compiler warnings of deprecated Qt5 usages (2 weeks)",
+    "Community Bonding Period (17 May - 7 June) > Task: Fix Qt5CoreCompat usages(2 weeks)",
+    "Community Bonding Period (17 May - 7 June) > Task: More regression testing and Clazy checks (1-2 weeks)",
+    "Community Bonding Period (17 May - 7 June) > Task: Port AppImage Builder (2-3 weeks)",
+    "Community Bonding Period (17 May - 7 June) > Task: Work on pending later tasks in final weeks if all higher priority tasks are complete",
+    "Components that rely on removed Qt5 classes > DImg framework uses Qt X11 Extras",
+    "GOALS",
+    "IMPLEMENTATION DETAILS > Fix all Qt5 deprecated compiler warnings",
+    "INTRODUCTION",
+    "INVOLVEMENT IN KDE",
+    "INVOLVEMENT IN KDE > MORE ABOUT ME",
+    "Port digiKam to Qt6 on Linux > MENTORS",
+    "Post GSoC",
+    "Qt5CoreCompat module usages",
+    "Rajce webservice plugin uses QXmlPattterns",
+    "Removing libO2 dependency",
+    "Replace Boost Random Code with Qt6 in DImg Framework",
+    "Replace Boost Random Code with Qt6 in DImg Framework > General regression testing strategy",
+    "Replace Boost Random Code with Qt6 in DImg Framework > Porting AppImage builder to use Qt 5.15.2 and later Qt6 with ICU support",
+    "Replace Boost Random Code with Qt6 in DImg Framework > Using clazy for code analysis",
+    "TIMELINE"
+  ]
+}

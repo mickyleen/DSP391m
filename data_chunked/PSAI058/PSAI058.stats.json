@@ -1,0 +1,24 @@
+{
+  "doc_id": "PSAI058",
+  "num_chunks": 75,
+  "total_tokens": 16389,
+  "avg_tokens": 218.52,
+  "min_tokens": 21,
+  "max_tokens": 510,
+  "chunks_by_type": {
+    "section_split": 44,
+    "section": 3,
+    "table_row": 28
+  },
+  "num_sections": 8,
+  "sections": [
+    "<span id=\"page-13-0\"></span>6 Reconstructing Source-Level Types from Binary Executables",
+    "<span id=\"page-13-0\"></span>6 Reconstructing Source-Level Types from Binary Executables > <span id=\"page-16-0\"></span>7 Proposed Timeline",
+    "<span id=\"page-13-0\"></span>6 Reconstructing Source-Level Types from Binary Executables > References",
+    "<span id=\"page-3-0\"></span>2 Beautiful Proofs for Ugly Code > Status: Completed [[6]](#page-16-1)",
+    "<span id=\"page-5-0\"></span>3 Provably-Safe Software Sandboxing > <span id=\"page-10-0\"></span>5 Parsing Untrusted Data > Status: Proposed/ongoing work",
+    "<span id=\"page-5-0\"></span>3 Provably-Safe Software Sandboxing > <span id=\"page-8-0\"></span>4 Agile Enforcement of Pre-Emptively Defensive Code > Status: Completed [[35]](#page-19-7)",
+    "<span id=\"page-5-0\"></span>3 Provably-Safe Software Sandboxing > Status: Completed [[7]](#page-16-2)",
+    "Thesis Proposal > 1 Introduction"
+  ]
+}

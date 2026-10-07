@@ -1,0 +1,37 @@
+{
+  "doc_id": "PSAI102",
+  "num_chunks": 97,
+  "total_tokens": 19708,
+  "avg_tokens": 203.18,
+  "min_tokens": 24,
+  "max_tokens": 510,
+  "chunks_by_type": {
+    "section": 16,
+    "section_split": 36,
+    "table_row": 45
+  },
+  "num_sections": 21,
+  "sections": [
+    "1 Introduction",
+    "2.1 Human Disagreement",
+    "2.1 Human Disagreement > 2.2 Reproducible ML Evaluation",
+    "2.3 Prompt Optimization",
+    "2.3 Prompt Optimization > <span id=\"page-1-1\"></span>3 Perspective-Aware Reproducible ML Evaluation > 3.1 Related Work in Reproducible ML Evaluation",
+    "2.3 Prompt Optimization > <span id=\"page-1-1\"></span>3 Perspective-Aware Reproducible ML Evaluation > 3.2 Preliminary Work in Reproducible ML Evaluation",
+    "2.3 Prompt Optimization > <span id=\"page-1-1\"></span>3 Perspective-Aware Reproducible ML Evaluation > 3.3 Proposed Work in Reproducible ML Evaluation",
+    "4.1 Related Work",
+    "4.1 Related Work > 4.2 Preliminary Work",
+    "4.1 Related Work > 4.2 Preliminary Work > 4.3 Proposed Work",
+    "4.1 Related Work > 4.2 Preliminary Work > Generation and Feedback Loop:",
+    "<span id=\"page-13-3\"></span>A.1.1 Power Analysis",
+    "<span id=\"page-7-0\"></span>5 Conclusion",
+    "A.3 ProRefine > Algorithm 1: Simulations for Halt",
+    "A.3 ProRefine > Algorithm 2: Simulations for Hnull",
+    "A.3 ProRefine > Algorithm 3: Calculate p-value",
+    "A.3 ProRefine > Algorithm 5: ProRefine",
+    "Abstract",
+    "Limitations",
+    "Limitations > A.1 Reproducible ML Evaluation",
+    "Thesis Proposal: Toward a Human-Centered and Perspective-Aware Framework for Reproducible ML Evaluation and AI Alignment"
+  ]
+}

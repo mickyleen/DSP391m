@@ -1,0 +1,24 @@
+{
+  "doc_id": "PSAI030",
+  "num_chunks": 10,
+  "total_tokens": 736,
+  "avg_tokens": 73.6,
+  "min_tokens": 22,
+  "max_tokens": 185,
+  "chunks_by_type": {
+    "section": 10
+  },
+  "num_sections": 10,
+  "sections": [
+    "Project Description",
+    "Project Description > Deliverables",
+    "Project Description > MileStone 1: Finalize scope, workflow design, and architectural design",
+    "Project Description > MileStone 2: Service implementation",
+    "Project Description > MileStone 4: All project deliverables (website, documentation, codebase)",
+    "Project Description > Total Budget Requested > Maintenance and Upgrade Plans",
+    "RFP Proposal: Retrieval Metainfo System with Incentive Mechanism",
+    "Team > Contact Info > Team Member LinkedIn Profiles",
+    "Team > Contact Info > Team Members",
+    "Team > Relevant Experience"
+  ]
+}

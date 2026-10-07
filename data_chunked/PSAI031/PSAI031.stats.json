@@ -1,0 +1,23 @@
+{
+  "doc_id": "PSAI031",
+  "num_chunks": 9,
+  "total_tokens": 685,
+  "avg_tokens": 76.11,
+  "min_tokens": 24,
+  "max_tokens": 142,
+  "chunks_by_type": {
+    "section": 9
+  },
+  "num_sections": 9,
+  "sections": [
+    "Contact Info > Team Members",
+    "Project Description",
+    "Project Description > Development Roadmap > Estimated Milestone Delivery",
+    "Project Description > Development Roadmap > Milestone 1 - Research and feasibility analysis of CBOR in Solidity in terms of FVM gas usage",
+    "Project Description > Development Roadmap > Team Members",
+    "Project Description > Development Roadmap > Week 1: Ramp-up into FEVM",
+    "Project Description > Development Roadmap > Weeks 2-3 The deep dive into Solidity",
+    "RFP Proposal: Solidity libraries and pre-compiles for FEVM Smart Contracts",
+    "Total Budget Requested > Maintenance and Upgrade Plans"
+  ]
+}

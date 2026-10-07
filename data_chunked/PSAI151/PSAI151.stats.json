@@ -1,0 +1,35 @@
+{
+  "doc_id": "PSAI151",
+  "num_chunks": 21,
+  "total_tokens": 2387,
+  "avg_tokens": 113.67,
+  "min_tokens": 21,
+  "max_tokens": 374,
+  "chunks_by_type": {
+    "section": 20,
+    "table_row": 1
+  },
+  "num_sections": 20,
+  "sections": [
+    "About Me",
+    "Alternatives Considered (Optional)",
+    "Background",
+    "Chromium GSoC Contributor Proposal Template",
+    "Code Affected > Code primarily resides in",
+    "Design Ideas",
+    "Design Ideas > Replay API:",
+    "Design Ideas > Rollout Strategy",
+    "Design Ideas > Tracing API:",
+    "Pre proposal Work",
+    "Prior Experience with open source",
+    "Project Abstract",
+    "Related Work",
+    "Schedule of Deliverables (timeline)",
+    "Schedule of Deliverables (timeline) > August 19 - November 11 (For Extended Timelines)",
+    "Schedule of Deliverables (timeline) > Communications",
+    "Schedule of Deliverables (timeline) > May 1 - May 26 (Community Bonding Period)",
+    "Schedule of Deliverables (timeline) > May 27 - July 12 (Phase I)",
+    "Schedule of Deliverables (timeline) > May 27 - July 12 (Phase I) > July 12 - August 19 (Phase II)",
+    "Why Chromium?"
+  ]
+}

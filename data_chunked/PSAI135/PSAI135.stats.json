@@ -1,0 +1,35 @@
+{
+  "doc_id": "PSAI135",
+  "num_chunks": 33,
+  "total_tokens": 4862,
+  "avg_tokens": 147.33,
+  "min_tokens": 20,
+  "max_tokens": 505,
+  "chunks_by_type": {
+    "section": 18,
+    "table_row": 9,
+    "section_split": 6
+  },
+  "num_sections": 19,
+  "sections": [
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Abstract",
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Personal Information",
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Related Work",
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Related Work > 1. What interests you most about this project?",
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Related Work > 2. As mentors and project coordinators, how can we get the best out of you?",
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Related Work > 3. Is there anything that you'll be studying or working on whilst working alongside us?",
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Related Work > 4. We'd love to hear a bit on your work preferences, e.g. how you keep yourself organized, what tools you use, etc?",
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Related Work > 5. Once you've selected a project from the ideas section, please suggest a weekly schedule with clear milestones and deliverables around it. Alternatively, if you want to propose your own idea then please include an outline, goals, and a well-defined weekly schedule with clear milestones and deliverables.",
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Related Work > Additional Points:",
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Related Work > Backend",
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Related Work > Conclusion",
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Related Work > Frontend",
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Related Work > Future work",
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Related Work > HLD and LLD",
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Related Work > High-Level Design:",
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Related Work > Low-Level Design:",
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Related Work > Note of Thanks",
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Related Work > Project Goals",
+    "PROPOSAL FOR GSoC 2023 > Title: Interactive Mindmap Visualization for Collection Formats Organization : Postman Mentor : Gbadebo Bello > Related Work > Research work on mindmap libraries in js"
+  ]
+}

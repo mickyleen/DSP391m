@@ -1,0 +1,20 @@
+{
+  "doc_id": "PSAI025",
+  "num_chunks": 6,
+  "total_tokens": 664,
+  "avg_tokens": 110.67,
+  "min_tokens": 46,
+  "max_tokens": 286,
+  "chunks_by_type": {
+    "section": 6
+  },
+  "num_sections": 6,
+  "sections": [
+    "Maintenance and Upgrade Plans",
+    "Project Description",
+    "Project Description > Total Budget Requested",
+    "Project Description > Value",
+    "Project Description > Value > Deliverables",
+    "Relevant Experience"
+  ]
+}

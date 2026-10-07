@@ -1,0 +1,38 @@
+{
+  "doc_id": "PSAI037",
+  "num_chunks": 48,
+  "total_tokens": 10194,
+  "avg_tokens": 212.38,
+  "min_tokens": 26,
+  "max_tokens": 505,
+  "chunks_by_type": {
+    "section_split": 24,
+    "section": 18,
+    "table_row": 6
+  },
+  "num_sections": 22,
+  "sections": [
+    "2 Related Work",
+    "2 Related Work > 3 Proposed Research",
+    "2 Related Work > 3.1 Phase 1: Debiasing Techniques (RQ1)",
+    "2 Related Work > 3.2 Phase 2: Authentic Data Validation (RQ2)",
+    "2 Related Work > Expected Outcomes:",
+    "4 Timeline and Feasibility",
+    "5 Thesis Contribution",
+    "5 Thesis Contribution > Practical Contributions:",
+    "5 Thesis Contribution > Scientific Contributions:",
+    "5.1 Limitations",
+    "5.1 Limitations > 6 Conclusion",
+    "Evaluation Metrics:",
+    "Evaluation Metrics: > 3.5 Evaluation Success Criteria",
+    "Evaluation Metrics: > Expected Outcomes:",
+    "Expected Outcomes:",
+    "Expected Outcomes: > 3.3 Phase 3: Intersectional Bias Analysis (RQ3)",
+    "Expected Outcomes: > Evaluation Metrics:",
+    "Expected Outcomes: > Expected Outcomes:",
+    "Expected Outcomes: > Expected Outcomes: > 3.4 Phase 4: Pipeline-Level Bias Propagation (RQ4)",
+    "Thesis Proposal: Auditing and Mitigating Demographic Bias in Multi-Stage Retrieval Systems for Criminal Justice Applications",
+    "Thesis Proposal: Auditing and Mitigating Demographic Bias in Multi-Stage Retrieval Systems for Criminal Justice Applications > 1 Introduction",
+    "Thesis Proposal: Auditing and Mitigating Demographic Bias in Multi-Stage Retrieval Systems for Criminal Justice Applications > Abstract"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "doc_id": "PSAI120",
+  "num_chunks": 18,
+  "total_tokens": 1440,
+  "avg_tokens": 80.0,
+  "min_tokens": 23,
+  "max_tokens": 351,
+  "chunks_by_type": {
+    "section": 10,
+    "table_row": 8
+  },
+  "num_sections": 10,
+  "sections": [
+    "Project Description",
+    "Project Description > Additional Beneifts of Storaging Open Algorithms",
+    "Project Description > Deliverables",
+    "Project Description > Deliverables > Total Budget Requested",
+    "Project Description > Maintenance and Upgrade Plans",
+    "Project Description > Risks:",
+    "Project Description > Team > Relevant Experience",
+    "Project Description > Team > Team Member LinkedIn Profiles",
+    "Project Description > Team > Team Members",
+    "Project Description > Value"
+  ]
+}

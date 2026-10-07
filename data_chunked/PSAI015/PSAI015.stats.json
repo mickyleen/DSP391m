@@ -1,0 +1,25 @@
+{
+  "doc_id": "PSAI015",
+  "num_chunks": 17,
+  "total_tokens": 1768,
+  "avg_tokens": 104.0,
+  "min_tokens": 31,
+  "max_tokens": 348,
+  "chunks_by_type": {
+    "section": 12,
+    "table_row": 5
+  },
+  "num_sections": 10,
+  "sections": [
+    "Additional Information",
+    "Project Description",
+    "Project Description > Breakdown",
+    "Project Description > Development Roadmap > Budget",
+    "Project Description > Development Roadmap > Milestones",
+    "Project Description > Development Roadmap > Phase 3: scale-out from a 50-node cluster to a 100 node cluster",
+    "Project Description > Maintenance and Upgrade Plans",
+    "Project Description > Team",
+    "Project Description > Team > Team Member CVs/LinkedIn Profiles",
+    "Project Description > Value"
+  ]
+}

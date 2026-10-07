@@ -1,0 +1,31 @@
+{
+  "doc_id": "PSAI234",
+  "num_chunks": 47,
+  "total_tokens": 3030,
+  "avg_tokens": 64.47,
+  "min_tokens": 20,
+  "max_tokens": 339,
+  "chunks_by_type": {
+    "section": 16,
+    "table_row": 31
+  },
+  "num_sections": 16,
+  "sections": [
+    "Additional Information :heavy_plus_sign:",
+    "Development Roadmap :nut_and_bolt: > Milestone 1 — Implement NFT Wallet Pallet",
+    "Development Roadmap :nut_and_bolt: > Milestone 1 — Implement NFT Wallet Pallet > Milestone 2 — Build NFT Collectibles Wallet Mobile App",
+    "Development Roadmap :nut_and_bolt: > Milestone 3 — Build Javascript SDK and Admin Frontend",
+    "Development Roadmap :nut_and_bolt: > Overview",
+    "Development Status :open_book:",
+    "Future Plans",
+    "Project Overview :page_facing_up:",
+    "Project Overview :page_facing_up: > Overview",
+    "Project Overview :page_facing_up: > Project Details > Mobile Wallet Details:",
+    "Substrate Pallet Details:",
+    "Substrate Pallet Details: > Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?",
+    "Substrate Pallet Details: > Ecosystem Fit",
+    "Substrate Pallet Details: > Javascript SDK Details:",
+    "Team :busts_in_silhouette: > Team members",
+    "Team :busts_in_silhouette: > Team members > Contact"
+  ]
+}

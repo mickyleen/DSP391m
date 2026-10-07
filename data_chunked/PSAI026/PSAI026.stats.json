@@ -1,0 +1,40 @@
+{
+  "doc_id": "PSAI026",
+  "num_chunks": 27,
+  "total_tokens": 3305,
+  "avg_tokens": 122.41,
+  "min_tokens": 21,
+  "max_tokens": 401,
+  "chunks_by_type": {
+    "section": 24,
+    "section_split": 3
+  },
+  "num_sections": 25,
+  "sections": [
+    "A Layer 2 Solution Approach",
+    "Compute Data Contracts",
+    "Compute Data Contracts > Roles",
+    "Deliverables",
+    "Deliverables > Compute Data Contracts > A sample XDV Smart Data Contract might look like",
+    "Deliverables > Compute Data Contracts > Spec",
+    "Deliverables > Spec",
+    "Enter XDV: The need for custom tailor made protocol",
+    "HTLC",
+    "IFESA / IDAO / Fernando Romero",
+    "Maintenance and Upgrade Plans",
+    "Metadata / File storage rust-ipld",
+    "Primitives",
+    "Primitives > HTLC / Atomic Swaps",
+    "Primitives > Smart Data Contracts",
+    "Project Description",
+    "Project Description > Previous Work",
+    "Team Website",
+    "Team code repositories",
+    "Team code repositories > XDV Node",
+    "Total Budget Requested",
+    "Use Cases > COVID-19 verifiable data warehousing",
+    "Use Cases > Cross chain NFT metadata uri token swap",
+    "Use Cases > Cross chain NFT metadata uri token swap > EDI Orders and Invoicing",
+    "Value"
+  ]
+}

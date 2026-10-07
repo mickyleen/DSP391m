@@ -1,0 +1,32 @@
+{
+  "doc_id": "PSAI003",
+  "num_chunks": 25,
+  "total_tokens": 4086,
+  "avg_tokens": 163.44,
+  "min_tokens": 20,
+  "max_tokens": 508,
+  "chunks_by_type": {
+    "section": 13,
+    "table_row": 3,
+    "section_split": 9
+  },
+  "num_sections": 16,
+  "sections": [
+    "Additional Information",
+    "Additional Information > Further / Follow-Up Work",
+    "Background",
+    "Open Grant Proposal: Browser-Based Web Archiving Design and",
+    "Project Description",
+    "Project Description > Deliverables",
+    "Project Description > Development Roadmap",
+    "Project Description > Development Roadmap > Creation of Storage Specification (Standardizing the WACZ Format) (SPEC)",
+    "Project Description > Development Roadmap > Implementation (IMPL)",
+    "Project Description > Development Roadmap > Privacy-Centric Design Research for Browser-Based Capture, Storage and Replay (UX)",
+    "Project Description > Development Roadmap > Total Budget Requested",
+    "Project Description > Maintenance and Upgrade Plans",
+    "Project Description > Value",
+    "Team > Team Members",
+    "Team > Team Members > Team Member LinkedIn Profiles",
+    "Team > Team Members > Team Member LinkedIn Profiles > Team code repositories"
+  ]
+}

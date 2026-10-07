@@ -1,0 +1,31 @@
+{
+  "doc_id": "PSAI246",
+  "num_chunks": 44,
+  "total_tokens": 3124,
+  "avg_tokens": 71.0,
+  "min_tokens": 20,
+  "max_tokens": 410,
+  "chunks_by_type": {
+    "section": 17,
+    "table_row": 27
+  },
+  "num_sections": 16,
+  "sections": [
+    "SubVT Telegram Bot for Kusama and Polkadot > -10th of May, 2022 Development Update",
+    "SubVT Telegram Bot for Kusama and Polkadot > Development Status :open_book:",
+    "SubVT Telegram Bot for Kusama and Polkadot > Development Status :open_book: > Development Roadmap :nut_and_bolt: > Overview",
+    "SubVT Telegram Bot for Kusama and Polkadot > Development Status :open_book: > Milestone 1 — Migration to the SubVT Services, Extended Support and Initial Fixes",
+    "SubVT Telegram Bot for Kusama and Polkadot > Development Status :open_book: > Milestone 2 — New features",
+    "SubVT Telegram Bot for Kusama and Polkadot > Future Plans",
+    "SubVT Telegram Bot for Kusama and Polkadot > Future Plans > Additional Information :heavy_plus_sign: > How did you hear about the Grants Program?",
+    "SubVT Telegram Bot for Kusama and Polkadot > Project Overview :page_facing_up: > Overview",
+    "SubVT Telegram Bot for Kusama and Polkadot > Project Overview :page_facing_up: > Project Details",
+    "SubVT Telegram Bot for Kusama and Polkadot > Project Overview :page_facing_up: > Project Details > Contact",
+    "SubVT Telegram Bot for Kusama and Polkadot > Project Overview :page_facing_up: > Project Details > Ecosystem Fit",
+    "SubVT Telegram Bot for Kusama and Polkadot > Project Overview :page_facing_up: > Project Details > Helikon Labs",
+    "SubVT Telegram Bot for Kusama and Polkadot > Project Overview :page_facing_up: > Project Details > Legal Structure",
+    "SubVT Telegram Bot for Kusama and Polkadot > Project Overview :page_facing_up: > Project Details > Team Members",
+    "SubVT Telegram Bot for Kusama and Polkadot > Project Overview :page_facing_up: > Project Details > Team's experience",
+    "SubVT Telegram Bot for Kusama and Polkadot > Project Overview :page_facing_up: > Team LinkedIn Profiles (if available)"
+  ]
+}

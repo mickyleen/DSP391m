@@ -1,0 +1,22 @@
+{
+  "doc_id": "PSAI028",
+  "num_chunks": 9,
+  "total_tokens": 1285,
+  "avg_tokens": 142.78,
+  "min_tokens": 23,
+  "max_tokens": 334,
+  "chunks_by_type": {
+    "section": 9
+  },
+  "num_sections": 8,
+  "sections": [
+    "Project Description",
+    "Project Description > Deliverables",
+    "Project Description > Deliverables > Development Roadmap",
+    "Project Description > Examples of technical challenges:",
+    "RFP Proposal: Chainlink x Filecoin: Use Filecoin for Ethereum zk-Rollup storage",
+    "Team > Additional Information",
+    "Team > Relevant Experience",
+    "Team > Relevant Experience > Resources"
+  ]
+}

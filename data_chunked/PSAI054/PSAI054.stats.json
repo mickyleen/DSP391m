@@ -1,0 +1,40 @@
+{
+  "doc_id": "PSAI054",
+  "num_chunks": 96,
+  "total_tokens": 26004,
+  "avg_tokens": 270.88,
+  "min_tokens": 20,
+  "max_tokens": 510,
+  "chunks_by_type": {
+    "section": 9,
+    "section_split": 72,
+    "table_row": 15
+  },
+  "num_sections": 24,
+  "sections": [
+    "<span id=\"page-12-0\"></span>2.2 Polytime Completeness of AARA (Completed)",
+    "<span id=\"page-12-0\"></span>2.2 Polytime Completeness of AARA (Completed) > <span id=\"page-13-1\"></span>Algorithm 1 Operational working of the target functional program ��",
+    "<span id=\"page-13-0\"></span>2.3 Bayesian Data-Driven Resource Analyses (Completed)",
+    "<span id=\"page-13-0\"></span>2.3 Bayesian Data-Driven Resource Analyses (Completed) > <span id=\"page-18-0\"></span>2.3.4 Extension to Non-Monotone Resource Metrics",
+    "<span id=\"page-18-1\"></span>2.4 Hybrid AARA (Completed)",
+    "<span id=\"page-21-0\"></span>2.5 Resource Decomposition (Completed)",
+    "<span id=\"page-21-0\"></span>2.5 Resource Decomposition (Completed) > <span id=\"page-21-1\"></span>2.5.1 Limitations of Hybrid AARA",
+    "<span id=\"page-21-0\"></span>2.5 Resource Decomposition (Completed) > <span id=\"page-21-1\"></span>2.5.1 Limitations of Hybrid AARA > <span id=\"page-23-0\"></span>2.5.2 Overview",
+    "<span id=\"page-21-0\"></span>2.5 Resource Decomposition (Completed) > <span id=\"page-21-1\"></span>2.5.1 Limitations of Hybrid AARA > <span id=\"page-25-0\"></span>2.5.3 Formalization",
+    "<span id=\"page-29-0\"></span>2.7 Inference of Program-Input Generators (Proposed Work)",
+    "<span id=\"page-29-0\"></span>2.7 Inference of Program-Input Generators (Proposed Work) > <span id=\"page-29-1\"></span>2.7.1 Motivation",
+    "<span id=\"page-29-0\"></span>2.7 Inference of Program-Input Generators (Proposed Work) > <span id=\"page-31-0\"></span>2.7.3 Statistical Inference of Worst-Case Input Generators",
+    "<span id=\"page-32-0\"></span>3 Timeline",
+    "<span id=\"page-4-0\"></span>1.2 Hybrid Resource Analysis",
+    "<span id=\"page-5-0\"></span>1.3 Roadmap of the Thesis",
+    "<span id=\"page-5-0\"></span>1.3 Roadmap of the Thesis > <span id=\"page-7-0\"></span>1.4 Publications",
+    "<span id=\"page-5-0\"></span>1.3 Roadmap of the Thesis > <span id=\"page-9-0\"></span>2 Overview",
+    "<span id=\"page-5-0\"></span>1.3 Roadmap of the Thesis > <span id=\"page-9-1\"></span>2.1 Background",
+    "References",
+    "Thesis Proposal: Hybrid Resource-Bound Analyses of Programs",
+    "Thesis Proposal: Hybrid Resource-Bound Analyses of Programs > <span id=\"page-3-0\"></span>1 Introduction",
+    "Thesis Proposal: Hybrid Resource-Bound Analyses of Programs > <span id=\"page-3-1\"></span>1.1 Resource Analysis",
+    "Thesis Proposal: Hybrid Resource-Bound Analyses of Programs > Abstract",
+    "Thesis Proposal: Hybrid Resource-Bound Analyses of Programs > Contents"
+  ]
+}

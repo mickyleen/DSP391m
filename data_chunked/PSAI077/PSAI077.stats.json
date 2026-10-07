@@ -1,0 +1,31 @@
+{
+  "doc_id": "PSAI077",
+  "num_chunks": 38,
+  "total_tokens": 10186,
+  "avg_tokens": 268.05,
+  "min_tokens": 20,
+  "max_tokens": 510,
+  "chunks_by_type": {
+    "section": 13,
+    "section_split": 19,
+    "table_row": 6
+  },
+  "num_sections": 15,
+  "sections": [
+    "2 Theoretical Framing and Related Work",
+    "2 Theoretical Framing and Related Work > 3 Research Questions, Current Progress, and Resources",
+    "2 Theoretical Framing and Related Work > 4 Dissertation Plan",
+    "2 Theoretical Framing and Related Work > 4 Dissertation Plan > 4.1 Study I: Build an Interference-Aware Resource and Diagnostic Layer",
+    "2 Theoretical Framing and Related Work > 4 Dissertation Plan > 4.2 Study II: Establish Strong Baselines and Experimental Controls",
+    "2 Theoretical Framing and Related Work > 4 Dissertation Plan > 4.3 Study III: Controlled Sharing, Retention-Aware Adaptation, and Boundary Estimation",
+    "2 Theoretical Framing and Related Work > 4 Dissertation Plan > 4.4 Optional Extension: Quality-Gated Data Expansion",
+    "2 Theoretical Framing and Related Work > 5 Evaluation Plan",
+    "2 Theoretical Framing and Related Work > 5 Evaluation Plan > 6 Expected Contributions, Ethics, and Feasibility",
+    "7 Conclusion",
+    "7 Conclusion > Limitations",
+    "Abstract",
+    "Abstract > 1 Introduction",
+    "Acknowledgement",
+    "Thesis Proposal: Diagnosing and Mitigating Semantic Interference in Script-Sharing Low-Resource Language Models: A Case Study on Square Bai Script"
+  ]
+}

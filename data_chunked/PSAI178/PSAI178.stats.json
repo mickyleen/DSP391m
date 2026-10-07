@@ -1,0 +1,32 @@
+{
+  "doc_id": "PSAI178",
+  "num_chunks": 18,
+  "total_tokens": 3872,
+  "avg_tokens": 215.11,
+  "min_tokens": 24,
+  "max_tokens": 425,
+  "chunks_by_type": {
+    "table_row": 2,
+    "section": 16
+  },
+  "num_sections": 17,
+  "sections": [
+    "About the project",
+    "About the project > 1. Revamping the uploader dashboard with analytics in focus",
+    "About the project > 1. Revamping the uploader dashboard with analytics in focus > 2. Command Line Client for Rest API",
+    "About the project > 3. Improve on the software internalization (i18n)",
+    "About the project > 3. Improve on the software internalization (i18n) > 4. Block Storage Support",
+    "About the project > 3. Improve on the software internalization (i18n) > 5. Implement remote encoding services",
+    "About the project > 6. Improvements to System Notifications",
+    "About the project > 7. Create an admin dashboard for handling all the custom settings for hosted CMS instance",
+    "Google Summer of Code 2021 MediaCMS - modern, fully featured video and media CMS GFOSS - Open Technology Alliance April 2021",
+    "Personal/Open Source Projects",
+    "Schedule of Deliverables",
+    "Schedule of Deliverables > Availability Schedule",
+    "Why GFOSS",
+    "Why GFOSS > ❖ Addition of testing modules",
+    "Why GFOSS > ❖ Automatic image releases to docker-hub",
+    "Why GFOSS > ❖ Improving the related media algorithm",
+    "Why Me"
+  ]
+}

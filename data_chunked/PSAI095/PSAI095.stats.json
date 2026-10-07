@@ -1,0 +1,41 @@
+{
+  "doc_id": "PSAI095",
+  "num_chunks": 73,
+  "total_tokens": 9552,
+  "avg_tokens": 130.85,
+  "min_tokens": 20,
+  "max_tokens": 508,
+  "chunks_by_type": {
+    "section": 28,
+    "table_row": 39,
+    "section_split": 6
+  },
+  "num_sections": 25,
+  "sections": [
+    "1 Introduction",
+    "1 Introduction > 2 Contributions",
+    "1 Introduction > 2.1 Semantic Stability as a Unifying Principle:",
+    "1 Introduction > 2.1 Semantic Stability as a Unifying Principle: > 2.2 A Semantically Grounded SUD–SDOH Corpus:",
+    "1 Introduction > 2.1 Semantic Stability as a Unifying Principle: > 2.3 Multi-LLM Assisted Annotation with Human Adjudication:",
+    "1 Introduction > 2.1 Semantic Stability as a Unifying Principle: > 2.3 Multi-LLM Assisted Annotation with Human Adjudication: > 2.4 Stability-Aware NER Evaluation under Paraphrasing:",
+    "1 Introduction > 2.1 Semantic Stability as a Unifying Principle: > 2.3 Multi-LLM Assisted Annotation with Human Adjudication: > 2.5 Evidence-Grounded Relation Extraction for Linguistic Claims:",
+    "1 Introduction > 2.1 Semantic Stability as a Unifying Principle: > 2.3 Multi-LLM Assisted Annotation with Human Adjudication: > 2.6 Benchmarking and Explainable Knowledge-Graph Reasoning:",
+    "1 Introduction > 3 Related Work > 3.1 Named Entity Recognition for SUD and SDOH",
+    "1 Introduction > 3 Related Work > 3.2 Relation Extraction and Structured Modeling of SUD–SDOH Interactions",
+    "1 Introduction > 3 Related Work > 3.3 Knowledge Graph Construction and Reasoning in Behavioral Health",
+    "1 Introduction > 4.1 Motivation",
+    "1 Introduction > 4.2 Dataset creation and Pre-processing",
+    "1 Introduction > 4.2 Dataset creation and Pre-processing > 4.3 Annotation Guidelines and Semantic Constraints",
+    "1 Introduction > 4.4 Multi-LLM Annotation Pipeline",
+    "1 Introduction > 4.5 Chain-of-Thought Reasoning",
+    "1 Introduction > 4.5 Chain-of-Thought Reasoning > 4.6 Human-in-the-Loop (HITL) Validation",
+    "1 Introduction > 4.5 Chain-of-Thought Reasoning > 4.7 Role of Semantic Stability Beyond Annotation",
+    "1 Introduction > 4.8 Knowledge Graph Construction",
+    "1 Introduction > 4.8 Knowledge Graph Construction > Extraction Accuracy:",
+    "1 Introduction > 4.8 Knowledge Graph Construction > Extraction Accuracy: > Social Determinants of Health (SDOH)",
+    "Conclusion",
+    "Conclusion > Limitations",
+    "Thesis Proposal: Stability-Aware, Evidence-Grounded Knowledge Graph for Substance Use Disorders and Social Determinants of Health",
+    "Thesis Proposal: Stability-Aware, Evidence-Grounded Knowledge Graph for Substance Use Disorders and Social Determinants of Health > Abstract"
+  ]
+}

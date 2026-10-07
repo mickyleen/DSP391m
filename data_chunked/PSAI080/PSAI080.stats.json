@@ -1,0 +1,35 @@
+{
+  "doc_id": "PSAI080",
+  "num_chunks": 49,
+  "total_tokens": 13286,
+  "avg_tokens": 271.14,
+  "min_tokens": 28,
+  "max_tokens": 511,
+  "chunks_by_type": {
+    "section": 11,
+    "section_split": 38
+  },
+  "num_sections": 20,
+  "sections": [
+    "1 Introduction",
+    "1 Introduction > 1.1 Research Questions",
+    "1 Introduction > 2.1 AD and MCI screening",
+    "1 Introduction > 2.1 AD and MCI screening > 2.2 Language-based detection of AD",
+    "1 Introduction > 2.3 Neuroimaging-based detection of AD",
+    "1 Introduction > 2.3 Neuroimaging-based detection of AD > 2.5 Digital Twins in Biomedical Research",
+    "1 Introduction > 2.3 Neuroimaging-based detection of AD > 3.1 Research Design",
+    "1 Introduction > 2.3 Neuroimaging-based detection of AD > 3.2 Data and Tools",
+    "1 Introduction > 2.3 Neuroimaging-based detection of AD > <span id=\"page-2-0\"></span>2.4 LMs as Cognitive Models",
+    "1 Introduction > 3.3 Implementation Plan > 3.3.1 Cognitive and Linguistic Assessment Module",
+    "1 Introduction > 3.3 Implementation Plan > 3.3.2 Brain score computation and normative modeling",
+    "1 Introduction > 3.3.3 Model alteration approaches",
+    "1 Introduction > 3.3.3 Model alteration approaches > 3.3.4 Detection pipeline",
+    "1 Introduction > 3.3.3 Model alteration approaches > 3.3.5 Personalized AD monitoring",
+    "1 Introduction > 4 Conclusion",
+    "Acknowledgments",
+    "Limitations",
+    "References",
+    "Thesis proposal: COGNILENS: Analyzing Cognitive Decline in Language Models for Alzheimer's Monitoring",
+    "Thesis proposal: COGNILENS: Analyzing Cognitive Decline in Language Models for Alzheimer's Monitoring > Abstract"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "doc_id": "PSAI235",
+  "num_chunks": 53,
+  "total_tokens": 5348,
+  "avg_tokens": 100.91,
+  "min_tokens": 20,
+  "max_tokens": 489,
+  "chunks_by_type": {
+    "section": 16,
+    "section_split": 10,
+    "table_row": 27
+  },
+  "num_sections": 19,
+  "sections": [
+    "ADDITIONAL INFORMATION :HEAVY_PLUS_SIGN:",
+    "DEVELOPMENT ROADMAP :NUT_AND_BOLT: > MILESTONE 1 — BASIC FUNCTIONALITY",
+    "DEVELOPMENT ROADMAP :NUT_AND_BOLT: > OVERVIEW",
+    "DEVELOPMENT STATUS :OPEN_BOOK:",
+    "FUTURE PLANS",
+    "LEGAL STRUCTURE",
+    "LEGAL STRUCTURE > ADVISORS",
+    "LEGAL STRUCTURE > TEAM CODE REPOS",
+    "LEGAL STRUCTURE > TEAM CODE REPOS > TEAM GITHUB PROFILES",
+    "LEGAL STRUCTURE > TEAM CODE REPOS > TEAM LINKEDIN PROFILES",
+    "MILESTONE 2 — ADDITIONAL FEATURES",
+    "MILESTONE 3 — WEB APPS INTEGRATIONS + ARTICLE",
+    "NFT AS AN ACCOUNT (NFTAA) > ECOSYSTEM FIT",
+    "NFT AS AN ACCOUNT (NFTAA) > OVERVIEW",
+    "NFT AS AN ACCOUNT (NFTAA) > PROJECT DETAILS > Business Overview",
+    "REFERRAL PROGRAM :MONEYBAG:",
+    "TEAM",
+    "TEAM > CONTACT",
+    "TEAM > TEAM MEMBERS"
+  ]
+}

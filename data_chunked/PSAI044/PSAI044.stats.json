@@ -1,0 +1,35 @@
+{
+  "doc_id": "PSAI044",
+  "num_chunks": 44,
+  "total_tokens": 12716,
+  "avg_tokens": 289.0,
+  "min_tokens": 64,
+  "max_tokens": 511,
+  "chunks_by_type": {
+    "section": 11,
+    "section_split": 33
+  },
+  "num_sections": 20,
+  "sections": [
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 1 Introduction",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 1.1 Example of Grounded Feedback: ANIMATE",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 1.2 Another Example of Grounded Feedback: Excel Tutor",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 1.3 Defining Grounded Feedback",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 1.3 Defining Grounded Feedback > 1.4 Initial Fraction Addition Tutor Design",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 1.5 Students' Prior Misconceptions Prevented Grounding",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 2 Proposed Experiment",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 2.1 Four-Condition Ablation Experiment",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 2.1 Four-Condition Ablation Experiment > Condition 1: Grounded Feedback – No Ablation",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 2.1 Four-Condition Ablation Experiment > Condition 2: Virtual Manipulatives – Ablation of input mode (feature 1)",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 2.1 Four-Condition Ablation Experiment > Condition 3: Correctness Feedback – Ablation of second representation (feature 2)",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 2.1 Four-Condition Ablation Experiment > Condition 4: Grounded plus Correctness – Examination of self-evaluation (feature 3)",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 2.2 Tutor Design and Initial Pilot Studies",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 2.3 Opposite-Conditions School Pilot",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 2.3 Opposite-Conditions School Pilot > 6) Delayed posttest (2-6 weeks after the intervention): Fraction Equivalence and Fraction Addition",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 2.4 Running the Four-Condition Ablation Experiment",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 2.5 Contributions of the Proposed Work",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 3 Timeline",
+    "Thesis Proposal: Toward Sense Making with Grounded Feedback Eliane Stampfer Wiese > 4 References"
+  ]
+}

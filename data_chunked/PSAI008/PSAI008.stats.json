@@ -1,0 +1,22 @@
+{
+  "doc_id": "PSAI008",
+  "num_chunks": 9,
+  "total_tokens": 1008,
+  "avg_tokens": 112.0,
+  "min_tokens": 20,
+  "max_tokens": 486,
+  "chunks_by_type": {
+    "section_split": 3,
+    "section": 6
+  },
+  "num_sections": 7,
+  "sections": [
+    "Project Description",
+    "Project Description > Development Roadmap",
+    "Project Description > Maintenance and Upgrade Plans",
+    "Project Description > Total Budget Requested",
+    "Team > Relevant Experience",
+    "Team > Team Members",
+    "Team > Team code repositories"
+  ]
+}

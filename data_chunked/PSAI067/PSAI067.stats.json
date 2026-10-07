@@ -1,0 +1,26 @@
+{
+  "doc_id": "PSAI067",
+  "num_chunks": 22,
+  "total_tokens": 1491,
+  "avg_tokens": 67.77,
+  "min_tokens": 20,
+  "max_tokens": 361,
+  "chunks_by_type": {
+    "section": 11,
+    "table_row": 11
+  },
+  "num_sections": 11,
+  "sections": [
+    "",
+    "F1 - DeepCue",
+    "F1 - DeepCue > Problem Areas Solution",
+    "Solution Approach - Block Diagram of Hardware + Software Interaction",
+    "Solution Approach - Computer Vision",
+    "Solution Approach - Physics Simulation",
+    "Solution Approach - Physics Simulation > Communication:",
+    "Solution Approach - Physics Simulation > Peripheral Hardware:",
+    "Testing, Verification, and Metrics",
+    "Use Case Requirements",
+    "What are the key technical challenges to meeting these requirements?"
+  ]
+}

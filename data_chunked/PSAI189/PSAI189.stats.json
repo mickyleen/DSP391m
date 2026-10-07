@@ -1,0 +1,24 @@
+{
+  "doc_id": "PSAI189",
+  "num_chunks": 38,
+  "total_tokens": 3086,
+  "avg_tokens": 81.21,
+  "min_tokens": 23,
+  "max_tokens": 487,
+  "chunks_by_type": {
+    "section": 5,
+    "section_split": 7,
+    "table_row": 26
+  },
+  "num_sections": 8,
+  "sections": [
+    "Academic/Technical background",
+    "Introduction",
+    "The Proposal > Goal",
+    "The Proposal > Hardware",
+    "The Proposal > The Plan",
+    "The Proposal > The timeline",
+    "The Proposal > Warm up Tasks",
+    "Why did you apply to libcamera? What looked interesting/exciting?"
+  ]
+}

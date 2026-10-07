@@ -1,0 +1,36 @@
+{
+  "doc_id": "PSAI134",
+  "num_chunks": 57,
+  "total_tokens": 5158,
+  "avg_tokens": 90.49,
+  "min_tokens": 20,
+  "max_tokens": 508,
+  "chunks_by_type": {
+    "section": 24,
+    "table_row": 26,
+    "section_split": 7
+  },
+  "num_sections": 20,
+  "sections": [
+    "Support importing Excel and JSON files",
+    "Support importing Excel and JSON files > API Spec:",
+    "Support importing Excel and JSON files > About Myself:",
+    "Support importing Excel and JSON files > Architectural Problems:",
+    "Support importing Excel and JSON files > Education:",
+    "Support importing Excel and JSON files > Feature Description:",
+    "Support importing Excel and JSON files > Other Commitments:",
+    "Support importing Excel and JSON files > Other Commitments: > Contributions to Mathesar:",
+    "Support importing Excel and JSON files > Other Commitments: > Thank You, Mathesar:",
+    "Support importing Excel and JSON files > Project Length:",
+    "Support importing Excel and JSON files > Questionnaire: > 1. Why are you interested in working on Mathesar?",
+    "Support importing Excel and JSON files > Questionnaire: > 2. Why are you interested in working on this project idea?",
+    "Support importing Excel and JSON files > Questionnaire: > 4. Do you have any other commitments during the program period? Provide dates, such as holidays, when you will not be available.",
+    "Support importing Excel and JSON files > Questionnaire: > 5. If your native language is not English, are you comfortable working closely with a mentor in English?",
+    "Support importing Excel and JSON files > Questionnaire: > 7. Are you interested in contributing to Mathesar after the program is complete?",
+    "Support importing Excel and JSON files > Research and References:",
+    "Support importing Excel and JSON files > Skills:",
+    "Support importing Excel and JSON files > Timeline and Deliverables:",
+    "Support importing Excel and JSON files > Type inference:",
+    "Support importing Excel and JSON files > Why I might be a Good Contributor:"
+  ]
+}

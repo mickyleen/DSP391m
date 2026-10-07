@@ -1,0 +1,17 @@
+{
+  "doc_id": "PSAI066",
+  "num_chunks": 10,
+  "total_tokens": 2461,
+  "avg_tokens": 246.1,
+  "min_tokens": 64,
+  "max_tokens": 509,
+  "chunks_by_type": {
+    "section_split": 10
+  },
+  "num_sections": 3,
+  "sections": [
+    "1 Proposal guidelines",
+    "1 Proposal guidelines > 2 Project ideas",
+    "1 Proposal guidelines > References"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "doc_id": "PSAI225",
+  "num_chunks": 58,
+  "total_tokens": 3570,
+  "avg_tokens": 61.55,
+  "min_tokens": 20,
+  "max_tokens": 401,
+  "chunks_by_type": {
+    "section": 22,
+    "table_row": 36
+  },
+  "num_sections": 21,
+  "sections": [
+    "ink! Analyzer > Additional Information :heavy_plus_sign:",
+    "ink! Analyzer > Development Roadmap :nut_and_bolt: > Milestone 1 — Semantic Analyzer: Setup and Diagnostics",
+    "ink! Analyzer > Development Roadmap :nut_and_bolt: > Milestone 3 — Language Server",
+    "ink! Analyzer > Development Roadmap :nut_and_bolt: > Milestone 4 — Visual Studio Code Extension",
+    "ink! Analyzer > Development Roadmap :nut_and_bolt: > Overview",
+    "ink! Analyzer > Development Status :open_book:",
+    "ink! Analyzer > Future Plans",
+    "ink! Analyzer > Project Overview :page_facing_up: > 2. Language Server",
+    "ink! Analyzer > Project Overview :page_facing_up: > 3. Extension/Plugin/Integrations for IDE, Code Editor or Development Tool",
+    "ink! Analyzer > Project Overview :page_facing_up: > Ecosystem Fit",
+    "ink! Analyzer > Project Overview :page_facing_up: > Legal Structure",
+    "ink! Analyzer > Project Overview :page_facing_up: > Objective",
+    "ink! Analyzer > Project Overview :page_facing_up: > Observation",
+    "ink! Analyzer > Project Overview :page_facing_up: > Overview",
+    "ink! Analyzer > Project Overview :page_facing_up: > Problem",
+    "ink! Analyzer > Project Overview :page_facing_up: > Project Details",
+    "ink! Analyzer > Project Overview :page_facing_up: > Solution",
+    "ink! Analyzer > Project Overview :page_facing_up: > Team Code Repos",
+    "ink! Analyzer > Project Overview :page_facing_up: > Team LinkedIn Profiles (if available)",
+    "ink! Analyzer > Project Overview :page_facing_up: > Team's experience",
+    "ink! Analyzer > Project Overview :page_facing_up: > Technology Stack"
+  ]
+}

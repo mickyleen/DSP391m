@@ -1,0 +1,23 @@
+{
+  "doc_id": "PSAI122",
+  "num_chunks": 9,
+  "total_tokens": 732,
+  "avg_tokens": 81.33,
+  "min_tokens": 29,
+  "max_tokens": 226,
+  "chunks_by_type": {
+    "section": 9
+  },
+  "num_sections": 9,
+  "sections": [
+    "Additional Information",
+    "Project Description",
+    "Project Description > Deliverables",
+    "Project Description > Development Roadmap",
+    "Project Description > Relevant Experience",
+    "Project Description > Team > Team Members",
+    "Project Description > Team code repositories",
+    "Project Description > Total Budget Requested",
+    "RFP Proposal: Filecoin <> Chainlink DeFi Data - Linkstorage"
+  ]
+}

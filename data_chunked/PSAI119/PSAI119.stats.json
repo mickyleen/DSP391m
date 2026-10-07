@@ -1,0 +1,28 @@
+{
+  "doc_id": "PSAI119",
+  "num_chunks": 18,
+  "total_tokens": 911,
+  "avg_tokens": 50.61,
+  "min_tokens": 21,
+  "max_tokens": 149,
+  "chunks_by_type": {
+    "section": 13,
+    "table_row": 5
+  },
+  "num_sections": 13,
+  "sections": [
+    "Additional Information",
+    "Development Roadmap",
+    "Development Roadmap > Milestone 2: Implement API and Blockchain Operating System",
+    "Development Roadmap > Milestone 3: Implement Mobile app",
+    "Maintenance and Upgrade Plans",
+    "Project Description",
+    "Project Description > Deliverables",
+    "Project Description > Value",
+    "Project Description > What are the benefits to getting this right?",
+    "Project Description > What are the risks if you don't get it right?",
+    "Project Description > What are the risks if you don't get it right? > What are the risks that will make executing on this project difficult?",
+    "Team Website > Relevant Experience",
+    "Total Budget Requested"
+  ]
+}

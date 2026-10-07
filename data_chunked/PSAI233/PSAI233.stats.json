@@ -1,0 +1,29 @@
+{
+  "doc_id": "PSAI233",
+  "num_chunks": 30,
+  "total_tokens": 2425,
+  "avg_tokens": 80.83,
+  "min_tokens": 20,
+  "max_tokens": 389,
+  "chunks_by_type": {
+    "section_split": 3,
+    "section": 13,
+    "table_row": 14
+  },
+  "num_sections": 13,
+  "sections": [
+    "Additional Information :heavy_plus_sign:",
+    "Development Roadmap :nut_and_bolt: > Future Plans",
+    "Development Roadmap :nut_and_bolt: > Milestone 1 — An implementation in Sage",
+    "Development Roadmap :nut_and_bolt: > Milestone 2 — A non-constant-time implementation in Rust in the case of the BLS12-381 curve",
+    "Development Roadmap :nut_and_bolt: > Overview",
+    "Implementation of the new hash function to BLS12 curves > Project Overview :page_facing_up: > Overview",
+    "Implementation of the new hash function to BLS12 curves > Project Overview :page_facing_up: > Project Details",
+    "Team :busts_in_silhouette: > Contact",
+    "Team :busts_in_silhouette: > Legal Structure",
+    "Team :busts_in_silhouette: > Legal Structure > Team's experience",
+    "Team :busts_in_silhouette: > Team Code Repos",
+    "Team :busts_in_silhouette: > Team LinkedIn Profiles (if available)",
+    "Team :busts_in_silhouette: > Team members"
+  ]
+}

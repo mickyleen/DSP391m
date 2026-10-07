@@ -1,0 +1,255 @@
+[
+  {
+    "chunk_id": "PSAI017-C0000",
+    "doc_id": "PSAI017",
+    "chunk_index": 0,
+    "section": "Project Description",
+    "heading_path": [
+      "Project Description"
+    ],
+    "block_type": "section",
+    "token_count": 295,
+    "hash": "dc4456168fdf4c23",
+    "text": "# Project Description\n\nData labeling or annotation is the process of adding metadata to a dataset. This metadata usually takes the form of tags, which can be added to any type of data, including text, images, and video. Adding comprehensive and consistent tags is a key part of developing a training dataset for machine learning. Deep learning data annotation is the next 100Billion dollar market, it is a pretty mature market in China and india. Machine learning giants like AWS and other companies hired lots of people to annotate the dataset from clients but they cannot guarantee the dataset delivered to the client is unique and non-transferable to other clients without permission.\n\nWith our solution we can forge the dataset to NFT and save to filecoin network to make the dataset unique, permission based transferable and profit shared by the original author.\n\nIPFS enable a low cost transmission of dataset cross continent NFT makes sure the original dataset owner has the right to choose how many copies to sell and sell to which Decentralized ID owner so he can share the profit from usage. The NFT attribute is also a certificate of the owner's quality of service and brand. Filecoin makes the important annotated dataset saved safely on the network, it also gives the owner the choice to discontinue the storage after the contract expires. Integration with our business partner FilSwan, we can future move the dataset close to the computing resource required, saving both bandwidth and cost as a turnkey solution for machine learning developers."
+  },
+  {
+    "chunk_id": "PSAI017-C0001",
+    "doc_id": "PSAI017",
+    "chunk_index": 1,
+    "section": "Value",
+    "heading_path": [
+      "Project Description",
+      "Value"
+    ],
+    "block_type": "section",
+    "token_count": 197,
+    "hash": "62bc46ce6a5e40ab",
+    "text": "# Project Description > Value\n\nWith increasing need and the importance of machine learning in the future industry, data ownership and secure transmission is the key feature of the machine learning industry. It has unique attributes such as annotation demand for supervised learning. Moreover, dataset also needs encryption, and normally dataset size is enormous, which means cross continent data transmission is extremely slow, data computation and storage have to be close to each other geographically. Hence, we cannot attract enough industry users if we do not solve those essential problems above. Solving these would be a great enterprise level example to attract AI and big data companies to utilise Filecoin networks and benefit the filecoin ecosystem.\n\nUser can get data from the website User annotated the dataset User can mint Dataset to NFT with permitted number of keys User can share the NFT via IPFS and backup to Filecoin network. Developer received the NFT and the keys for decryption (optional) Developer can use the computing resource on Filecoin network for machine learning"
+  },
+  {
+    "chunk_id": "PSAI017-C0002",
+    "doc_id": "PSAI017",
+    "chunk_index": 2,
+    "section": "Development Roadmap",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap"
+    ],
+    "block_type": "table_row",
+    "token_count": 41,
+    "hash": "fffab14c4dd96969",
+    "text": "No. Milestone Funding Description Project functionality 1 design and NA scope definition. Project user 2 interface NA design Infrastructure architecture 3 design and NA implementation plan readiness. 4 Command line: tool coding"
+  },
+  {
+    "chunk_id": "PSAI017-C0003",
+    "doc_id": "PSAI017",
+    "chunk_index": 3,
+    "section": "Development Roadmap",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap"
+    ],
+    "block_type": "table_row",
+    "token_count": 62,
+    "hash": "c00b94d03d92abaa",
+    "text": "No. Milestone Funding Description Project functionality 1 design and NA scope definition. Project user 2 interface NA design Infrastructure architecture 3 design and NA implementation plan readiness. 4 Command line: 10,000 | 2 1 1: 4 | Estimated Timeframe weeks weeks weeks: weeks"
+  },
+  {
+    "chunk_id": "PSAI017-C0004",
+    "doc_id": "PSAI017",
+    "chunk_index": 4,
+    "section": "Development Roadmap",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap"
+    ],
+    "block_type": "table_row",
+    "token_count": 43,
+    "hash": "93aa0c0bcd07d6ae",
+    "text": "No. Milestone Funding Description Project functionality 1 design and NA scope definition. Project user 2 interface NA design Infrastructure architecture 3 design and NA implementation plan readiness. 4 Command line: 5 User interface"
+  },
+  {
+    "chunk_id": "PSAI017-C0005",
+    "doc_id": "PSAI017",
+    "chunk_index": 5,
+    "section": "Development Roadmap",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap"
+    ],
+    "block_type": "table_row",
+    "token_count": 63,
+    "hash": "c7818d96142f6b83",
+    "text": "No. Milestone Funding Description Project functionality 1 design and NA scope definition. Project user 2 interface NA design Infrastructure architecture 3 design and NA implementation plan readiness. 4 Command line: 10,000 coding | 2 1 1: 3 | Estimated Timeframe weeks weeks weeks: weeks"
+  },
+  {
+    "chunk_id": "PSAI017-C0006",
+    "doc_id": "PSAI017",
+    "chunk_index": 6,
+    "section": "Development Roadmap",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap"
+    ],
+    "block_type": "table_row",
+    "token_count": 43,
+    "hash": "89d7f1f4f8021134",
+    "text": "No. Milestone Funding Description Project functionality 1 design and NA scope definition. Project user 2 interface NA design Infrastructure architecture 3 design and NA implementation plan readiness. 4 Command line: 7 Document and"
+  },
+  {
+    "chunk_id": "PSAI017-C0007",
+    "doc_id": "PSAI017",
+    "chunk_index": 7,
+    "section": "Development Roadmap",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap"
+    ],
+    "block_type": "table_row",
+    "token_count": 60,
+    "hash": "f3d99dfcdddafc1d",
+    "text": "No. Milestone Funding Description Project functionality 1 design and NA scope definition. Project user 2 interface NA design Infrastructure architecture 3 design and NA implementation plan readiness. 4 Command line: tutorial TBD | 2 1 1: 1 | Estimated Timeframe weeks weeks weeks: weeks"
+  },
+  {
+    "chunk_id": "PSAI017-C0008",
+    "doc_id": "PSAI017",
+    "chunk_index": 8,
+    "section": "Development Roadmap",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap"
+    ],
+    "block_type": "table_row",
+    "token_count": 41,
+    "hash": "26d9c881fd2698f8",
+    "text": "No. Milestone Funding Description Project functionality 1 design and NA scope definition. Project user 2 interface NA design Infrastructure architecture 3 design and NA implementation plan readiness. 4 Command line: Product release"
+  },
+  {
+    "chunk_id": "PSAI017-C0009",
+    "doc_id": "PSAI017",
+    "chunk_index": 9,
+    "section": "Development Roadmap",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap"
+    ],
+    "block_type": "table_row",
+    "token_count": 41,
+    "hash": "179561e9fa880731",
+    "text": "No. Milestone Funding Description Project functionality 1 design and NA scope definition. Project user 2 interface NA design Infrastructure architecture 3 design and NA implementation plan readiness. 4 Command line: go marketing"
+  },
+  {
+    "chunk_id": "PSAI017-C0010",
+    "doc_id": "PSAI017",
+    "chunk_index": 10,
+    "section": "Development Roadmap",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap"
+    ],
+    "block_type": "table_row",
+    "token_count": 62,
+    "hash": "220c995a2d5dc667",
+    "text": "No. Milestone Funding Description Project functionality 1 design and NA scope definition. Project user 2 interface NA design Infrastructure architecture 3 design and NA implementation plan readiness. 4 Command line: 10,000 | 2 1 1: 1 | Estimated Timeframe weeks weeks weeks: weeks"
+  },
+  {
+    "chunk_id": "PSAI017-C0011",
+    "doc_id": "PSAI017",
+    "chunk_index": 11,
+    "section": "Total Budget Requested",
+    "heading_path": [
+      "Project Description",
+      "Total Budget Requested"
+    ],
+    "block_type": "section",
+    "token_count": 23,
+    "hash": "67eeb9c32ccea760",
+    "text": "# Project Description > Total Budget Requested\n\n\\$30000 for total. Please see the development roadmap for details."
+  },
+  {
+    "chunk_id": "PSAI017-C0012",
+    "doc_id": "PSAI017",
+    "chunk_index": 12,
+    "section": "Maintenance and Upgrade Plans",
+    "heading_path": [
+      "Project Description",
+      "Maintenance and Upgrade Plans"
+    ],
+    "block_type": "section",
+    "token_count": 26,
+    "hash": "f93d6b58e5367993",
+    "text": "# Project Description > Maintenance and Upgrade Plans\n\nWill add more data transmission. Will continuously take comments from the community and make improvements."
+  },
+  {
+    "chunk_id": "PSAI017-C0013",
+    "doc_id": "PSAI017",
+    "chunk_index": 13,
+    "section": "Team Members",
+    "heading_path": [
+      "Team",
+      "Team Members"
+    ],
+    "block_type": "section",
+    "token_count": 26,
+    "hash": "6606211ffff43f34",
+    "text": "# Team > Team Members\n\nZhenglin Xiong Shaun Li Pingao Wang Charles Cao (FilSwan support)"
+  },
+  {
+    "chunk_id": "PSAI017-C0014",
+    "doc_id": "PSAI017",
+    "chunk_index": 14,
+    "section": "Team Member LinkedIn Profiles",
+    "heading_path": [
+      "Team",
+      "Team Member LinkedIn Profiles"
+    ],
+    "block_type": "section",
+    "token_count": 63,
+    "hash": "6cd84eea098da493",
+    "text": "# Team > Team Member LinkedIn Profiles\n\nhttps://www.linkedin.com/in/zhenglinxiong/ https://www.linkedin.com/in/shaunlipy/ https://www.linkedin.com/in/pingao-wang/ https://www.linkedin.com/in/charles-cao-09a79526/"
+  },
+  {
+    "chunk_id": "PSAI017-C0015",
+    "doc_id": "PSAI017",
+    "chunk_index": 15,
+    "section": "Relevant Experience",
+    "heading_path": [
+      "Team",
+      "Team Member LinkedIn Profiles",
+      "Relevant Experience"
+    ],
+    "block_type": "section",
+    "token_count": 60,
+    "hash": "9e3504480359311a",
+    "text": "# Team > Team Member LinkedIn Profiles > Relevant Experience\n\nTuninsight AI is a Montreal based Artificial Intelligence solution provider that develops Intelligent Medical Diagnostic technologies and AI-powered Industrial Visual Inspection and Action Detection products based on massive data. Our AI developers have many years of experience in deep learning research and development."
+  },
+  {
+    "chunk_id": "PSAI017-C0016",
+    "doc_id": "PSAI017",
+    "chunk_index": 16,
+    "section": "Team code repositories",
+    "heading_path": [
+      "Team",
+      "Team Member LinkedIn Profiles",
+      "Relevant Experience",
+      "Team code repositories"
+    ],
+    "block_type": "section",
+    "token_count": 45,
+    "hash": "3fcdf52c375b164b",
+    "text": "# Team > Team Member LinkedIn Profiles > Relevant Experience > Team code repositories\n\nhttps://github.com/pingaowang/detectron2.git https://github.com/pingaowang/yolo2-pytorch.git"
+  },
+  {
+    "chunk_id": "PSAI017-C0017",
+    "doc_id": "PSAI017",
+    "chunk_index": 17,
+    "section": "Additional Information",
+    "heading_path": [
+      "Additional Information"
+    ],
+    "block_type": "section",
+    "token_count": 62,
+    "hash": "5dd297b83e7fa425",
+    "text": "# Additional Information\n\nTuninsight AI has won 1st place of the 2018 Create @ Alibaba Cloud Startup Contest North America Final at Silicon Valley, award \\$50,000 from Alibaba Cloud. Tuninsight was invited to represent the Canadian delegation at the United Nations AI for Good Global Summit."
+  }
+]

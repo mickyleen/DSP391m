@@ -1,0 +1,35 @@
+{
+  "doc_id": "PSAI221",
+  "num_chunks": 55,
+  "total_tokens": 3831,
+  "avg_tokens": 69.65,
+  "min_tokens": 23,
+  "max_tokens": 481,
+  "chunks_by_type": {
+    "section": 17,
+    "section_split": 6,
+    "table_row": 32
+  },
+  "num_sections": 19,
+  "sections": [
+    "Deeper Chain > Development Roadmap :nut_and_bolt:",
+    "Deeper Chain > Development Roadmap :nut_and_bolt: > M1: Micropayments – 4 weeks",
+    "Deeper Chain > Future Plans",
+    "Deeper Chain > Have you applied for other grants so far?",
+    "Deeper Chain > Note to the grant approvers",
+    "Deeper Chain > Project Overview :page_facing_up: > Ecosystem Fit",
+    "Deeper Chain > Project Overview :page_facing_up: > Micropayment and credit update",
+    "Deeper Chain > Project Overview :page_facing_up: > Network topology of light nodes",
+    "Deeper Chain > Project Overview :page_facing_up: > Overview",
+    "Deeper Chain > Team :busts_in_silhouette: > Contact",
+    "Deeper Chain > Team :busts_in_silhouette: > Fei Yang",
+    "Deeper Chain > Team :busts_in_silhouette: > Hui Liu",
+    "Deeper Chain > Team :busts_in_silhouette: > Legal Structure",
+    "Deeper Chain > Team :busts_in_silhouette: > Team Code Repos",
+    "Deeper Chain > Team :busts_in_silhouette: > Team Website",
+    "Deeper Chain > Team :busts_in_silhouette: > Team members",
+    "Deeper Chain > Team :busts_in_silhouette: > Yang Liu",
+    "Deeper Chain > Team :busts_in_silhouette: > Zhiwu Liu",
+    "Deeper Chain > Team :busts_in_silhouette: > Zhuang Jin"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "doc_id": "PSAI105",
+  "num_chunks": 16,
+  "total_tokens": 1837,
+  "avg_tokens": 114.81,
+  "min_tokens": 23,
+  "max_tokens": 435,
+  "chunks_by_type": {
+    "section": 10,
+    "table_row": 6
+  },
+  "num_sections": 9,
+  "sections": [
+    "Additional Information",
+    "Project Description",
+    "Project Description > Deliverables",
+    "Project Description > Maintenance and Upgrade Plans",
+    "Project Description > Maintenance and Upgrade Plans > Team Members",
+    "Project Description > Relevant Experience",
+    "Project Description > Relevant Experience > Team code repositories",
+    "Project Description > Total Budget Requested",
+    "Project Description > Value"
+  ]
+}

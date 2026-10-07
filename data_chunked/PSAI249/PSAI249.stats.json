@@ -1,0 +1,33 @@
+{
+  "doc_id": "PSAI249",
+  "num_chunks": 46,
+  "total_tokens": 3749,
+  "avg_tokens": 81.5,
+  "min_tokens": 21,
+  "max_tokens": 494,
+  "chunks_by_type": {
+    "section": 17,
+    "section_split": 3,
+    "table_row": 26
+  },
+  "num_sections": 17,
+  "sections": [
+    "Additional Information :heavy_plus_sign:",
+    "Development Roadmap :nut_and_bolt: > Milestone 1 — Research phase, part 1",
+    "Development Roadmap :nut_and_bolt: > Milestone 3 — Development phase",
+    "Development Roadmap :nut_and_bolt: > Overview",
+    "Development Status :open_book:",
+    "Future Plans",
+    "Project Overview :page_facing_up:",
+    "Project Overview :page_facing_up: > Ecosystem Fit",
+    "Project Overview :page_facing_up: > Ecosystem Fit > Contact",
+    "Project Overview :page_facing_up: > Ecosystem Fit > Legal Structure",
+    "Project Overview :page_facing_up: > Ecosystem Fit > Team's experience",
+    "Project Overview :page_facing_up: > Overview",
+    "Project Overview :page_facing_up: > Project Details > Benchmarking program architecture",
+    "Project Overview :page_facing_up: > Project Details > Development phase",
+    "Project Overview :page_facing_up: > Project Details > Research phase",
+    "Project Overview :page_facing_up: > Team GitHub Profiles",
+    "Project Overview :page_facing_up: > Team LinkedIn Profiles"
+  ]
+}

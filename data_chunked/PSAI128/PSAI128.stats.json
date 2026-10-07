@@ -1,0 +1,42 @@
+{
+  "doc_id": "PSAI128",
+  "num_chunks": 38,
+  "total_tokens": 6632,
+  "avg_tokens": 174.53,
+  "min_tokens": 20,
+  "max_tokens": 461,
+  "chunks_by_type": {
+    "section": 22,
+    "section_split": 12,
+    "table_row": 4
+  },
+  "num_sections": 26,
+  "sections": [
+    "About Me",
+    "Benefits to the Ardupilot community",
+    "Contact Details",
+    "Current Scenario",
+    "DDS-RTPS Protocol",
+    "DDS-XRCE Protocol",
+    "DDS-XRCE Protocol > Flow diagram of DDS-XRCE protocol (source)",
+    "Experience with Ardupilot and related fields",
+    "Full Proposal Title > Abstract",
+    "Future Improvements/Add-Ons",
+    "Implementations",
+    "Implementations > Task 1 - Configuring the build system and the environment :",
+    "Is DDS a replacement for MAVLINK ?",
+    "Logistics",
+    "My Work So Far (Current Progress)",
+    "ROS1 vs ROS2",
+    "ROS2 Native Support for Ardupilot",
+    "References and other Useful Links",
+    "Task 2 - Setting up the Ardupilot XRCE-DDS client",
+    "Task 3 - Proper Integration into the Ardupilot Codebase",
+    "Task 4 - Writing Ardupilot ROS 2 applications",
+    "Time is no Bar",
+    "Timeline > Coding Period",
+    "Timeline > Community Bonding Period",
+    "Timeline > Pre GSoC Period",
+    "Using ros1_bridge for connecting with MAVROS"
+  ]
+}

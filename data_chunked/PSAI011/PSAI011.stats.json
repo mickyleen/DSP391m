@@ -1,0 +1,26 @@
+{
+  "doc_id": "PSAI011",
+  "num_chunks": 18,
+  "total_tokens": 1787,
+  "avg_tokens": 99.28,
+  "min_tokens": 20,
+  "max_tokens": 449,
+  "chunks_by_type": {
+    "section": 12,
+    "table_row": 6
+  },
+  "num_sections": 11,
+  "sections": [
+    "Additional Information",
+    "Project Description",
+    "Project Description > Deliverables",
+    "Project Description > Development Roadmap",
+    "Project Description > Development Roadmap > Total Budget Requested",
+    "Project Description > IPFSpace's deck link:",
+    "Project Description > Maintenance and Upgrade Plans",
+    "Project Description > Relevant Experience",
+    "Project Description > Solution:",
+    "Project Description > Team Members",
+    "Project Description > Team code repositories"
+  ]
+}

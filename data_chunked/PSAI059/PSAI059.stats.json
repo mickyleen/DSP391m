@@ -1,0 +1,36 @@
+{
+  "doc_id": "PSAI059",
+  "num_chunks": 81,
+  "total_tokens": 19863,
+  "avg_tokens": 245.22,
+  "min_tokens": 21,
+  "max_tokens": 511,
+  "chunks_by_type": {
+    "section": 8,
+    "table_row": 22,
+    "section_split": 51
+  },
+  "num_sections": 20,
+  "sections": [
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > <span id=\"page-13-0\"></span>3.4 Proposed Work: Supporting Other Formula Representations",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > <span id=\"page-15-0\"></span>4 Research Problem 2: Integrating Symmetry-breaking into Encoding",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > <span id=\"page-15-1\"></span>4.1 Proposed Work: Substitution Redundancy for Symmetry Breaking",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > <span id=\"page-15-1\"></span>4.1 Proposed Work: Substitution Redundancy for Symmetry Breaking > <span id=\"page-17-0\"></span>4.2 Proposed Work: Native Symmetry-breaking Reasoning",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > <span id=\"page-17-1\"></span>4.3 Proposed Work: Symmetry-breaking Proof Reconstruction",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > <span id=\"page-18-0\"></span>5 Research Problem 3: Verified End-to-end SAT Solving",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > <span id=\"page-19-0\"></span><sup>813</sup> 6 Conclusion",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > <span id=\"page-19-1\"></span><sup>830</sup> 7 Timeline",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > <span id=\"page-19-1\"></span><sup>830</sup> 7 Timeline > References",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > <span id=\"page-2-0\"></span>1 Introduction",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > <span id=\"page-3-0\"></span><sup>109</sup> 2 Background and Preliminaries",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > <span id=\"page-3-0\"></span><sup>109</sup> 2 Background and Preliminaries > <span id=\"page-4-0\"></span>2.1 SAT encodings",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > <span id=\"page-3-0\"></span><sup>109</sup> 2 Background and Preliminaries > <span id=\"page-5-0\"></span>2.2 SAT proof checking",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > <span id=\"page-6-0\"></span>3 Research Problem 1: Verifying Encodings",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > <span id=\"page-6-1\"></span>3.1 Completed Work: Verified Encodings in Trestle",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > <span id=\"page-6-1\"></span>3.1 Completed Work: Verified Encodings in Trestle > <span id=\"page-10-0\"></span>3.2 Inspiration from PySAT",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > <span id=\"page-6-1\"></span>3.1 Completed Work: Verified Encodings in Trestle > <span id=\"page-11-0\"></span>3.3 Proposed Work: Updating the Encoding Tooling",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > Abstract",
+    "Thesis Proposal: Building a Verified SAT Toolchain in Trestle > Contents"
+  ]
+}

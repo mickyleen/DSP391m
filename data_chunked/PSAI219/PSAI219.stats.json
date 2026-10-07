@@ -1,0 +1,29 @@
+{
+  "doc_id": "PSAI219",
+  "num_chunks": 53,
+  "total_tokens": 5064,
+  "avg_tokens": 95.55,
+  "min_tokens": 21,
+  "max_tokens": 475,
+  "chunks_by_type": {
+    "section_split": 12,
+    "section": 9,
+    "table_row": 32
+  },
+  "num_sections": 13,
+  "sections": [
+    "dairdrop > Development Status :open_book:",
+    "dairdrop > Development Status :open_book: > Milestone 2 — UI/UX design, web server (backend), and front-end development.",
+    "dairdrop > Future Plans",
+    "dairdrop > Project Overview :page_facing_up: > Ecosystem Fit",
+    "dairdrop > Project Overview :page_facing_up: > Overview",
+    "dairdrop > Project Overview :page_facing_up: > Project Details",
+    "dairdrop > Project Overview :page_facing_up: > case 1",
+    "dairdrop > Project Overview :page_facing_up: > case 2",
+    "dairdrop > Team :busts_in_silhouette: > Contact",
+    "dairdrop > Team :busts_in_silhouette: > Legal Structure",
+    "dairdrop > Team :busts_in_silhouette: > Team members",
+    "dairdrop > Team :busts_in_silhouette: > Team's experience",
+    "dairdrop > Team Code Repos"
+  ]
+}

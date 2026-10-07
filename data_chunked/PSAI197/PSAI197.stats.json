@@ -1,0 +1,26 @@
+{
+  "doc_id": "PSAI197",
+  "num_chunks": 33,
+  "total_tokens": 1901,
+  "avg_tokens": 57.61,
+  "min_tokens": 20,
+  "max_tokens": 309,
+  "chunks_by_type": {
+    "section": 13,
+    "table_row": 20
+  },
+  "num_sections": 11,
+  "sections": [
+    "Additional Information :heavy_plus_sign:",
+    "Future Plans",
+    "Project Overview :page_facing_up:",
+    "Project Overview :page_facing_up: > Ecosystem Fit",
+    "Project Overview :page_facing_up: > Overview",
+    "Project Overview :page_facing_up: > Technology and Languages",
+    "Team :busts_in_silhouette: > Team members",
+    "Technical Scope: > Milestone 1 Initial UI & Basic Functionality",
+    "Technical Scope: > Milestone 2 Advanced Flows and Improvements",
+    "Technical Scope: > Milestone3 Maintenance and improvements",
+    "Technical Scope: > Milestone3 Maintenance and improvements > Milestone 1 Initial UI & Basic Functionality"
+  ]
+}

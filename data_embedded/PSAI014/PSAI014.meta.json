@@ -1,0 +1,116 @@
+[
+  {
+    "chunk_id": "PSAI014-C0000",
+    "doc_id": "PSAI014",
+    "chunk_index": 0,
+    "section": "Project description",
+    "heading_path": [
+      "Project description"
+    ],
+    "block_type": "section",
+    "token_count": 235,
+    "hash": "c506aca475418c8d",
+    "text": "# Project description\n\nGlitter is an socialized RSS reader based on IPFS&Filecoin, it also provides digital wallet function. Users can post articles/microblog/images/videos on various topics. Users can also subscribe to Twitter/Youtube/Journals through Glitter without complicated switches. All contents on Glitter is provided on IPFS, Glitter will have users content been uploaded to Filecoin network, giving users a more secure and persistent service.\n\nIn this way, we are building a synchronized backup bridge between the traditional Internet and the decentralized network using RSS protocol. Even if the original site has been closed, the data of the posts will still be stored in our network in a distributed manner. We believe our platform will be the standard sync protocol of decentralized rss feeds. As more and more users participate, we will store more and more web content data in a distributed manner across the network. Our users will use Glitter RSS as their primary information acquisition and sharing platform.\n\nThe desktop version will be a offline workable RSS Client, and if the feed is unaccessable it will try fetch RSS feed via IPFS/Filecoin see if there is anyone storing the content already."
+  },
+  {
+    "chunk_id": "PSAI014-C0001",
+    "doc_id": "PSAI014",
+    "chunk_index": 1,
+    "section": "Value to the Filecoin ecosystem",
+    "heading_path": [
+      "Project description",
+      "Value to the Filecoin ecosystem"
+    ],
+    "block_type": "section",
+    "token_count": 129,
+    "hash": "7e1636a9e6c6fa9b",
+    "text": "# Project description > Value to the Filecoin ecosystem\n\nSince our goal is to synchronize content from the Internet to the IPFS/Filecoin network via the rss protocol, in this way we will create a backup of a large amount of Internet content in the Filecoin network. In the future, users will be able to access large amounts of Internet data directly through Glitter, while at the same time the Filecoin network will store a direct copy of existing centralized Internet data. And Glitter will be a platform that makes it easier for users to participate in IPFS&Filecoin, making the content creation on IPFS/Filecoin network much easier."
+  },
+  {
+    "chunk_id": "PSAI014-C0002",
+    "doc_id": "PSAI014",
+    "chunk_index": 2,
+    "section": "Deliverables",
+    "heading_path": [
+      "Project description",
+      "Deliverables"
+    ],
+    "block_type": "section",
+    "token_count": 20,
+    "hash": "785305daa4cf845a",
+    "text": "# Project description > Deliverables\n\nLinux + Mac + Linux version of Glitter with source code."
+  },
+  {
+    "chunk_id": "PSAI014-C0003",
+    "doc_id": "PSAI014",
+    "chunk_index": 3,
+    "section": "Milestone 2 - Linux/Mac/Windows version initial release - 1 Month",
+    "heading_path": [
+      "Project description",
+      "Milestone 1 - API&UI Design - 2 Weeks",
+      "Milestone 2 - Linux/Mac/Windows version initial release - 1 Month"
+    ],
+    "block_type": "section",
+    "token_count": 58,
+    "hash": "78c9f6d1a314a557",
+    "text": "# Project description > Milestone 1 - API&UI Design - 2 Weeks > Milestone 2 - Linux/Mac/Windows version initial release - 1 Month\n\nBase framework finished Subscribe any RSS feed Sync RSS feed via IPFS network All source code will be available on github"
+  },
+  {
+    "chunk_id": "PSAI014-C0004",
+    "doc_id": "PSAI014",
+    "chunk_index": 4,
+    "section": "Milestone 3 - Desktop version core functions update - 1 Month",
+    "heading_path": [
+      "Project description",
+      "Milestone 1 - API&UI Design - 2 Weeks",
+      "Milestone 3 - Desktop version core functions update - 1 Month"
+    ],
+    "block_type": "section",
+    "token_count": 76,
+    "hash": "64369637b005b46b",
+    "text": "# Project description > Milestone 1 - API&UI Design - 2 Weeks > Milestone 3 - Desktop version core functions update - 1 Month\n\nUsers can publish articles, microblog, images, videos and linkings Direct Message to Friends Comments, Repost, Upvote/Downvote and Favorites Search content on our network All source code will be available on github"
+  },
+  {
+    "chunk_id": "PSAI014-C0005",
+    "doc_id": "PSAI014",
+    "chunk_index": 5,
+    "section": "Total Budget Requested",
+    "heading_path": [
+      "Project description",
+      "Total Budget Requested"
+    ],
+    "block_type": "section",
+    "token_count": 53,
+    "hash": "f2afba22bf9aae7a",
+    "text": "# Project description > Total Budget Requested\n\nWe are asking for a \\$30000USD funding support from Filecoin Dev Grant.:\n- Linux version: \\$10000USD\n- Windows version: \\$10000USD\n- Mac version: \\$10000USD"
+  },
+  {
+    "chunk_id": "PSAI014-C0006",
+    "doc_id": "PSAI014",
+    "chunk_index": 6,
+    "section": "Maintenance and Upgrade Plans",
+    "heading_path": [
+      "Project description",
+      "Total Budget Requested",
+      "Maintenance and Upgrade Plans"
+    ],
+    "block_type": "section",
+    "token_count": 52,
+    "hash": "0f43ebb8223ee744",
+    "text": "# Project description > Total Budget Requested > Maintenance and Upgrade Plans\n\nAfter we launch, we will make a lot of changes based on users' feedback and Filecoin's upgrade. There will never be a final version, we will be a continuously updated product."
+  },
+  {
+    "chunk_id": "PSAI014-C0007",
+    "doc_id": "PSAI014",
+    "chunk_index": 7,
+    "section": "Team Members",
+    "heading_path": [
+      "Team",
+      "Team Members"
+    ],
+    "block_type": "section",
+    "token_count": 37,
+    "hash": "ea5a908e91f208b5",
+    "text": "# Team > Team Members\n\nChao Feng: Project Manager and Production Manager Ted Liao: Tech lead and backend developer Liang Fang: App&Web developer Xin Lu: UI Design"
+  }
+]

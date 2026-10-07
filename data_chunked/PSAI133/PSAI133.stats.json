@@ -1,0 +1,33 @@
+{
+  "doc_id": "PSAI133",
+  "num_chunks": 32,
+  "total_tokens": 2480,
+  "avg_tokens": 77.5,
+  "min_tokens": 20,
+  "max_tokens": 343,
+  "chunks_by_type": {
+    "section": 16,
+    "table_row": 16
+  },
+  "num_sections": 18,
+  "sections": [
+    "API Spec:",
+    "API Spec: > Questionnaire:",
+    "API Spec: > Timeline and Deliverables:",
+    "About Myself:",
+    "Add more summarization functions",
+    "Add more summarization functions > Feature Description:",
+    "Add more summarization functions > Synopsis:",
+    "Architectural Problems:",
+    "Education:",
+    "Project Implementation:",
+    "Project Implementation: > Postgres Implementation:",
+    "Project Implementation: > UX Design Problems:",
+    "Skills:",
+    "Skills: > Contributions to Mathesar:",
+    "Skills: > Experience:",
+    "Skills: > Other Commitments:",
+    "Skills: > Thank You, Mathesar:",
+    "Skills: > Why I might be a Good Contributor:"
+  ]
+}

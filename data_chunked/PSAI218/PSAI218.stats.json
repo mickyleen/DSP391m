@@ -1,0 +1,43 @@
+{
+  "doc_id": "PSAI218",
+  "num_chunks": 101,
+  "total_tokens": 6793,
+  "avg_tokens": 67.26,
+  "min_tokens": 20,
+  "max_tokens": 511,
+  "chunks_by_type": {
+    "section": 26,
+    "section_split": 7,
+    "table_row": 68
+  },
+  "num_sections": 27,
+  "sections": [
+    "Additional Information :heavy_plus_sign:",
+    "Common Deliverables",
+    "Development Roadmap :nut_and_bolt: > Overview",
+    "Ecosystem Fit",
+    "Future Plans",
+    "Milestone 1 — Block Seals",
+    "Milestone 1 — Block Seals > Milestone 2 — Encryption to Future Slots",
+    "Milestone 3: Putting it all together - Sealed-Bid NFT Auction PoC",
+    "Project Overview :page_facing_up:",
+    "Project Overview :page_facing_up: > High Level Architecture",
+    "Project Overview :page_facing_up: > Overview",
+    "Project Overview :page_facing_up: > Project Details",
+    "Project Overview :page_facing_up: > Project Details > Background",
+    "Project Overview :page_facing_up: > Project Details > Decryption",
+    "Project Overview :page_facing_up: > Project Details > Encryption-to-future-slots (EtF)",
+    "Project Overview :page_facing_up: > Project Details > Genesis/Setup",
+    "Project Overview :page_facing_up: > Project Details > Implementation",
+    "Project Overview :page_facing_up: > Project Details > Implementation Details",
+    "Project Overview :page_facing_up: > Project Details > Notation and Terminology",
+    "Project Overview :page_facing_up: > Project Details > Slot Scheduling",
+    "Project Overview :page_facing_up: > Project Details > What this is not",
+    "Team :busts_in_silhouette:",
+    "Team :busts_in_silhouette: > Carlos Montoya",
+    "Team :busts_in_silhouette: > Legal Structure",
+    "Team :busts_in_silhouette: > Team Code Repos",
+    "Team :busts_in_silhouette: > Team's experience",
+    "Team :busts_in_silhouette: > Tony Riemer"
+  ]
+}

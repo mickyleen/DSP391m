@@ -1,0 +1,84 @@
+[
+  {
+    "chunk_id": "PSAI025-C0000",
+    "doc_id": "PSAI025",
+    "chunk_index": 0,
+    "section": "Project Description",
+    "heading_path": [
+      "Project Description"
+    ],
+    "block_type": "section",
+    "token_count": 286,
+    "hash": "4d46bf47cf7b457f",
+    "text": "# Project Description\n\nLate last year, Wrapped Filecoin (WFIL) launched on Ethereum, via a joint collaboration between Anchorage and Tokensoft. WFIL is an ERC20 standard token which represents a 1:1 value of WFIL to Filecoin (FIL) held in custody by Anchorage, a US-based trust. WFIL allows for FIL to be used in traditional DeFi applications such as Uniswap, Balancer and Curve. FIL holders often would like to be able to wrap their Filecoin so that they can participate in yield farming opportunities that exist in Ethereum and on layer two networks like Polygon.\n\nWhile a centralized model is good for some, it doesn't service the entire marketplace. Some FIL holders would like a trustless way to easily get into WFIL. Since that isn't possible at the moment, FIL holders that want to wrap and put their holdings to work to generate additional yield, are unable to do so. This is a missed opportunity; some FIL holders end up selling their FIL for a stablecoin, then subsequently using it to purchase WFIL directly on a DEX on Ethereum, like Sushi or Uniswap.\n\nTo create a solution for this, we're applying for a grant to build a trustless / open source and bidirectional bridge from FIL to WFIL to enable many of the users who are requesting to do so, a way to easily move back and forth."
+  },
+  {
+    "chunk_id": "PSAI025-C0001",
+    "doc_id": "PSAI025",
+    "chunk_index": 1,
+    "section": "Value",
+    "heading_path": [
+      "Project Description",
+      "Value"
+    ],
+    "block_type": "section",
+    "token_count": 101,
+    "hash": "12da3927a4312ead",
+    "text": "# Project Description > Value\n\nA trustless bridge between FIL and WFIL will allow long term holders of FIL a way to take advantage of many of the opportunities that exist in DeFi, particularly on Ethereum and L2s like Polygon. The primary risk associated with constructing a bridge is ensuring that sufficient liquidity is in place to facilitate the crossover from FIL to WFIL. The lack of liquidity does not put a FIL holders funds at risk, it simply limits the amount one would potentially be able to bridge."
+  },
+  {
+    "chunk_id": "PSAI025-C0002",
+    "doc_id": "PSAI025",
+    "chunk_index": 2,
+    "section": "Deliverables",
+    "heading_path": [
+      "Project Description",
+      "Value",
+      "Deliverables"
+    ],
+    "block_type": "section",
+    "token_count": 77,
+    "hash": "54faa4f27d29cf05",
+    "text": "# Project Description > Value > Deliverables\n\n60 days post-grant (~8 weeks); launch bridge\n\n1W: Finalize formal specification 2W: Design API 3W: Toolchain & Infrastructure 4W: Test Suite & Development 5W: Development\n\n6W: User Acceptance Testing 7W: Post UAT Refactor 8W: Release"
+  },
+  {
+    "chunk_id": "PSAI025-C0003",
+    "doc_id": "PSAI025",
+    "chunk_index": 3,
+    "section": "Total Budget Requested",
+    "heading_path": [
+      "Project Description",
+      "Total Budget Requested"
+    ],
+    "block_type": "section",
+    "token_count": 46,
+    "hash": "4ce4bd094de5a959",
+    "text": "# Project Description > Total Budget Requested\n\n\\$20000 USD/FIL (~345 FIL as of 30/06/2021)\n\nThese funds will be dedicated to the associative labor required to construct the WFIL/FIL."
+  },
+  {
+    "chunk_id": "PSAI025-C0004",
+    "doc_id": "PSAI025",
+    "chunk_index": 4,
+    "section": "Maintenance and Upgrade Plans",
+    "heading_path": [
+      "Maintenance and Upgrade Plans"
+    ],
+    "block_type": "section",
+    "token_count": 67,
+    "hash": "4f237f4d65cfe660",
+    "text": "# Maintenance and Upgrade Plans\n\nWe plan to continue to support and maintain the core functionality of the bridge for at least the next 2 years (24 months), as long as it is technically possible alongside the respective states of each network, and in accordance/adherence to with laws/regulations in the respective regions where the bridge is available."
+  },
+  {
+    "chunk_id": "PSAI025-C0005",
+    "doc_id": "PSAI025",
+    "chunk_index": 5,
+    "section": "Relevant Experience",
+    "heading_path": [
+      "Relevant Experience"
+    ],
+    "block_type": "section",
+    "token_count": 87,
+    "hash": "6ec8c0a1bbe88368",
+    "text": "# Relevant Experience\n\nBoth Erwan and I work on Wrapped.com at Tokensoft. Tokensoft is an industry leading provider of services for issuance of security tokens allowing for precise regulatory compliance during all stages of fundraising. Tokensoft also manages the smart contract security of the minting, burning and distribution of the wrapped tokens. Anchorage is a Qualified Custodian which secures over 100 billion in transactions annually through cutting edge cyber security architecture."
+  }
+]

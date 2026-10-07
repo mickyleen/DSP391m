@@ -1,0 +1,24 @@
+{
+  "doc_id": "PSAI166",
+  "num_chunks": 26,
+  "total_tokens": 2344,
+  "avg_tokens": 90.15,
+  "min_tokens": 21,
+  "max_tokens": 472,
+  "chunks_by_type": {
+    "section": 7,
+    "section_split": 4,
+    "table_row": 15
+  },
+  "num_sections": 8,
+  "sections": [
+    "Personal Details",
+    "Personal Details > About Yourself",
+    "Personal Details > Commitment",
+    "Proposal",
+    "Proposal > Key Deliverables:",
+    "Proposal > Project Plan: > (Community Bonding Period)",
+    "Proposal > Tools and Technologies to be used: (can change/update as <sup>I</sup> proceed with the project)",
+    "What to expect from GSoC at Tardis"
+  ]
+}

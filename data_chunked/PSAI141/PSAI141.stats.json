@@ -1,0 +1,33 @@
+{
+  "doc_id": "PSAI141",
+  "num_chunks": 23,
+  "total_tokens": 4690,
+  "avg_tokens": 203.91,
+  "min_tokens": 21,
+  "max_tokens": 507,
+  "chunks_by_type": {
+    "section": 16,
+    "section_split": 7
+  },
+  "num_sections": 18,
+  "sections": [
+    "",
+    "10. How many years have you attended there?",
+    "10. How many years have you attended there? > 11. What city/country will you be spending this summer in?",
+    "10. How many years have you attended there? > 12. How much time do you expect to have for this project?",
+    "10. How many years have you attended there? > 13. Please list all jobs, summer classes, vacations and/or other commitments that you'll need to work around.",
+    "10. How many years have you attended there? > 13. Please list all jobs, summer classes, vacations and/or other commitments that you'll need to work around. > 18. Please describe your proposed project in detail, including deliverables and expected timeline with milestones (this is the long answer, so spend most time here!)",
+    "Background",
+    "Detailed description of the proposed features:",
+    "Feature: Intercept websockets",
+    "Feature: Intercept websockets > Feature: Intercept TCP messages",
+    "Feature: Intercept websockets > Feature: Intercept TCP messages > Technical Changes:",
+    "Feature: Intercept websockets > Solution:",
+    "I would prefer a medium sized project. (175 hours) > 3. Are you willing and able to work on other projects instead?",
+    "I would prefer a medium sized project. (175 hours) > 4. Please describe your preferred coding languages and experience.",
+    "I would prefer a medium sized project. (175 hours) > 6. Please describe any previous usage with Honeynet Project tools or honeypots in general.",
+    "I would prefer a medium sized project. (175 hours) > 6. Please describe any previous usage with Honeynet Project tools or honeypots in general. > 7. Please describe any previous Honeynet Project or honeypot related development experience, including details of any patches, code or ideas you may have previously submitted.",
+    "I would prefer a medium sized project. (175 hours) > 6. Please describe any previous usage with Honeynet Project tools or honeypots in general. > 9. What school do you attend and what is your specialty/major at the school?",
+    "Timeline:"
+  ]
+}

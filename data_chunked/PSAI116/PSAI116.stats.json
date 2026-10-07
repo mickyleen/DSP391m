@@ -1,0 +1,35 @@
+{
+  "doc_id": "PSAI116",
+  "num_chunks": 23,
+  "total_tokens": 3049,
+  "avg_tokens": 132.57,
+  "min_tokens": 21,
+  "max_tokens": 395,
+  "chunks_by_type": {
+    "section": 23
+  },
+  "num_sections": 21,
+  "sections": [
+    "Additional Information",
+    "Deliverables",
+    "Development Roadmap",
+    "Development Roadmap > Buidlers:",
+    "Development Roadmap > DAO-Friendly Stage",
+    "Development Roadmap > Funding breakdown:",
+    "Development Roadmap > Improved Utility Stage",
+    "Development Roadmap > Minimum Viable \"Dev-Friendly\" Stage",
+    "Development Roadmap > Minimum Viable \"Dev-Friendly\" Stage > Funding Breakdown:",
+    "Development Roadmap > Minimum Viable \"Human-Friendly\" Stage",
+    "Development Roadmap > Minimum Viable \"Human-Friendly\" Stage > Buidlers:",
+    "Development Roadmap > Timeline: > Funding Breakdown:",
+    "Filecoin / IPFS",
+    "Maintenance and Upgrade Plans",
+    "Project Description",
+    "Project Description > Value",
+    "Relevant Experience",
+    "Relevant Experience > Team code repositories",
+    "Team",
+    "Team Member LinkedIn Profiles",
+    "Team Members"
+  ]
+}

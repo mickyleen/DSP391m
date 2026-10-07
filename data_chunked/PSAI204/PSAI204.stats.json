@@ -1,0 +1,42 @@
+{
+  "doc_id": "PSAI204",
+  "num_chunks": 47,
+  "total_tokens": 4242,
+  "avg_tokens": 90.26,
+  "min_tokens": 20,
+  "max_tokens": 386,
+  "chunks_by_type": {
+    "section": 27,
+    "table_row": 20
+  },
+  "num_sections": 27,
+  "sections": [
+    "Permissionless Oracle Network (PoN)",
+    "Permissionless Oracle Network (PoN) > Architecture",
+    "Permissionless Oracle Network (PoN) > Architecture > Court DAO",
+    "Permissionless Oracle Network (PoN) > Architecture > Ecosystem Fit",
+    "Permissionless Oracle Network (PoN) > Architecture > Private Oracle",
+    "Permissionless Oracle Network (PoN) > Architecture > SaaS3 DAO",
+    "Permissionless Oracle Network (PoN) > Architecture > Treasury",
+    "Permissionless Oracle Network (PoN) > Contact",
+    "Permissionless Oracle Network (PoN) > Decentralized Serverless Runtime (dRuntime)",
+    "Permissionless Oracle Network (PoN) > Future Plans",
+    "Permissionless Oracle Network (PoN) > How did you hear about the Grants Program?",
+    "Permissionless Oracle Network (PoN) > How did you hear about the Grants Program? > Other Grants",
+    "Permissionless Oracle Network (PoN) > How did you hear about the Grants Program? > Related Files",
+    "Permissionless Oracle Network (PoN) > Legal Structure",
+    "Permissionless Oracle Network (PoN) > Milestone 1 — dRuntime in ink!",
+    "Permissionless Oracle Network (PoN) > Milestone 2 — SaaS3 DAO Pallets",
+    "Permissionless Oracle Network (PoN) > Team Code Repos",
+    "Permissionless Oracle Network (PoN) > Team Code Repos > Overview",
+    "Permissionless Oracle Network (PoN) > Team members",
+    "Project Overview :page_facing_up: > Background",
+    "Project Overview :page_facing_up: > Examples:",
+    "Project Overview :page_facing_up: > Integration into Polkadot / Kusama",
+    "Project Overview :page_facing_up: > Our solution - SaaS3 Oracle",
+    "Project Overview :page_facing_up: > Overview",
+    "Project Overview :page_facing_up: > Team Motivation",
+    "Protocol Details > Mockups/designs",
+    "SaaS3 Protocol"
+  ]
+}

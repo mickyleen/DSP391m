@@ -1,0 +1,2257 @@
+[
+  {
+    "chunk_id": "PSAI048-C0000",
+    "doc_id": "PSAI048",
+    "chunk_index": 0,
+    "section": "<span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing"
+    ],
+    "block_type": "section",
+    "token_count": 99,
+    "hash": "71afc5bf9af89cf9",
+    "text": "# <span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing\n\nYulia Tsvetkov Language Technologies Institute School of Computer Science Carnegie Mellon University ytsvetko@cs.cmu.edu\n\nThesis committee\n\nChris Dyer (chair), Carnegie Mellon University Alan W Black, Carnegie Mellon University Noah A. Smith, Carnegie Mellon University Jacob Eisenstein, Georgia Institute of Technology"
+  },
+  {
+    "chunk_id": "PSAI048-C0001",
+    "doc_id": "PSAI048",
+    "chunk_index": 1,
+    "section": "1 Introduction",
+    "heading_path": [
+      "<span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing",
+      "1 Introduction"
+    ],
+    "block_type": "section_split",
+    "token_count": 398,
+    "hash": "0a4db4461c65cbab",
+    "text": "# <span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing > 1 Introduction\n\nAs global development brings connectivity to more and more people, hundreds of millions of people speaking resource-limited<sup>1</sup> languages will have access to the software applications built upon natural language processing (NLP) technology. While accessibility of technology will improve, a linguistic divide will remain. The rich ecosystem of intelligent, language-aware applications rely on state-of-the-art NLP tools, such as text parsing, speech recognition and synthesis, text and speech translation, semantic analysis and inference, which, in turn, depend on data resources that exist only for a few resource-rich languages. Recent work has developed techniques for projecting resources from resource-rich languages (e.g., Yarowsky et al. 2001, Diab and Resnik 2002, Hwa et al. 2005, Ganchev et al. 2009, Padó and Lapata 2009, Das and Petrov 2011, Täckström et al. 2013), but these have required large amounts of parallel (translated) data. However, while small parallel corpora—translated chiefly to English—do exist for many languages, large parallel corpora are expensive. Furthermore, while English is a high-resource language, it is linguistically a typological outlier in a number of respects (e.g., relatively simple morphology, complex system of verbal auxiliaries, large lexicon, etc.), and the construction-level parallelism that projection techniques exploit may be problematic.\n\nThus, there is an urgent need for the development of methodologies that do not rely on large-scale parallel corpora: without new strategies, most of the 7,000+ languages in the world—many with millions of speakers—will remain resource-poor from the standpoint of NLP."
+  },
+  {
+    "chunk_id": "PSAI048-C0002",
+    "doc_id": "PSAI048",
+    "chunk_index": 2,
+    "section": "1 Introduction",
+    "heading_path": [
+      "<span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing",
+      "1 Introduction"
+    ],
+    "block_type": "section_split",
+    "token_count": 446,
+    "hash": "0f5d650b0e83184a",
+    "text": "and syntactic) from a \"donor\" language to a \"recipient\" language as a result of contacts between communities speaking different languages (Thomason and Kaufman 2001). Borrowed words (also called loanwords) are found in nearly all languages, and routinely account for 10–70% of the vocabulary. Borrowing occurs across genetically and typologically unrelated languages (for example, about 40% of Swahili's vocabulary is borrowed from Arabic). Importantly, since resource-rich languages are (historically) geopolitically important languages, borrowed words often bridge between resource-rich and resource-limited languages.\n\nAlthough borrowing is pervasive and a topic of enduring interest for historical and theoretical linguists (Haugen 1950, Weinreich 1979), only limited work in computational modeling has addressed this phenomenon. However, it is a topic well-suited to computational models. For example, the systematic phonological changes that occur during borrowing can be modeled using established computational primitives such as finite state transducers, and—as this proposal contends—models of borrowing have useful applications. Any where cross-lingual lexical correspondences are needed, we can learn them from the borrowing models; since we need only monolingual resources, we have the ability to apply this to many languages with minimal effort without solving a complete decipherment problem. The proposed work can be summarized as the development of a computational model of lexical borrowing and an exploration of its applications to augment language resources and computational approaches to NLP in resource-limited languages.\n\nThis thesis work seeks to answer the following questions:\n\nQ1. How to model lexical borrowing to learn structural commonalities across languages? Although borrowed words are assimilated in language and are not perceived as foreign by native speakers (e.g., 'orange' and 'sugar' are English words borrowed from Arabic l. PA <sup>K</sup> (nArnj) 2 and QºË@ (Alskr), respecti-\n\n<sup>1</sup>Languages with limited availability of digitally stored material, and a dearth of manually-constructed linguistic resources.\n\n<sup>2</sup>We use Buckwalter notation to write Arabic glosses."
+  },
+  {
+    "chunk_id": "PSAI048-C0003",
+    "doc_id": "PSAI048",
+    "chunk_index": 3,
+    "section": "1 Introduction",
+    "heading_path": [
+      "<span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing",
+      "1 Introduction"
+    ],
+    "block_type": "section_split",
+    "token_count": 313,
+    "hash": "b1c36266f1d82f62",
+    "text": "the ontological difference between borrowed and (phylogenetically) native vocabulary often reveals itself through analysis (Itô and Mester 1995). We operationalize existing morpho-phonological accounts of the borrowing process in terms of Optimality Theory (McCarthy and Prince 1994, Prince and Smolensky 2008) to formulate a computationally and statistically efficient model of the transformation and assimilation process. To validate our approach, we develop lexical borrowing models for typologically diverse resourcelimited languages and extract donor–recipient bilingual lexicons using the models (§3,§5.1; Tsvetkov et al. 2015).\n\nQ2. How to leverage borrowing models to reduce the dependence on parallel data in NLP applications? Many applications, such as machine translation and linguistic resource projection techniques, use parallel data (corpora of translated sentences) to learn cross-lingual lexical correspondences. We leverage the borrowing models to augment (or replace, if parallel data do not exist for a language pair) cross-lingual lexicons obtained from parallel data. To validate this, we will adapt existing cross-lingual resource-projection approaches to non-parallel settings. We will concentrate on the following downstream tasks: translation (§4; Tsvetkov and Dyer 2015a), part-of-speech tagging (§5.2; cf. Täckström et al. 2013), and dependency parsing (§5.2; cf. McDonald et al. 2011)."
+  },
+  {
+    "chunk_id": "PSAI048-C0004",
+    "doc_id": "PSAI048",
+    "chunk_index": 4,
+    "section": "1 Introduction",
+    "heading_path": [
+      "<span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing",
+      "1 Introduction"
+    ],
+    "block_type": "section_split",
+    "token_count": 328,
+    "hash": "514a226bd4807bce",
+    "text": "the emergence and diffusion of lexical change in English Twitter data, relying only on word frequencies (Eisenstein et al. 2014), our goal is to extend this research direction to multiple languages, and to explore examples containing morpho-phonological signals. We will first learn to distinguish borrowed items among all neologisms, using the learned morpho-phonological features from the first phase of this thesis. Then, we will investigate demographic and geographic factors influencing borrowing and its linguistic pathways (§5.3; cf. Eisenstein et al. 2014). This study will result in tools that can improve social media applications analyzing and predicting human behavior, and will help us gain better understanding of motives, determinants, and impacts of lexical borrowing.\n\nThesis statement. This thesis addresses the phenomenon of lexical borrowing with computational models. Discovering and modeling cross-lingual borrowing is an interesting task in and of itself, as it provides a better understanding of a pervasive linguistic phenomenon. Practically, computational models of borrowing can facilitate cross-lingual transfer—from resource-rich to resource-limited languages—of linguistic (lexical, morpho-phonological, syntactic) and metalinguistic (socio-economic, cultural, behavioral) knowledge, thereby advancing NLP applications for resource-limited languages.\n\nThe rest of this proposal is structured as follows. In §2 we provide background and motivation. In sections §3 and §4 we discuss recent studies we conducted to substantiate our assertions and establish the feasibility of the project. The proposed future work is in §5. We conclude with the timeline for thesis completion (§6)."
+  },
+  {
+    "chunk_id": "PSAI048-C0005",
+    "doc_id": "PSAI048",
+    "chunk_index": 5,
+    "section": "1 Introduction",
+    "heading_path": [
+      "<span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing",
+      "1 Introduction"
+    ],
+    "block_type": "section_split",
+    "token_count": 64,
+    "hash": "6aaf64496ce1a664",
+    "text": "of this proposal is structured as follows. In §2 we provide background and motivation. In sections §3 and §4 we discuss recent studies we conducted to substantiate our assertions and establish the feasibility of the project. The proposed future work is in §5. We conclude with the timeline for thesis completion (§6)."
+  },
+  {
+    "chunk_id": "PSAI048-C0006",
+    "doc_id": "PSAI048",
+    "chunk_index": 6,
+    "section": "<span id=\"page-3-0\"></span>2 Background and Motivation",
+    "heading_path": [
+      "<span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing",
+      "<span id=\"page-3-0\"></span>2 Background and Motivation"
+    ],
+    "block_type": "section_split",
+    "token_count": 361,
+    "hash": "7fc5c778a8823044",
+    "text": "# <span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing > <span id=\"page-3-0\"></span>2 Background and Motivation\n\nͪपÜपलȣ pippalī Sanskrit پلپل pilpil Persian פלפל falafel' Hebrew فلافل falāfil Arabic pilipili Swahili parpaare Gawwada Fig. 1: An example of the multilingual borrowing from Sanskrit into typologically diverse, low- and high-resource languages (Haspelmath and Tadmor 2009). Lexical borrowing Borrowed words (e.g., in figure 1) are lexical items adopted from another language and integrated (nativized) in the recipient language (Haugen 1950). Borrowing occurs as a result of linguistic contact, typically on the part of minority language speakers, from the language of wider communication into the minority language (Sankoff 2002); that is one reason why donor languages are often resource-rich. Nouns are borrowed preferentially, then other parts of speech, then affixes, inflections, and phonemes (Whitney 1881, Moravcsik 1978, Myers-Scotton 2002; p. 240). Borrowing is a distinctive and pervasive phenomenon: all languages borrowed from other languages at some point in their lifetime, and borrowed words constitute a large fraction (10–70%) of most language lexicons (Haspelmath 2009).\n\n<span id=\"page-3-1\"></span>![](images/_page_3_Diagram_2.jpeg)"
+  },
+  {
+    "chunk_id": "PSAI048-C0007",
+    "doc_id": "PSAI048",
+    "chunk_index": 7,
+    "section": "<span id=\"page-3-0\"></span>2 Background and Motivation",
+    "heading_path": [
+      "<span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing",
+      "<span id=\"page-3-0\"></span>2 Background and Motivation"
+    ],
+    "block_type": "section_split",
+    "token_count": 427,
+    "hash": "121aa487b1d2598d",
+    "text": "Calabrese and Wetzels 2009, Kang 2011; inter alia). Phonological repair strategies amount to feature/phoneme epenthesis, elision, degemination, and assimilation. When speakers encounter a foreign word (either a lemma or an inflected form), they analyze it morphologically as a stem; morphological loanword integration thus amounts to picking a donor surface form (out of existing inflections of the same lemma), and applying the recipient language morphology (Repetti 2006). Adapted loanwords can freely undergo recipient language inflectional and derivational processes.\n\nThe task of modeling borrowing is unexplored in computational linguistics. With the exception of a study conducted by Blair and Ingram (2003) on generation of borrowed phonemes in English–Japanese language pair (the method does not generalize from borrowed phonemes to borrowed words, and does not rely on linguistic insights), we are not aware of any prior work on computational modeling of lexical borrowing. Few papers only mention or tangentially address borrowing, we briefly list them here. Daumé III (2009) focuses on areal effects on linguistic typology, a broader phenomenon that includes borrowing and genetic relations across languages. This study is aimed at discovering language areas based on typological features of languages. Garley and Hockenmaier (2012) train a maxent classifier with character n-gram and morphological features to identify anglicisms (which they compare to loanwords) in an online community of German hip hop fans. List and Moran (2013) publish a toolkit for computational tasks in historical linguistics, however, the only algorithm that addresses borrowing in the toolkit is based on a non-computational study on relation of cognacy and borrowing in language evolution (Nelson-Sathi et al. 2010). Furthermore, List and Moran (2013) admit that \"Automatic approaches for borrowing detection are still in their infancy in historical linguistics.\" More dedicated approaches are required to facilitate computational models and applications of lexical borrowing. This is indeed the main goal of the proposed research."
+  },
+  {
+    "chunk_id": "PSAI048-C0008",
+    "doc_id": "PSAI048",
+    "chunk_index": 8,
+    "section": "<span id=\"page-3-0\"></span>2 Background and Motivation",
+    "heading_path": [
+      "<span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing",
+      "<span id=\"page-3-0\"></span>2 Background and Motivation"
+    ],
+    "block_type": "section_split",
+    "token_count": 359,
+    "hash": "afb5c23c6c4eb825",
+    "text": "(OT), a constraint-based theory of phonology, which has shown that complex surface phenomena can be well-explained as the interaction of morpho-phonological constraints on the form of outputs and the relationships of inputs and outputs (Kager 1999). OT posits that surface phonetic words (in the case of borrowing, loanwords) emerge from underlying phonological forms (donor words) according to a two-stage process: first, various candidates for the surface form are enumerated for consideration (the 'generation' or GEN phase); then, these candidates are weighed against one another to see which most closely conforms to—or equivalently, least egregiously violates—the phonological preferences of the language (while the preferences themselves are thought to be a universal component of human linguistic competence, the ranking of the preferences varies across languages). When the preferences are correctly ranked, then the actual surface form should be selected as the most optimal realization of the underlying form.<sup>3</sup> Although originally a theory of monolingual phonology, OT has been adapted to account for borrowing by treating the donor language word as the underlying form for the recipient language; that is, the phonological system of the recipient language is encoded as a system of constraints, and these constraints account for how the donor word is adapted when it is borrowed. There has been a lot of work on borrowing in the OT paradigm (Yip 1993, Davidson and Noyer 1997, Jacobs and Gussenhoven 2000, Kang 2003, Broselow 2004, Adler 2006, Rose and Demuth 2006, Kenstowicz and Suchato 2006, Kenstowicz 2007), but none of it has lead to computational realizations."
+  },
+  {
+    "chunk_id": "PSAI048-C0009",
+    "doc_id": "PSAI048",
+    "chunk_index": 9,
+    "section": "<span id=\"page-3-0\"></span>2 Background and Motivation",
+    "heading_path": [
+      "<span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing",
+      "<span id=\"page-3-0\"></span>2 Background and Motivation"
+    ],
+    "block_type": "section_split",
+    "token_count": 499,
+    "hash": "b7c00e19f2eecd59",
+    "text": "although see (Knight and Graehl 1998). Borrowed words might have entered a language originally as transliterations, but a characteristic of borrowed words is that they become assimilated in the morph-phonological system of the recipient language. Borrowing vs. inheritance: Cognates are words in related languages inherited from one word in a common ancestral language (the proto-language). Loanwords, on the other hand, can occur between any languages, either related or not, that historically came into contact. Theoretical analysis of cognates has tended to be concerned with a diachronic point of view, i.e., modeling word changes across time. While cognacy is of immense scientific interest, borrowing offers a unique opportunity to reason about lexical material in many languages, even those that are only distantly related to other living.\n\nMachine translation and other cross-lingual NLP tasks. Machine translation has been a phenomenal success for language pairs for which large amounts of parallel data exist; however, for low-resource language pairs with few example translations performance lags behind (Bojar et al. 2014). While some intriguing results suggest that cryptanalysis has promise to help identify translation across languages (Dou and Knight 2013, Ravi and Knight 2011), identifying example translations using reliable cross-lingual evidence—such as parallel corpora or bilingual dictionaries—is a key component in effectively inferring high-quality lexical translations from data (Dou et al. 2014). In effect, these high-quality lexical translation \"anchors\" are sufficient to bootstrap cross-lingual models so that monolingual representations can be exploited more\n\nPreferences are expressed as violable constraints ('violable' because in many cases there may be no candidate that satisfies all of them). They consist of markedness constraints (McCarthy and Prince 1995), which describe unnatural (dispreferred) patterns in the language, and faithfulness constraints (Prince and Smolensky 2008), which reward correspondences between the underlying form and the surface candidates. To clarify the distinction between faithfulness and markedness constraint groups to the NLP readership, we can draw the following analogy to the components of machine translation or speech recognition: faithfulness constraints are analogical to the translation model or acoustic model (reflecting input), while markedness constraints are analogical to the language model (requiring well-formedness of the output). Without faithfulness constraints, the optimal surface form could differ arbitrarily from the underlying form."
+  },
+  {
+    "chunk_id": "PSAI048-C0010",
+    "doc_id": "PSAI048",
+    "chunk_index": 10,
+    "section": "<span id=\"page-3-0\"></span>2 Background and Motivation",
+    "heading_path": [
+      "<span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing",
+      "<span id=\"page-3-0\"></span>2 Background and Motivation"
+    ],
+    "block_type": "section_split",
+    "token_count": 485,
+    "hash": "8446f35611e77f71",
+    "text": "ical to the translation model or acoustic model (reflecting input), while markedness constraints are analogical to the language model (requiring well-formedness of the output). Without faithfulness constraints, the optimal surface form could differ arbitrarily from the underlying form.\n\neffectively (Saluja et al. 2014, Mikolov et al. 2013a, Marton et al. 2009, Callison-Burch et al. 2006). Unfortunately, few resources exist for finding reliable translation anchors, and borrowing promises to be a new resource for finding translations. Beyond machine translation, lexical alignments have been widely used to project annotations from high- to low-resource languages (Hwa et al. 2005, Täckström et al. 2013, Ganchev et al. 2009, Tsvetkov et al. 2014a; inter alia). And, as with translation, the languages where cross-lingual projection is most urgently needed to bootstrap linguistic resources are the languages where no parallel data is available.\n\nWhy lexical borrowing in cross-lingual NLP? We hypothesize that lexical borrowing is a plausible alternative to parallel corpora in methods employing cross-lingual data transfer. First, loanword adaptation is not a random but rather systematic and predictable process, depending on phonotactics of donor and recipient languages, thus can be modeled computationally. Loanword adaptation analyses typically employ constraint-based models, such as OT (Kang 2011). Constraint-based models are well-suited to standard computational string-transduction approaches, and we have already built the first successful prototype of a language-independent OT-based loanword adaptation system (§3). Second, much linguistic research and resource-collection has been done on borrowing in numerous language pairs. These studies will facilitate development and evaluation of lexical-borrowing systems. Third, unlike parallel corpora which is limited or unavailable for most language pairs, borrowing is pervasive: loanwords constitute a large fraction of most language lexicons.<sup>4</sup> Cross-lingual data transfer via borrowing is thus applicable at a much larger scale than via parallel corpus. Finally, the diversity of donor languages and projection via multiple donors (rather than via English word-alignments) will allow us to adjust model parameters to typological traits of a specific target language (Täckström et al. 2013)."
+  },
+  {
+    "chunk_id": "PSAI048-C0011",
+    "doc_id": "PSAI048",
+    "chunk_index": 11,
+    "section": "<span id=\"page-3-0\"></span>2 Background and Motivation",
+    "heading_path": [
+      "<span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing",
+      "<span id=\"page-3-0\"></span>2 Background and Motivation"
+    ],
+    "block_type": "section_split",
+    "token_count": 65,
+    "hash": "c5bc86b679768c7e",
+    "text": "borrowing is thus applicable at a much larger scale than via parallel corpus. Finally, the diversity of donor languages and projection via multiple donors (rather than via English word-alignments) will allow us to adjust model parameters to typological traits of a specific target language (Täckström et al. 2013)."
+  },
+  {
+    "chunk_id": "PSAI048-C0012",
+    "doc_id": "PSAI048",
+    "chunk_index": 12,
+    "section": "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing"
+    ],
+    "block_type": "section_split",
+    "token_count": 477,
+    "hash": "9faa42aa5654dea9",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing\n\nOur task is to identify plausible donor–loan word pairs in a language pair. While modeling string transductions is a well-studied problem in NLP, we wish to be able to learn the cross-lingual correspondences from minimal training data, we propose a model whose features are motivated by linguistic knowledge. We formulate a scoring model inspired by OT, in which borrowing candidates are ranked by universal constraints posited to underly the human faculty of language, and the candidates are determined by transduction processes articulated in prior studies of contact linguistics.\n\nAs illustrated in figure 2, our model is conceptually divided into three main parts: (1) a mapping of orthographic word forms in two languages into a common phonetic space; (2) generation of loanword pronunciation candidates from a donor word; and (3) ranking of generated loanword candidates, based on linguistic constraints of the donor and recipient languages. In our proposed system, parts (1) and (2) are rule-based; whereas (3) is learned. Each component of the model is discussed in detail in the rest of this section.\n\n<sup>4</sup> For example, 30–70% of the vocabulary in Japanese, Vietnamese, Korean, Cantonese, and Thai—resource-limited languages spoken by over 400 million people—are borrowed from resource-rich languages: Chinese and English. Similarly, African languages have been greatly influenced by Arabic, Spanish, English, and French, due to colonization, a prolonged period of language contact in the Indian Ocean trading, as well as the influence of Islam; Swahili, Zulu, Malagasy, Hausa, Tarifit, Yoruba, spoken by 200 million, contain up to 40% of loanwords. Indo-Iranian languages—Hindustani, Hindi, Urdu, Bengali, Persian, Pashto—spoken by 860 million, also extensively borrowed from Arabic and English (Haspelmath and Tadmor 2009). In short, at least a billion people are speaking languages whose lexicons are heavily borrowed from resource-rich languages.\n\n<span id=\"page-6-0\"></span>![](images/_page_6_Diagram_0.jpeg)"
+  },
+  {
+    "chunk_id": "PSAI048-C0013",
+    "doc_id": "PSAI048",
+    "chunk_index": 13,
+    "section": "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing"
+    ],
+    "block_type": "section_split",
+    "token_count": 467,
+    "hash": "052114b33d3f4009",
+    "text": "resource-rich languages.\n\n<span id=\"page-6-0\"></span>![](images/_page_6_Diagram_0.jpeg)\n\nFig. 2: Our morpho-phonological borrowing model conceptually has three main parts: (1) conversion of orthographic word forms to pronunciations in IPA format; (2) generation of loanword pronunciation candidates; (3) ranking of generated candidates using Optimality-Theoretic constraints. Part (1) and (2) are rule-based, (1) uses pronunciation dictionaries, (2) is based on prior linguistic studies; part (3) is learned. In (3) we learn OT constraint weights from a few dozen automatically extracted training examples.\n\nThe model is implemented as a cascade of finite-state transducers. Parts (1) and (2) amount to unweighted string transformation operations. In (1), we convert orthographic word forms to their pronunciations in the International Phonetic Alphabet (IPA), these are pronunciation transducers. In (2) we syllabify donor pronunciations, then perform insertion, deletion, and substitution of phonemes and morphemes (affixes), to generate multiple loanword candidates from a donor word. Although string transformation transducers in (2) can generate loanword candidates that are not found in a recipient language vocabulary, such candidates are filtered out due to composition with the recipient language lexicon acceptor.\n\nOur model performs string transformations from donor to recipient (recapitulating the historical process). However, the resulting relation (i.e., the final composed transducer) is a bidirectional model which can just as well be used to reason about underlying donor forms given recipient forms. In a probabilistic cascade, Bayes' rule could be used to reverse the direction and infer underlying donor forms given a loanword. However, we instead opt to train the model discriminatively to find the most likely underlying form, given a loanword. In part (3), candidates are \"evaluated\" (i.e., scored) with a weighted sum of universal constraint violations. The non-negative weights, which we call the \"cost vector\", constitute our model parameters and are learned using a small training set of donor–recepient pairs. We use a shortest path algorithm to find the path with the minimal cost."
+  },
+  {
+    "chunk_id": "PSAI048-C0014",
+    "doc_id": "PSAI048",
+    "chunk_index": 14,
+    "section": "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing"
+    ],
+    "block_type": "section_split",
+    "token_count": 64,
+    "hash": "1612e0621dc94ded",
+    "text": "\" (i.e., scored) with a weighted sum of universal constraint violations. The non-negative weights, which we call the \"cost vector\", constitute our model parameters and are learned using a small training set of donor–recepient pairs. We use a shortest path algorithm to find the path with the minimal cost."
+  },
+  {
+    "chunk_id": "PSAI048-C0015",
+    "doc_id": "PSAI048",
+    "chunk_index": 15,
+    "section": "<span id=\"page-6-1\"></span>3.1 Case Study: Arabic–Swahili Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-6-1\"></span>3.1 Case Study: Arabic–Swahili Borrowing"
+    ],
+    "block_type": "section_split",
+    "token_count": 395,
+    "hash": "7aa225511aa387b1",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-6-1\"></span>3.1 Case Study: Arabic–Swahili Borrowing\n\nIn this section, we use the Arabic–Swahili<sup>5</sup> language-pair to describe the prototypical linguistic adaptation processes that words undergo when borrowed. Then, we describe how we model these processes.\n\nThe Swahili lexicon has been influenced by Arabic due to a prolonged period of language contact in the Indian Ocean trading (800 A.D.–1920), as well as the influence of Islam (Rothman 2002). According to several independent studies, Arabic loanwords constitute from 18% (Hurskainen 2004) to 40% (Johnson 1939) of Swahili word types. Despite a strong susceptibility of Swahili to borrowing and a large fraction of Swahili words originating from Arabic, the two languages are typologically distinct with profoundly dissimilar phonological and morpho-syntactic systems. Therefore, Arabic loanwords have been substantially adapted to conform to Swahili phonotactics, which we survey briefly. First, Arabic has five syllable patterns:<sup>6</sup> CV, CVV, CVC, CVCC, and CVVC (McCarthy 1985; pp. 23–28), whereas Swahili (like other Bantu languages) is characterized by the syllable ending with a vowel and CV or V syllable structure. At the\n\n<sup>5</sup> For simplicity, we subsume Omani Arabic and other historical dialects of Arabic under the label \"Arabic\"; similarly, we subsume Swahili, its dialects and protolanguages under \"Swahili\".\n\n<sup>6</sup>C stands for consonant, and V for vowel."
+  },
+  {
+    "chunk_id": "PSAI048-C0016",
+    "doc_id": "PSAI048",
+    "chunk_index": 16,
+    "section": "<span id=\"page-6-1\"></span>3.1 Case Study: Arabic–Swahili Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-6-1\"></span>3.1 Case Study: Arabic–Swahili Borrowing"
+    ],
+    "block_type": "section_split",
+    "token_count": 293,
+    "hash": "b857f1dbab6962b9",
+    "text": "u 'book' (Polomé 1967, Schadeberg 2009, Mwita 2009). Second, phonological adaptation in Swahili loanwords includes shortening of vowels (unlike Arabic, Swahili does not have phonemic length); substitution of consonants that are found in Arabic but not in Swahili (e.g., emphatic (pharyngealized) /t<sup>Q</sup> /→/t/, voiceless velar fricative /x/→/k/, dental fricatives /T/→/s/, /D/→/z/, and the voiced velar fricative /G/→/g/); adoption of Arabic phonemes that were not originally present in Swahili /T/, /D/, /G/ (e.g.,QK Ym (tHyr)→ tahadhari 'warning'); degemination of Arabic geminate consonants (e.g., Qå (\\$r~)→ shari 'evil'). Finally, adapted loanwords can freely undergo Swahili inflectional and derivational processes, e.g.,QK PñË@ (Alwzyr) → waziri 'minister', mawaziri 'ministers', kiuwaziri* 'ministerial' (Zawawi 1979, Schadeberg 2009)."
+  },
+  {
+    "chunk_id": "PSAI048-C0017",
+    "doc_id": "PSAI048",
+    "chunk_index": 17,
+    "section": "<span id=\"page-6-1\"></span>3.1 Case Study: Arabic–Swahili Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-6-1\"></span>3.1 Case Study: Arabic–Swahili Borrowing"
+    ],
+    "block_type": "section_split",
+    "token_count": 64,
+    "hash": "16c5389300768026",
+    "text": "al and derivational processes, e.g.,QK PñË@ (Alwzyr) → waziri 'minister', mawaziri 'ministers', kiuwaziri* 'ministerial' (Zawawi 1979, Schadeberg 2009)."
+  },
+  {
+    "chunk_id": "PSAI048-C0018",
+    "doc_id": "PSAI048",
+    "chunk_index": 18,
+    "section": "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers"
+    ],
+    "block_type": "section",
+    "token_count": 131,
+    "hash": "d4b42acbdfe1c09a",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers\n\nWe describe unweighted transducers for pronunciation, syllabification, and morphological and phonological adaptation. An example that illustrates some of the possible string transformations by individual components of the model is shown in figure 3. The goal of these transducers is to minimally overgenerate Swahili adapted forms of Arabic words, based on the adaptations described above.\n\n<span id=\"page-7-0\"></span>"
+  },
+  {
+    "chunk_id": "PSAI048-C0019",
+    "doc_id": "PSAI048",
+    "chunk_index": 19,
+    "section": "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers"
+    ],
+    "block_type": "table_row",
+    "token_count": 38,
+    "hash": "5d7de72ac9307840",
+    "text": "ku.ta <DEP-V> ta <PEAK> .ba.li <DEP-MORPH>: ku.ta <DEP-V> ta <PEAK> .ba.li."
+  },
+  {
+    "chunk_id": "PSAI048-C0020",
+    "doc_id": "PSAI048",
+    "chunk_index": 20,
+    "section": "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers"
+    ],
+    "block_type": "table_row",
+    "token_count": 32,
+    "hash": "5350f79cb8d6ed2e",
+    "text": "ku.ta <DEP-V> ta <PEAK> .ba.li <DEP-MORPH>: ku.tta <*COMPLEX> .ba."
+  },
+  {
+    "chunk_id": "PSAI048-C0021",
+    "doc_id": "PSAI048",
+    "chunk_index": 21,
+    "section": "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers"
+    ],
+    "block_type": "table_row",
+    "token_count": 32,
+    "hash": "e7dbb53066a1e58c",
+    "text": "ku.ta <DEP-V> ta <PEAK> .ba.li <DEP-MORPH>: ki.ta.bu <IDENT-IO-V>"
+  },
+  {
+    "chunk_id": "PSAI048-C0022",
+    "doc_id": "PSAI048",
+    "chunk_index": 22,
+    "section": "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers"
+    ],
+    "block_type": "table_row",
+    "token_count": 31,
+    "hash": "a11defa8fd8efe9c",
+    "text": "ku.ta <DEP-V> ta <PEAK> .ba.li <DEP-MORPH>: ki.ta.bu <DEP-V>"
+  },
+  {
+    "chunk_id": "PSAI048-C0023",
+    "doc_id": "PSAI048",
+    "chunk_index": 23,
+    "section": "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers"
+    ],
+    "block_type": "table_row",
+    "token_count": 41,
+    "hash": "11896241e2a36d3d",
+    "text": "ku.ta <DEP-V> ta <PEAK> .ba.li <DEP-MORPH>: vi <DEP-MORPH> .ki.ta.bu <IDENT-IO-V>"
+  },
+  {
+    "chunk_id": "PSAI048-C0024",
+    "doc_id": "PSAI048",
+    "chunk_index": 24,
+    "section": "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers"
+    ],
+    "block_type": "table_row",
+    "token_count": 33,
+    "hash": "6dd0e4592de2f23e",
+    "text": ": ku.ta.ba. | ku.ta <DEP-V> ta <PEAK> .ba.li <DEP-MORPH>: [degemination]"
+  },
+  {
+    "chunk_id": "PSAI048-C0025",
+    "doc_id": "PSAI048",
+    "chunk_index": 25,
+    "section": "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers"
+    ],
+    "block_type": "table_row",
+    "token_count": 34,
+    "hash": "847401ffa8b5df5c",
+    "text": ": ku.tata.ba. | ku.ta <DEP-V> ta <PEAK> .ba.li <DEP-MORPH>: [epenthesis]"
+  },
+  {
+    "chunk_id": "PSAI048-C0026",
+    "doc_id": "PSAI048",
+    "chunk_index": 26,
+    "section": "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers"
+    ],
+    "block_type": "table_row",
+    "token_count": 34,
+    "hash": "9285a3428e3bb6ae",
+    "text": ": ku.ta.bu. | ku.ta <DEP-V> ta <PEAK> .ba.li <DEP-MORPH>: [final vowel subst.]"
+  },
+  {
+    "chunk_id": "PSAI048-C0027",
+    "doc_id": "PSAI048",
+    "chunk_index": 27,
+    "section": "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers"
+    ],
+    "block_type": "table_row",
+    "token_count": 34,
+    "hash": "c6536be535d0d140",
+    "text": ": ki.ta.bu. | ku.ta <DEP-V> ta <PEAK> .ba.li <DEP-MORPH>: [final vowel subst.]"
+  },
+  {
+    "chunk_id": "PSAI048-C0028",
+    "doc_id": "PSAI048",
+    "chunk_index": 28,
+    "section": "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers"
+    ],
+    "block_type": "table_row",
+    "token_count": 34,
+    "hash": "4948429a735646b4",
+    "text": ": ki.ta.bu. | ku.ta <DEP-V> ta <PEAK> .ba.li <DEP-MORPH>: [epenthesis]"
+  },
+  {
+    "chunk_id": "PSAI048-C0029",
+    "doc_id": "PSAI048",
+    "chunk_index": 29,
+    "section": "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers"
+    ],
+    "block_type": "section_split",
+    "token_count": 449,
+    "hash": "b278ab4a52598368",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers\n\nFig. 3: An example of an Arabic word AK A J»(ktAbA) 'book.sg.indef' transformed by our model into a Swahili loanword kitabu.\n\nPronunciation Based on the IPA, we assign shared symbols to sounds that exist in both sound systems of Arabic and Swahili (e.g., nasals /n/, /m/; voiced stops /b/, /d/), and language-specific unique symbols to sounds that are unique to the phonemic inventory of Arabic (e.g., pharyngeal voiced and voiceless fricatives /è/, /Q/) or Swahili (e.g., velar nasal /N/). For Swahili, we construct a pronunciation dictionary based on the Omniglot grapheme-to-IPA mapping.<sup>7</sup> In Arabic, we use the CMU Arabic vowelized pronunciation dictionary containing about 700K types which has an average of four pronunciations per word (Metze et al. 2010).<sup>8</sup> We then design four transducers—Arabic and Swahili word-to-IPA and IPA-to-word transducers each as a union of linear chain transducers, as well as one acceptor per pronunciation dictionary listing.\n\nSyllabification Arabic words borrowed into Swahili undergo a repair of violations of the Swahili segmental and phonotactic constraints, for example via vowel epenthesis in a consonant cluster. Importantly, repair\n\n<sup>7</sup><www.omniglot.com>\n\n<sup>8</sup> Since we are working at the level of word types which have no context, we cannot disambiguate the intended form, so we include all options. For example, for the input word AK A J»(ktAbA) 'book.sg.indef', we use both pronunciations /kitAbA/ and /kuttAbA/."
+  },
+  {
+    "chunk_id": "PSAI048-C0030",
+    "doc_id": "PSAI048",
+    "chunk_index": 30,
+    "section": "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers"
+    ],
+    "block_type": "section_split",
+    "token_count": 498,
+    "hash": "28a23a2c8ecfffce",
+    "text": "/.\n\ndepends upon syllabification. To simulate plausible phonological repair processes, we generate multiple syllabification variants for input pronunciations. The syllabification transducer optionally inserts syllable separators between phones. For example, for an input phonetic sequence /kuttAbA/, the output strings include /ku.t.tA.bA/, /kut.tA.bA/, and /ku.ttA.bA/ as syllabification variants; each variant violates different constraints and consequently triggers different phonological adaptation.\n\nPhonological adaptation Phonological adaptation of syllabified phone sequences is the crux of the loanword adaptation process. We implement phonological adaptation transducers as a composition of plausible context-dependent insertions, deletions, and substitutions of phone subsets, based on prior studies summarized in §3.1. In what follows, we list phonological adaptation components in the order of transducer composition in the borrowing model. The vowel deletion transducer shortens Arabic long vowels and vowel clusters. The consonant degemination transducer shortens Arabic geminate consonants, e.g., it degeminates /tt/ in /ku.ttA.bA/, outputting /ku.tA.bA/. The substitution of similar phonemes transducer substitutes similar phonemes and phonemes that are found in Arabic but not in Swahili (Polomé 1967; p. 45). For example, the emphatic /t<sup>Q</sup> /, /d<sup>Q</sup> /, /s<sup>Q</sup> / are replaced by the corresponding non-emphatic segments [t], [d], [s]. The vowel epenthesis transducer inserts a vowel between pairs of consonants (/ku.ttA.bA/ → /ku.tatA.bA/), and at the end of a syllable, if the syllable ends with a consonant (/ku.t.tA.bA/ → /ku.ta.tA.bA/). Sometimes it is possible to predict the final vowel of a word, depending on the word-final coda consonant of its Arabic counterpart: /u/ or /o/ added if an Arabic donor ends with a labial, and /i/ or /e/ added after coronals and dorsals (Mwita 2009). Following these rules, the final vowel substitution transducer complements the inventory of final vowels in loanword candidates."
+  },
+  {
+    "chunk_id": "PSAI048-C0031",
+    "doc_id": "PSAI048",
+    "chunk_index": 31,
+    "section": "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers"
+    ],
+    "block_type": "section_split",
+    "token_count": 181,
+    "hash": "18b9e0f68cad6f4d",
+    "text": "with a labial, and /i/ or /e/ added after coronals and dorsals (Mwita 2009). Following these rules, the final vowel substitution transducer complements the inventory of final vowels in loanword candidates.\n\nMorphological adaptation Both Arabic and Swahili have significant morphological processes that alter the appearance of lemmas. To deal with morphological variants, we construct morphological adaptation transducers that optionally strip Arabic concatenative affixes and clitics, and then optionally append Swahili affixes, generating a superset of all possible loanword hypotheses. We obtain the list of Arabic affixes from the Arabic morphological analyzer SAMA (Maamouri et al. 2010); the Swahili affixes are taken from a hand-crafted Swahili morphological analyzer (Littell et al. 2014)."
+  },
+  {
+    "chunk_id": "PSAI048-C0032",
+    "doc_id": "PSAI048",
+    "chunk_index": 32,
+    "section": "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers"
+    ],
+    "block_type": "section_split",
+    "token_count": 64,
+    "hash": "1e1ce81bf0540bf8",
+    "text": "possible loanword hypotheses. We obtain the list of Arabic affixes from the Arabic morphological analyzer SAMA (Maamouri et al. 2010); the Swahili affixes are taken from a hand-crafted Swahili morphological analyzer (Littell et al. 2014)."
+  },
+  {
+    "chunk_id": "PSAI048-C0033",
+    "doc_id": "PSAI048",
+    "chunk_index": 33,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "section",
+    "token_count": 333,
+    "hash": "49327eaff3ced654",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > 3.3 Learning Constraint Weights\n\nDue to the computational problems of working with OT (Eisner 1997; 2002), we make simplifying assumptions by (1) bounding the theoretically infinite set of underlying forms with a small linguistically-motivated subset of allowed transformations on donor pronunciations, as described in §3.2; (2) imposing a priori restrictions on the set of the surface realizations by intersecting the candidate set with the recipient pronunciation lexicon; (3) assuming that the set of constraints is finite and regular (Ellison 1994); and (4) assigning linear weights to constraints, rather than learning an ordinal constraint ranking (Boersma and Hayes 2001, Goldwater and Johnson 2003).\n\nOT distinguishes \"markedness\" constraints (McCarthy and Prince 1995), which detect dispreferred phonetic patterns in the language, and \"faithfulness\" constraints (Prince and Smolensky 2008), which ensure correspondences between the underlying form and the surface candidates.<sup>9</sup> The implemented constraints are\n\n<sup>9</sup>To clarify the distinction between faithfulness and markedness constraint groups to the NLP readership, we can draw the following analogy to the components of machine translation or speech recognition: faithfulness constraints are analogical to the translation model or acoustic model (reflecting input), while markedness constraints are analogical to the language model (requ-\n\n<span id=\"page-9-0\"></span>"
+  },
+  {
+    "chunk_id": "PSAI048-C0034",
+    "doc_id": "PSAI048",
+    "chunk_index": 34,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 26,
+    "hash": "53be562f5cbe0225",
+    "text": ": MAX | : IO | : MORPH | Faithfulness: no | : (donor) | constraints: affix deletion"
+  },
+  {
+    "chunk_id": "PSAI048-C0035",
+    "doc_id": "PSAI048",
+    "chunk_index": 35,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 21,
+    "hash": "dc7eccfd7b0d22c4",
+    "text": ": MAX | : IO | : C | Faithfulness: no | : consonant | constraints: deletion"
+  },
+  {
+    "chunk_id": "PSAI048-C0036",
+    "doc_id": "PSAI048",
+    "chunk_index": 36,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 20,
+    "hash": "8d0067a163ff3bd3",
+    "text": ": MAX | : IO | : V | Faithfulness: no | : vowel | constraints: deletion"
+  },
+  {
+    "chunk_id": "PSAI048-C0037",
+    "doc_id": "PSAI048",
+    "chunk_index": 37,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 28,
+    "hash": "8bb09b28d4b551bf",
+    "text": ": DEP | : IO | : MORPH | Faithfulness: no | : (recipient) | constraints: affix epenthesis"
+  },
+  {
+    "chunk_id": "PSAI048-C0038",
+    "doc_id": "PSAI048",
+    "chunk_index": 38,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 23,
+    "hash": "b94cce0cbc37f134",
+    "text": ": DEP | : IO | : V | Faithfulness: no | : vowel | constraints: epenthesis"
+  },
+  {
+    "chunk_id": "PSAI048-C0039",
+    "doc_id": "PSAI048",
+    "chunk_index": 39,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 21,
+    "hash": "23c75ac4c558e92d",
+    "text": ": IDENT | : IO | : C | Faithfulness: no | : consonant | constraints: substitution"
+  },
+  {
+    "chunk_id": "PSAI048-C0040",
+    "doc_id": "PSAI048",
+    "chunk_index": 40,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 25,
+    "hash": "64cb4160d50bd815",
+    "text": ": IDENT | : IO | : C M | Faithfulness: no | : subst. | constraints: in manner of pronunciation"
+  },
+  {
+    "chunk_id": "PSAI048-C0041",
+    "doc_id": "PSAI048",
+    "chunk_index": 41,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 26,
+    "hash": "ca3f153451e3df98",
+    "text": ": IDENT | : IO | : C A | Faithfulness: no | : subst. | constraints: in place of articulation"
+  },
+  {
+    "chunk_id": "PSAI048-C0042",
+    "doc_id": "PSAI048",
+    "chunk_index": 42,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 25,
+    "hash": "5d577cf06175ab54",
+    "text": ": IDENT | : IO | : C S | Faithfulness: no | : subst. | constraints: in sonority"
+  },
+  {
+    "chunk_id": "PSAI048-C0043",
+    "doc_id": "PSAI048",
+    "chunk_index": 43,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 26,
+    "hash": "cbc7f6c7491e1bae",
+    "text": ": IDENT | : IO | : C P | Faithfulness: no | : pharyngeal | constraints: consonant substitution"
+  },
+  {
+    "chunk_id": "PSAI048-C0044",
+    "doc_id": "PSAI048",
+    "chunk_index": 44,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 25,
+    "hash": "813a4585cddd4678",
+    "text": ": IDENT | : IO | : C G | Faithfulness: no | : glottal | constraints: consonant substitution"
+  },
+  {
+    "chunk_id": "PSAI048-C0045",
+    "doc_id": "PSAI048",
+    "chunk_index": 45,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 24,
+    "hash": "dedb8d2ef958e68f",
+    "text": ": IDENT | : IO | : C E | Faithfulness: no | : emphatic | constraints: consonant substitution"
+  },
+  {
+    "chunk_id": "PSAI048-C0046",
+    "doc_id": "PSAI048",
+    "chunk_index": 46,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 20,
+    "hash": "7cc62e64d1e6dc21",
+    "text": ": IDENT | : IO | : V | Faithfulness: no | : vowel | constraints: substitution"
+  },
+  {
+    "chunk_id": "PSAI048-C0047",
+    "doc_id": "PSAI048",
+    "chunk_index": 47,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 24,
+    "hash": "75924df5485aae4a",
+    "text": ": IDENT | : IO | : V O | Faithfulness: no | : subst. | constraints: in vowel openness"
+  },
+  {
+    "chunk_id": "PSAI048-C0048",
+    "doc_id": "PSAI048",
+    "chunk_index": 48,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 25,
+    "hash": "133dc17e519550e7",
+    "text": ": IDENT | : IO | : V R | Faithfulness: no | : subst. | constraints: in vowel roundness"
+  },
+  {
+    "chunk_id": "PSAI048-C0049",
+    "doc_id": "PSAI048",
+    "chunk_index": 49,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 25,
+    "hash": "e0f4b89ba2ea782f",
+    "text": ": IDENT | : IO | : V F | Faithfulness: no | : subst. | constraints: in vowel frontness"
+  },
+  {
+    "chunk_id": "PSAI048-C0050",
+    "doc_id": "PSAI048",
+    "chunk_index": 50,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 22,
+    "hash": "93a9c9bee810fa8d",
+    "text": ": IDENT | : IO | : V FIN | Faithfulness: no | : final | constraints: vowel substitution"
+  },
+  {
+    "chunk_id": "PSAI048-C0051",
+    "doc_id": "PSAI048",
+    "chunk_index": 51,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "section",
+    "token_count": 237,
+    "hash": "4eff9480b6b93982",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > 3.3 Learning Constraint Weights\n\nTab. 1: Faithfulness constraints prefer pronounced realizations completely congruent with their underlying forms.\n\nlisted in tables 1 and 2. Faithfulness constraints are integrated in phonological transformation components as transitions following each insertion, deletion, or substitution. Markedness constraints are implemented as standalone identity transducers: inputs are equal outputs, but path weights representing candidate evaluation with respect to violated constraints are different.\n\nThe final \"loanword transducer\" is the composition of all transducers described in §3.2 and OT constraint transducers. A path in the transducer represents a syllabified phonemic sequence along with (weighted) OT constraints it violates, and shortest path outputs are those, whose cumulative weight of violated constraints is minimal.\n\nOT constraints are realized as features in our linear model, and feature weights are learned in a discri-\n\n<span id=\"page-9-1\"></span>iring well-formedness of the output). Without faithfulness constraints, the optimal surface form could differ arbitrarily from the underlying form."
+  },
+  {
+    "chunk_id": "PSAI048-C0052",
+    "doc_id": "PSAI048",
+    "chunk_index": 52,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 21,
+    "hash": "5d33e779aba978b1",
+    "text": ": * COMPLEX | : S | Markedness constraints: no consonant clusters on syllable margins"
+  },
+  {
+    "chunk_id": "PSAI048-C0053",
+    "doc_id": "PSAI048",
+    "chunk_index": 53,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "table_row",
+    "token_count": 21,
+    "hash": "d61c180da8493bef",
+    "text": ": * COMPLEX | : C | Markedness constraints: no consonant clusters within a syllable"
+  },
+  {
+    "chunk_id": "PSAI048-C0054",
+    "doc_id": "PSAI048",
+    "chunk_index": 54,
+    "section": "3.3 Learning Constraint Weights",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.3 Learning Constraint Weights"
+    ],
+    "block_type": "section",
+    "token_count": 169,
+    "hash": "463927bbb8d19d6d",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > 3.3 Learning Constraint Weights\n\nTab. 2: Markedness constraints impose language-specific structural well-formedness of surface realizations.\n\nminative training to maximize the accuracy obtained by the loanword transducer on a small development set of donor–recipient pairs. For parameter estimation, we employ the Nelder–Mead algorithm (Nelder and Mead 1965), a heuristic derivative-free method that iteratively optimizes, based on an objective function evaluation, the convex hull of n + 1 simplex vertices.<sup>10</sup> The objective function is the \"soft accuracy\" of the development set, defined as the proportion of correctly identified donor words in the total set of 1-best outputs."
+  },
+  {
+    "chunk_id": "PSAI048-C0055",
+    "doc_id": "PSAI048",
+    "chunk_index": 55,
+    "section": "3.4 Adapting the Model to a New Language",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.4 Adapting the Model to a New Language"
+    ],
+    "block_type": "section",
+    "token_count": 368,
+    "hash": "eb3b1a7089713bb4",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > 3.4 Adapting the Model to a New Language\n\nThe Arabic–Swahili case study shows that, in principle, a borrowing model can be constructed. But a reasonable question to ask is: how much work is required to build a similar system for a new language pair? We claim that our design permits rapid development in new language pairs. First, string transformation operations, as well as OT constraints are language-universal. The only adaptation required is a linguistic analysis to identify plausible morpho-phonological repair strategies for the new language pair (i.e., a subset of allowed insertions, deletions and substitutions of phonemes and morphemes). Since we need only to overgenerate candidates (the OT constraints will filter bad outputs), the effort is minimal relative to many other grammar engineering exercises. The second language-specific component is the grapheme-to-IPA converter. While this can be a non-trivial problem in some cases, the problem is well studied, and many under-resourced languages (e.g., Swahili), have \"phonographic\" systems where orthography corresponds to phonology.<sup>11</sup>\n\nTo illustrate the ease with which a language pair can be engineered, we applied our borrowing model to the French–Romanian language pair. Although French and Romanian are sister languages (both descending from Latin), about 12% of Romanian types are true French borrowings that came into the language in the past few centuries (Schulte 2009). We employ the GLOBALPHONE pronunciation dictionary for French (Schultz and Schlippe 2014) (we convert it to IPA), and automatically construct a Romanian pronunciation dictionary using Omniglot grapheme-to-IPA conversion rules."
+  },
+  {
+    "chunk_id": "PSAI048-C0056",
+    "doc_id": "PSAI048",
+    "chunk_index": 56,
+    "section": "3.5 Intrinsic Evaluation of Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.5 Intrinsic Evaluation of Models of Lexical Borrowing"
+    ],
+    "block_type": "section_split",
+    "token_count": 335,
+    "hash": "ae7cad529d551d00",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > 3.5 Intrinsic Evaluation of Models of Lexical Borrowing\n\nOur experimental setup is defined as follows. The input to the borrowing model is a loanword candidate in Swahili/Romanian, the outputs are plausible donor words in the Arabic/French monolingual lexicon (i.e., any word in pronunciation dictionary). We train the borrowing model using a small set of training examples, and then evaluate it using a held-out test set. In the rest of this section we describe in detail our datasets, tools, and experimental results.\n\nResources We employ Arabic–English and Swahili–English bitexts to extract a training set (corpora of sizes 5.4M and 14K sentence pairs, respectively), using a cognate discovery technique (cf. Kondrak 2001). Phonetically and semantically similar strings are classified as cognates; phonetic similarity is the string\n\n<sup>10</sup>The decision to use Nelder–Mead rather than more conventional gradient-based optimization algorithms was motivated purely by practical limitations of the finite-state toolkit we used which made computing derivatives with latent structure impractical from an engineering standpoint.\n\n<sup>11</sup>This tendency can be explained by the fact that, in many cases, lower-resource languages have developed orthography relatively recently, rather than having organically evolved written forms that preserve archaic or idiosyncratic spellings that are more distantly related to the current phonology of the language such as we see in, e.g., English."
+  },
+  {
+    "chunk_id": "PSAI048-C0057",
+    "doc_id": "PSAI048",
+    "chunk_index": 57,
+    "section": "3.5 Intrinsic Evaluation of Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.5 Intrinsic Evaluation of Models of Lexical Borrowing"
+    ],
+    "block_type": "section_split",
+    "token_count": 462,
+    "hash": "7350207c96f94e49",
+    "text": "is used for word alignments. Given an extracted word pair ha, si, we also extract word pairs {ha 0, si} for all proper Arabic words a <sup>0</sup> which share the same lemma with a producing on average 33 Arabic types per Swahili type. We use MADA (Habash et al. 2009) for Arabic morphological expansion.\n\nFrom the resulting dataset of 490 extracted Arabic–Swahili borrowing examples,<sup>13</sup> we set aside randomly sampled 73 examples (15%) for evaluation,<sup>14</sup> and use the remaining 417 examples for model parameter optimization. For French–Romanian language pair, we use an existing small annotated set of borrowing examples,<sup>15</sup> with 282 training and 50 (15%) randomly sampled test examples.\n\nWe use pyfst—a Python interface to OpenFst (Allauzen et al. 2007)—for the borrowing model implementation.<sup>16</sup>\n\nBaselines We compare our model to several baselines. In the Levenshtein (L) distance baselines we chose the closest word (either surface or pronunciation-based). In the Levenshtein-weighted (L-W) baselines, we evaluate a variant of the Levenshtein distance tuned to identify cognates (Mann and Yarowsky 2001, Kondrak and Sherif 2006); this method was identified by Kondrak and Sherif (2006) among the top three cognate identification methods. In the CRF baselines we generate plausible \"transliterations\" of the input Swahili (or Romanian) words in the donor lexicon using the model of Ammar et al. (2012), with multiple references in a lattice and without reranking. The CRF transliteration model is a linear-chain CRF where we label each source character with a sequence of target characters. The features are label unigrams, label bigrams, and label conjoined with a moving window of source characters. In the OT-uniform baseline, we evaluate the accuracy of the borrowing model with uniform weights, thus shortest paths in the loanwords transducer will be forms violating the fewest constraints."
+  },
+  {
+    "chunk_id": "PSAI048-C0058",
+    "doc_id": "PSAI048",
+    "chunk_index": 58,
+    "section": "3.5 Intrinsic Evaluation of Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.5 Intrinsic Evaluation of Models of Lexical Borrowing"
+    ],
+    "block_type": "section_split",
+    "token_count": 483,
+    "hash": "0498837afe8125d8",
+    "text": "the loanwords transducer will be forms violating the fewest constraints.\n\nEvaluation In addition to predictive accuracy on all models (if a model produces multiple hypotheses with the same 1-best weight, we count the proportion of correct outputs in this set), we evaluate two particular aspects of our proposed model: (1) appropriateness of the model family, and (2) the quality of the learned OT constraint weights. The first aspect is designed to evaluate whether the morpho-phonological transformations implemented in the model are required and sufficient to generate loanwords from the donor inputs. We report two evaluation measures: model reachability and ambiguity. Reachability is a percentage of test samples that are reachable (i.e., there is a path from the input test example to a correct output) in the loanword transducer. A naïve model which generates all possible strings would score 100% reachability, but it will be hard to set the model parameters such that it discriminates between good and bad candidates. In order to capture this trade-off, we also report the inherent ambiguity of our model, which is the average\n\n<sup>12</sup>This cognate discovery technique is sufficient to extract a small training set, but is not generally applicable, as it requires parallel corpora or manually constructed dictionaries to measure semantic similarity. Large parallel corpora are unavailable for most language pairs, including Swahili–English.\n\n<sup>13</sup>In each training/test example one Swahili word corresponds to all extracted Arabic donor words.\n\n<sup>14</sup>We manually verified that our test set contains clear Arabic–Swahili borrowings. For example, we extract Swahili kusafiri, safari and Arabic Q ®Ë@,Q ®, Q ® (Alsfr, ysAfr, sfr) all aligned to 'travel'.\n\n<sup>15</sup><http://wold.clld.org/vocabulary/8>\n\n<sup>16</sup><https://github.com/vchahun/pyfst>\n\n<span id=\"page-12-1\"></span><span id=\"page-12-0\"></span>Tab. 3: The evaluation of the borrowing model design. Reachability is a percentage of donor–recipient pairs that are reachable from a donor to a recipient language. Ambiguity is an average number of outputs that the model generates per one input."
+  },
+  {
+    "chunk_id": "PSAI048-C0059",
+    "doc_id": "PSAI048",
+    "chunk_index": 59,
+    "section": "3.5 Intrinsic Evaluation of Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.5 Intrinsic Evaluation of Models of Lexical Borrowing"
+    ],
+    "block_type": "section_split",
+    "token_count": 64,
+    "hash": "2d0972d53532c155",
+    "text": "span><span id=\"page-12-0\"></span>Tab. 3: The evaluation of the borrowing model design. Reachability is a percentage of donor–recipient pairs that are reachable from a donor to a recipient language. Ambiguity is an average number of outputs that the model generates per one input."
+  },
+  {
+    "chunk_id": "PSAI048-C0060",
+    "doc_id": "PSAI048",
+    "chunk_index": 60,
+    "section": "3.5 Intrinsic Evaluation of Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.5 Intrinsic Evaluation of Models of Lexical Borrowing"
+    ],
+    "block_type": "table_row",
+    "token_count": 32,
+    "hash": "9e4907335f0b7a88",
+    "text": "L: CRF | Accuracy AR – SW 8.9: 16.4 | (%) FR – RO 38.0: 36.0"
+  },
+  {
+    "chunk_id": "PSAI048-C0061",
+    "doc_id": "PSAI048",
+    "chunk_index": 61,
+    "section": "3.5 Intrinsic Evaluation of Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.5 Intrinsic Evaluation of Models of Lexical Borrowing"
+    ],
+    "block_type": "table_row",
+    "token_count": 36,
+    "hash": "579f605a61b24b1f",
+    "text": "Orthographic: Phonetic | L: L | Accuracy AR – SW 8.9: 19.8 | (%) FR – RO 38.0: 26.3"
+  },
+  {
+    "chunk_id": "PSAI048-C0062",
+    "doc_id": "PSAI048",
+    "chunk_index": 62,
+    "section": "3.5 Intrinsic Evaluation of Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.5 Intrinsic Evaluation of Models of Lexical Borrowing"
+    ],
+    "block_type": "table_row",
+    "token_count": 32,
+    "hash": "843c10b04ede66e0",
+    "text": "L: L-W | Accuracy AR – SW 8.9: 19.7 | (%) FR – RO 38.0: 30.7"
+  },
+  {
+    "chunk_id": "PSAI048-C0063",
+    "doc_id": "PSAI048",
+    "chunk_index": 63,
+    "section": "3.5 Intrinsic Evaluation of Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.5 Intrinsic Evaluation of Models of Lexical Borrowing"
+    ],
+    "block_type": "table_row",
+    "token_count": 37,
+    "hash": "dd20124e30c707cb",
+    "text": "Orthographic: OT | L: OT-U | Accuracy AR – SW 8.9: 29.3 | (%) FR – RO 38.0: 58.5"
+  },
+  {
+    "chunk_id": "PSAI048-C0064",
+    "doc_id": "PSAI048",
+    "chunk_index": 64,
+    "section": "3.5 Intrinsic Evaluation of Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.5 Intrinsic Evaluation of Models of Lexical Borrowing"
+    ],
+    "block_type": "table_row",
+    "token_count": 31,
+    "hash": "85b195187ebda9e6",
+    "text": "L: OT | Accuracy AR – SW 8.9: 48.4 | (%) FR – RO 38.0: 75.6"
+  },
+  {
+    "chunk_id": "PSAI048-C0065",
+    "doc_id": "PSAI048",
+    "chunk_index": 65,
+    "section": "3.5 Intrinsic Evaluation of Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.5 Intrinsic Evaluation of Models of Lexical Borrowing"
+    ],
+    "block_type": "section",
+    "token_count": 404,
+    "hash": "0a5385af3fe65bb6",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > 3.5 Intrinsic Evaluation of Models of Lexical Borrowing\n\nTab. 4: The evaluation of the borrowing model accuracy. The baselines are orthographic (surface) and phonetic (based on pronunciation lexicon) Levenshtein distance (L), heuristic Levenshtein distance with lower penalty on vowel updates and similar letter/phone substitutions (L-W), CRF transliteration, and our model with uniform (OT-U) and learned OT constraint weights assignment.\n\nnumber of outputs potentially generated per input. A generic Arabic–Swahili transducer, for example, has an ambiguity of 786,998—the size of the Arabic pronunciation lexicon.\n\nResults The borrowing model reachability and ambiguity are listed in table 3. The model obtains high reachability, while significantly reducing the average number of possible outputs per input: in Arabic from 787K to 857 words, in French from 62K to 12. This result shows that the loanword transducer design, based on the prior linguistic analysis, is a plausible model of word borrowing. Yet, there are on average 33 correct Arabic words out of the possible 857 outputs, thus the second part of the model—OT constraint weights optimization—is crucial.\n\nThe accuracy results in table 4 show how challenging the task of modeling lexical borrowing between two distinct languages is, and importantly, that orthographic and phonetic baselines including the stateof-the-art generative model of transliteration are not suitable for this task. Phonetic baselines for Arabic– Swahili perform better than orthographic ones, but substantially worse than OT-based models, even if OT constraints are not weighted. Crucially, the performance of the borrowing model with the learned OT weights corroborates the assumption made in numerous linguistic accounts that OT is an adequate analysis of the lexical borrowing phenomenon.\n\n<span id=\"page-12-2\"></span>"
+  },
+  {
+    "chunk_id": "PSAI048-C0066",
+    "doc_id": "PSAI048",
+    "chunk_index": 66,
+    "section": "3.5 Intrinsic Evaluation of Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.5 Intrinsic Evaluation of Models of Lexical Borrowing"
+    ],
+    "block_type": "table_row",
+    "token_count": 52,
+    "hash": "fc39f49fa8615631",
+    "text": "EN: book | AR gloss: ktAb | AR pronunciation: kitAb | SW syllabification: ki.ta.bu. | Violated OT constraints: IDENT IO C G h A, a i , DEP IO V h \u000f, u i"
+  },
+  {
+    "chunk_id": "PSAI048-C0067",
+    "doc_id": "PSAI048",
+    "chunk_index": 67,
+    "section": "3.5 Intrinsic Evaluation of Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.5 Intrinsic Evaluation of Models of Lexical Borrowing"
+    ],
+    "block_type": "table_row",
+    "token_count": 53,
+    "hash": "78df6c665bb67c8e",
+    "text": "EN: palace | AR gloss: AlqSr | AR pronunciation: AlqaSr | SW syllabification: ka.sri | Violated OT constraints: MAX IO MORPH h Al, \u000f i , IDENT IO C S h q, k i ,"
+  },
+  {
+    "chunk_id": "PSAI048-C0068",
+    "doc_id": "PSAI048",
+    "chunk_index": 68,
+    "section": "3.5 Intrinsic Evaluation of Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.5 Intrinsic Evaluation of Models of Lexical Borrowing"
+    ],
+    "block_type": "table_row",
+    "token_count": 35,
+    "hash": "8f388d90821daf8f",
+    "text": "Violated OT constraints: IDENT IO C E h S, s i , * COMPLEX C h sr i , DEP IO | : V h \u000f, i i"
+  },
+  {
+    "chunk_id": "PSAI048-C0069",
+    "doc_id": "PSAI048",
+    "chunk_index": 69,
+    "section": "3.5 Intrinsic Evaluation of Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.5 Intrinsic Evaluation of Models of Lexical Borrowing"
+    ],
+    "block_type": "table_row",
+    "token_count": 49,
+    "hash": "e34bd637729873ba",
+    "text": "EN: wage | AR gloss: Ajrh | AR pronunciation: Aujrah | SW syllabification: u.ji.ra. | Violated OT constraints: MAX IO V h A, \u000f i , ONSET h u i ,"
+  },
+  {
+    "chunk_id": "PSAI048-C0070",
+    "doc_id": "PSAI048",
+    "chunk_index": 70,
+    "section": "3.5 Intrinsic Evaluation of Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.5 Intrinsic Evaluation of Models of Lexical Borrowing"
+    ],
+    "block_type": "table_row",
+    "token_count": 25,
+    "hash": "d7419234e9f9d2b9",
+    "text": "Violated OT constraints: DEP IO V h \u000f, i i , MAX IO C h h, \u000f i"
+  },
+  {
+    "chunk_id": "PSAI048-C0071",
+    "doc_id": "PSAI048",
+    "chunk_index": 71,
+    "section": "3.5 Intrinsic Evaluation of Models of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "3.5 Intrinsic Evaluation of Models of Lexical Borrowing"
+    ],
+    "block_type": "section",
+    "token_count": 346,
+    "hash": "8701ad5913d82b64",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > 3.5 Intrinsic Evaluation of Models of Lexical Borrowing\n\nTab. 5: Examples of syllabification and OT constraint violations produced by our borrowing model.\n\nQualitative evaluation The constraint ranking learned by the borrowing model (constraints are listed in tables 1, 2) is in line with prior linguistic analysis. In Swahili NO-CODA dominates all other markedness constraints, as expected. Both COMPLEX-S and COMPLEX-C, restricting consonant clusters, dominate *COMPLEX-V, confirming that Swahili is more permissive to vowel clusters. SSP—sonority-based constraint—captures a common pattern of consonant clustering, found across languages, and is also learned by our model as undominated by most competitors in Swahili, and as a dominating markedness constraint in Romanian. Finally, vowel epenthesis DEP-IO-V is the most common strategy in Arabic loanword adaptation, and is ranked lower according to the model; however, it is ranked highly in the French–Romanian model, where vowel insertion is rare.\n\nA second interesting by-product of our model is an inferred syllabification. While we did not conduct a systematic quantitative evaluation, higher-ranked Swahili outputs tend to contain linguistically plausible syllabifications, although the syllabification transducer inserts optional syllable boundaries between every pair of phones. This result further attests to the plausible constraint ranking learned by the model. Example Swahili syllabifications<sup>17</sup> along with the OT constraint violations produced by the borrowing model are depicted in table 5."
+  },
+  {
+    "chunk_id": "PSAI048-C0072",
+    "doc_id": "PSAI048",
+    "chunk_index": 72,
+    "section": "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation"
+    ],
+    "block_type": "section",
+    "token_count": 108,
+    "hash": "0b5275806db176e0",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation\n\nWe now introduce an external application where the borrowing model will be used as a component machine translation. We rely on the borrowing model to project translation information from a high-resource donor language into a low-resource recipient language, thus mitigating the deleterious effects of out-ofvocabulary (OOV) words."
+  },
+  {
+    "chunk_id": "PSAI048-C0073",
+    "doc_id": "PSAI048",
+    "chunk_index": 73,
+    "section": "4.1 Pivoting via Borrowing for Translating OOV Words",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.1 Pivoting via Borrowing for Translating OOV Words"
+    ],
+    "block_type": "section_split",
+    "token_count": 491,
+    "hash": "50d496e0b9c375ea",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation > 4.1 Pivoting via Borrowing for Translating OOV Words\n\nOOVs are a ubiquitous and difficult problem in MT. When a translation system encounters an OOV—a word that was not observed in the training data, and the trained system thus lacks its translation variants—it usually outputs the word just as it is in the source language, producing erroneous and disfluent translations. All MT systems, even when trained on billion-sentence-size parallel corpora, are prone to OOVs. These are often named entities and neologisms. However, OOV problem is much more serious in morphologicallyrich and low-resource scenarios: there, OOVs are primarily not lexicon-peripheral items such as names and specialized/technical terms, but regular content words. Since borrowed words are a component of the regular lexical content of a language, projecting translations onto the recipient language by identifying borrowed lexical material is a plausible strategy for solving this problem.\n\nProcuring translations for OOVs has been a subject of active research for decades. Translation of named entities is usually generated using transliteration techniques (Al-Onaizan and Knight 2002, Hermjakob et al. 2008, Habash 2008). Extracting a translation lexicon for recovering OOV content words and phrases is done by mining bi-lingual and monolingual resources (Rapp 1995, Callison-Burch et al. 2006, Haghighi et al. 2008, Marton et al. 2009, Razmara et al. 2013, Saluja et al. 2014). In addition, OOV content words can be recovered by exploiting cognates, by transliterating and then pivoting via a closely-related resourcericher language, when such a language exists (Hajic et al. 2000, Mann and Yarowsky 2001, Kondrak et al. ˇ 2003, De Gispert and Marino 2006, Durrani et al. 2010, Wang et al. 2012, Nakov and Ng 2012, Dholakia"
+  },
+  {
+    "chunk_id": "PSAI048-C0074",
+    "doc_id": "PSAI048",
+    "chunk_index": 74,
+    "section": "4.1 Pivoting via Borrowing for Translating OOV Words",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.1 Pivoting via Borrowing for Translating OOV Words"
+    ],
+    "block_type": "section_split",
+    "token_count": 355,
+    "hash": "f1ee23e9359c6b4d",
+    "text": "2003, De Gispert and Marino 2006, Durrani et al. 2010, Wang et al. 2012, Nakov and Ng 2012, Dholakia\n\n<sup>17</sup>We chose examples from the Arabic–Swahili system because this is a more challenging case due to linguistic discrepancies.\n\nand Sarkar 2014). Our work is similar in spirit to the latter line of research, but we show how to obtain translations for OOV content words by pivoting via an unrelated, often typologically distant resource-rich language.\n\n<span id=\"page-14-0\"></span>![](images/_page_14_Diagram_2.jpeg)\n\nFig. 4: To improve a resource-poor Swahili–English MT system, we extract translation candidates for OOV Swahili words borrowed from Arabic using the Swahili-to-Arabic borrowing system and Arabic– English resource-rich MT.\n\nOur high-level solution is depicted in figure 4. Given an OOV word in resource-poor MT, we plug it into a borrowing system that identifies the list of plausible donor words in the donor language. Then, using the resourcerich MT, we translate the donor words to the same target language as in the resource-poor MT (here, English). Finally, we integrate translation candidates in the resourcepoor system.\n\nWe now discuss integrating translation candidates acquired via borrowing plus resource-rich translation.\n\nPhrase-based translation works as follows. A set of candidate translations for an input sentence is created by matching contiguous spans of the input against an inventory of phrasal translations, reordering them into a target-language appropriate order, and choosing the best one according to a discriminative model that combines"
+  },
+  {
+    "chunk_id": "PSAI048-C0075",
+    "doc_id": "PSAI048",
+    "chunk_index": 75,
+    "section": "4.1 Pivoting via Borrowing for Translating OOV Words",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.1 Pivoting via Borrowing for Translating OOV Words"
+    ],
+    "block_type": "section_split",
+    "token_count": 502,
+    "hash": "f51441fdbe1d349b",
+    "text": "domain specificity and scarcity of available resources. Thus, the decoder's only hope for producing a good output is to find a fluent, meaning-preserving translation using incomplete translation lexicons. We have introduced synthetic phrases (Tsvetkov et al. 2013, Chahuneau et al. 2013, Schlinger et al. 2013, Ammar et al. 2013, Tsvetkov et al. 2014b, Tsvetkov and Dyer 2015b) as a strategy of integrating translated phrases directly in the MT translation model, rather than via pre- or postprocessing MT inputs and outputs. Synthetic phrases are phrasal translations that are not directly extractable from the training data, generated by auxiliary translation and postediting processes (for example, extracted from a borrowing model). An important advantage of synthetic phrases is that they are recall-oriented, allowing the system to leverage good translations that are missing in the default phrase inventory, while being stable to noisy translation hypotheses.\n\nFor each OOV, the borrowing system produces the n-best list of plausible donors; for each donor we then extract the k-best list of its translations.<sup>18</sup> Then, we pair the OOV with the resulting n × k translation candidates. The translation candidates are noisy: some of the generated donors may be erroneous, the errors are then propagated in translation.<sup>19</sup> To allow the low-resource translation system to leverage good translations that are missing in the default phrase inventory, while being able to learn how trustworthy they\n\n<sup>18</sup>We set n and k to 5, we did not experiment with other values.\n\n<sup>19</sup>We give as input into the borrowing system all OOV words, although, clearly, not all OOVs are loanwords, and not all loanword OOVs are borrowed from the donor language. However, an important property of the borrowing model is that its operations are not general, but specific to the language-pair and reduced only to a small set of plausible changes that the donor word can undergo in the process of assimilation in the recipient language. Thus, the borrowing system only minimally overgenerates the set of output candidates given an input. If the borrowing system encounters an input word that was not borrowed from the target donor language, it usually (but not always) produces an empty output.\n\nare, we integrate the borrowing-model acquired translation candidates as synthetic phrases."
+  },
+  {
+    "chunk_id": "PSAI048-C0076",
+    "doc_id": "PSAI048",
+    "chunk_index": 76,
+    "section": "4.1 Pivoting via Borrowing for Translating OOV Words",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.1 Pivoting via Borrowing for Translating OOV Words"
+    ],
+    "block_type": "section_split",
+    "token_count": 390,
+    "hash": "da44dc4fa90696df",
+    "text": "ates the set of output candidates given an input. If the borrowing system encounters an input word that was not borrowed from the target donor language, it usually (but not always) produces an empty output.\n\nare, we integrate the borrowing-model acquired translation candidates as synthetic phrases.\n\nTo let the translation model learn whether to trust these phrases, the translation options obtained from the borrowing model are augmented with a boolean translation feature indicating that the phrase was generated externally. Additional features annotating the integrated OOV translations correspond to properties of the donor–loan words' relation; their goal is to provide an indication of plausibility of the pair (to mark possible errors in the outputs of the borrowing system).\n\nWe employ two types of features: phonetic and semantic. Since borrowing is primarily a phonological phenomenon, phonetic features will provide an indication of how typical (or atypical) pronunciation of the word in a language; loanwords are expected to be less typical than core vocabulary words. The goal of semantic features is to measure semantic similarity between donor and loan words: erroneous candidates and borrowed words that changed meaning over time are expected to have different meaning from the OOV.\n\nPhonetic features To compute phonetic features we first train a (5-gram) language model (LM) of IPA pronunciations of the donor/recipient language vocabulary (phoneLM). Then, we re-score pronunciations of the donor and loanword candidates using the LMs. We hypothesize that in donor–loanword pairs the donor phoneLM score is higher but the loanword score is lower (i.e., the loanword phonology is atypical in the recipient language). We capture this intuition in three features: f1=PphoneLM (donor), f2=PphoneLM (loanword), and the harmonic mean between the two scores f3= 2f1f<sup>2</sup> f1+f<sup>2</sup>."
+  },
+  {
+    "chunk_id": "PSAI048-C0077",
+    "doc_id": "PSAI048",
+    "chunk_index": 77,
+    "section": "4.1 Pivoting via Borrowing for Translating OOV Words",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.1 Pivoting via Borrowing for Translating OOV Words"
+    ],
+    "block_type": "section_split",
+    "token_count": 121,
+    "hash": "a7624f5c134af0ed",
+    "text": "canonical correlation analysis (CCA) with small donor–loanword dictionaries (training sets in the borrowing models) to project the word embeddings into 50-dimensional vectors with maximized correlation between their dimensions. The semantic feature annotating the synthetic translation candidates is cosine distance between the resulting donor and loanword vectors. We use the WORD2VEC tool (Mikolov et al. 2013b) to train monolingual vectors,<sup>21</sup> and the CCA-based tool (Faruqui and Dyer 2014) for projecting word vectors.<sup>22</sup>"
+  },
+  {
+    "chunk_id": "PSAI048-C0078",
+    "doc_id": "PSAI048",
+    "chunk_index": 78,
+    "section": "4.1 Pivoting via Borrowing for Translating OOV Words",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.1 Pivoting via Borrowing for Translating OOV Words"
+    ],
+    "block_type": "section_split",
+    "token_count": 64,
+    "hash": "73356fc1f8a4a798",
+    "text": "word vectors. We use the WORD2VEC tool (Mikolov et al. 2013b) to train monolingual vectors,<sup>21</sup> and the CCA-based tool (Faruqui and Dyer 2014) for projecting word vectors.<sup>22</sup>"
+  },
+  {
+    "chunk_id": "PSAI048-C0079",
+    "doc_id": "PSAI048",
+    "chunk_index": 79,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "section_split",
+    "token_count": 304,
+    "hash": "9ef408adae4c2254",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation > 4.2 Evaluation of Pivoting via Borrowing in MT\n\nWe now turn to an extrinsic evaluation, looking at two low-resource translation tasks: Swahili–English translation (donor language: Arabic), and Romanian–English translation (donor language: French). We begin by reviewing the datasets used, and then discuss two oracle experiments that attempt to quantify how much value could we obtain from a perfect borrowing model (since not all mistakes made by MT systems involve borrowed words). Armed with this understanding, we then explore how much improvement can be obtained using our system.\n\nDatasets and software The Swahili–English parallel corpus was crawled from the Global Voices project website23. To simulate resource-poor scenario for the Romanian–English language pair, we sample a parallel corpus of same size from the transcribed TED talks (Cettolo et al. 2012). To evaluate translation\n\n<sup>20</sup>We assume that while parallel data is limited in the recipient language, monolingual data is available.\n\n<sup>21</sup><code.google.com/p/word2vec>\n\n<sup>22</sup><github.com/mfaruqui/eacl14-cca>\n\n<sup>23</sup><sw.globalvoicesonline.org>"
+  },
+  {
+    "chunk_id": "PSAI048-C0080",
+    "doc_id": "PSAI048",
+    "chunk_index": 80,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "section_split",
+    "token_count": 101,
+    "hash": "0dddec65a0c693c4",
+    "text": "with Kneser-Ney smoothing (Kneser and Ney 1995) are trained using KenLM (Heafield 2011) on the target side of the parallel training corpora and on the Gigaword corpus (Graff et al. 2007). Results are reported using case-insensitive BLEU with a single reference (Papineni et al. 2002). We train three systems for each MT setup; reported BLEU scores are averaged over systems."
+  },
+  {
+    "chunk_id": "PSAI048-C0081",
+    "doc_id": "PSAI048",
+    "chunk_index": 81,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "section_split",
+    "token_count": 64,
+    "hash": "7ba524a273cc9138",
+    "text": "training corpora and on the Gigaword corpus (Graff et al. 2007). Results are reported using case-insensitive BLEU with a single reference (Papineni et al. 2002). We train three systems for each MT setup; reported BLEU scores are averaged over systems."
+  },
+  {
+    "chunk_id": "PSAI048-C0082",
+    "doc_id": "PSAI048",
+    "chunk_index": 82,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 29,
+    "hash": "f568a50ee5378b64",
+    "text": ": Tokens | 4K: 84,764 | 8K: 170,493 | 14K: 300,648"
+  },
+  {
+    "chunk_id": "PSAI048-C0083",
+    "doc_id": "PSAI048",
+    "chunk_index": 83,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 29,
+    "hash": "e7f975fe2406ee66",
+    "text": ": Types | 4K: 14,554 | 8K: 23,134 | 14K: 33,288"
+  },
+  {
+    "chunk_id": "PSAI048-C0084",
+    "doc_id": "PSAI048",
+    "chunk_index": 84,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 46,
+    "hash": "b0d6249f2164c9b8",
+    "text": ": OOV tokens | 4K: 4,465 (12.7%) | 8K: 3,509 (10.0%) | 14K: 2,965 (8.4%)"
+  },
+  {
+    "chunk_id": "PSAI048-C0085",
+    "doc_id": "PSAI048",
+    "chunk_index": 85,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 46,
+    "hash": "77bb4c7d46e01ded",
+    "text": ": OOV types | 4K: 3,610 (50.3%) | 8K: 2,950 (41.1%) | 14K: 2,523 (35.1%)"
+  },
+  {
+    "chunk_id": "PSAI048-C0086",
+    "doc_id": "PSAI048",
+    "chunk_index": 86,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "section",
+    "token_count": 120,
+    "hash": "2fff68da03e03332",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation > 4.2 Evaluation of Pivoting via Borrowing in MT\n\n<span id=\"page-16-1\"></span><span id=\"page-16-0\"></span>Tab. 6: Statistics of the Swahili–English corpora and source-side OOV for 4K, 8K, 14K parallel training sentences."
+  },
+  {
+    "chunk_id": "PSAI048-C0087",
+    "doc_id": "PSAI048",
+    "chunk_index": 87,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 29,
+    "hash": "ec6256d826424af5",
+    "text": ": Tokens | 4K: 35,978 | 8K: 71,584 | 14K: 121,718"
+  },
+  {
+    "chunk_id": "PSAI048-C0088",
+    "doc_id": "PSAI048",
+    "chunk_index": 88,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 29,
+    "hash": "ce0e830eb91855ce",
+    "text": ": Types | 4K: 7,210 | 8K: 11,144 | 14K: 15,112"
+  },
+  {
+    "chunk_id": "PSAI048-C0089",
+    "doc_id": "PSAI048",
+    "chunk_index": 89,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 46,
+    "hash": "5e8a2aa1c7460820",
+    "text": ": OOV tokens | 4K: 3,268 (16.6%) | 8K: 2,585 (13.1%) | 14K: 2,177 (11.1%)"
+  },
+  {
+    "chunk_id": "PSAI048-C0090",
+    "doc_id": "PSAI048",
+    "chunk_index": 90,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 46,
+    "hash": "84e53b9132e874fe",
+    "text": ": OOV types | 4K: 2,382 (55.0%) | 8K: 1,922 (44.4%) | 14K: 1,649 (38.1%)"
+  },
+  {
+    "chunk_id": "PSAI048-C0091",
+    "doc_id": "PSAI048",
+    "chunk_index": 91,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "section",
+    "token_count": 107,
+    "hash": "a3b758ba5f463b76",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation > 4.2 Evaluation of Pivoting via Borrowing in MT\n\n<span id=\"page-16-2\"></span>Tab. 7: Statistics of the Romanian–English corpora and source-side OOV for 4K, 8K, 14K parallel training sentences."
+  },
+  {
+    "chunk_id": "PSAI048-C0092",
+    "doc_id": "PSAI048",
+    "chunk_index": 92,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 37,
+    "hash": "2c6f82c72fc3ba54",
+    "text": ": Sentences | dev: 1,552 | SW – EN test: 1,732 | dev: 2,687 | RO – EN test: 2,265"
+  },
+  {
+    "chunk_id": "PSAI048-C0093",
+    "doc_id": "PSAI048",
+    "chunk_index": 93,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 36,
+    "hash": "00c325e3ce03fc9a",
+    "text": ": Tokens | dev: 33,446 | SW – EN test: 35,057 | dev: 24,754 | RO – EN test: 19,659"
+  },
+  {
+    "chunk_id": "PSAI048-C0094",
+    "doc_id": "PSAI048",
+    "chunk_index": 94,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 36,
+    "hash": "88a3fdcfb49c2c32",
+    "text": ": Types | dev: 7,008 | SW – EN test: 7,180 | dev: 5,141 | RO – EN test: 4,328"
+  },
+  {
+    "chunk_id": "PSAI048-C0095",
+    "doc_id": "PSAI048",
+    "chunk_index": 95,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "section",
+    "token_count": 475,
+    "hash": "b0762304bc255664",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation > 4.2 Evaluation of Pivoting via Borrowing in MT\n\nTab. 8: Dev and test corpora sizes.\n\nBaselines and oracles The goal of our experiments is not only to evaluate the contribution of the OOV dictionaries that we extract when pivoting via borrowing, but also to understand the potential contribution of exploiting borrowing: what is the overall improvement that can be achieved if we correctly translate all OOVs that were borrowed from another language? We answer this question with the help of an \"oracle\" experiment. In the oracle experiment we word-align all available parallel corpora, including dev and test sets, and extract from the alignments translations of OOV words. Then, we append the extracted OOV dictionaries to the translation system's training corpus and re-train the system with the augmented training data. Translation scores of the resulting system provide an upper bound of an improvement from correctly\n\n<sup>24</sup><www.cdec-decoder.org>\n\ntranslating all OOVs. When we append oracle translations of the subset of OOV dictionaries, in particular translations of all OOVs for which the output of the borrowing system is not empty, we obtain an upper bound that can be achieved using our method (if the borrowing system provided perfect outputs). Understanding the upper bounds is relevant not only for our experiments, but for any experiments that involve augmenting translation dictionaries; however, we are not aware of prior work providing similar analysis of upper bounds, and we recommend this as a calibrating procedure for future work on OOV mitigation strategies.\n\nBorrowing-augmented setups We integrate translations of OOV loanwords in the translation model using the synthetic phrase paradigm. Due to data sparsity, we conjecture that non-OOVs that occur only few times in the training corpus can also lack appropriate translation candidates, i.e., these are target-language OOVs. We therefore plug into the borrowing system OOVs and non-OOV words that occur less than 3 times in the training corpus. We list in table 9 sizes of resulting borrowed lexicons that we integrate in translation tables."
+  },
+  {
+    "chunk_id": "PSAI048-C0096",
+    "doc_id": "PSAI048",
+    "chunk_index": 96,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 36,
+    "hash": "b9181c713ad5696a",
+    "text": ": Loan OOVs in SW – EN | 4K: 2,670 | 8K: 2,162 | 14K: 1,840"
+  },
+  {
+    "chunk_id": "PSAI048-C0097",
+    "doc_id": "PSAI048",
+    "chunk_index": 97,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 30,
+    "hash": "445ddf7565a7c649",
+    "text": ": Loan OOVs in RO – EN | 4K: 174 | 8K: 133 | 14K: 105"
+  },
+  {
+    "chunk_id": "PSAI048-C0098",
+    "doc_id": "PSAI048",
+    "chunk_index": 98,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "section",
+    "token_count": 169,
+    "hash": "59b28a6c9a9ef0e4",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation > 4.2 Evaluation of Pivoting via Borrowing in MT\n\n<span id=\"page-17-0\"></span>Tab. 9: Sizes of dictionaries extracted using pivoting via borrowing and integrated in translation models.\n\n<span id=\"page-17-1\"></span>Results Translation results are shown in tables 10 and 11. We evaluate separately the contribution of the integrated OOV translations, and the same translations annotated with phonetic and semantic features. We also provide oracle scores for integrated loanword dictionaries (Oracle-loan) as well as for recovering all OOVs (Oracle-all)."
+  },
+  {
+    "chunk_id": "PSAI048-C0099",
+    "doc_id": "PSAI048",
+    "chunk_index": 99,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 30,
+    "hash": "08e67a4b34fe68b2",
+    "text": ": Baseline | 4K: 13.2 | 8K: 15.1 | 14K: 17.1"
+  },
+  {
+    "chunk_id": "PSAI048-C0100",
+    "doc_id": "PSAI048",
+    "chunk_index": 100,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 33,
+    "hash": "a2367b2e0a48deae",
+    "text": ": + Loan OOVs | 4K: 14.3 | 8K: 15.7 | 14K: 18.2"
+  },
+  {
+    "chunk_id": "PSAI048-C0101",
+    "doc_id": "PSAI048",
+    "chunk_index": 101,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 30,
+    "hash": "0620ce9703aab181",
+    "text": ": + Features | 4K: 14.8 | 8K: 16.4 | 14K: 18.4"
+  },
+  {
+    "chunk_id": "PSAI048-C0102",
+    "doc_id": "PSAI048",
+    "chunk_index": 102,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 31,
+    "hash": "a938fb7bc302805f",
+    "text": ": Oracle-loan | 4K: 18.9 | 8K: 19.1 | 14K: 20.7"
+  },
+  {
+    "chunk_id": "PSAI048-C0103",
+    "doc_id": "PSAI048",
+    "chunk_index": 103,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 30,
+    "hash": "1ebbe9856d59f316",
+    "text": ": Oracle-all | 4K: 19.2 | 8K: 20.4 | 14K: 21.1"
+  },
+  {
+    "chunk_id": "PSAI048-C0104",
+    "doc_id": "PSAI048",
+    "chunk_index": 104,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "section",
+    "token_count": 86,
+    "hash": "476069e890da8b99",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation > 4.2 Evaluation of Pivoting via Borrowing in MT\n\nTab. 10: Swahili–English MT experiments.\n\n<span id=\"page-17-2\"></span>"
+  },
+  {
+    "chunk_id": "PSAI048-C0105",
+    "doc_id": "PSAI048",
+    "chunk_index": 105,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 30,
+    "hash": "c06b89784b1d1b08",
+    "text": ": Baseline | 4K: 15.8 | 8K: 18.5 | 14K: 20.7"
+  },
+  {
+    "chunk_id": "PSAI048-C0106",
+    "doc_id": "PSAI048",
+    "chunk_index": 106,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 33,
+    "hash": "c5349bb50ef65089",
+    "text": ": + Loan OOVs | 4K: 16.0 | 8K: 18.7 | 14K: 20.7"
+  },
+  {
+    "chunk_id": "PSAI048-C0107",
+    "doc_id": "PSAI048",
+    "chunk_index": 107,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 30,
+    "hash": "36389460a7bb3442",
+    "text": ": + Features | 4K: 15.9 | 8K: 18.6 | 14K: 20.6"
+  },
+  {
+    "chunk_id": "PSAI048-C0108",
+    "doc_id": "PSAI048",
+    "chunk_index": 108,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 31,
+    "hash": "a52384ea840a872d",
+    "text": ": Oracle-loan | 4K: 16.6 | 8K: 19.4 | 14K: 20.9"
+  },
+  {
+    "chunk_id": "PSAI048-C0109",
+    "doc_id": "PSAI048",
+    "chunk_index": 109,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "table_row",
+    "token_count": 30,
+    "hash": "f67ad4388137710e",
+    "text": ": Oracle-all | 4K: 28.0 | 8K: 28.8 | 14K: 30.4"
+  },
+  {
+    "chunk_id": "PSAI048-C0110",
+    "doc_id": "PSAI048",
+    "chunk_index": 110,
+    "section": "4.2 Evaluation of Pivoting via Borrowing in MT",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+      "4.2 Evaluation of Pivoting via Borrowing in MT"
+    ],
+    "block_type": "section",
+    "token_count": 265,
+    "hash": "3a0d30d112920910",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation > 4.2 Evaluation of Pivoting via Borrowing in MT\n\nTab. 11: Romanian–English MT experiments.\n\nSwahili–English MT performance is improved by up to +1.6 BLEU when we augment it with translated OOV loanwords leveraged from the Arabic–Swahili borrowing and then Arabic–English MT. The contribution of the borrowing dictionaries is +0.6–1.1 BLEU, and phonetic and semantic features contribute additional half BLEU. More importantly, oracle results show that the system can be improved more substantially with better dictionaries of OOV loanwords. This result confirms that OOV borrowed words is an important type of OOVs, and with proper modeling it has the potential to improve translation by a large margin. Romanian–English systems obtain only small improvement. However, this is expected as the rate of borrowing from French into Romanian is smaller, and, as the result, the integrated loanword dictionaries are small. Still, even with these imperfect and small dictionaries the translations improve, and even almost approach the oracle results."
+  },
+  {
+    "chunk_id": "PSAI048-C0111",
+    "doc_id": "PSAI048",
+    "chunk_index": 111,
+    "section": "<span id=\"page-18-0\"></span>5.1 Models of Lexical Borrowing for Typologically Diverse Languages",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-18-0\"></span>5.1 Models of Lexical Borrowing for Typologically Diverse Languages"
+    ],
+    "block_type": "section",
+    "token_count": 283,
+    "hash": "1694b85cb6c5abd7",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-18-2\"></span>5 Future Work > <span id=\"page-18-0\"></span>5.1 Models of Lexical Borrowing for Typologically Diverse Languages\n\nWe introduced the Swahili–Arabic and Romanian–French borrowing systems. To establish the robustness and generality of our approach, in future work we will build borrowing systems for a diverse set of languages, listed in table 12. We selected the list of focus languages, based on the following considerations:\n\n- Recipients are susceptible to borrowing, typologically diverse, and also diverse in terms of availability of resources, from resource-rich English to extremely resource-poor Yoruba. We also paid attention to selecting recipient languages that have more than one prominent donor language.\n- Donors are resource-rich and typologically diverse.\n- Donor–recipient language pairs have been extensively studied in contact linguistics, in particular using Optimality Theoretic view, and linguistic studies contain lexicons of donor–loanword examples that we can use as training sets.\n- Availability of pronunciation dictionaries (or phonographic writing system); availability of small parallel corpora, dependency treebanks and POS tagged corpora to enable extrinsic evaluation; and, when possible, language presence it Twitter data."
+  },
+  {
+    "chunk_id": "PSAI048-C0112",
+    "doc_id": "PSAI048",
+    "chunk_index": 112,
+    "section": "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP"
+    ],
+    "block_type": "section",
+    "token_count": 365,
+    "hash": "3b4f07beb00984d8",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-18-2\"></span>5 Future Work > <span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP\n\nApproaches to low-resource NLP can roughly be categorized into unsupervised (Christodoulopoulos et al. 2010, Berg-Kirkpatrick and Klein 2010, Cohen et al. 2011, Naseem et al. 2012), and semi-supervised methods relying on cross-lingual projection from resource-rich languages via parallel data. Cross-lingual semisupervised learning strategies of syntactic structure—both shallow and deep—have been a promising vein of research over the last years; we will continue this research direction, but will augment or replace word alignments with multilingual borrowing lexicons.\n\nThe majority of semi-supervised approaches project annotations from English, both in POS tagging (Yarowsky et al. 2001, Das and Petrov 2011, Li et al. 2012, Täckström et al. 2013), and in induction of dependency relations (Wu 1997, Kuhn 2004, Smith and Smith 2004, Hwa et al. 2005, Xi and Hwa 2005, Burkett and Klein 2008, Snyder et al. 2009, Ganchev et al. 2009, Tiedemann 2014). We hypothesize that in the case of syntactic annotation, projection via borrowing is a more plausible method than projection via\n\n<span id=\"page-19-0\"></span>"
+  },
+  {
+    "chunk_id": "PSAI048-C0113",
+    "doc_id": "PSAI048",
+    "chunk_index": 113,
+    "section": "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP"
+    ],
+    "block_type": "table_row",
+    "token_count": 24,
+    "hash": "7eb30f1cb9d83601",
+    "text": "# speakers: (millions) | : Resource-rich donors | : Studies | : on | : lexical | : borrowing"
+  },
+  {
+    "chunk_id": "PSAI048-C0114",
+    "doc_id": "PSAI048",
+    "chunk_index": 114,
+    "section": "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP"
+    ],
+    "block_type": "table_row",
+    "token_count": 48,
+    "hash": "707be59e2d13dadf",
+    "text": "Recipient: English | Family: Germanic | # speakers: 1500 | : French, | : German, Spanish, | : Arabic | : (Grant | : 2009, | : Durkin | : 2014)"
+  },
+  {
+    "chunk_id": "PSAI048-C0115",
+    "doc_id": "PSAI048",
+    "chunk_index": 115,
+    "section": "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP"
+    ],
+    "block_type": "table_row",
+    "token_count": 39,
+    "hash": "8abc0ecfde17a4b7",
+    "text": "Recipient: Russian | Family: Slavic | # speakers: 260 | : English | : (Benson | : 1959, | : Styblo Jr | : 2007)"
+  },
+  {
+    "chunk_id": "PSAI048-C0116",
+    "doc_id": "PSAI048",
+    "chunk_index": 116,
+    "section": "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP"
+    ],
+    "block_type": "table_row",
+    "token_count": 51,
+    "hash": "8173bfb50fc61fdd",
+    "text": "Recipient: Japanese | Family: Altaic | # speakers: 125 | : English, | : Chinese | : (Kay | : 1995, | : Daulton | : 2008, | : Schmidt | : 2009)"
+  },
+  {
+    "chunk_id": "PSAI048-C0117",
+    "doc_id": "PSAI048",
+    "chunk_index": 117,
+    "section": "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP"
+    ],
+    "block_type": "table_row",
+    "token_count": 46,
+    "hash": "cb6318d4c33f54be",
+    "text": "Recipient: Vietnamese | Family: Austro-Asiatic | # speakers: 80 | : Chinese, | : French | : (Barker | : 1969, | : Alves | : 2009)"
+  },
+  {
+    "chunk_id": "PSAI048-C0118",
+    "doc_id": "PSAI048",
+    "chunk_index": 118,
+    "section": "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP"
+    ],
+    "block_type": "table_row",
+    "token_count": 44,
+    "hash": "e048d181ccee16d8",
+    "text": "Recipient: Korean | Family: Koreanic | # speakers: 75 | : English, | : Chinese | : (Kang | : 2003, | : Kenstowicz | : 2005)"
+  },
+  {
+    "chunk_id": "PSAI048-C0119",
+    "doc_id": "PSAI048",
+    "chunk_index": 119,
+    "section": "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP"
+    ],
+    "block_type": "table_row",
+    "token_count": 42,
+    "hash": "e32f50137c76323e",
+    "text": "Recipient: Swahili | Family: Bantu | # speakers: 40 | : Arabic | : (Mwita | : 2009, | : Schadeberg | : 2009)"
+  },
+  {
+    "chunk_id": "PSAI048-C0120",
+    "doc_id": "PSAI048",
+    "chunk_index": 120,
+    "section": "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP"
+    ],
+    "block_type": "table_row",
+    "token_count": 43,
+    "hash": "defb9480636414f8",
+    "text": "Recipient: Yoruba | Family: Edekiri | # speakers: 28 | : English | : (Ojo | : 1977, | : Kenstowicz | : 2006)"
+  },
+  {
+    "chunk_id": "PSAI048-C0121",
+    "doc_id": "PSAI048",
+    "chunk_index": 121,
+    "section": "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP"
+    ],
+    "block_type": "table_row",
+    "token_count": 39,
+    "hash": "6e926bcfefc11454",
+    "text": "Recipient: Romanian | Family: Romance | # speakers: 24 | : French | : (Friesner | : 2009, | : Schulte | : 2009)"
+  },
+  {
+    "chunk_id": "PSAI048-C0122",
+    "doc_id": "PSAI048",
+    "chunk_index": 122,
+    "section": "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP"
+    ],
+    "block_type": "table_row",
+    "token_count": 49,
+    "hash": "b617a6a20ab82af9",
+    "text": "Recipient: Quechua | Family: Quechuan | # speakers: 9 | : Spanish | : (Rendón | : 2008, | : Rendón | : and | : Adelaar 2009)"
+  },
+  {
+    "chunk_id": "PSAI048-C0123",
+    "doc_id": "PSAI048",
+    "chunk_index": 123,
+    "section": "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP"
+    ],
+    "block_type": "table_row",
+    "token_count": 49,
+    "hash": "36c4c7bdc5eabc70",
+    "text": "Recipient: Hebrew | Family: Semitic | # speakers: 7.5 | : English, | : Arabic | : (Schwarzwald | : 1998, | : Cohen 2009; | : 2013)"
+  },
+  {
+    "chunk_id": "PSAI048-C0124",
+    "doc_id": "PSAI048",
+    "chunk_index": 124,
+    "section": "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP"
+    ],
+    "block_type": "table_row",
+    "token_count": 53,
+    "hash": "3b5968df45f3fec1",
+    "text": "Recipient: Finnish | Family: Uralic | # speakers: 5 | : German, | : English | : (Orešnik | : 1982, | : Kallio | : 2006, | : Johnson 2014)"
+  },
+  {
+    "chunk_id": "PSAI048-C0125",
+    "doc_id": "PSAI048",
+    "chunk_index": 125,
+    "section": "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP"
+    ],
+    "block_type": "section_split",
+    "token_count": 448,
+    "hash": "23708ca100171bbb",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-18-2\"></span>5 Future Work > <span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP\n\nTab. 12: Recipient and donor languages to be used for borrowing systems constructed in this project.\n\nword alignment, especially when large parallel corpora are unavailable. First, projecting via borrowing will enable annotation projection from typologically more similar languages to the target language. For example, some Austronesian languages (e.g., Malagasy) have borrowed extensively from Arabic, and these are typologically closer to Arabic than to English (e.g., like Arabic, these are verb-subject-object languages). Second, linguistic studies report statistics on \"borrowability\" of syntactic categories pertaining to specific languages; Haspelmath and Tadmor (2009), for example, provide relative percentages of loan nouns, verbs, adjectives, and adverbs for 41 languages. We will use this prior knowledge to bias the learned taggers/parsers. Finally, integrating borrowing will allow us to use signals from multiple source languages, which have proven to work better than solely exploiting English (McDonald et al. 2011, Berg-Kirkpatrick and Klein 2010, Cohen et al. 2011, Naseem et al. 2012).\n\nWe will experiment with existing cross-lingual approaches to POS tagging (cf. Täckström et al. 2013), adapted to projecting via donor–loan lexicons. There, we will employ borrowing both in projecting token annotations (in addition to or instead of parallel corpora), and in projecting tag dictionaries. Similarly, we will adapt techniques for cross-lingual dependency grammar induction (cf. McDonald et al. 2011). Prior work on non-parallel cross-lingual structure prediction has already shown that phylogenetic relations are a valuable signal (Berg-Kirkpatrick and Klein 2010), and we will continue this vein of research, focusing on non-parallel projection via borrowing."
+  },
+  {
+    "chunk_id": "PSAI048-C0126",
+    "doc_id": "PSAI048",
+    "chunk_index": 126,
+    "section": "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP"
+    ],
+    "block_type": "section_split",
+    "token_count": 348,
+    "hash": "e05912205b034ac4",
+    "text": "The universal POS tagset (Petrov et al. 2012) and the universal dependency treebank (McDonald et al. 2013) will be used to train resource-rich taggers/parsers, the sources of projection. We will use the Leipzig Corpora Collection (Biemann et al. 2007) as a source of monolingual data, and publicly available parallel or multi-parallel corpora such as WIT<sup>3</sup> (translated TED talks) (Cettolo et al. 2012) and Common Crawl parallel data (Smith et al. 2013) for translation and cross-lingual projection. In addition, we will use Wiktionary<sup>25</sup> as a source of multilingual tag dictionaries (cf. Li et al. 2012, Garrette and Baldridge 2013), and the World Atlas of Language Structures (WALS) (Dryer and Haspelmath 2013) as a source of linguistic typological features (cf. Naseem et al. 2012). We will evaluate an accuracy our taggers and parsers on existing tagged and parsed corpora (e.g., Erjavec 2004, Hajic et al. 2009). We will also evaluate the effectiveness of our ˇ methodology by simulating resource-rich to resource-poor scenario in a resource-rich language pair (e.g., English–Spanish, English–French). We will conduct manual qualitative evaluation and error analysis, and,\n\n<sup>25</sup><www.wiktionary.org>\n\nimportantly, will investigate the impact of typological similarity on the quality of cross-lingual projection."
+  },
+  {
+    "chunk_id": "PSAI048-C0127",
+    "doc_id": "PSAI048",
+    "chunk_index": 127,
+    "section": "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP"
+    ],
+    "block_type": "section_split",
+    "token_count": 64,
+    "hash": "f895e42ca8d47ae4",
+    "text": "in a resource-rich language pair (e.g., English–Spanish, English–French). We will conduct manual qualitative evaluation and error analysis, and,\n\n<sup>25</sup><www.wiktionary.org>\n\nimportantly, will investigate the impact of typological similarity on the quality of cross-lingual projection."
+  },
+  {
+    "chunk_id": "PSAI048-C0128",
+    "doc_id": "PSAI048",
+    "chunk_index": 128,
+    "section": "<span id=\"page-20-0\"></span>5.3 Modeling the Sociolinguistic Aspects of Lexical Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-20-0\"></span>5.3 Modeling the Sociolinguistic Aspects of Lexical Borrowing"
+    ],
+    "block_type": "section",
+    "token_count": 308,
+    "hash": "b0f424e1cd04203c",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-18-2\"></span>5 Future Work > <span id=\"page-20-0\"></span>5.3 Modeling the Sociolinguistic Aspects of Lexical Borrowing\n\nAs pointed out by Appel and Muysken (2005; p. 174), the literature on lexical borrowing combines an immense number of case studies with the absence of general works. Linguistic case studies focus on morphophonological properties of lexical, morphological, phonological, and grammatical borrowing; sociolinguistic case studies explore social and cultural determinants of borrowing. While in the first phases of this research we will develop general data-driven approaches to identify and model lexical borrowing as a linguistic phenomenon, the goal of the current phase is to develop general approaches to statistically model borrowing as a social and cultural phenomenon. We will focus on two research questions: (1) what are demographic and geographic conditions to the emergence and diffusion of borrowing?; and (2) is there a correlation between socio-political status quo in contact communities and meaning/semantic polarity that loanwords acquire in borrowing? Answering these questions using robust statistical methods, will help researchers better understand and exploit lexical borrowing in NLP applications. In addition, these computational studies will corroborate or refute the generality of claims made in individual sociolinguistic case studies on borrowing, thereby contributing to sociolinguistic research."
+  },
+  {
+    "chunk_id": "PSAI048-C0129",
+    "doc_id": "PSAI048",
+    "chunk_index": 129,
+    "section": "5.3.1 Emergence and Diffusion of Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-20-0\"></span>5.3 Modeling the Sociolinguistic Aspects of Lexical Borrowing",
+      "5.3.1 Emergence and Diffusion of Borrowing"
+    ],
+    "block_type": "section_split",
+    "token_count": 325,
+    "hash": "39a4f8bea7e74890",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-18-2\"></span>5 Future Work > <span id=\"page-20-0\"></span>5.3 Modeling the Sociolinguistic Aspects of Lexical Borrowing > 5.3.1 Emergence and Diffusion of Borrowing\n\nLinguistic borrowing emerges in bilingualism over time; wider-spread and longer language contact triggers more common and more far-reaching borrowing (McMahon 1994). Twitter and other social media corpora provide particularly fruitful conditions to investigate the emergence and diffusion of lexical borrowing: these texts are an example of rapid language development, of emergence and diffusion of neologisms (Androutsopoulos 2000, Anis 2007, Herring 2012), of dense interaction between diverse multilingual populations all over the world. Importantly, written neologisms—\"neography\" (Anis 2007)—are often phonetic forms of spoken words, and, as recent research shows, are influenced by the phonological system of the source language (Eisenstein 2013; 2015). Presence of morpho-phonological influence indicates some level of linguistic adaptation, i.e., borrowing. While previous studies investigated the emergence and diffusion of lexical change in English Twitter data, relying only on word frequencies (Eisenstein et al. 2014), our goal is to extend this research direction to multiple languages/dialects, and to explore examples containing morpho-phonological signals."
+  },
+  {
+    "chunk_id": "PSAI048-C0130",
+    "doc_id": "PSAI048",
+    "chunk_index": 130,
+    "section": "5.3.1 Emergence and Diffusion of Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-20-0\"></span>5.3 Modeling the Sociolinguistic Aspects of Lexical Borrowing",
+      "5.3.1 Emergence and Diffusion of Borrowing"
+    ],
+    "block_type": "section_split",
+    "token_count": 79,
+    "hash": "e8da39d87b0ecf5f",
+    "text": "above\", i.e., being initiated by higher-influence groups (of users, locations, languages) and adopted \"from below\", by lower-influence groups (as in the Labov's seminal work on dialect importation (1966)); that while phonetic transcription and context-switching are used by younger users, borrowing requires mature linguistic experience of adults to correctly identify and adopt the borrowed features."
+  },
+  {
+    "chunk_id": "PSAI048-C0131",
+    "doc_id": "PSAI048",
+    "chunk_index": 131,
+    "section": "5.3.1 Emergence and Diffusion of Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-20-0\"></span>5.3 Modeling the Sociolinguistic Aspects of Lexical Borrowing",
+      "5.3.1 Emergence and Diffusion of Borrowing"
+    ],
+    "block_type": "section_split",
+    "token_count": 64,
+    "hash": "dcc4750f6f47b969",
+    "text": ", locations, languages) and adopted \"from below\", by lower-influence groups (as in the Labov's seminal work on dialect importation (1966)); that while phonetic transcription and context-switching are used by younger users, borrowing requires mature linguistic experience of adults to correctly identify and adopt the borrowed features."
+  },
+  {
+    "chunk_id": "PSAI048-C0132",
+    "doc_id": "PSAI048",
+    "chunk_index": 132,
+    "section": "5.3.2 Relation between Prestige and Sentiment Polarity in Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-20-0\"></span>5.3 Modeling the Sociolinguistic Aspects of Lexical Borrowing",
+      "5.3.2 Relation between Prestige and Sentiment Polarity in Borrowing"
+    ],
+    "block_type": "section_split",
+    "token_count": 501,
+    "hash": "8daf53146ac49da8",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-18-2\"></span>5 Future Work > <span id=\"page-20-0\"></span>5.3 Modeling the Sociolinguistic Aspects of Lexical Borrowing > 5.3.2 Relation between Prestige and Sentiment Polarity in Borrowing\n\nSusceptibility of a language to borrowing is determined by both linguistic and socio-political factors. Linguistic considerations involve attempts to fill a lexical gap for a concept that has no word in the recipient language (new information or technology, contact with foreign culture, or foreign flora and fauna, etc.). Socio-political factors are determined by political and social prestige. Presumably, speakers borrow from a prestige-group, although not always—when loanwords enter from less prestigious to more prestigious language, these often connote derogatory meanings (McMahon 1994). For example, Romanian loanwords from Slavic tend to have positive semantic orientation, while loanwords from Turkish have more negative connotations, e.g., prieten 'friend' (Romanian, borrowed from Slavic prijatel) vs. dus,man 'enemy' (from Turkish dü¸sman) (Schulte 2009). Turkish, in turn, frequently borrowed words from Arabic and Persian, but with the founding of the modern Turkish state and the related rise of nationalism and national identity, this borrowing ceased more or less instantly (Curnow 2001). We will conduct a qualitative study to measure correlation between sentiment polarity of borrowed words and prestige relations of lending/borrowing users.\n\nStudies on emergence and diffusion of borrowing, and on dynamics in semantics of borrowing can shed new light to the longstanding goal of social studies—linguistic and computational—understanding the relationship between social forces and linguistic outcomes. Practically, this study will result in new analytics tools that can improve social media applications analyzing and predicting human behavior, e.g., predicting public opinion from social media feeds (O'Connor et al. 2010), predicting personal attributes like geographic location, age, gender, and race/ethnicity of social media users (Nguyen et al. 2011, Mislove et al. 2011), measuring power differences between individuals based the patterns of words they speak or write (Danescu-Niculescu-Mizil et al. 2012)."
+  },
+  {
+    "chunk_id": "PSAI048-C0133",
+    "doc_id": "PSAI048",
+    "chunk_index": 133,
+    "section": "5.3.2 Relation between Prestige and Sentiment Polarity in Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-20-0\"></span>5.3 Modeling the Sociolinguistic Aspects of Lexical Borrowing",
+      "5.3.2 Relation between Prestige and Sentiment Polarity in Borrowing"
+    ],
+    "block_type": "section_split",
+    "token_count": 193,
+    "hash": "3b16c452cf2285c4",
+    "text": "media users (Nguyen et al. 2011, Mislove et al. 2011), measuring power differences between individuals based the patterns of words they speak or write (Danescu-Niculescu-Mizil et al. 2012).\n\nIn all our experiments we will use geo-tagged Twitter data from the Twitter Gardenhose stream, which is a sample of approximately 10% of all publicly available Twitter messages (tweets). In addition to the messages themselves, we have information about the identity of the message sender, whether or not it was a \"retweet\" of another message, partial information from the \"follower graph,\" and, for some subset of the tweets, geographic location of the message sender (which can be, e.g., correlated with demographic information). All donor and recipient focus languages—except Swahili, Yoruba, and Quechua—are wellrepresented in the CMU Twitter archive (table 13)."
+  },
+  {
+    "chunk_id": "PSAI048-C0134",
+    "doc_id": "PSAI048",
+    "chunk_index": 134,
+    "section": "5.3.2 Relation between Prestige and Sentiment Polarity in Borrowing",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-18-2\"></span>5 Future Work",
+      "<span id=\"page-20-0\"></span>5.3 Modeling the Sociolinguistic Aspects of Lexical Borrowing",
+      "5.3.2 Relation between Prestige and Sentiment Polarity in Borrowing"
+    ],
+    "block_type": "section_split",
+    "token_count": 64,
+    "hash": "060b33896b26fa71",
+    "text": "graph,\" and, for some subset of the tweets, geographic location of the message sender (which can be, e.g., correlated with demographic information). All donor and recipient focus languages—except Swahili, Yoruba, and Quechua—are wellrepresented in the CMU Twitter archive (table 13)."
+  },
+  {
+    "chunk_id": "PSAI048-C0135",
+    "doc_id": "PSAI048",
+    "chunk_index": 135,
+    "section": "<span id=\"page-21-0\"></span>6 Timeline",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-21-0\"></span>6 Timeline"
+    ],
+    "block_type": "section",
+    "token_count": 145,
+    "hash": "2f2614608a4e6402",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-21-0\"></span>6 Timeline\n\n- Summer 2015: finalize models of borrowing for multiple languages (§5.1); publicly release multilingual borrowing lexicons.\n- Summer, Fall 2015: investigate integrating borrowing in core-NLP (§5.2); submit a TACL paper.\n- Spring, Summer 2016: explore borrowing in social media in monolingual and cross-lingual settings (§5.3); write a paper.\n- Summer 2016: thesis defense\n\n<span id=\"page-22-12\"></span>"
+  },
+  {
+    "chunk_id": "PSAI048-C0136",
+    "doc_id": "PSAI048",
+    "chunk_index": 136,
+    "section": "<span id=\"page-21-0\"></span>6 Timeline",
+    "heading_path": [
+      "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+      "<span id=\"page-21-0\"></span>6 Timeline"
+    ],
+    "block_type": "section",
+    "token_count": 50,
+    "hash": "d8b8e14e5195240d",
+    "text": "# <span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-21-0\"></span>6 Timeline\n\nTab. 13: Statistics of the multilingual tweets."
+  },
+  {
+    "chunk_id": "PSAI048-C0137",
+    "doc_id": "PSAI048",
+    "chunk_index": 137,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 509,
+    "hash": "91c741d0204e5b2a",
+    "text": "# References\n\n<span id=\"page-22-11\"></span><span id=\"page-22-10\"></span><span id=\"page-22-9\"></span><span id=\"page-22-8\"></span><span id=\"page-22-7\"></span><span id=\"page-22-6\"></span><span id=\"page-22-5\"></span><span id=\"page-22-4\"></span><span id=\"page-22-3\"></span><span id=\"page-22-2\"></span><span id=\"page-22-1\"></span><span id=\"page-22-0\"></span>Allison N Adler. Faithfulness and perception in loanword adaptation: A case study from Hawaiian. Lingua, 116(7):1024–1045, 2006. Sang-Cheol Ahn and Gregory K Iverson. Dimensions in Korean laryngeal phonology. Journal of East Asian Linguistics, 13(4):345–379, 2004. Yaser Al-Onaizan and Kevin Knight. Machine transliteration of names in Arabic text. In Proc. the ACL workshop on Computational Approaches to Semitic Languages, pages 1–13, 2002. Cyril Allauzen, Michael Riley, Johan Schalkwyk, Wojciech Skut, and Mehryar Mohri. OpenFst: A general and efficient weighted finite-state transducer library. In Implementation and Application of Automata, pages 11–23. Springer, 2007. Mark Alves. Loanwords in Vietnamese. In Martin Haspelmath and Uri Tadmor, editors, Loanwords in the World's Languages: A Comparative Handbook, pages 617–637. Max Planck Institute for Evolutionary Anthropology, 2009. Waleed Ammar, Chris Dyer, and Noah A. Smith. Transliteration by sequence labeling with lattice encodings and reranking. In Proc. NEWS workshop at ACL, 2012. Waleed Ammar, Victor Chahuneau, Michael Denkowski, Greg Hanneman, Wang Ling, Austin Matthews, Kenton Murray, Nicola Segall, Yulia Tsvetkov, Alon Lavie, and Chris Dyer. The cmu machine translation systems at WMT 2013: Syntax, synthetic translation options, and pseudo-references. In Proc. WMT, 2013. Jannis K Androutsopoulos."
+  },
+  {
+    "chunk_id": "PSAI048-C0138",
+    "doc_id": "PSAI048",
+    "chunk_index": 138,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 509,
+    "hash": "289b02f893adaae4",
+    "text": "Segall, Yulia Tsvetkov, Alon Lavie, and Chris Dyer. The cmu machine translation systems at WMT 2013: Syntax, synthetic translation options, and pseudo-references. In Proc. WMT, 2013. Jannis K Androutsopoulos. Non-standard spellings in media texts: The case of German fanzines. Journal of Sociolinguistics, 4(4):514–533, 2000. Jacques Anis. Neography: Unconventional spelling in French SMS text messages. The multilingual internet: Language, culture, and communication online, pages 87–115, 2007. René Appel and Pieter Muysken. Language contact and bilingualism. Amsterdam University Press, 2005. Milton E Barker. The phonological adaptation of French loanwords io Vietnamese. Mon-Khmer Studies Journal, 3:138–147, 1969. Morton Benson. English loanwords in Russian. The Slavic and East European Journal, 3(3):248–267, 1959. <span id=\"page-23-20\"></span><span id=\"page-23-19\"></span><span id=\"page-23-18\"></span><span id=\"page-23-17\"></span><span id=\"page-23-16\"></span><span id=\"page-23-15\"></span><span id=\"page-23-14\"></span><span id=\"page-23-13\"></span><span id=\"page-23-12\"></span><span id=\"page-23-11\"></span><span id=\"page-23-10\"></span><span id=\"page-23-9\"></span><span id=\"page-23-8\"></span><span id=\"page-23-7\"></span><span id=\"page-23-6\"></span><span id=\"page-23-5\"></span><span id=\"page-23-4\"></span><span id=\"page-23-3\"></span><span id=\"page-23-2\"></span><span id=\"page-23-1\"></span><span id=\"page-23-0\"></span>Taylor Berg-Kirkpatrick and Dan Klein. Phylogenetic grammar induction. In Proc. ACL, pages 1288–1297, 2010. Chris Biemann, Gerhard Heyer, Uwe Quasthoff, and Matthias Richter."
+  },
+  {
+    "chunk_id": "PSAI048-C0139",
+    "doc_id": "PSAI048",
+    "chunk_index": 139,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 510,
+    "hash": "9ae9752b61fa7654",
+    "text": "=\"page-23-0\"></span>Taylor Berg-Kirkpatrick and Dan Klein. Phylogenetic grammar induction. In Proc. ACL, pages 1288–1297, 2010. Chris Biemann, Gerhard Heyer, Uwe Quasthoff, and Matthias Richter. The leipzig corpora collectionmonolingual corpora of standard size. In Proc. Corpus Linguistic, 2007. Alan D Blair and John Ingram. Learning to predict the phonological structure of English loanwords in Japanese. Applied Intelligence, 19(1-2):101–108, 2003. Paul Boersma and Bruce Hayes. Empirical tests of the gradual learning algorithm. Linguistic inquiry, 32 (1):45–86, 2001. Ondˇrej Bojar, Christian Buck, Christian Federmann, Barry Haddow, Philipp Koehn, Johannes Leveling, Christof Monz, Pavel Pecina, Matt Post, Herve Saint-Amand, Radu Soricut, Lucia Specia, and Aleš Tamchyna. Findings of the 2014 workshop on statistical machine translation. In Proc. WMT, pages 12–58, 2014. Ellen Broselow. Language contact phonology: richness of the stimulus, poverty of the base. In Proc. NELS, volume 34, pages 1–22, 2004. David Burkett and Dan Klein. Two languages are better than one (for syntactic parsing). In Proc. EMNLP, pages 877–886, 2008. Andrea Calabrese and W Leo Wetzels. Loan phonology, volume 307. John Benjamins Publishing, 2009. Chris Callison-Burch, Philipp Koehn, and Miles Osborne. Improved statistical machine translation using paraphrases. In Proc. ACL, 2006. Mauro Cettolo, Christian Girardi, and Marcello Federico. WIT<sup>3</sup>: Web inventory of transcribed and translated talks. In Proc. EAMT, pages 261–268, 2012. Victor Chahuneau, Eva Schlinger, Noah A Smith, and Chris Dyer. Translating into morphologically rich languages with synthetic phrases. In Proc. EMNLP, pages 1677–1687, 2013. Christos Christodoulopoulos, Sharon Goldwater, and Mark Steedman."
+  },
+  {
+    "chunk_id": "PSAI048-C0140",
+    "doc_id": "PSAI048",
+    "chunk_index": 140,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 442,
+    "hash": "fe165fbbc22bdddc",
+    "text": "Eva Schlinger, Noah A Smith, and Chris Dyer. Translating into morphologically rich languages with synthetic phrases. In Proc. EMNLP, pages 1677–1687, 2013. Christos Christodoulopoulos, Sharon Goldwater, and Mark Steedman. Two decades of unsupervised POS induction: How far have we come? In Proc. EMNLP, pages 575–584, 2010. Evan-Gary Cohen. The role of similarity in phonology: Evidence from loanword adaptation in Hebrew. PhD thesis, Tel Aviv University, 2009. Evan-Gary Cohen. The emergence of the unmarked: Vowel harmony in Hebrew loanword adaptation. Lingua, 131:66–79, 2013. Shay B. Cohen, Dipanjan Das, and Noah A. Smith. Unsupervised structure prediction with non-parallel multilingual guidance. In Proc. EMNLP, 2011. Timothy Jowan Curnow. What language features can be 'borrowed'. Areal diffusion and genetic inheritance: problems in comparative linguistics, pages 412–436, 2001. Cristian Danescu-Niculescu-Mizil, Lillian Lee, Bo Pang, and Jon Kleinberg. Echoes of power: Language effects and power differences in social interaction. In Proc. WWW, pages 699–708, 2012. Dipanjan Das and Slav Petrov. Unsupervised part-of-speech tagging with bilingual graph-based projections. In Proc. ACL, pages 600–609, 2011. Frank E Daulton. Japan's built-in lexicon of English-based loanwords, volume 26. Multilingual Matters, 2008. Hal Daumé III. Non-parametric Bayesian areal linguistics. In Proc. NAACL, pages 593–601, 2009. Lisa Davidson and Rolf Noyer. Loan phonology in Huave: nativization and the ranking of faithfulness constraints. In Proc. WCCFL, volume 15, pages 65–79, 1997."
+  },
+  {
+    "chunk_id": "PSAI048-C0141",
+    "doc_id": "PSAI048",
+    "chunk_index": 141,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 505,
+    "hash": "02b039379ab94e00",
+    "text": "22\"></span><span id=\"page-24-21\"></span><span id=\"page-24-20\"></span><span id=\"page-24-19\"></span><span id=\"page-24-18\"></span><span id=\"page-24-17\"></span><span id=\"page-24-16\"></span><span id=\"page-24-15\"></span><span id=\"page-24-14\"></span><span id=\"page-24-13\"></span><span id=\"page-24-12\"></span><span id=\"page-24-11\"></span><span id=\"page-24-10\"></span><span id=\"page-24-9\"></span><span id=\"page-24-8\"></span><span id=\"page-24-7\"></span><span id=\"page-24-6\"></span><span id=\"page-24-5\"></span><span id=\"page-24-4\"></span><span id=\"page-24-3\"></span><span id=\"page-24-2\"></span><span id=\"page-24-1\"></span><span id=\"page-24-0\"></span>Adrià De Gispert and Jose B Marino. Catalan-English statistical machine translation without parallel corpus: bridging through Spanish. In Proc. LREC, pages 65–68, 2006. Rohit Dholakia and Anoop Sarkar. Pivot-based triangulation for low-resource languages. In Proc. AMTA, 2014. Mona Diab and Philip Resnik. An unsupervised method for word sense tagging using parallel corpora. In Proc. ACL, 2002. Qing Dou and Kevin Knight. Dependency-based decipherment for resource-limited machine translation. In Proc. EMNLP, 2013. Qing Dou, Ashish Vaswani, and Kevin Knight. Beyond parallel data: Joint word alignment and decipherment improves machine translation. In Proc. EMNLP, 2014. Matthew S Dryer and Martin Haspelmath. Wals online. Max Planck Institute for Evolutionary Anthropology, Leipzig, 2013. Philip Durkin. Borrowed Words: A History of Loanwords in English. Oxford University Press, 2014. Nadir Durrani, Hassan Sajjad, Alexander Fraser, and Helmut Schmid. Hindi-to-Urdu machine translation through transliteration. In Proc."
+  },
+  {
+    "chunk_id": "PSAI048-C0142",
+    "doc_id": "PSAI048",
+    "chunk_index": 142,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 511,
+    "hash": "8eedbac577f0fe38",
+    "text": "Durkin. Borrowed Words: A History of Loanwords in English. Oxford University Press, 2014. Nadir Durrani, Hassan Sajjad, Alexander Fraser, and Helmut Schmid. Hindi-to-Urdu machine translation through transliteration. In Proc. ACL, pages 465–474, 2010. Chris Dyer, Adam Lopez, Juri Ganitkevitch, Johnathan Weese, Ferhan Ture, Phil Blunsom, Hendra Setiawan, Vladimir Eidelman, and Philip Resnik. cdec: A decoder, alignment, and learning framework for finite-state and context-free translation models. In Proc. ACL, 2010. Chris Dyer, Victor Chahuneau, and Noah A. Smith. A simple, fast, and effective reparameterization of IBM Model 2. In Proc. NAACL, 2013. Jacob Eisenstein. Phonological factors in social media writing. In Proc. NAACL, pages 11–19, 2013. Jacob Eisenstein. Systematic patterning in phonologically-motivated orthographic variation. Journal of Sociolinguistics, 2015. Jacob Eisenstein, Brendan O'Connor, Noah A Smith, and Eric P Xing. Diffusion of lexical change in social media. PloS ONE, 9(11):e113114, 2014. Jason Eisner. Efficient generation in primitive Optimality Theory. In Proc. EACL, pages 313–320, 1997. Jason Eisner. Comprehension and compilation in Optimality Theory. In Proc. ACL, pages 56–63, 2002. T Mark Ellison. Phonological derivation in Optimality Theory. In Proc. CICLing, pages 1007–1013, 1994. Tomaz Erjavec. Multext-east version 3: Multilingual morphosyntactic specifications, lexicons and corpora. In Proc. LREC, 2004. Manaal Faruqui and Chris Dyer. Improving vector space word representations using multilingual correlation. In Proc. EACL, 2014. Michael L Friesner. The adaptation of romanian loanwords from Turkish and French. Calabrese & Wetzels (2009), pages 115–130, 2009. Kuzman Ganchev, Jennifer Gillenwater, and Ben Taskar. Dependency grammar induction via bitext projection constraints."
+  },
+  {
+    "chunk_id": "PSAI048-C0143",
+    "doc_id": "PSAI048",
+    "chunk_index": 143,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 493,
+    "hash": "0bce4eeeb3fc1002",
+    "text": "Friesner. The adaptation of romanian loanwords from Turkish and French. Calabrese & Wetzels (2009), pages 115–130, 2009. Kuzman Ganchev, Jennifer Gillenwater, and Ben Taskar. Dependency grammar induction via bitext projection constraints. In Proc. ACL, pages 369–377. Association for Computational Linguistics, 2009. Matt Garley and Julia Hockenmaier. Beefmoves: dissemination, diversity, and dynamics of English borrowings in a German hip hop forum. In Proc. ACL, pages 135–139, 2012. Dan Garrette and Jason Baldridge. Learning a part-of-speech tagger from two hours of annotation. In Proc. HLT-NAACL, pages 138–147, 2013. Sharon Goldwater and Mark Johnson. Learning OT constraint rankings using a maximum entropy model. In Proc. the Stockholm workshop on variation within Optimality Theory, pages 111–120, 2003.\n\n- <span id=\"page-25-21\"></span><span id=\"page-25-20\"></span><span id=\"page-25-19\"></span><span id=\"page-25-18\"></span><span id=\"page-25-17\"></span><span id=\"page-25-16\"></span><span id=\"page-25-15\"></span><span id=\"page-25-14\"></span><span id=\"page-25-13\"></span><span id=\"page-25-12\"></span><span id=\"page-25-11\"></span><span id=\"page-25-10\"></span><span id=\"page-25-9\"></span><span id=\"page-25-8\"></span><span id=\"page-25-7\"></span><span id=\"page-25-6\"></span><span id=\"page-25-5\"></span><span id=\"page-25-4\"></span><span id=\"page-25-3\"></span><span id=\"page-25-2\"></span><span id=\"page-25-1\"></span><span id=\"page-25-0\"></span>D. Graff, J. Kong, K. Chen, and K. Maeda. English gigaword third edition, 2007. Anthony Grant. Loanwords in British English."
+  },
+  {
+    "chunk_id": "PSAI048-C0144",
+    "doc_id": "PSAI048",
+    "chunk_index": 144,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 510,
+    "hash": "7e1f9878f3a2de28",
+    "text": "-25-0\"></span>D. Graff, J. Kong, K. Chen, and K. Maeda. English gigaword third edition, 2007. Anthony Grant. Loanwords in British English. In Martin Haspelmath and Uri Tadmor, editors, Loanwords in the World's Languages: A Comparative Handbook, pages 360–383. Max Planck Institute for Evolutionary Anthropology, 2009. Gregory R Guy. The sociolinguistic types of language change. Diachronica, 7(1):47–67, 1990. Nizar Habash. Four techniques for online handling of out-of-vocabulary words in Arabic-English statistical machine translation. In Proc. ACL, pages 57–60, 2008. Nizar Habash, Owen Rambow, and Ryan Roth. MADA+TOKAN: A toolkit for Arabic tokenization, diacritization, morphological disambiguation, POS tagging, stemming and lemmatization. In Proc. MEDAR, pages 102–109, 2009. Aria Haghighi, Percy Liang, Taylor Berg-Kirkpatrick, and Dan Klein. Learning bilingual lexicons from monolingual corpora. In Proc. ACL, pages 771–779, 2008. Jan Hajic, Jan Hric, and Vladislav Kubo ˇ n. Machine translation of very close languages. In ˇ Proc. ANLP, pages 7–12, 2000. Jan Hajic, Massimiliano Ciaramita, Richard Johansson, Daisuke Kawahara, Maria Antònia Martí, Lluís ˇ Màrquez, Adam Meyers, Joakim Nivre, Sebastian Padó, Jan Štepánek, et al. The conll-2009 shared task: ˇ Syntactic and semantic dependencies in multiple languages. In Proc. CoNLL: Shared Task, pages 1–18, 2009. Martin Haspelmath. Lexical borrowing: concepts and issues. Loanwords in the World's Languages: a comparative handbook, pages 35–54, 2009. Martin Haspelmath and Uri Tadmor, editors. Loanwords in the World's Languages: A Comparative Handbook. Max Planck Institute for Evolutionary Anthropology, Leipzig, 2009. URL http://wold. clld.org/."
+  },
+  {
+    "chunk_id": "PSAI048-C0145",
+    "doc_id": "PSAI048",
+    "chunk_index": 145,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 484,
+    "hash": "e406f2c4d250a835",
+    "text": "handbook, pages 35–54, 2009. Martin Haspelmath and Uri Tadmor, editors. Loanwords in the World's Languages: A Comparative Handbook. Max Planck Institute for Evolutionary Anthropology, Leipzig, 2009. URL http://wold. clld.org/. Einar Haugen. The analysis of linguistic borrowing. Language, pages 210–231, 1950. Kenneth Heafield. KenLM: Faster and smaller language model queries. In Proc. WMT, 2011. Ulf Hermjakob, Kevin Knight, and Hal Daumé III. Name translation in statistical machine translationlearning when to transliterate. In Proc. ACL, pages 389–397, 2008. Susan C Herring. Grammar and electronic communication. The Encyclopedia of Applied Linguistics, 2012. Hans Henrich Hock and Brian D Joseph. Language history, language change, and language relationship: An introduction to historical and comparative linguistics, volume 218. Walter de Gruyter, 2009. Kyril Holden. Assimilation rates of borrowings and phonological productivity. Language, pages 131–147, 1976. Arvi Hurskainen. Loan words in Swahili. In Katrin Bromber and Birgit Smieja, editors, Globalisation and African Languages, pages 199–218. Walter de Gruyter, 2004. Rebecca Hwa, Philip Resnik, Amy Weinberg, Clara Cabezas, and Okan Kolak. Bootstrapping parsers via syntactic projection across parallel texts. Natural Language Engineering, 11(3), 2005. Junko Itô and Armin Mester. The core-periphery structure of the lexicon and constraints on reranking. Papers in Optimality Theory, 18:181–209, 1995. Haike Jacobs and Carlos Gussenhoven. Loan phonology: perception, salience, the lexicon and OT. Optimality Theory: Phonology, syntax, and acquisition, pages 193–209, 2000. Frederick Johnson. Standard Swahili-English dictionary. Oxford University Press, 1939. Mirva Johnson. Trends of loanword origins in 20th century Finnish. Honors Theses, paper 74, 2014."
+  },
+  {
+    "chunk_id": "PSAI048-C0146",
+    "doc_id": "PSAI048",
+    "chunk_index": 146,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 504,
+    "hash": "fb447deb27af1a91",
+    "text": "Press, 1939. Mirva Johnson. Trends of loanword origins in 20th century Finnish. Honors Theses, paper 74, 2014.\n\n<span id=\"page-26-22\"></span><span id=\"page-26-21\"></span><span id=\"page-26-20\"></span><span id=\"page-26-19\"></span><span id=\"page-26-18\"></span><span id=\"page-26-17\"></span><span id=\"page-26-16\"></span><span id=\"page-26-15\"></span><span id=\"page-26-14\"></span><span id=\"page-26-13\"></span><span id=\"page-26-12\"></span><span id=\"page-26-11\"></span><span id=\"page-26-10\"></span><span id=\"page-26-9\"></span><span id=\"page-26-8\"></span><span id=\"page-26-7\"></span><span id=\"page-26-6\"></span><span id=\"page-26-5\"></span><span id=\"page-26-4\"></span><span id=\"page-26-3\"></span><span id=\"page-26-2\"></span><span id=\"page-26-1\"></span><span id=\"page-26-0\"></span>René Kager. Optimality Theory. Cambridge University Press, 1999. Petri Kallio. On the earliest Slavic loanwords in Finnic. Slavica Helsingiensia, 27:154–166, 2006. Yoonjung Kang. Perceptual similarity in loanword adaptation: English postvocalic word-final stops in Korean. Phonology, 20(2):219–274, 2003. Yoonjung Kang. Loanword phonology. In Mark van Oostendorp, Colin Ewen, Elizabeth Hume, and Keren Rice, editors, Companion to Phonology. Wiley–Blackwell, 2011. Shigeto Kawahara. Phonetic naturalness and unnaturalness in Japanese loanword phonology. Journal of East Asian Linguistics, 17(4):317–330, 2008. Gillian Kay. English loanwords in Japanese. World Englishes, 14(1):67–76, 1995. Michael Kenstowicz."
+  },
+  {
+    "chunk_id": "PSAI048-C0147",
+    "doc_id": "PSAI048",
+    "chunk_index": 147,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 509,
+    "hash": "60b2cc7cafddfa0f",
+    "text": "phonology. Journal of East Asian Linguistics, 17(4):317–330, 2008. Gillian Kay. English loanwords in Japanese. World Englishes, 14(1):67–76, 1995. Michael Kenstowicz. The phonetics and phonology of Korean loanword adaptation. In Proceedings of the first European conference on Korean linguistics, volume 1, pages 17–32, 2005. Michael Kenstowicz. Tone loans: The adaptation of English loanwords into Yoruba. In Selected proceedings of the 35th annual conference on African Linguistics, pages 136–146, 2006. Michael Kenstowicz. Salience and similarity in loanword adaptation: a case study from Fijian. Language Sciences, 29(2):316–340, 2007. Michael Kenstowicz and Atiwong Suchato. Issues in loanword adaptation: A case study from Thai. Lingua, 116(7):921–949, 2006. Reinhard Kneser and Hermann Ney. Improved backing-off for m-gram language modeling. In Proc. ICA-SSP, volume 1, pages 181–184. IEEE, 1995. Kevin Knight and Jonathan Graehl. Machine transliteration. Computational Linguistics, 24(4):599–612, 1998. Philipp Koehn, Franz Josef Och, and Daniel Marcu. Statistical phrase-based translation. In Proc. NAACL-HLT, pages 48–54, 2003. Grzegorz Kondrak. Identifying cognates by phonetic and semantic similarity. In Proc. NAACL, pages 1–8, 2001. Grzegorz Kondrak and Tarek Sherif. Evaluation of several phonetic similarity algorithms on the task of cognate identification. In Proc. the Workshop on Linguistic Distances, pages 43–50. Association for Computational Linguistics, 2006. Grzegorz Kondrak, Daniel Marcu, and Kevin Knight. Cognates can improve statistical translation models. In Proc. HLT-NAACL, pages 46–48, 2003. Jonas Kuhn. Experiments in parallel-text based grammar induction. In Proc. ACL, page 470, 2004. William Labov. The social stratification of English in New York city."
+  },
+  {
+    "chunk_id": "PSAI048-C0148",
+    "doc_id": "PSAI048",
+    "chunk_index": 148,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 293,
+    "hash": "5a224789fd05f631",
+    "text": ". In Proc. HLT-NAACL, pages 46–48, 2003. Jonas Kuhn. Experiments in parallel-text based grammar induction. In Proc. ACL, page 470, 2004. William Labov. The social stratification of English in New York city. 1966. Shen Li, Joao V Graça, and Ben Taskar. Wiki-ly supervised part-of-speech tagging. In Proc. EMNLP, pages 1389–1398, 2012. Johann-Mattis List and Steven Moran. An open source toolkit for quantitative historical linguistics. In Proc. ACL (System Demonstrations), pages 13–18, 2013. Patrick Littell, Kaitlyn Price, and Lori Levin. Morphological parsing of Swahili using crowdsourced lexical resources. In Proc. LREC, 2014. Mohamed Maamouri, Dave Graff, Basma Bouziri, Sondos Krouna, and Seth Kulick. LDC Standard Arabic morphological analyzer (SAMA) v. 3.1. LDC Catalog No. LDC2010L01. ISBN, pages 1–58563, 2010. Gideon S Mann and David Yarowsky. Multipath translation lexicon induction via bridge languages. In Proc. HLT-NAACL, pages 1–8, 2001."
+  },
+  {
+    "chunk_id": "PSAI048-C0149",
+    "doc_id": "PSAI048",
+    "chunk_index": 149,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 491,
+    "hash": "aeba0c37b1af7b32",
+    "text": "id=\"page-27-6\"></span><span id=\"page-27-5\"></span><span id=\"page-27-4\"></span><span id=\"page-27-3\"></span><span id=\"page-27-2\"></span><span id=\"page-27-1\"></span><span id=\"page-27-0\"></span>Yuval Marton, Chris Callison-Burch, and Philip Resnik. Improved statistical machine translation using monolingually-derived paraphrases. In Proc. EMNLP, pages 381–390, 2009. John J McCarthy. Formal problems in Semitic phonology and morphology. PhD thesis, MIT, 1985. John J McCarthy and Alan Prince. The emergence of the unmarked: Optimality in prosodic morphology. 1994. John J McCarthy and Alan Prince. Faithfulness and reduplicative identity. Beckman et al. (Eds.), pages 249–384, 1995. Ryan McDonald, Slav Petrov, and Keith Hall. Multi-source transfer of delexicalized dependency parsers. In Proc. EMNLP, pages 62–72, 2011. Ryan T McDonald, Joakim Nivre, Yvonne Quirmbach-Brundage, Yoav Goldberg, Dipanjan Das, Kuzman Ganchev, Keith B Hall, Slav Petrov, Hao Zhang, Oscar Täckström, et al. Universal dependency annotation for multilingual parsing. In Proc. ACL, pages 92–97, 2013. April M S McMahon. Understanding language change. Cambridge University Press, 1994. Florian Metze, Roger Hsiao, Qin Jin, Udhyakumar Nallasamy, and Tanja Schultz. The 2010 CMU GALE speech-to-text system. In Proc. INTERSPEECH, pages 1501–1504, 2010. Tomas Mikolov, Quoc V. Le, and Ilya Sutskever. Exploiting similarities among languages for machine translation. CoRR, abs/1309.4168, 2013a. Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg S. Corrado, and Jeff Dean. Distributed representations of words and phrases and their compositionality. In Proc. NIPS, 2013b."
+  },
+  {
+    "chunk_id": "PSAI048-C0150",
+    "doc_id": "PSAI048",
+    "chunk_index": 150,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 502,
+    "hash": "870e665c55b4cfee",
+    "text": ", Ilya Sutskever, Kai Chen, Greg S. Corrado, and Jeff Dean. Distributed representations of words and phrases and their compositionality. In Proc. NIPS, 2013b. Alan Mislove, Sune Lehmann, Yong-Yeol Ahn, Jukka-Pekka Onnela, and J Niels Rosenquist. Understanding the demographics of Twitter users. In Proc. ICWSM, pages 554–557, 2011. Edith Moravcsik. Language contact. Universals of human language, 1:93–122, 1978. Leonard Chacha Mwita. The adaptation of Swahili loanwords from Arabic: A constraint-based analysis. Journal of Pan African Studies, 2009. Carol Myers-Scotton. Contact linguistics: Bilingual encounters and grammatical outcomes. Oxford University Press Oxford, 2002. Preslav Nakov and Hwee Tou Ng. Improving statistical machine translation for a resource-poor language using related resource-rich languages. Journal of Artificial Intelligence Research, pages 179–222, 2012. Tahira Naseem, Regina Barzilay, and Amir Globerson. Selective sharing for multilingual dependency parsing. In Proc. ACL, pages 629–637, 2012. John A Nelder and Roger Mead. A simplex method for function minimization. Computer journal, 7(4): 308–313, 1965. Shijulal Nelson-Sathi, Johann-Mattis List, Hans Geisler, Heiner Fangerau, Russell D Gray, William Martin, and Tal Dagan. Networks uncover hidden lexical borrowing in Indo-European language evolution. Proceedings of the Royal Society B: Biological Sciences, page rspb20101917, 2010. Dong Nguyen, Noah A. Smith, and Carolyn P. Rosé. Author age prediction from text using linear regression. In Proc. the ACL Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities, 2011. Franz Josef Och. Minimum error rate training in statistical machine translation. In Proc. ACL, pages 160– 167, 2003. Brendan O'Connor, Ramnath Balasubramanyan, Bryan Routledge, and Noah A. Smith. From tweets to polls: Linking text sentiment to public opinion time series. In Proc. ICWSM, 2010."
+  },
+  {
+    "chunk_id": "PSAI048-C0151",
+    "doc_id": "PSAI048",
+    "chunk_index": 151,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 509,
+    "hash": "bc7828b052499edc",
+    "text": "2003. Brendan O'Connor, Ramnath Balasubramanyan, Bryan Routledge, and Noah A. Smith. From tweets to polls: Linking text sentiment to public opinion time series. In Proc. ICWSM, 2010.\n\n<span id=\"page-28-20\"></span><span id=\"page-28-19\"></span><span id=\"page-28-18\"></span><span id=\"page-28-17\"></span><span id=\"page-28-16\"></span><span id=\"page-28-15\"></span><span id=\"page-28-14\"></span><span id=\"page-28-13\"></span><span id=\"page-28-12\"></span><span id=\"page-28-11\"></span><span id=\"page-28-10\"></span><span id=\"page-28-9\"></span><span id=\"page-28-8\"></span><span id=\"page-28-7\"></span><span id=\"page-28-6\"></span><span id=\"page-28-5\"></span><span id=\"page-28-4\"></span><span id=\"page-28-3\"></span><span id=\"page-28-2\"></span><span id=\"page-28-1\"></span><span id=\"page-28-0\"></span>Valentine Ojo. English-Yoruba language contact in Nigeria. Universität Tübingen, 1977. Birgitta Orešnik. On the adaptation of English loanwords into Finnish. The English Element in European Languages, 2:180–212, 1982. Sebastian Padó and Mirella Lapata. Cross-lingual annotation projection for semantic roles. Journal of Artificial Intelligence Research, 36(1):307–340, 2009. Kishore Papineni, Salim Roukos, Todd Ward, and Wei-Jing Zhu. BLEU: a method for automatic evaluation of machine translation. In Proc. ACL, pages 311–318. Association for Computational Linguistics, 2002. Slav Petrov, Dipanjan Das, and Ryan McDonald. A universal part-of-speech tagset. In Proc. LREC, 2012. Edgar C Polomé. Swahili Language Handbook. ERIC, 1967. Alan Prince and Paul Smolensky. Optimality Theory: Constraint interaction in generative grammar."
+  },
+  {
+    "chunk_id": "PSAI048-C0152",
+    "doc_id": "PSAI048",
+    "chunk_index": 152,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 508,
+    "hash": "456a13644ee705d8",
+    "text": "and Ryan McDonald. A universal part-of-speech tagset. In Proc. LREC, 2012. Edgar C Polomé. Swahili Language Handbook. ERIC, 1967. Alan Prince and Paul Smolensky. Optimality Theory: Constraint interaction in generative grammar. John Wiley & Sons, 2008. Reinhard Rapp. Identifying word translations in non-parallel texts. In Pro. ACL, pages 320–322, 1995. Sujith Ravi and Kevin Knight. Deciphering foreign language. In Proc. ACL, 2011. Majid Razmara, Maryam Siahbani, Reza Haffari, and Anoop Sarkar. Graph propagation for paraphrasing out-of-vocabulary words in statistical machine translation. In Proc. ACL, pages 1105–1115, 2013. J Gómez Rendón. Spanish lexical borrowing in Imbabura Quichua: In search of constraints on language contact. Empirical Approaches to Language Typology, 39:95, 2008. J Gómez Rendón and Willem Adelaar. Loanwords in Imbabura Quichua. In Martin Haspelmath and Uri Tadmor, editors, Loanwords in the World's Languages: A Comparative Handbook, pages 944–967. Max Planck Institute for Evolutionary Anthropology, 2009. Lori Repetti. The emergence of marked structures in the integration of loans in Italian. Amsterdam Studies in the Theory and History of Linguistic Science Series 4, 274:209, 2006. Yvan Rose and Katherine Demuth. Vowel epenthesis in loanword adaptation: Representational and phonetic considerations. Lingua, 116(7):1112–1139, 2006. Norman C Rothman. Indian Ocean trading links: The Swahili experience. Comparative Civilizations Review, 46:79–90, 2002. Avneesh Saluja, Hany Hassan, Kristina Toutanova, and Chris Quirk. Graph-based semi-supervised learning of translation models from monolingual data. In Proc. ACL, pages 676–686, 2014. Gillian Sankoff. Linguistic outcomes of language contact. In Jack Chambers, Peter Trudgill, and Natalie Schilling-Estes, editors, Handbook of Sociolinguistics, pages 638–668."
+  },
+  {
+    "chunk_id": "PSAI048-C0153",
+    "doc_id": "PSAI048",
+    "chunk_index": 153,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 283,
+    "hash": "fb229c9c5dbe91ab",
+    "text": "Proc. ACL, pages 676–686, 2014. Gillian Sankoff. Linguistic outcomes of language contact. In Jack Chambers, Peter Trudgill, and Natalie Schilling-Estes, editors, Handbook of Sociolinguistics, pages 638–668. Blackwell, 2002. Thilo C Schadeberg. Loanwords in Swahili. In Martin Haspelmath and Uri Tadmor, editors, Loanwords in the World's Languages: A Comparative Handbook, pages 76–102. Max Planck Institute for Evolutionary Anthropology, 2009. Eva Schlinger, Victor Chahuneau, and Chris Dyer. morphogen: Translation into morphologically rich languages with synthetic phrases. The Prague Bulletin of Mathematical Linguistics, 100:51–62, 2013. Christopher K. Schmidt. Loanwords in Japanese. In Martin Haspelmath and Uri Tadmor, editors, Loanwords in the World's Languages: A Comparative Handbook, pages 545–574. Max Planck Institute for Evolutionary Anthropology, 2009. Kim Schulte. Loanwords in Romanian. In Martin Haspelmath and Uri Tadmor, editors, Loanwords in the World's Languages: A Comparative Handbook, pages 230–259. Max Planck Institute for Evolutionary Anthropology, 2009."
+  },
+  {
+    "chunk_id": "PSAI048-C0154",
+    "doc_id": "PSAI048",
+    "chunk_index": 154,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 509,
+    "hash": "e0a40acd1852a76e",
+    "text": "span id=\"page-29-5\"></span><span id=\"page-29-4\"></span><span id=\"page-29-3\"></span><span id=\"page-29-2\"></span><span id=\"page-29-1\"></span><span id=\"page-29-0\"></span>Tanja Schultz and Tim Schlippe. Globalphone: Pronunciation dictionaries in 20 languages. In Proc. LREC, 2014. Ora Schwarzwald. Word foreignness in modern Hebrew. Hebrew Studies, pages 115–142, 1998. David A Smith and Noah A Smith. Bilingual parsing with factored estimation: Using english to parse korean. In Proc. EMNLP, pages 49–56, 2004. Jason R Smith, Herve Saint-Amand, Magdalena Plamada, Philipp Koehn, Chris Callison-Burch, and Adam Lopez. Dirt cheap web-scale parallel text from the Common Crawl. In Proc. ACL, pages 1374–1383, 2013. Benjamin Snyder, Tahira Naseem, and Regina Barzilay. Unsupervised multilingual grammar induction. In Proc. ACL/AFNLP, pages 73–81, 2009. Miroslav Styblo Jr. English loanwords in modern Russian language. Master's thesis, University of North Carolina, 2007. Oscar Täckström, Dipanjan Das, Slav Petrov, Ryan McDonald, and Joakim Nivre. Token and type constraints for cross-lingual part-of-speech tagging. Transactions of the Association for Computational Linguistics, 1:1–12, 2013. Oscar Täckström, Ryan McDonald, and Joakim Nivre. Target language adaptation of discriminative transfer parsers. In Proc. NAACL-HLT, pages 1061–1071, 2013. Sarah Grey Thomason and Terrence Kaufman. Language contact. Edinburgh University Press Edinburgh, 2001. Jörg Tiedemann. Rediscovering annotation projection for cross-lingual parser induction. In Proc. COLING, 2014. Yulia Tsvetkov and Chris Dyer. Cross-lingual bridges with models of lexical borrowing. In Submission to JAIR, 2015a. Yulia Tsvetkov and Chris Dyer. Lexicon stratification for translating out-of-vocabulary words."
+  },
+  {
+    "chunk_id": "PSAI048-C0155",
+    "doc_id": "PSAI048",
+    "chunk_index": 155,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 420,
+    "hash": "345488c0f96d46f7",
+    "text": ", 2014. Yulia Tsvetkov and Chris Dyer. Cross-lingual bridges with models of lexical borrowing. In Submission to JAIR, 2015a. Yulia Tsvetkov and Chris Dyer. Lexicon stratification for translating out-of-vocabulary words. In Submission to ACL (short), 2015b. Yulia Tsvetkov, Chris Dyer, Lori Levin, and Archna Bhatia. Generating English determiners in phrase-based translation with synthetic translation options. In Proc. WMT, 2013. Yulia Tsvetkov, Leonid Boytsov, Anatole Gershman, Eric Nyberg, and Chris Dyer. Metaphor detection with cross-lingual model transfer. In Proc. ACL, 2014a. Yulia Tsvetkov, Florian Metze, and Chris Dyer. Augmenting translation models with simulated acoustic confusions for improved spoken language translation. In Proc. EACL, pages 616–625, 2014b. Yulia Tsvetkov, Waleed Ammar, and Chris Dyer. Constraint-based models of lexical borrowing. In Proc. HLT-NAACL, 2015. Frans Van Coetsem. Loan phonology and the two transfer types in language contact. Walter de Gruyter, 1988. Pidong Wang, Preslav Nakov, and Hwee Tou Ng. Source language adaptation for resource-poor machine translation. In Proc. EMNLP, pages 286–296, 2012. Uriel Weinreich. Languages in contact: Findings and problems. Walter de Gruyter, 1979. William Dwight Whitney. On mixture in language. Transactions of the American Philological Association (1870), pages 5–26, 1881. Dekai Wu. Stochastic inversion transduction grammars and bilingual parsing of parallel corpora. Computational linguistics, 23(3):377–403, 1997."
+  },
+  {
+    "chunk_id": "PSAI048-C0156",
+    "doc_id": "PSAI048",
+    "chunk_index": 156,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 175,
+    "hash": "1e8be26c06a3b30b",
+    "text": "-1\"></span><span id=\"page-30-0\"></span>Chenhai Xi and Rebecca Hwa. A backoff model for bootstrapping resources for non-English languages. In Proc. EMNLP, pages 851–858, 2005. David Yarowsky, Grace Ngai, and Richard Wicentowski. Inducing multilingual text analysis tools via robust projection across aligned corpora. In Proc. HLT, pages 1–8, 2001. Moira Yip. Cantonese loanword phonology and Optimality Theory. Journal of East Asian Linguistics, 2(3): 261–291, 1993. Sharifa Zawawi. Loan words and their effect on the classification of Swahili nominals. Leiden: E.J. Brill, 1979."
+  },
+  {
+    "chunk_id": "PSAI048-C0157",
+    "doc_id": "PSAI048",
+    "chunk_index": 157,
+    "section": "References",
+    "heading_path": [
+      "References"
+    ],
+    "block_type": "section_split",
+    "token_count": 64,
+    "hash": "c6e8666529e2c48f",
+    "text": "ese loanword phonology and Optimality Theory. Journal of East Asian Linguistics, 2(3): 261–291, 1993. Sharifa Zawawi. Loan words and their effect on the classification of Swahili nominals. Leiden: E.J. Brill, 1979."
+  }
+]

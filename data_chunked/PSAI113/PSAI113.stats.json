@@ -1,0 +1,16 @@
+{
+  "doc_id": "PSAI113",
+  "num_chunks": 7,
+  "total_tokens": 1787,
+  "avg_tokens": 255.29,
+  "min_tokens": 64,
+  "max_tokens": 510,
+  "chunks_by_type": {
+    "section_split": 7
+  },
+  "num_sections": 2,
+  "sections": [
+    "03/05/2021 - Content Exchange Protocol",
+    "Open Grant Proposal: Bootstrapping a secondary retrieval market"
+  ]
+}

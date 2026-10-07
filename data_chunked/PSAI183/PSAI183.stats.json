@@ -1,0 +1,33 @@
+{
+  "doc_id": "PSAI183",
+  "num_chunks": 48,
+  "total_tokens": 3334,
+  "avg_tokens": 69.46,
+  "min_tokens": 20,
+  "max_tokens": 251,
+  "chunks_by_type": {
+    "section": 18,
+    "table_row": 30
+  },
+  "num_sections": 18,
+  "sections": [
+    "About me",
+    "Abstract",
+    "Automated Twitter bot to run PyBaMM Simulations",
+    "Previous contributions to PyBaMM",
+    "Previous contributions to PyBaMM > My progress with the project",
+    "Schedule of Deliverables",
+    "Schedule of Deliverables > 2. Commitments and Availability",
+    "Schedule of Deliverables > 2. Work experience",
+    "Schedule of Deliverables > 3. Am I applying to any other organizations?",
+    "Schedule of Deliverables > 3. Consistent, experienced, a quick learner, and good with documentation",
+    "Schedule of Deliverables > 4. Some final words",
+    "Schedule of Deliverables > After Google Summer of Code",
+    "Schedule of Deliverables > After Google Summer of Code > 1. Career Goals",
+    "Schedule of Deliverables > Why I chose this project and this sub-organization",
+    "Schedule of Deliverables > Why I chose this project and this sub-organization > 1. Mexili Winter of Code",
+    "Schedule of Deliverables > Why I chose this project and this sub-organization > 2. Cross Winter of Code",
+    "Screenshots",
+    "Technical Details"
+  ]
+}

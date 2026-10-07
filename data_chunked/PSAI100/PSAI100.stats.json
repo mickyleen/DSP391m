@@ -1,0 +1,32 @@
+{
+  "doc_id": "PSAI100",
+  "num_chunks": 35,
+  "total_tokens": 9564,
+  "avg_tokens": 273.26,
+  "min_tokens": 47,
+  "max_tokens": 510,
+  "chunks_by_type": {
+    "section": 13,
+    "section_split": 19,
+    "table_row": 3
+  },
+  "num_sections": 16,
+  "sections": [
+    "1 Introduction",
+    "2.1 Token Representation",
+    "2.1 Token Representation > 2.2 Multilingual LLMs",
+    "2.1 Token Representation > 2.3 Vocabulary Extension",
+    "2.1 Token Representation > 2.3 Vocabulary Extension > 2.4 Instruction Tuning and RLHF",
+    "2.1 Token Representation > 3 Proposed Approaches",
+    "2.1 Token Representation > 3.1 Experiments in English",
+    "2.1 Token Representation > 3.2 Experiments in low-resource languages",
+    "2.1 Token Representation > 3.2 Experiments in low-resource languages > 4.1 Evaluation",
+    "2.1 Token Representation > 3.2 Experiments in low-resource languages > 4.2 Early Experiments and Results",
+    "5 Conclusion",
+    "Challenges",
+    "Challenges > Acknowledgments",
+    "Challenges > References",
+    "Thesis Proposal: Efficient Methods for Natural Language Generation/Understanding Systems",
+    "Thesis Proposal: Efficient Methods for Natural Language Generation/Understanding Systems > Abstract"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "doc_id": "PSAI208",
+  "num_chunks": 28,
+  "total_tokens": 2335,
+  "avg_tokens": 83.39,
+  "min_tokens": 20,
+  "max_tokens": 359,
+  "chunks_by_type": {
+    "section": 18,
+    "table_row": 10
+  },
+  "num_sections": 18,
+  "sections": [
+    "DEVELOPMENT ROADMAP > MILESTONE 1 - MOVEVM COMPATIBILITY WORK AND SUBTRATE PALLET DEVELOPMENT",
+    "DEVELOPMENT ROADMAP > OVERVIEW",
+    "DEVELOPMENT STATUS -",
+    "FUTURE PLANS",
+    "FUTURE PLANS > ADDITIONAL INFORMATION ➕ > How did you hear about the Grants Program?",
+    "PROJECT OVERVIEW",
+    "PROJECT OVERVIEW > API specifications",
+    "PROJECT OVERVIEW > API specifications > Notes",
+    "PROJECT OVERVIEW > API specifications > Tech stack",
+    "PROJECT OVERVIEW > ECOSYSTEM FIT",
+    "PROJECT OVERVIEW > OVERVIEW",
+    "PROJECT OVERVIEW > PROJECT DETAILS > 1. Substrate Move:",
+    "PROJECT OVERVIEW > PROJECT DETAILS > 2. Move VM system pallet:",
+    "PROJECT OVERVIEW > PROJECT DETAILS > Prior work",
+    "PROJECT OVERVIEW > TEAM > CONTACT",
+    "PROJECT OVERVIEW > TEAM > LEGAL STRUCTURE",
+    "PROJECT OVERVIEW > TEAM > TEAM MEMBERS",
+    "PROJECT OVERVIEW > TEAM > TEAM'S EXPERIENCE"
+  ]
+}

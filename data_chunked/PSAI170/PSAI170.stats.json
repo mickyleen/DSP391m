@@ -1,0 +1,28 @@
+{
+  "doc_id": "PSAI170",
+  "num_chunks": 55,
+  "total_tokens": 4007,
+  "avg_tokens": 72.85,
+  "min_tokens": 21,
+  "max_tokens": 471,
+  "chunks_by_type": {
+    "section": 10,
+    "section_split": 6,
+    "table_row": 39
+  },
+  "num_sections": 12,
+  "sections": [
+    "Contact Information:",
+    "GSoC 2021 Proposal: hin-ben > My proposal > Before 17 May:",
+    "GSoC 2021 Proposal: hin-ben > My proposal > Coding Challenge:",
+    "GSoC 2021 Proposal: hin-ben > My proposal > List any non-Summer-of-Code plans you have for the Summer",
+    "GSoC 2021 Proposal: hin-ben > My proposal > List your skills and give evidence of your qualifications",
+    "GSoC 2021 Proposal: hin-ben > My proposal > Major goals",
+    "GSoC 2021 Proposal: hin-ben > My proposal > Reasons why Google and Apertium should sponsor it",
+    "GSoC 2021 Proposal: hin-ben > My proposal > Resources",
+    "GSoC 2021 Proposal: hin-ben > My proposal > Title",
+    "GSoC 2021 Proposal: hin-ben > My proposal > Workplan",
+    "GSoC 2021 Proposal: hin-ben > Which of the published tasks are you interested in? What do you plan to do?",
+    "GSoC 2021 Proposal: hin-ben > Why is it that you are interested in Apertium?"
+  ]
+}

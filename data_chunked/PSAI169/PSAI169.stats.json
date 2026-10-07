@@ -1,0 +1,29 @@
+{
+  "doc_id": "PSAI169",
+  "num_chunks": 15,
+  "total_tokens": 1278,
+  "avg_tokens": 85.2,
+  "min_tokens": 33,
+  "max_tokens": 209,
+  "chunks_by_type": {
+    "section": 15
+  },
+  "num_sections": 15,
+  "sections": [
+    "About Me",
+    "About Me > Apertium",
+    "User-friendly lexical training",
+    "User-friendly lexical training > Aug 16 - Aug 23",
+    "User-friendly lexical training > Aug 16 - Aug 23 > Non-SoC plans",
+    "User-friendly lexical training > Contact",
+    "User-friendly lexical training > July 12 - July 26",
+    "User-friendly lexical training > July 12 - July 26 > Aug 2 - Aug 16",
+    "User-friendly lexical training > July 12 - July 26 > July 26 - Aug 2",
+    "User-friendly lexical training > June 14 - June 21",
+    "User-friendly lexical training > June 21 - June 28",
+    "User-friendly lexical training > June 28 - July 5",
+    "User-friendly lexical training > June 28 - July 5 > July 5 - July 12",
+    "User-friendly lexical training > coding challenges",
+    "User-friendly lexical training > coding challenges > May 17 - June 14"
+  ]
+}

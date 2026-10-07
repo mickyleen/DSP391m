@@ -1,0 +1,27 @@
+{
+  "doc_id": "PSAI087",
+  "num_chunks": 35,
+  "total_tokens": 8097,
+  "avg_tokens": 231.34,
+  "min_tokens": 20,
+  "max_tokens": 511,
+  "chunks_by_type": {
+    "section": 7,
+    "section_split": 21,
+    "table_row": 7
+  },
+  "num_sections": 11,
+  "sections": [
+    "1 Introduction",
+    "2.1 Knowledge Graph Embedding",
+    "2.1 Knowledge Graph Embedding > 2.2 Downstream Tasks and Evaluation",
+    "2.1 Knowledge Graph Embedding > 2.3 Related Work",
+    "2.1 Knowledge Graph Embedding > 3 Research Questions",
+    "2.1 Knowledge Graph Embedding > 3.1 Reducing Uncertainty",
+    "3.2 Quantifying Uncertainty",
+    "3.3 Reasoning under Uncertainty",
+    "4 Conclusion",
+    "Abstract",
+    "Thesis Proposal: Uncertainty in Knowledge Graph Embeddings"
+  ]
+}

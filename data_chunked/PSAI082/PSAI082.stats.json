@@ -1,0 +1,27 @@
+{
+  "doc_id": "PSAI082",
+  "num_chunks": 46,
+  "total_tokens": 10608,
+  "avg_tokens": 230.61,
+  "min_tokens": 20,
+  "max_tokens": 510,
+  "chunks_by_type": {
+    "section": 7,
+    "section_split": 25,
+    "table_row": 14
+  },
+  "num_sections": 11,
+  "sections": [
+    "Collaborative Data Exploration through Visualization: A Thesis Proposal Analyzing Impact of Conversational Assistants",
+    "Collaborative Data Exploration through Visualization: A Thesis Proposal Analyzing Impact of Conversational Assistants > 1 Introduction",
+    "Collaborative Data Exploration through Visualization: A Thesis Proposal Analyzing Impact of Conversational Assistants > 2 Related Work",
+    "Collaborative Data Exploration through Visualization: A Thesis Proposal Analyzing Impact of Conversational Assistants > 4 Conclusion",
+    "Collaborative Data Exploration through Visualization: A Thesis Proposal Analyzing Impact of Conversational Assistants > <span id=\"page-2-1\"></span>3 Proposed Research",
+    "Collaborative Data Exploration through Visualization: A Thesis Proposal Analyzing Impact of Conversational Assistants > <span id=\"page-2-1\"></span>3 Proposed Research > <span id=\"page-2-0\"></span>3.1 Motivation and Research Question",
+    "Collaborative Data Exploration through Visualization: A Thesis Proposal Analyzing Impact of Conversational Assistants > <span id=\"page-2-1\"></span>3 Proposed Research > RQ: How do user-initiated clarification requests impact user experience concerning system functionality, interpretability, and overall usability?",
+    "Collaborative Data Exploration through Visualization: A Thesis Proposal Analyzing Impact of Conversational Assistants > <span id=\"page-3-1\"></span>3.2 Dataset",
+    "Collaborative Data Exploration through Visualization: A Thesis Proposal Analyzing Impact of Conversational Assistants > <span id=\"page-4-0\"></span>3.3 Proposed Workflow",
+    "Collaborative Data Exploration through Visualization: A Thesis Proposal Analyzing Impact of Conversational Assistants > <span id=\"page-5-0\"></span>3.4 User Study for CA Evaluation:",
+    "Collaborative Data Exploration through Visualization: A Thesis Proposal Analyzing Impact of Conversational Assistants > Abstract"
+  ]
+}

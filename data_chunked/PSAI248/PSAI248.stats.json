@@ -1,0 +1,30 @@
+{
+  "doc_id": "PSAI248",
+  "num_chunks": 27,
+  "total_tokens": 1963,
+  "avg_tokens": 72.7,
+  "min_tokens": 22,
+  "max_tokens": 428,
+  "chunks_by_type": {
+    "section": 13,
+    "section_split": 3,
+    "table_row": 11
+  },
+  "num_sections": 14,
+  "sections": [
+    "tDOT > Development Status :open_book: > Milestone 1 — Stable Asset XCM Pallet",
+    "tDOT > Development Status :open_book: > Milestone 2 — tDOT Minting",
+    "tDOT > Development Status :open_book: > Milestone 3 — tDOT Redeeming",
+    "tDOT > Development Status :open_book: > Overview",
+    "tDOT > Future Plans",
+    "tDOT > Project Overview :page_facing_up:",
+    "tDOT > Project Overview :page_facing_up: > Overview",
+    "tDOT > Project Overview :page_facing_up: > Project Details",
+    "tDOT > Team :busts_in_silhouette: > Contact",
+    "tDOT > Team :busts_in_silhouette: > Legal Structure",
+    "tDOT > Team :busts_in_silhouette: > Team Code Repos",
+    "tDOT > Team :busts_in_silhouette: > Team LinkedIn Profiles",
+    "tDOT > Team :busts_in_silhouette: > Team members",
+    "tDOT > Team :busts_in_silhouette: > Team's experience"
+  ]
+}

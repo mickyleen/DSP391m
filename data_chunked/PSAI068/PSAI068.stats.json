@@ -1,0 +1,42 @@
+{
+  "doc_id": "PSAI068",
+  "num_chunks": 30,
+  "total_tokens": 3911,
+  "avg_tokens": 130.37,
+  "min_tokens": 28,
+  "max_tokens": 511,
+  "chunks_by_type": {
+    "section": 27,
+    "section_split": 3
+  },
+  "num_sections": 27,
+  "sections": [
+    "3D Objects Search Engines",
+    "Grading",
+    "Mid level processing > Discovering object symmetries",
+    "Mid level processing > •Image completion",
+    "Multi-view Scene Understanding",
+    "Multi-view Scene Understanding > Scene interpretation from video shots",
+    "Multi-view Scene Understanding > Scene interpretation from video shots > Indoor layout estimation",
+    "Multi-view Scene Understanding > Scene interpretation from video shots > • Layout Estimation",
+    "Photosynth > Datasets",
+    "Photosynth > Hardware & systems",
+    "Photosynth > Object recognition",
+    "Project Proposal",
+    "Project proposals",
+    "Project proposals > Matching",
+    "Project proposals > Matching > - Matching images: Panorama Stitching.",
+    "Project proposals > The ʻyellow line' in football games",
+    "Recognition [human actions]",
+    "Recognition [human actions] > • ACTION RECOGNITION",
+    "Recognition [human actions] > • Multi target Tracking papers",
+    "Recognition [materials]",
+    "Recognition [materials] > Web based",
+    "Recognition [objects] > Human – gaze recognition",
+    "Recognition [objects] > • Object recognition and Pose estimation",
+    "Recognition [scenes]",
+    "To-Do",
+    "Types of Projects",
+    "Where to Get Projects"
+  ]
+}

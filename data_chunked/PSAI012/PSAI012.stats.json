@@ -1,0 +1,31 @@
+{
+  "doc_id": "PSAI012",
+  "num_chunks": 20,
+  "total_tokens": 3942,
+  "avg_tokens": 197.1,
+  "min_tokens": 25,
+  "max_tokens": 489,
+  "chunks_by_type": {
+    "section": 14,
+    "section_split": 6
+  },
+  "num_sections": 16,
+  "sections": [
+    "Additional Information",
+    "Additional Information > 2. The time for Votecube decentralized decision-making system is at hand:",
+    "Additional Information > X: Liberal - Conservative Y: Left - Right Z: Traditional - Progressive",
+    "Development Roadmap > Phase 1: Basic Functionality Prototype",
+    "Economics",
+    "Economics > Fee model",
+    "Economics > Monetization",
+    "Economics > Monetization > Decentralized advertisement with profit sharing",
+    "Maintenance and Upgrade Plans",
+    "Open Grant Proposal: Autonomous Interdependent Repositories - Basic Functionality Prototype",
+    "Project Description",
+    "Project Description > Value",
+    "Project Description > Value > This:",
+    "Team > Team Members",
+    "Team Member LinkedIn Profiles",
+    "Team Member LinkedIn Profiles > Team code repositories"
+  ]
+}

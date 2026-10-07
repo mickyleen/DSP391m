@@ -1,0 +1,41 @@
+{
+  "doc_id": "PSAI050",
+  "num_chunks": 100,
+  "total_tokens": 18576,
+  "avg_tokens": 185.76,
+  "min_tokens": 20,
+  "max_tokens": 511,
+  "chunks_by_type": {
+    "section": 12,
+    "section_split": 49,
+    "table_row": 39
+  },
+  "num_sections": 25,
+  "sections": [
+    "<span id=\"page-12-0\"></span>4 Research Problem 2: Dynamic Encoding",
+    "<span id=\"page-12-1\"></span>4.1 Completed Work",
+    "<span id=\"page-14-0\"></span>4.2 Proposed Work",
+    "<span id=\"page-16-0\"></span>5 Research Problem 3: Parallel Solving",
+    "<span id=\"page-16-0\"></span>5 Research Problem 3: Parallel Solving > <span id=\"page-16-2\"></span><span id=\"page-16-1\"></span>5.1 Proposed Work",
+    "<span id=\"page-18-0\"></span>6 Research Problem 4: Trustworthy Solving",
+    "<span id=\"page-18-0\"></span>6 Research Problem 4: Trustworthy Solving > <span id=\"page-18-1\"></span>6.1 Completed Work",
+    "<span id=\"page-19-0\"></span>6.2 Proposed Work",
+    "<span id=\"page-2-0\"></span>1 Introduction",
+    "<span id=\"page-2-0\"></span>1 Introduction > <span id=\"page-4-0\"></span>2 Background",
+    "<span id=\"page-20-0\"></span>7 Timeline",
+    "<span id=\"page-20-0\"></span>7 Timeline > References",
+    "<span id=\"page-4-1\"></span>2.1 Boolean Satisfiability",
+    "<span id=\"page-4-2\"></span>2.2 Cardinality Constraints",
+    "<span id=\"page-4-2\"></span>2.2 Cardinality Constraints > <span id=\"page-7-0\"></span>2.3 Cube-and-Conquer",
+    "<span id=\"page-4-2\"></span>2.2 Cardinality Constraints > <span id=\"page-7-1\"></span>2.4 Clausal Proofs",
+    "<span id=\"page-4-2\"></span>2.2 Cardinality Constraints > <span id=\"page-7-3\"></span><span id=\"page-7-2\"></span>2.5 Magic Squares and Max Squares Benchmarks",
+    "<span id=\"page-4-2\"></span>2.2 Cardinality Constraints > Figure 1 totalizer of Example 1",
+    "<span id=\"page-4-2\"></span>2.2 Cardinality Constraints > Figure 2",
+    "<span id=\"page-8-0\"></span>3 Research Problem 1: Cardinality Extraction",
+    "<span id=\"page-8-0\"></span>3 Research Problem 1: Cardinality Extraction > <span id=\"page-8-1\"></span>3.1 Completed Work",
+    "<span id=\"page-8-0\"></span>3 Research Problem 1: Cardinality Extraction > <span id=\"page-8-1\"></span>3.1 Completed Work > <span id=\"page-10-0\"></span>3.2 Proposed Work",
+    "Thesis Proposal: Cardinality Constraints in Satisfiability Solving",
+    "Thesis Proposal: Cardinality Constraints in Satisfiability Solving > Abstract",
+    "Thesis Proposal: Cardinality Constraints in Satisfiability Solving > Contents"
+  ]
+}

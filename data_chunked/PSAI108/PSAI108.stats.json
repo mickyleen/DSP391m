@@ -1,0 +1,23 @@
+{
+  "doc_id": "PSAI108",
+  "num_chunks": 9,
+  "total_tokens": 686,
+  "avg_tokens": 76.22,
+  "min_tokens": 24,
+  "max_tokens": 235,
+  "chunks_by_type": {
+    "section": 9
+  },
+  "num_sections": 9,
+  "sections": [
+    "Maintenance and Upgrade Plans",
+    "Maintenance and Upgrade Plans > Team Members",
+    "Project description",
+    "Total Budget Requested",
+    "Value to the Filecoin ecosystem",
+    "Value to the Filecoin ecosystem > Deliverables",
+    "Value to the Filecoin ecosystem > Development Roadmap > Milestone 1 - API&UI Design - 2 Weeks",
+    "Value to the Filecoin ecosystem > Development Roadmap > Milestone 2 - Linux/Mac/Windows version initial release - 1 Month",
+    "Value to the Filecoin ecosystem > Development Roadmap > Milestone 3 - Desktop version core functions update - 1 Month"
+  ]
+}

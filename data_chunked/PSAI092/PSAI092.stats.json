@@ -1,0 +1,31 @@
+{
+  "doc_id": "PSAI092",
+  "num_chunks": 55,
+  "total_tokens": 10567,
+  "avg_tokens": 192.13,
+  "min_tokens": 21,
+  "max_tokens": 506,
+  "chunks_by_type": {
+    "section": 14,
+    "section_split": 14,
+    "table_row": 27
+  },
+  "num_sections": 15,
+  "sections": [
+    "Thesis Proposal: Interpretable Reasoning Enhancement in Large Language Models through Puzzle and Ontological Task Analysis",
+    "Thesis Proposal: Interpretable Reasoning Enhancement in Large Language Models through Puzzle and Ontological Task Analysis > 1 Introduction",
+    "Thesis Proposal: Interpretable Reasoning Enhancement in Large Language Models through Puzzle and Ontological Task Analysis > 2 Related Works > 2.1 Interpretability in Large Language Models",
+    "Thesis Proposal: Interpretable Reasoning Enhancement in Large Language Models through Puzzle and Ontological Task Analysis > 2 Related Works > 2.2 Reasoning in Transformer Models and Chain-of-Thought Methods",
+    "Thesis Proposal: Interpretable Reasoning Enhancement in Large Language Models through Puzzle and Ontological Task Analysis > 2 Related Works > 2.3 Middle Layer Dynamics and Transformer Analysis",
+    "Thesis Proposal: Interpretable Reasoning Enhancement in Large Language Models through Puzzle and Ontological Task Analysis > 2 Related Works > 2.4 Puzzle and Ontological Reasoning in Language Models",
+    "Thesis Proposal: Interpretable Reasoning Enhancement in Large Language Models through Puzzle and Ontological Task Analysis > 2 Related Works > 3 Aims",
+    "Thesis Proposal: Interpretable Reasoning Enhancement in Large Language Models through Puzzle and Ontological Task Analysis > 2 Related Works > 3 Aims > 3.1.1 Probing Architectures for Puzzle and Ontological Reasoning",
+    "Thesis Proposal: Interpretable Reasoning Enhancement in Large Language Models through Puzzle and Ontological Task Analysis > 2 Related Works > 3 Aims > 3.1.2 Specialized Dataset Creation and Evaluation Frameworks",
+    "Thesis Proposal: Interpretable Reasoning Enhancement in Large Language Models through Puzzle and Ontological Task Analysis > 2 Related Works > 3 Aims > 3.1.3 Middle Layer Analysis Framework for Domain Specific Reasoning",
+    "Thesis Proposal: Interpretable Reasoning Enhancement in Large Language Models through Puzzle and Ontological Task Analysis > 2 Related Works > 3 Aims > 3.2.1 Probe Guided Intervention Strategies for Specific Reasoning Domains",
+    "Thesis Proposal: Interpretable Reasoning Enhancement in Large Language Models through Puzzle and Ontological Task Analysis > 2 Related Works > 3 Aims > 3.2.2 Inference-Time Reasoning Enhancement for Focused Domains",
+    "Thesis Proposal: Interpretable Reasoning Enhancement in Large Language Models through Puzzle and Ontological Task Analysis > 2 Related Works > 3.2.3 Comprehensive Evaluation Protocols for Domain Specific Interventions",
+    "Thesis Proposal: Interpretable Reasoning Enhancement in Large Language Models through Puzzle and Ontological Task Analysis > 4 Timeline and Deliverables",
+    "Thesis Proposal: Interpretable Reasoning Enhancement in Large Language Models through Puzzle and Ontological Task Analysis > Abstract"
+  ]
+}

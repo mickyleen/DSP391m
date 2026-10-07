@@ -1,0 +1,26 @@
+{
+  "doc_id": "PSAI101",
+  "num_chunks": 76,
+  "total_tokens": 14526,
+  "avg_tokens": 191.13,
+  "min_tokens": 20,
+  "max_tokens": 512,
+  "chunks_by_type": {
+    "section": 7,
+    "section_split": 37,
+    "table_row": 32
+  },
+  "num_sections": 10,
+  "sections": [
+    "Thesis Proposal: A Neuro-Symbolic Approach to Control Task-Oriented Dialog Systems",
+    "Thesis Proposal: A Neuro-Symbolic Approach to Control Task-Oriented Dialog Systems > 1 Introduction",
+    "Thesis Proposal: A Neuro-Symbolic Approach to Control Task-Oriented Dialog Systems > 2 Related Work",
+    "Thesis Proposal: A Neuro-Symbolic Approach to Control Task-Oriented Dialog Systems > 3 Motivation and Research Questions",
+    "Thesis Proposal: A Neuro-Symbolic Approach to Control Task-Oriented Dialog Systems > 4 Proposed Work",
+    "Thesis Proposal: A Neuro-Symbolic Approach to Control Task-Oriented Dialog Systems > 5 Conclusion",
+    "Thesis Proposal: A Neuro-Symbolic Approach to Control Task-Oriented Dialog Systems > 6 Limitations",
+    "Thesis Proposal: A Neuro-Symbolic Approach to Control Task-Oriented Dialog Systems > A Appendix",
+    "Thesis Proposal: A Neuro-Symbolic Approach to Control Task-Oriented Dialog Systems > Abstract",
+    "Thesis Proposal: A Neuro-Symbolic Approach to Control Task-Oriented Dialog Systems > References"
+  ]
+}

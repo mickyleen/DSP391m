@@ -1,0 +1,40 @@
+{
+  "doc_id": "PSAI200",
+  "num_chunks": 40,
+  "total_tokens": 3356,
+  "avg_tokens": 83.9,
+  "min_tokens": 21,
+  "max_tokens": 484,
+  "chunks_by_type": {
+    "section": 23,
+    "section_split": 3,
+    "table_row": 14
+  },
+  "num_sections": 24,
+  "sections": [
+    "Additional Information :heavy_plus_sign:",
+    "Future Plans",
+    "Milestone 1 - Pallet Contract Update",
+    "Milestone 2 — Pallet staking Update",
+    "Milestone 2 — Pallet staking Update > Milestone 3 — Validator Reward Contract, Testing and Documentation",
+    "Overview",
+    "Project Overview :page_facing_up: > Brief Description",
+    "Project Overview :page_facing_up: > Ecosystem Fit",
+    "Project Overview :page_facing_up: > Outline of Core functionality",
+    "Project Overview :page_facing_up: > Overview",
+    "Project Overview :page_facing_up: > Prior work - Research",
+    "Project Overview :page_facing_up: > Similar Projects (How it is different)",
+    "Project Overview :page_facing_up: > Substrate Integration",
+    "Project Overview :page_facing_up: > Substrate implementation Design",
+    "Project Overview :page_facing_up: > Target Audience",
+    "Project Overview :page_facing_up: > Team Interest",
+    "Project Overview :page_facing_up: > What need(s) does your project meet?",
+    "Project Overview :page_facing_up: > What your project is not or will not provide or implement",
+    "Referral Program :moneybag:",
+    "Team :busts_in_silhouette: > Contact",
+    "Team :busts_in_silhouette: > Legal Structure",
+    "Team :busts_in_silhouette: > Team Code Repos",
+    "Team :busts_in_silhouette: > Team LinkedIn Profiles",
+    "Team :busts_in_silhouette: > Team members"
+  ]
+}

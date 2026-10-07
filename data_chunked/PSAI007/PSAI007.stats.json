@@ -1,0 +1,21 @@
+{
+  "doc_id": "PSAI007",
+  "num_chunks": 7,
+  "total_tokens": 542,
+  "avg_tokens": 77.43,
+  "min_tokens": 25,
+  "max_tokens": 189,
+  "chunks_by_type": {
+    "section": 7
+  },
+  "num_sections": 7,
+  "sections": [
+    "Additional Information",
+    "Project Description",
+    "Project Description > Development Roadmap",
+    "Project Description > Development Roadmap > Maintenance and Upgrade Plans",
+    "Project Description > Team > Relevant Experience",
+    "Project Description > Team > Team code repositories",
+    "Project Description > We implement these commands:"
+  ]
+}

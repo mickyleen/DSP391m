@@ -1,0 +1,27 @@
+{
+  "doc_id": "PSAI009",
+  "num_chunks": 14,
+  "total_tokens": 900,
+  "avg_tokens": 64.29,
+  "min_tokens": 27,
+  "max_tokens": 150,
+  "chunks_by_type": {
+    "section": 14
+  },
+  "num_sections": 13,
+  "sections": [
+    "Additional Information",
+    "Project Description",
+    "Project Description > Maintenance and Upgrade Plans",
+    "Project Description > Milestone 3: Implement Mobile app",
+    "Project Description > Value",
+    "Project Description > What are the benefits to getting this right?",
+    "Project Description > What are the risks if you don't get it right?",
+    "Project Description > What are the risks if you don't get it right? > Milestone 1: Implement Filecoin API to own blockchain",
+    "Project Description > What are the risks if you don't get it right? > Milestone 2: Implement API and Blockchain Operating System",
+    "Project Description > What are the risks if you don't get it right? > What are the risks that will make executing on this project difficult?",
+    "Team > Contact",
+    "Team > Team Website > Relevant Experience",
+    "Team > Team members"
+  ]
+}

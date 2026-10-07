@@ -1,0 +1,40 @@
+{
+  "doc_id": "PSAI079",
+  "num_chunks": 65,
+  "total_tokens": 16048,
+  "avg_tokens": 246.89,
+  "min_tokens": 47,
+  "max_tokens": 510,
+  "chunks_by_type": {
+    "section": 19,
+    "section_split": 32,
+    "table_row": 14
+  },
+  "num_sections": 24,
+  "sections": [
+    "2.2 Existing MLLMs",
+    "<span id=\"page-1-0\"></span>2 Background and Related Work > <span id=\"page-1-1\"></span>2.1 Definitions",
+    "<span id=\"page-2-3\"></span>2.3 Existing benchmarks",
+    "<span id=\"page-2-3\"></span>2.3 Existing benchmarks > 3.5 Other Issues/Troubles",
+    "<span id=\"page-2-3\"></span>2.3 Existing benchmarks > <span id=\"page-3-0\"></span>3 Issues in Existing Benchmarks",
+    "<span id=\"page-2-3\"></span>2.3 Existing benchmarks > <span id=\"page-3-6\"></span>3.1 Prompt Selection",
+    "<span id=\"page-2-3\"></span>2.3 Existing benchmarks > <span id=\"page-3-6\"></span>3.1 Prompt Selection > 3.3 Perception of Musical Content Not Required",
+    "<span id=\"page-2-3\"></span>2.3 Existing benchmarks > <span id=\"page-3-6\"></span>3.1 Prompt Selection > <span id=\"page-3-5\"></span>3.2 Extraction of the Actual Answer from Model Response",
+    "<span id=\"page-2-3\"></span>2.3 Existing benchmarks > <span id=\"page-4-0\"></span>3.4 Using Proprietary LLM in Evaluation",
+    "<span id=\"page-2-3\"></span>2.3 Existing benchmarks > <span id=\"page-5-0\"></span>4 Aims and Research Questions",
+    "<span id=\"page-2-3\"></span>2.3 Existing benchmarks > <span id=\"page-5-4\"></span>RQ3 - actual usefulness for humans:",
+    "<span id=\"page-2-3\"></span>2.3 Existing benchmarks > RQ1 - evaluation procedures:",
+    "<span id=\"page-2-3\"></span>2.3 Existing benchmarks > RQ2 - musical understanding:",
+    "<span id=\"page-5-1\"></span>5 Proposed Methodology",
+    "<span id=\"page-5-1\"></span>5 Proposed Methodology > 5.1 Benchmark Design and Development",
+    "<span id=\"page-5-1\"></span>5 Proposed Methodology > 5.2 Model Evaluation",
+    "<span id=\"page-5-1\"></span>5 Proposed Methodology > 5.2 Model Evaluation > 5.3 Synthetic Methods and On-Demand Benchmark Generation",
+    "<span id=\"page-5-1\"></span>5 Proposed Methodology > 5.2 Model Evaluation > 5.5 Towards Modality-Agnostic Music Representations",
+    "<span id=\"page-5-1\"></span>5 Proposed Methodology > 5.2 Model Evaluation > <span id=\"page-7-2\"></span>5.4 Benchmark Validation with Human Musicians",
+    "<span id=\"page-5-1\"></span>5 Proposed Methodology > 5.6 Open for Collaboration",
+    "<span id=\"page-5-1\"></span>5 Proposed Methodology > <span id=\"page-7-0\"></span>6 Conclusion",
+    "Abstract",
+    "Abstract > 1 Introduction",
+    "Thesis Proposal: Multimodal Benchmark for Music Understanding in Large Language Models"
+  ]
+}

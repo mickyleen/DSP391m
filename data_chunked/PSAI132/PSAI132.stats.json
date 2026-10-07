@@ -1,0 +1,28 @@
+{
+  "doc_id": "PSAI132",
+  "num_chunks": 14,
+  "total_tokens": 2341,
+  "avg_tokens": 167.21,
+  "min_tokens": 35,
+  "max_tokens": 402,
+  "chunks_by_type": {
+    "section": 14
+  },
+  "num_sections": 14,
+  "sections": [
+    "About Me:",
+    "About Me: > My experience with GCC:",
+    "Abstract:",
+    "Current State of Project:",
+    "Current State of Project: > Project Goals:",
+    "Current State of Project: > Project Goals: > default:",
+    "Implementation:",
+    "Post GSOC:",
+    "References:",
+    "Timeline Of the Project:",
+    "Timeline Of the Project: > Phase 1 :",
+    "Timeline Of the Project: > Phase 2:",
+    "Timeline Of the Project: > Phase 3:",
+    "Timeline Of the Project: > Phase 4:"
+  ]
+}

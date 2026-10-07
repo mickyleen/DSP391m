@@ -1,0 +1,191 @@
+[
+  {
+    "chunk_id": "PSAI001-C0000",
+    "doc_id": "PSAI001",
+    "chunk_index": 0,
+    "section": "Project Description",
+    "heading_path": [
+      "Project Description"
+    ],
+    "block_type": "section",
+    "token_count": 255,
+    "hash": "a21b7ad9b1c052c2",
+    "text": "# Project Description\n\nlotus-farcaster V3 brings additionnal functionnalities to lotus farcaster (see tables below).\n\nLotus farcaster is used by 400+ miners, was downloaded more than 200 times and get 30+ new users during the last 2 weeks. We want to keep farcaster has one of the main analytics companion of miners by continuously adding features supporting their new challenges. This new release follow Filecoin roadmap and bring storage markets features, bring support to the new lotus split mode architecture and made it reusable for other project by providing all the functions are a python module. This tool is build for the community and we really want to keep it opensource\n\nLotus farcaster is a Visualization and Analytics tool for Lotus Filecoin node It leverages Prometheus, Grafana and Python.\n\nWe want it to be accessible and designed for any types of miners. It's designed to manage all type of architecture: single miner, single miner with workers monolitic and split store architecture (markets node) multiple miners farm.\n\nWe want to move from console based monitoring to a proactive professional monitoring grade. Compared to the existing console tools, users will benefits: consolidated information data history push notification Visual monitoring Scalable solution User management Security Mobile device accessibility"
+  },
+  {
+    "chunk_id": "PSAI001-C0001",
+    "doc_id": "PSAI001",
+    "chunk_index": 1,
+    "section": "Architecture",
+    "heading_path": [
+      "Project Description",
+      "How it works",
+      "Architecture"
+    ],
+    "block_type": "diagram",
+    "token_count": 80,
+    "hash": "23c37f4d24bf4e0d",
+    "text": "```text\n-------------------------- ------------ ----- ---------------- ------------ | Lotus Miner | | | | Grafana | | Web Client | | lotus-exporter-farcaster | <------- | Prometheus | <------- | farcaster-dashboard | <------- | | -------------------------- ------------ ----- ---------------- ------------ | | -------------------------\n|-> | Lotus Daemon | | ------------------------- | | ------------------------- |-> | Lotus Markets | -------------------------\n```"
+  },
+  {
+    "chunk_id": "PSAI001-C0002",
+    "doc_id": "PSAI001",
+    "chunk_index": 2,
+    "section": "lotus farcaster comes with 2 Components :",
+    "heading_path": [
+      "Project Description",
+      "How it works",
+      "lotus farcaster comes with 2 Components :"
+    ],
+    "block_type": "section",
+    "token_count": 56,
+    "hash": "1564e379a74eb12f",
+    "text": "# Project Description > How it works > lotus farcaster comes with 2 Components :\n\nA Grafana dashboard lotus-exporter-farcaster a standalone python script executed every minute by the crontab. It generates metrics that are exposed by node-exporter to prometheus."
+  },
+  {
+    "chunk_id": "PSAI001-C0003",
+    "doc_id": "PSAI001",
+    "chunk_index": 3,
+    "section": "Security",
+    "heading_path": [
+      "Project Description",
+      "How it works",
+      "Security"
+    ],
+    "block_type": "section",
+    "token_count": 133,
+    "hash": "3ec20e563cf26571",
+    "text": "# Project Description > How it works > Security\n\nThe design and choice of these components, was made to keep a high level of security:\n- metrics are pulled from the miner to avoid compromising network or management servers\n- lotus-exporterfarcaster doesn't bind any ports to avoid exposing the miner to external threat\n- lotus-exporter-farcaster run under unprivileged user (ideally lotus user) to avoid system being compromised\n- The global solution doesn't rely on any cloud or remote component. To avoid data leak.\n\nlotus-exporter-farcaster is running locally on the miner without any specific privilege nor access to other servers."
+  },
+  {
+    "chunk_id": "PSAI001-C0004",
+    "doc_id": "PSAI001",
+    "chunk_index": 4,
+    "section": "It will follow prometheus guidelines :",
+    "heading_path": [
+      "Project Description",
+      "How it works",
+      "It will follow prometheus guidelines :"
+    ],
+    "block_type": "section",
+    "token_count": 33,
+    "hash": "e796e39e703589cf",
+    "text": "# Project Description > How it works > It will follow prometheus guidelines :\n\nressources inexpensive standard prometheus metrics naming compatible with 3rd parties dashboards and exporters"
+  },
+  {
+    "chunk_id": "PSAI001-C0005",
+    "doc_id": "PSAI001",
+    "chunk_index": 5,
+    "section": "Benefits",
+    "heading_path": [
+      "Project Description",
+      "How it works",
+      "Benefits"
+    ],
+    "block_type": "section",
+    "token_count": 56,
+    "hash": "cd936a924454b02d",
+    "text": "# Project Description > How it works > Benefits\n\nSupport any type of lotus architecture Easy to deploy Small footprint Collect lotus node and miner data Only rely on API Data are pulled from the Prometheus server (increase security) Deployed on the miner node only Run under Unprivileged user"
+  },
+  {
+    "chunk_id": "PSAI001-C0006",
+    "doc_id": "PSAI001",
+    "chunk_index": 6,
+    "section": "Dashboard Features",
+    "heading_path": [
+      "Project Description",
+      "Dashboard Features"
+    ],
+    "block_type": "table_row",
+    "token_count": 21,
+    "hash": "b8d8f8936f52eee2",
+    "text": "sectors: categories | to restore: : | : CC / inc. | : deals / inc."
+  },
+  {
+    "chunk_id": "PSAI001-C0007",
+    "doc_id": "PSAI001",
+    "chunk_index": 7,
+    "section": "Dashboard Features",
+    "heading_path": [
+      "Project Description",
+      "Dashboard Features"
+    ],
+    "block_type": "table_row",
+    "token_count": 20,
+    "hash": "505b129d8aadaef8",
+    "text": "sectors: lookup | to restore: file (Adress=Name/Label) | : to"
+  },
+  {
+    "chunk_id": "PSAI001-C0008",
+    "doc_id": "PSAI001",
+    "chunk_index": 8,
+    "section": "Roadmap",
+    "heading_path": [
+      "Project Description",
+      "Dashboard Features",
+      "Roadmap"
+    ],
+    "block_type": "section",
+    "token_count": 114,
+    "hash": "bdb1ebbd5fa9d8fb",
+    "text": "# Project Description > Dashboard Features > Roadmap\n\nThe planning could be shorted if Protocol Labs for any reasons decide to force miners to switch to splitstore.\n\n- 01 sep 2021: V3 scoping\n- 07 sep 2021: V3 Development of Design / Specifications / Mockup\n- 30 sep 2021: First release open to beta tester\n- 15 oct 2021: Public release of the new farcaster (without the python lib)\n- 15 nov 2021: Public release of the python lib"
+  },
+  {
+    "chunk_id": "PSAI001-C0009",
+    "doc_id": "PSAI001",
+    "chunk_index": 9,
+    "section": "Roadmap",
+    "heading_path": [
+      "Project Description",
+      "Dashboard Features",
+      "Roadmap"
+    ],
+    "block_type": "section",
+    "token_count": 36,
+    "hash": "20287ac8cbf520df",
+    "text": "# Project Description > Dashboard Features > Roadmap\n\nOption: Additionnal support per major update (start\n\nafter included support consummed)\n\n10\n\n€ 720\n\nNo VAT charged"
+  },
+  {
+    "chunk_id": "PSAI001-C0010",
+    "doc_id": "PSAI001",
+    "chunk_index": 10,
+    "section": "Maintenance and Upgrade Plans",
+    "heading_path": [
+      "Project Description",
+      "Dashboard Features",
+      "Roadmap",
+      "Maintenance and Upgrade Plans"
+    ],
+    "block_type": "section",
+    "token_count": 39,
+    "hash": "9ae45eadd9681c12",
+    "text": "# Project Description > Dashboard Features > Roadmap > Maintenance and Upgrade Plans\n\nTools will be updated according to lotus release. Will be glad to work closer with PL team to specify API needs."
+  },
+  {
+    "chunk_id": "PSAI001-C0011",
+    "doc_id": "PSAI001",
+    "chunk_index": 11,
+    "section": "Team Members",
+    "heading_path": [
+      "Team",
+      "Team Members"
+    ],
+    "block_type": "section",
+    "token_count": 21,
+    "hash": "ae3f8ddee8940fcf",
+    "text": "# Team > Team Members\n\nJulien NOEL - julien.noel@twinquasar.io"
+  },
+  {
+    "chunk_id": "PSAI001-C0012",
+    "doc_id": "PSAI001",
+    "chunk_index": 12,
+    "section": "Relevant Experience",
+    "heading_path": [
+      "Relevant Experience"
+    ],
+    "block_type": "section",
+    "token_count": 82,
+    "hash": "77b2cb23fb501761",
+    "text": "# Relevant Experience\n\nJulien is a:\n- Filecoin miner, actively helping the filecoin community on slack.\n- Filecoin Notary\n- Part of MinerX program IPFS and Web3 enthousiast, starting being active around filecoin right before Space Race, Julien is a computer science engineer, spending 15 years working for Top100 companies providing strategic advice to C-level around new technologies."
+  }
+]

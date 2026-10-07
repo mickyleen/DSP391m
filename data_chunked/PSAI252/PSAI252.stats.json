@@ -1,0 +1,33 @@
+{
+  "doc_id": "PSAI252",
+  "num_chunks": 57,
+  "total_tokens": 3455,
+  "avg_tokens": 60.61,
+  "min_tokens": 20,
+  "max_tokens": 492,
+  "chunks_by_type": {
+    "section_split": 3,
+    "section": 13,
+    "table_row": 41
+  },
+  "num_sections": 17,
+  "sections": [
+    "Additional Information :heavy_plus_sign:",
+    "Avoiding Rust Deadlocks via Visualizing Lifetime > Development Roadmap :nut_and_bolt: > Milestone 1 — Implement the bug detection component",
+    "Avoiding Rust Deadlocks via Visualizing Lifetime > Development Roadmap :nut_and_bolt: > Overview",
+    "Avoiding Rust Deadlocks via Visualizing Lifetime > Development Status :open_book:",
+    "Avoiding Rust Deadlocks via Visualizing Lifetime > Milestone 2 — Integrate the bug detection functionalities into rust-analyzer",
+    "Avoiding Rust Deadlocks via Visualizing Lifetime > Milestone 3 — Implement the visualization component",
+    "Avoiding Rust Deadlocks via Visualizing Lifetime > Project Overview :page_facing_up: > A brief description of the project.",
+    "Avoiding Rust Deadlocks via Visualizing Lifetime > Project Overview :page_facing_up: > How our tool will be integrated into Substrate/Polkadot?",
+    "Avoiding Rust Deadlocks via Visualizing Lifetime > Project Overview :page_facing_up: > Overview",
+    "Avoiding Rust Deadlocks via Visualizing Lifetime > Project Overview :page_facing_up: > What are we going to do?",
+    "Avoiding Rust Deadlocks via Visualizing Lifetime > Project Overview :page_facing_up: > Why are we interested in creating this project?",
+    "Avoiding Rust Deadlocks via Visualizing Lifetime > Team :busts_in_silhouette: > Contact",
+    "Avoiding Rust Deadlocks via Visualizing Lifetime > Team :busts_in_silhouette: > Legal Structure",
+    "Avoiding Rust Deadlocks via Visualizing Lifetime > Team :busts_in_silhouette: > Team Code Repos",
+    "Avoiding Rust Deadlocks via Visualizing Lifetime > Team :busts_in_silhouette: > Team members",
+    "Avoiding Rust Deadlocks via Visualizing Lifetime > Team :busts_in_silhouette: > Team's experience",
+    "Future Plans"
+  ]
+}

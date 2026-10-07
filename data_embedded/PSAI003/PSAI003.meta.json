@@ -1,0 +1,361 @@
+[
+  {
+    "chunk_id": "PSAI003-C0000",
+    "doc_id": "PSAI003",
+    "chunk_index": 0,
+    "section": "Open Grant Proposal: Browser-Based Web Archiving Design and",
+    "heading_path": [
+      "Open Grant Proposal: Browser-Based Web Archiving Design and"
+    ],
+    "block_type": "section",
+    "token_count": 99,
+    "hash": "a701e46955cedabd",
+    "text": "# Open Grant Proposal: Browser-Based Web Archiving Design and\n\nStandardization\n\nBrowser-Based Web Archiving Design and Standardization\n\nAdministrator: Dietrich Ayala\n\nThe formal specification and UX research output documents will be released under the CC-BY-4.0 license.\n\nThe work also includes updating of existing tools (ArchiveWeb.page, ReplayWeb.page, Agregore) which are released under AGPL.\n\nAny other work created under this grant will be released under MIT and Apache licenses."
+  },
+  {
+    "chunk_id": "PSAI003-C0001",
+    "doc_id": "PSAI003",
+    "chunk_index": 1,
+    "section": "Background",
+    "heading_path": [
+      "Background"
+    ],
+    "block_type": "section",
+    "token_count": 247,
+    "hash": "d989c69e90c25c86",
+    "text": "# Background\n\nThe ability to not just view and interact, but to save and preserve, is fundamental to an open web and has been part of the original design. (The very first browser had a Save As option). But as the web has become more complex, and moved away from serving static documents to dynamic, interactive applications, the ability to save and preserve content has become more difficult and less functional. While modern browsers still retain a 'Save Page As…' option, this option is clumsy and mostly useless for any modern web sites.\n\nFocusing on archiving websites in bulk, a community of web archivists pioneered by memory institutions such as Internet Archive has developed alongside the web. The traditional approach of \"crawling\" the web at scale and saving the HTTP traffic seen by a specialized crawler has also reached its limits when dealing with modern, complex websites that require Javascript and complex user interaction to be fully realized.\n\nThe ability to create high fidelity archives directly through a browser provides a viable alternative to the currently broken 'Save Page As…'. The ability to then efficiently load web archives then also provides a direct interface between HTTP-based web applications and new applications built around new decentralized/p2p/web3 protocols such as IPFS."
+  },
+  {
+    "chunk_id": "PSAI003-C0002",
+    "doc_id": "PSAI003",
+    "chunk_index": 2,
+    "section": "Project Description",
+    "heading_path": [
+      "Project Description"
+    ],
+    "block_type": "section",
+    "token_count": 189,
+    "hash": "9e20aad52ba42385",
+    "text": "# Project Description\n\nThe overarching goal of this project will be to present a documented, standardized path for implementers wishing to create web archives in a browser environment and place these archives (archives of HTTP websites) onto decentralized systems (IPFS, other p2p/web3-protocol based systems), and provide initial proof-of-concept implementations of these standards using existing tools.\n\nThis project will consist of three parallel but interrelated strands of work that will serve to further ability to safely and easily create browser-based high-fidelity web archives, store them on decentralized systems, and efficiently access them:\n\n- 1. Creation of a formal storage specification\n- 2. Creation of UX guidelines for browser-based capture, storage and replay\n- 3. Beginning of implementation into existing tools.\n\nTogether, the work on these three tracks will define the storage and UX requirements for high-fidelity browser-based web archiving and support existing tools begin realizing these requirements."
+  },
+  {
+    "chunk_id": "PSAI003-C0003",
+    "doc_id": "PSAI003",
+    "chunk_index": 3,
+    "section": "Value",
+    "heading_path": [
+      "Project Description",
+      "Value"
+    ],
+    "block_type": "section",
+    "token_count": 209,
+    "hash": "3b8a1a32122a15e8",
+    "text": "# Project Description > Value\n\nThe main value of this project is to create a formally standardized approach to creating, storing and accessing web archives on p2p/decentralized systems. The standard will include both the storage specification as well as ux guidelines for approach this process, as well as initial integration of these standards into our existing tools. The standard specification will be usuable by other tools and independent developers.\n\nThe risks include not having the standard being clear enough or formal enough to enable others to adopt them on their own. The project does have a lot of moving parts, with three concurrent tracks of work, and we will attempt to mitigate the risks through clear updates via GitHub and dedicated project manager role.\n\nThere is also a separate risk inherent in the process of allowing users to archive their own data using the browser, and ways to mitigate this risk is a key part of the research in this project. The ux research will include threat modeling and will have an emphasis on user privacy, while the specification will include approaches to encrypted storage to address these risks."
+  },
+  {
+    "chunk_id": "PSAI003-C0004",
+    "doc_id": "PSAI003",
+    "chunk_index": 4,
+    "section": "Deliverables",
+    "heading_path": [
+      "Project Description",
+      "Deliverables"
+    ],
+    "block_type": "section",
+    "token_count": 46,
+    "hash": "aec19722fb7f9545",
+    "text": "# Project Description > Deliverables\n\nThe work will be divided into 6 monthly milestones. Each milestone deliverable falls into one of the work areas defined below. The work and the associated funding for each deliverable are as follows:"
+  },
+  {
+    "chunk_id": "PSAI003-C0005",
+    "doc_id": "PSAI003",
+    "chunk_index": 5,
+    "section": "Deliverables",
+    "heading_path": [
+      "Project Description",
+      "Deliverables"
+    ],
+    "block_type": "table_row",
+    "token_count": 22,
+    "hash": "8816416f88765f2d",
+    "text": "approaches: toolset | defined: (py-wacz) | in: for creating | spec.: and"
+  },
+  {
+    "chunk_id": "PSAI003-C0006",
+    "doc_id": "PSAI003",
+    "chunk_index": 6,
+    "section": "Deliverables",
+    "heading_path": [
+      "Project Description",
+      "Deliverables"
+    ],
+    "block_type": "table_row",
+    "token_count": 20,
+    "hash": "910d45ce41176a27",
+    "text": "approaches: MFS | defined: for ‘continuous | in: archiving | spec.: over"
+  },
+  {
+    "chunk_id": "PSAI003-C0007",
+    "doc_id": "PSAI003",
+    "chunk_index": 7,
+    "section": "Deliverables",
+    "heading_path": [
+      "Project Description",
+      "Deliverables"
+    ],
+    "block_type": "table_row",
+    "token_count": 20,
+    "hash": "6e8282ee646bcc0f",
+    "text": "approaches: storage, | defined: including | in: IPFS, | spec.: with privacy"
+  },
+  {
+    "chunk_id": "PSAI003-C0008",
+    "doc_id": "PSAI003",
+    "chunk_index": 8,
+    "section": "Development Roadmap",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap"
+    ],
+    "block_type": "section",
+    "token_count": 42,
+    "hash": "c4e042fc1eb5fa05",
+    "text": "# Project Description > Development Roadmap\n\nThe development roadmap follows three strands of work, including work storage specification, UX research and design, and implementation of research into existing tools. The three tracks are defined below:"
+  },
+  {
+    "chunk_id": "PSAI003-C0009",
+    "doc_id": "PSAI003",
+    "chunk_index": 9,
+    "section": "Creation of Storage Specification (Standardizing the WACZ Format) (SPEC)",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Creation of Storage Specification (Standardizing the WACZ Format) (SPEC)"
+    ],
+    "block_type": "section_split",
+    "token_count": 508,
+    "hash": "3603ecf58554aa48",
+    "text": "# Project Description > Development Roadmap > Creation of Storage Specification (Standardizing the WACZ Format) (SPEC)\n\nWork performed by: Ilya Kreymer and Ed Summers\n\nTo facilitate the storage of web archive data on decentralized systems, an open-standard format is necessary to represent web archive data and any necessary metadata. This specification will enable the placement for archived web (HTTP-based content) to be served from decentralized (web3, etc…) systems.\n\nWebrecorder has created an initial prototype of such a format, WACZ (Web Archive Collection Zipped). The format packages existing web archive data, WARC along with indexes and other metadata in a random-access-readable way. The format should allow for efficient access to web archive data over any protocol that supports random\n\naccess read. Any IPFS-specific considerations will also be included in the specification, such as including the replay system for self-hosted storage or using MFS for incremental updates. The specification in its current form can be found here:\n\nWebrecorder has also created and maintains tools that read and write WACZ files. The specification broadly follows the basics of the Frictionless Data Package format, although the individual components of the package are not fully specified. To aid further adoption and implementation of the format with decentralized/p2p storage systems, a formal specification of the WACZ format will be created. The specification will address specific use cases from a group range of stakeholders in and around the web archiving community, who will provide input on the development of the specification. A technical writer/editor will be responsible for maintaining the draft of the specification and seek to achieve rough consensus with the group of stakeholders, while iterating on the specification.\n\nThe WACZ specification will be expanded in the following:\n\nFormal defintion of the WACZ (ZIP format) and all parts of the data layout, possibly improvements to the Frictionless Data Spec framework. Research on the most versatile approach to indexing, considering the current (CDXJ) approach and other approaches (e.g. sqlite). Research on best approach to store full-text search data in a scalable way. Specification for incremental/continuous archiving, where a web archive collection is increased through periodic automated capture. Plan for IPFS storage, including using MFS for incremental storage, specification storage of the replay system for standalone access via HTTP gateways. Specification for storing additional metadata as part of the data package based on standard metadata schemas. Research on potential approaches to support encryption while maintaing random access."
+  },
+  {
+    "chunk_id": "PSAI003-C0010",
+    "doc_id": "PSAI003",
+    "chunk_index": 10,
+    "section": "Creation of Storage Specification (Standardizing the WACZ Format) (SPEC)",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Creation of Storage Specification (Standardizing the WACZ Format) (SPEC)"
+    ],
+    "block_type": "section_split",
+    "token_count": 196,
+    "hash": "f34559560257c32f",
+    "text": ". Plan for IPFS storage, including using MFS for incremental storage, specification storage of the replay system for standalone access via HTTP gateways. Specification for storing additional metadata as part of the data package based on standard metadata schemas. Research on potential approaches to support encryption while maintaing random access.\n\nAt Milestone C, and possibly at later stages, we will also evaluate if any changes to the storage specification, are necessary in response to the UX research and threat modeling to better account for privacy of stored data.\n\nAt the end of the grant period, the specification will more rigorously define aspects of a storage model for web archives on decentralized/p2p systems, identify key use cases - from small static websites to larger growing collections, and receive a thorough vetting from initial stakeholders. A decision on the next steps for formal standardization, for example via W3C or IETF, will be made and the specification will be ready for submission into the proper standardization path."
+  },
+  {
+    "chunk_id": "PSAI003-C0011",
+    "doc_id": "PSAI003",
+    "chunk_index": 11,
+    "section": "Creation of Storage Specification (Standardizing the WACZ Format) (SPEC)",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Creation of Storage Specification (Standardizing the WACZ Format) (SPEC)"
+    ],
+    "block_type": "section_split",
+    "token_count": 64,
+    "hash": "d2a179d47c1a6b33",
+    "text": ", identify key use cases - from small static websites to larger growing collections, and receive a thorough vetting from initial stakeholders. A decision on the next steps for formal standardization, for example via W3C or IETF, will be made and the specification will be ready for submission into the proper standardization path."
+  },
+  {
+    "chunk_id": "PSAI003-C0012",
+    "doc_id": "PSAI003",
+    "chunk_index": 12,
+    "section": "Privacy-Centric Design Research for Browser-Based Capture, Storage and Replay (UX)",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Privacy-Centric Design Research for Browser-Based Capture, Storage and Replay (UX)"
+    ],
+    "block_type": "section_split",
+    "token_count": 447,
+    "hash": "0ea0b925a61d906e",
+    "text": "# Project Description > Development Roadmap > Privacy-Centric Design Research for Browser-Based Capture, Storage and Replay (UX)\n\nWork performed by New Design Congress, led by Cade Diehm\n\nTraditional web archiving, such as that performed by larger institutions like Internet Archive, generally only archive publicly available content. However, browser-based archiving enables the user to archive anything loaded in their browser, including private content. The browser-based approach to web archiving is more powerful, but also riskier, as it allows users to archive and share potentially private content. Thus far, the privacy implications of personalized, browserbased web archiving have not been extensively research, and this effort will certain user privacy and security as a core facet of the work.\n\nThe UI/UX research will cover three key stages of web archiving process: web archive creation in the browser, web archive replay in the browser, and user decisions about web archive storage (where data should be stored, with whom it should be shared, etc…), with a special focus on user privacy throughout all stages of archiving. Web archiving UX contains numerous challenges, tied not only the interfaces of capture, storage and replay, but also the proposed file formats and underlying distribution models. In this grant, UI/UX research will deliver best practice recommendations for providing high-fidelity web archiving implementations directly into a web browser or browser-based extensions.\n\nThe UX research will include core must-have features that must exist for a user to create and access web archives in the browser. The UX research will cover more advanced/optional features, and designs will be informed by UI/UX best practices alongside careful threat modelling techniques. As a result, the UX research will deliver recommendations that take into consideration the privacy and security concerns associated with sharing potentially private or sensitive data, the politics of social graphing inherent in P2P distribution models, and how to facilitate user decisions as they choose which data to share, and the curation of archived pages.\n\nThe UX research will include the following deliverables: - Interviews with diverse group of individual and instititonal users, both currently creating web archives and those who may be able to create web archives in the future, if given the opportunity and the right tools."
+  },
+  {
+    "chunk_id": "PSAI003-C0013",
+    "doc_id": "PSAI003",
+    "chunk_index": 13,
+    "section": "Privacy-Centric Design Research for Browser-Based Capture, Storage and Replay (UX)",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Privacy-Centric Design Research for Browser-Based Capture, Storage and Replay (UX)"
+    ],
+    "block_type": "section_split",
+    "token_count": 238,
+    "hash": "1b6092466af40b90",
+    "text": "reat modeling assessment based on the gathered use cases, covering the basic process of capture, storage and replay as required by users. Design system proposal that covers the basic the goal of web archiving, storage and replay/curation, designing for complexity within each of these stages of archival processes, and taking into user privacy concerns at each stage. Design system proposal that also covers storing web archives to IPFS or other decentralized/p2p systems. The proposals will be informed by security considerations as documented in the research to identify drawbacks or compromises inherent in the proposed design system. A recommendations document on user privacy covering how to present web archiving functionality and associated trade-offs associated with archiving fidelity vs privacy, and guidelines on how to express the limitations and trade-offs to users to allow them to make best decisions given their needs.\n\nThe design research output (UX design mockups and guidelines document) will be directly usable by implementers wishing to integrate web archiving functionality into existing tools, and provide actionable next steps for a variety of browser interface, including browser extensions such as Webrecorder's ArchiveWeb.page, native browser implementations, and Electron-based browsers such as Agregore and the ArchiveWeb.page App."
+  },
+  {
+    "chunk_id": "PSAI003-C0014",
+    "doc_id": "PSAI003",
+    "chunk_index": 14,
+    "section": "Privacy-Centric Design Research for Browser-Based Capture, Storage and Replay (UX)",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Privacy-Centric Design Research for Browser-Based Capture, Storage and Replay (UX)"
+    ],
+    "block_type": "section_split",
+    "token_count": 64,
+    "hash": "dfbebeec73f782f6",
+    "text": ") will be directly usable by implementers wishing to integrate web archiving functionality into existing tools, and provide actionable next steps for a variety of browser interface, including browser extensions such as Webrecorder's ArchiveWeb.page, native browser implementations, and Electron-based browsers such as Agregore and the ArchiveWeb.page App."
+  },
+  {
+    "chunk_id": "PSAI003-C0015",
+    "doc_id": "PSAI003",
+    "chunk_index": 15,
+    "section": "Implementation (IMPL)",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Implementation (IMPL)"
+    ],
+    "block_type": "section",
+    "token_count": 287,
+    "hash": "c9ae8e0c0356dc30",
+    "text": "# Project Description > Development Roadmap > Implementation (IMPL)\n\nWorked performed by: Ilya Kreymer, Ed Summers, and Mauve (Georgi S)\n\nThe implementation phase will begin during the second half of the grant and will be focused on implementing the output of the other two tracks, the WACZ specification and UX research into new and existing tools in support of browser-based web archiving.\n\nThe goal will be to ensure the web archiving output can work with different systems and even different browsers.\n\nImprovements to the ReplayWeb.page (and core wabac.js) replay systems to ensure that they can read web archives according to the latest specification, particularly any new approaches to indexing, full-text search, metadata, standalone loading, and loading from IPFS. Improvements to the ArchiveWeb.page system will be made to ensure the system can write web archives according to latest specification, including storage to IPFS. The Agregore Browser, an existing Electron-based browser which already provides support for several p2p protocols, including IPFS, but currently lacks the full Chrome extensions API necessary for web archiving to be supported, will be updated with the necessary extension APIs. Aregore will then be updated to fully support running the ArchiveWeb.page extension natively in Argregore with IPFS storage. Updates to ArchiveWeb.page UX to support output of UX research, such as privacy preserving workflows."
+  },
+  {
+    "chunk_id": "PSAI003-C0016",
+    "doc_id": "PSAI003",
+    "chunk_index": 16,
+    "section": "Total Budget Requested",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Total Budget Requested"
+    ],
+    "block_type": "section",
+    "token_count": 41,
+    "hash": "56e58c901966e984",
+    "text": "# Project Description > Development Roadmap > Total Budget Requested\n\nThe total budget requests is \\$100,000. The breakdown of the budget is associated with the deliverables of each milestone, defined above."
+  },
+  {
+    "chunk_id": "PSAI003-C0017",
+    "doc_id": "PSAI003",
+    "chunk_index": 17,
+    "section": "Maintenance and Upgrade Plans",
+    "heading_path": [
+      "Project Description",
+      "Maintenance and Upgrade Plans"
+    ],
+    "block_type": "section",
+    "token_count": 107,
+    "hash": "ffccc66ee3fa47d3",
+    "text": "# Project Description > Maintenance and Upgrade Plans\n\nThe goal for the storage specification is to enter into a formal standardization process, such as with IETF or W3C, and to follow the guidelines associated with those processes for creating a long-term standard. The ux research may be updated as needed in the future. The existing open source tools that will be updated are already being maintained, either by Webrecorder or in case of Agregore Browser, by Mauve Software, and will continue to be maintained by those organizations."
+  },
+  {
+    "chunk_id": "PSAI003-C0018",
+    "doc_id": "PSAI003",
+    "chunk_index": 18,
+    "section": "Team Members",
+    "heading_path": [
+      "Team",
+      "Team Members"
+    ],
+    "block_type": "section",
+    "token_count": 85,
+    "hash": "2bf35d47306c01f8",
+    "text": "# Team > Team Members\n\nThe staff for the project will consist of:\n\nLead Developer & Project Lead, Webrecorder:\n- Ilya Kreymer Project Manager, Webrecorder\n- Lorena Ramírez-López UX Research\n- New Design Congress, led by Cade Diehm New Design Congress Team Technical Writing / Specification Research Dev\n- Ed Summers Agregore Integration Developer\n- Mauve Software"
+  },
+  {
+    "chunk_id": "PSAI003-C0019",
+    "doc_id": "PSAI003",
+    "chunk_index": 19,
+    "section": "Team Member LinkedIn Profiles",
+    "heading_path": [
+      "Team",
+      "Team Members",
+      "Team Member LinkedIn Profiles"
+    ],
+    "block_type": "section_split",
+    "token_count": 499,
+    "hash": "2042abfb98a71ded",
+    "text": "# Team > Team Members > Team Member LinkedIn Profiles\n\nIlya Kreymer:\n- https://www.linkedin.com/in/ilya-kreymer-55110093/ Lorena Ramírez-López\n- https://www.linkedin.com/in/lorena-aramirez-lopez/ Cade Diehm\n- https://www.linkedin.com/in/shibacomputer/ Ed Summers\n- https://www.linkedin.com/in/esummers/ Mauve/Georgi S.\n- https://www.linkedin.com/in/georgiy-s-47697579/\n\nThe Webrecorder project has been focused on addressing these limits by pushing the capabilities of web archiving technologies through open source tools and new formats in support of high fidelity digital web preservation. Webrecorder tools are grounded in some of the formats and techniques of the web archiving community but designed to work with the web browser itself, with the goal of making high-fidelity web archiving available to all. The Webrecorder project seeks to accomplish this by pushing the limits of what browsers can do, either through browser automation, creating browser extensions, or helping to influence changes in future browsers to make improved save and archive capabilities a core feature. Ilya Kreymer has worked in the web archiving field for 10 years. He started the Webrecorder project in 2014, previously working at the Interent Archive on their Wayback Machine software. Lorena Ramírez-López is currently a developer and community manager for Webrecorder. She was previously the project manager for the Media Conservation Initiative and handled the budget, fellowships, and workshop logistics. Cade Diehm is a systems theorist, researcher and founder of the New Design Congress, a non-profit organisation developing a nuanced understanding of technology's role as a social, political and environmental accelerant. He has spent ten years embedded in tech infrastructure and security projects in six countries. New Design Congress' multi-year research focus includes designing new decentralised identity paradigms (current collaborations with Ink & Switch and Radicle), collaborative infrastructure design, and embedded economic systems. Ed Summers is a design researcher and software developer working at the Maryland Institute for Technology in the Humanities. For the last 25 years he has worked in the field of digital preservation and the web, in government, business and academic settings. During that time he worked as a technical writer and developer on the Simple Knowledge Organization System (SKOS) and RDFa W3C standards."
+  },
+  {
+    "chunk_id": "PSAI003-C0020",
+    "doc_id": "PSAI003",
+    "chunk_index": 20,
+    "section": "Team Member LinkedIn Profiles",
+    "heading_path": [
+      "Team",
+      "Team Members",
+      "Team Member LinkedIn Profiles"
+    ],
+    "block_type": "section_split",
+    "token_count": 133,
+    "hash": "06c930365bb4f436",
+    "text": "years he has worked in the field of digital preservation and the web, in government, business and academic settings. During that time he worked as a technical writer and developer on the Simple Knowledge Organization System (SKOS) and RDFa W3C standards. While working at the Library of Congress he helped create a reference implementation and write the initial drafts of the BagIt File Packaging Format (RFC 8493). Mauve is a decentralized software consultant and has worked on grants for Protocol labs as well as a wide range of peer to peer projects. One of their focuses has been on making peer to peer web technologies more accessible via the Agregore Browser project."
+  },
+  {
+    "chunk_id": "PSAI003-C0021",
+    "doc_id": "PSAI003",
+    "chunk_index": 21,
+    "section": "Team Member LinkedIn Profiles",
+    "heading_path": [
+      "Team",
+      "Team Members",
+      "Team Member LinkedIn Profiles"
+    ],
+    "block_type": "section_split",
+    "token_count": 64,
+    "hash": "390e94ff4a1374ae",
+    "text": "of the BagIt File Packaging Format (RFC 8493). Mauve is a decentralized software consultant and has worked on grants for Protocol labs as well as a wide range of peer to peer projects. One of their focuses has been on making peer to peer web technologies more accessible via the Agregore Browser project."
+  },
+  {
+    "chunk_id": "PSAI003-C0022",
+    "doc_id": "PSAI003",
+    "chunk_index": 22,
+    "section": "Team code repositories",
+    "heading_path": [
+      "Team",
+      "Team Members",
+      "Team Member LinkedIn Profiles",
+      "Team code repositories"
+    ],
+    "block_type": "section",
+    "token_count": 106,
+    "hash": "9249ce567031d0cc",
+    "text": "# Team > Team Members > Team Member LinkedIn Profiles > Team code repositories\n\nExisting code repositories that will be updated in this work:\n\nhttps://github.com/webrecorder/wacz-format include the spec and https://github.com/webrecorder/wacz-format/py-wacz for python WACZ library. https://github.com/webrecorder/wabac.js https://github.com/webrecorder/archiveweb.page https://github.com/webrecorder/replayweb.page https://github.com/AgregoreWeb/agregore-browser"
+  },
+  {
+    "chunk_id": "PSAI003-C0023",
+    "doc_id": "PSAI003",
+    "chunk_index": 23,
+    "section": "Additional Information",
+    "heading_path": [
+      "Additional Information"
+    ],
+    "block_type": "section",
+    "token_count": 40,
+    "hash": "75f4ac66e0a1a4bc",
+    "text": "# Additional Information\n\nIn drafting the specification, we will seek input and feedback from various experts and interested parties in the fields of decentralized protocols and web archiving. The list of advisors will expand as we"
+  },
+  {
+    "chunk_id": "PSAI003-C0024",
+    "doc_id": "PSAI003",
+    "chunk_index": 24,
+    "section": "Further / Follow-Up Work",
+    "heading_path": [
+      "Additional Information",
+      "Further / Follow-Up Work"
+    ],
+    "block_type": "section",
+    "token_count": 313,
+    "hash": "f3ae3f6a025d55be",
+    "text": "# Additional Information > Further / Follow-Up Work\n\nThis project will define a core specification for browser-based, userdriven web archiving and produce usable UX research for implementors to begin to support browser-based archiving. The goal of the implementation work will be to integrate the bulk of the updated WACZ format specification into existing tools (py-wacz, ArchiveWeb.page, ReplayWeb.page) and to begin implementing the work from the UX research into ArchiveWeb.page and ReplayWeb.page.\n\nSome follow-up work that can be undertaken at the completion of the six month period will be as follows:\n\nImplementation of automated web archiving system, such as performed by a browser-based crawler like Webrecorder: Browsertrix Crawler at fixed intervals and depositing data to p2p/decentralized systems automatically 'at scale'. The specification for this use case will be well defined, and will be wellpositioned to begin implementation of such a system. A C++ library for creating WACZ web archives. The Python and Javascript libraries, such as py-wacz and wabac.js will be updated during this period, paving them for a C++ implementation afterwards. Full implementation of encrypted storage. The specification and UX research will focus on defining the threat models and requirements, and the specification will define the low-level requirements for encrypted web archive storage, positioning us to proceed with full implementation after this six month period. Further design research into context-driven navigation systems for larger, multi-contributor archive projects. Development of a broader political framework for assessing private archive systems."
+  }
+]

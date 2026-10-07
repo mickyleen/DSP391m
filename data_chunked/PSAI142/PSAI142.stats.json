@@ -1,0 +1,29 @@
+{
+  "doc_id": "PSAI142",
+  "num_chunks": 47,
+  "total_tokens": 3118,
+  "avg_tokens": 66.34,
+  "min_tokens": 20,
+  "max_tokens": 406,
+  "chunks_by_type": {
+    "section": 15,
+    "table_row": 32
+  },
+  "num_sections": 14,
+  "sections": [
+    "Migrate Problem Creator to Vue.js + Typescript > ARITRA",
+    "Migrate Problem Creator to Vue.js + Typescript > Security impact",
+    "Migrate Problem Creator to Vue.js + Typescript > Technical skills",
+    "Migrate Problem Creator to Vue.js + Typescript > Technical skills > Alternatives considered",
+    "Migrate Problem Creator to Vue.js + Typescript > Technical skills > Detailed project description",
+    "Migrate Problem Creator to Vue.js + Typescript > Technical skills > Detailed project description > I would like to divide the project into two halves:",
+    "Migrate Problem Creator to Vue.js + Typescript > Technical skills > Education",
+    "Migrate Problem Creator to Vue.js + Typescript > Technical skills > Frontend",
+    "Migrate Problem Creator to Vue.js + Typescript > Technical skills > Frontend > User experience",
+    "Migrate Problem Creator to Vue.js + Typescript > Technical skills > Link to omegaUp merged PRs:",
+    "Migrate Problem Creator to Vue.js + Typescript > Technical skills > Motivation",
+    "Migrate Problem Creator to Vue.js + Typescript > Technical skills > Progress and my plans:",
+    "Migrate Problem Creator to Vue.js + Typescript > Testing plan",
+    "Schedule"
+  ]
+}

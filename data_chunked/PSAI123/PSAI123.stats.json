@@ -1,0 +1,25 @@
+{
+  "doc_id": "PSAI123",
+  "num_chunks": 11,
+  "total_tokens": 746,
+  "avg_tokens": 67.82,
+  "min_tokens": 22,
+  "max_tokens": 122,
+  "chunks_by_type": {
+    "section": 11
+  },
+  "num_sections": 11,
+  "sections": [
+    "Additional Information",
+    "Project Description",
+    "Project Description > Deliverables",
+    "Project Description > Development Roadmap > MileStone 1: Finalize scope, workflow design, and architectural design",
+    "Project Description > Development Roadmap > MileStone 2: Service implementation",
+    "Project Description > Development Roadmap > MileStone 3: the web application",
+    "Project Description > Development Roadmap > MileStone 3: the web application > MileStone 4: All project deliverables (website, documentation, codebase)",
+    "RFP Proposal: Retrieval Metainfo System with Incentive Mechanism",
+    "Total Budget Requested > Team Member LinkedIn Profiles",
+    "Total Budget Requested > Team Members",
+    "Total Budget Requested > Team Website > Relevant Experience"
+  ]
+}

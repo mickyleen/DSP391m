@@ -1,0 +1,26 @@
+{
+  "doc_id": "PSAI184",
+  "num_chunks": 23,
+  "total_tokens": 1588,
+  "avg_tokens": 69.04,
+  "min_tokens": 20,
+  "max_tokens": 266,
+  "chunks_by_type": {
+    "section": 11,
+    "table_row": 12
+  },
+  "num_sections": 11,
+  "sections": [
+    "Dateparser Better Language Detection > ABOUT ME > Personal Information",
+    "Dateparser Better Language Detection > BACKGROUND",
+    "Dateparser Better Language Detection > BACKGROUND > COMMITMENTS",
+    "Dateparser Better Language Detection > BACKGROUND > Experience with the proposed tech stack",
+    "Dateparser Better Language Detection > BACKGROUND > MENTORS",
+    "Dateparser Better Language Detection > BACKGROUND > Newspaper3k.",
+    "Dateparser Better Language Detection > BACKGROUND > PRE-GSOC",
+    "Dateparser Better Language Detection > BACKGROUND > PROJECT DESCRIPTION",
+    "Dateparser Better Language Detection > BACKGROUND > PROJECT GOALS",
+    "Dateparser Better Language Detection > BACKGROUND > PROPOSED TIMELINE",
+    "Dateparser Better Language Detection > BACKGROUND > Why Me?"
+  ]
+}

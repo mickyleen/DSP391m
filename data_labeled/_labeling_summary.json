@@ -1,0 +1,9 @@
+{
+  "model": "gemini-2.0-flash",
+  "num_documents": 0,
+  "total_labeled_chunks": 0,
+  "total_input_tokens": 0,
+  "total_output_tokens": 0,
+  "total_cost_usd": 0,
+  "per_document": []
+}

@@ -1,0 +1,28 @@
+{
+  "doc_id": "PSAI198",
+  "num_chunks": 32,
+  "total_tokens": 1356,
+  "avg_tokens": 42.38,
+  "min_tokens": 20,
+  "max_tokens": 188,
+  "chunks_by_type": {
+    "section": 12,
+    "table_row": 20
+  },
+  "num_sections": 13,
+  "sections": [
+    "Development Roadmap :nut_and_bolt: > Overview",
+    "Future Plans",
+    "Main pallet storage and method",
+    "Milestone 1 — Verify Production of Concepts (POC) and Implement Substrate Modules",
+    "Project Overview :page_facing_up: > Introduction",
+    "Project Overview :page_facing_up: > Project Details > Architecture",
+    "Project Overview :page_facing_up: > Project Details > Data Structure",
+    "Team :busts_in_silhouette: > Team Members",
+    "Team :busts_in_silhouette: > Team Members > Legal Structure",
+    "blackjooohn",
+    "blackjooohn > Dragon",
+    "blackjooohn > MingMing",
+    "blackjooohn > Team Code Repos"
+  ]
+}

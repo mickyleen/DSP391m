@@ -1,0 +1,34 @@
+{
+  "doc_id": "PSAI004",
+  "num_chunks": 21,
+  "total_tokens": 3237,
+  "avg_tokens": 154.14,
+  "min_tokens": 30,
+  "max_tokens": 380,
+  "chunks_by_type": {
+    "section": 21
+  },
+  "num_sections": 20,
+  "sections": [
+    "Project Description",
+    "Project Description > Deliverables",
+    "Project Description > Filecoin / IPFS",
+    "Project Description > Filecoin / IPFS > DAO-Friendly Stage",
+    "Project Description > Filecoin / IPFS > DAO-Friendly Stage > Buidlers:",
+    "Project Description > Filecoin / IPFS > DAO-Friendly Stage > Timeline:",
+    "Project Description > Filecoin / IPFS > Development Roadmap",
+    "Project Description > Filecoin / IPFS > Minimum Viable \"Dev-Friendly\" Stage",
+    "Project Description > Filecoin / IPFS > Minimum Viable \"Dev-Friendly\" Stage > Funding Breakdown:",
+    "Project Description > Filecoin / IPFS > Minimum Viable \"Dev-Friendly\" Stage > Timeline:",
+    "Project Description > Filecoin / IPFS > Minimum Viable \"Human-Friendly\" Stage",
+    "Project Description > Filecoin / IPFS > Minimum Viable \"Human-Friendly\" Stage > Buidlers:",
+    "Project Description > Filecoin / IPFS > Minimum Viable \"Human-Friendly\" Stage > Funding Breakdown:",
+    "Project Description > Filecoin / IPFS > Minimum Viable \"Human-Friendly\" Stage > Timeline:",
+    "Project Description > Filecoin / IPFS > Total Budget Requested",
+    "Project Description > Maintenance and Upgrade Plans",
+    "Project Description > Maintenance and Upgrade Plans > Team Member LinkedIn Profiles",
+    "Project Description > Maintenance and Upgrade Plans > Team Members",
+    "Project Description > Relevant Experience",
+    "Project Description > Value"
+  ]
+}

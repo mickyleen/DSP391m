@@ -1,0 +1,32 @@
+{
+  "doc_id": "PSAI090",
+  "num_chunks": 42,
+  "total_tokens": 12320,
+  "avg_tokens": 293.33,
+  "min_tokens": 36,
+  "max_tokens": 511,
+  "chunks_by_type": {
+    "section": 9,
+    "section_split": 33
+  },
+  "num_sections": 17,
+  "sections": [
+    "<span id=\"page-0-0\"></span>Thesis Proposal: An Explainable Multimodal Framework for Detecting Harmful Content in Code-Switched Children's Media",
+    "Abstract",
+    "Abstract > 1 Introduction",
+    "Abstract > 2.1 Automated Detection of Harmful Content",
+    "Abstract > 2.1 Automated Detection of Harmful Content > 2.2 Multimodal Analysis for Content Understanding",
+    "Abstract > 2.1 Automated Detection of Harmful Content > 2.3 The Challenge with Low-Resource and Code-Mixed Languages",
+    "Abstract > 2.1 Automated Detection of Harmful Content > 2.4 Explainable AI (XAI) for Content Moderation",
+    "Abstract > 3 Proposed Methodology",
+    "Abstract > 3 Proposed Methodology > 3.1 Study 1: Dataset Construction and Linguistic Baselines",
+    "Abstract > 3 Proposed Methodology > 3.2 Study 2: The Multimodal Classification Engine",
+    "Abstract > 3 Proposed Methodology > 3.2 Study 2: The Multimodal Classification Engine > 3.3 Study 3: An LLM-Powered Explainability Module",
+    "Abstract > 3 Proposed Methodology > 3.4 Study 4: Preliminary Cross-Lingual Feasibility",
+    "Abstract > 3.5 Evaluation Plan",
+    "Abstract > 4 Conclusion",
+    "Abstract > Acknowledgments",
+    "Abstract > Ethics Consideration",
+    "Abstract > Limitations"
+  ]
+}

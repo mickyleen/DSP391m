@@ -1,0 +1,37 @@
+{
+  "doc_id": "PSAI114",
+  "num_chunks": 24,
+  "total_tokens": 3309,
+  "avg_tokens": 137.88,
+  "min_tokens": 20,
+  "max_tokens": 418,
+  "chunks_by_type": {
+    "section": 24
+  },
+  "num_sections": 23,
+  "sections": [
+    "Project Description",
+    "Project Description > Deliverables > A sample XDV Smart Data Contract might look like",
+    "Project Description > Deliverables > HTLC",
+    "Project Description > Deliverables > Spec",
+    "Project Description > Development Roadmap",
+    "Project Description > Enter XDV: The need for custom tailor made protocol",
+    "Project Description > Enter XDV: The need for custom tailor made protocol > A Layer 2 Solution Approach",
+    "Project Description > Enter XDV: The need for custom tailor made protocol > COVID-19 verifiable data warehousing",
+    "Project Description > Enter XDV: The need for custom tailor made protocol > Cross chain NFT metadata uri token swap",
+    "Project Description > Enter XDV: The need for custom tailor made protocol > EDI Orders and Invoicing",
+    "Project Description > Enter XDV: The need for custom tailor made protocol > Insurance Claims",
+    "Project Description > Enter XDV: The need for custom tailor made protocol > Primitives",
+    "Project Description > Maintenance and Upgrade Plans",
+    "Project Description > Previous Work",
+    "Project Description > Primitives > Compute Data Contracts",
+    "Project Description > Primitives > HTLC",
+    "Project Description > Primitives > Metadata / File storage rust-ipld",
+    "Project Description > Relevant Experience",
+    "Project Description > Team > Team Members > IFESA / IDAO / Fernando Romero",
+    "Project Description > Team Member LinkedIn Profiles",
+    "Project Description > Team Website",
+    "Project Description > Team code repositories > IFESA Repos",
+    "Project Description > Team code repositories > XDV Node"
+  ]
+}

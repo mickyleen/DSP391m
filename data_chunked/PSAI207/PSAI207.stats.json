@@ -1,0 +1,29 @@
+{
+  "doc_id": "PSAI207",
+  "num_chunks": 49,
+  "total_tokens": 2565,
+  "avg_tokens": 52.35,
+  "min_tokens": 21,
+  "max_tokens": 323,
+  "chunks_by_type": {
+    "section_split": 3,
+    "section": 11,
+    "table_row": 35
+  },
+  "num_sections": 13,
+  "sections": [
+    "Future Plans > Development Plans",
+    "Future Plans > Marketing and Community Plans",
+    "Project Overview :page_facing_up: > Introduction",
+    "Project Overview :page_facing_up: > Milestone 1 : The testnet is completed and the first playable game template is built",
+    "Project Overview :page_facing_up: > Overview",
+    "Project Overview :page_facing_up: > Scenario to buy chips and transfer",
+    "Project Overview :page_facing_up: > Scenario to buy chips and transfer > <https://www.figma.com/file/8bSq6NEYOKfbcdFXLtsmFR/SubGame>",
+    "Project Overview :page_facing_up: > Scenario to buy chips and transfer > Ecosystem Fit",
+    "Project Overview :page_facing_up: > Team :busts_in_silhouette: > Legal Structure",
+    "Project Overview :page_facing_up: > Team :busts_in_silhouette: > Legal Structure > QiangKai",
+    "Project Overview :page_facing_up: > Team :busts_in_silhouette: > Legal Structure > Team LinkedIn Profiles",
+    "Project Overview :page_facing_up: > Team :busts_in_silhouette: > Team members",
+    "Project Overview :page_facing_up: > Team :busts_in_silhouette: > Team members > Contact"
+  ]
+}

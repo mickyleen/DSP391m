@@ -1,0 +1,40 @@
+{
+  "doc_id": "PSAI188",
+  "num_chunks": 44,
+  "total_tokens": 3140,
+  "avg_tokens": 71.36,
+  "min_tokens": 20,
+  "max_tokens": 201,
+  "chunks_by_type": {
+    "section": 27,
+    "table_row": 17
+  },
+  "num_sections": 25,
+  "sections": [
+    "<span id=\"page-1-0\"></span>Personal Details > <span id=\"page-1-1\"></span>About me",
+    "<span id=\"page-1-0\"></span>Personal Details > <span id=\"page-1-2\"></span>Previous contributions > Code contributions",
+    "<span id=\"page-1-0\"></span>Personal Details > <span id=\"page-1-2\"></span>Previous contributions > Code contributions > Merged PRs:",
+    "<span id=\"page-1-0\"></span>Personal Details > <span id=\"page-1-2\"></span>Previous contributions > Code contributions > Open PRs:",
+    "<span id=\"page-1-0\"></span>Personal Details > <span id=\"page-1-2\"></span>Previous contributions > Issues filed > A list of issues created by me in zulip/zulip",
+    "<span id=\"page-1-0\"></span>Personal Details > <span id=\"page-1-2\"></span>Previous contributions > PRs reviewed",
+    "<span id=\"page-10-0\"></span>Why Zulip and why me?",
+    "<span id=\"page-10-1\"></span>Availability",
+    "<span id=\"page-10-2\"></span>Post GSoC",
+    "<span id=\"page-3-0\"></span>Proposal > <span id=\"page-3-1\"></span>Abstract",
+    "<span id=\"page-3-0\"></span>Proposal > <span id=\"page-3-2\"></span>Project details > 1. Improve and stabilize support for Red Hat based Linux distributions",
+    "<span id=\"page-3-0\"></span>Proposal > <span id=\"page-3-2\"></span>Project details > 10.Stretch goal: Work on improving docker-zulip",
+    "<span id=\"page-3-0\"></span>Proposal > <span id=\"page-3-2\"></span>Project details > 6. Add more entries to RealmAuditLog",
+    "<span id=\"page-3-0\"></span>Proposal > <span id=\"page-3-2\"></span>Project details > 8. Improve zulip-js and migrate it to Typescript",
+    "<span id=\"page-3-0\"></span>Proposal > <span id=\"page-3-2\"></span>Project details > Related issue",
+    "<span id=\"page-3-0\"></span>Proposal > <span id=\"page-3-2\"></span>Project details > Related issues",
+    "<span id=\"page-3-0\"></span>Proposal > Community Bonding Period",
+    "<span id=\"page-3-0\"></span>Proposal > Week 1 - 2",
+    "<span id=\"page-3-0\"></span>Proposal > Week 3 - 4",
+    "<span id=\"page-3-0\"></span>Proposal > Week 5",
+    "<span id=\"page-3-0\"></span>Proposal > Week 6",
+    "<span id=\"page-3-0\"></span>Proposal > Week 7 - 8",
+    "<span id=\"page-3-0\"></span>Proposal > Week 9 - 10",
+    "<span id=\"page-9-0\"></span>Personal projects",
+    "Improve tooling, integrations, and testing infrastructure of Zulip"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "doc_id": "PSAI165",
+  "num_chunks": 24,
+  "total_tokens": 5656,
+  "avg_tokens": 235.67,
+  "min_tokens": 30,
+  "max_tokens": 499,
+  "chunks_by_type": {
+    "section": 24
+  },
+  "num_sections": 24,
+  "sections": [
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Community Bonding Period (May 8 to June 1)",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Me and my project",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Me and my project > Overview",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Me the Programmer > Math and CS background",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Me the Programmer > Math and CS background > But in Sympy,",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Me the Programmer > Why I chose to go for Sympy",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Me the Programmer > Why I chose to go for Sympy > My Contributions to Sympy",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Me the person > My Introduction",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Me the person > Personal Details",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > My Commitment to this project",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Phase 3 – Toroidal Wrapping Geometry (WrappingToroid) > Implementation Strategy",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Phase 3 – Toroidal Wrapping Geometry (WrappingToroid) > Mathematical Foundations",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Project Phases > Phase 1 – Conical Wrapping Geometry (WrappingCone) > 2. Refolding via the Differential: The unfolding map",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Project Phases > Phase 1 – Conical Wrapping Geometry (WrappingCone) > Implementation Strategy",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Project Phases > Phase 1 – Conical Wrapping Geometry (WrappingCone) > Mathematical Foundations",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Project Phases > Phase 2 – Spheroidal Wrapping Geometry (WrappingEllipsoid) > Implementation Strategy",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Project Phases > Phase 2 – Spheroidal Wrapping Geometry (WrappingEllipsoid) > Mathematical Foundations",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > References",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Table of Contents",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Weeks 1, 2, and 3 (June 2 to June 23)",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Weeks 10, 11, 12, and 13 (August 5 to September 1)",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Weeks 4, 5, and 6 (June 24 to July 14)",
+    "Classical Mechanics: Implement Wrapping Geometry and Pathways for Musculoskeletal Modeling > Weeks 7, 8, and 9 (July 15 to August 4)"
+  ]
+}

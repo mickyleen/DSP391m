@@ -1,0 +1,41 @@
+{
+  "doc_id": "PSAI190",
+  "num_chunks": 31,
+  "total_tokens": 5573,
+  "avg_tokens": 179.77,
+  "min_tokens": 20,
+  "max_tokens": 508,
+  "chunks_by_type": {
+    "section": 21,
+    "section_split": 9,
+    "table_row": 1
+  },
+  "num_sections": 25,
+  "sections": [
+    "About Me",
+    "About Me > Known Languages:",
+    "About Me > Open Source Contributions:",
+    "About Me > Open Source Contributions: > Familiar areas and coursework relevant to Machine Learning:",
+    "Abstract",
+    "After GSOC",
+    "Are you applying for other Projects ?",
+    "Communication with mentor(s)",
+    "Denoising Convolutional Autoencoder",
+    "Denoising Convolutional Autoencoder > 6. AdaBoost Classification on Graduate Admission 2 Data",
+    "Denoising Convolutional Autoencoder > 7. Naive Bayes Classification on MicroChip Quality Control Data",
+    "Ending Note",
+    "Exams or Classes that overlap during the GSOC time period ?",
+    "Implementation:",
+    "Implementation: > 2. Random Forest Classification on Rain in Australia Data",
+    "Implementation: > 3. Decision Tree Classification on Loan Default Prediction Data",
+    "Implementation: > 4. CIFAR10 Image Classifier using ConvNet",
+    "Implementation: > 4. CIFAR10 Image Classifier using ConvNet > ● Deep Neural Net Architecture is as shown below",
+    "Implementation: > 5. Reconstructing Noisy MNIST Images using Convolutional Autoencoders",
+    "Optional Question",
+    "Potential Impact of the project",
+    "Project Deliverables:",
+    "Weekly Timeline",
+    "When you'll need to start work ?",
+    "When you'll need to start work ? > How much time are you going to invest in this task?"
+  ]
+}

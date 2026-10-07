@@ -1,0 +1,41 @@
+{
+  "doc_id": "PSAI173",
+  "num_chunks": 30,
+  "total_tokens": 3901,
+  "avg_tokens": 130.03,
+  "min_tokens": 20,
+  "max_tokens": 506,
+  "chunks_by_type": {
+    "section": 24,
+    "section_split": 6
+  },
+  "num_sections": 26,
+  "sections": [
+    "Availability > How much time do you plan to spend on your GSoC?",
+    "Availability > What are your intended start and end dates?",
+    "Availability > What other factors affect your availability ?",
+    "Background Information",
+    "Background Information > 2. Object tracking algorithms :",
+    "Background Information > 3. Person detection using histogram of oriented gradients :",
+    "Background Information > Academic performance :",
+    "Background Information > Academic performance : > Completed Internships/Jobs/Courses : -",
+    "Background Information > Academic performance : > Programming Background :",
+    "Background Information > Academic performance : > Some technical courses which I have completed until my 3rd semester are :",
+    "Background Information > My plans beyond the Google summer of code time frame :",
+    "Background Information > My plans beyond the Google summer of code time frame : > Software development environment I am most familiar with :",
+    "Background Information > Reason for contributing to Boost C++ libraries :",
+    "Background Information > Reason for contributing to Boost C++ libraries : > 1. Basic Image processing algorithms :",
+    "Background Information > Reason for contributing to Boost C++ libraries : > My interest in project :",
+    "Background Information > Reason for contributing to Boost C++ libraries : > Previous work done in this area :",
+    "Boost.Gil(Generic Image Library)",
+    "Competency test",
+    "Project proposal",
+    "Project proposal > 1. Separate 2D convolution and correlation :",
+    "Project proposal > 2. Improve pixel accessing method :",
+    "Project proposal > 3.Provide more boundary options :",
+    "Project proposal > 4. Separable 2D convolution :",
+    "Project proposal > 4. Separable 2D convolution : > Miscellaneous work :",
+    "Project proposal > How my work will benefit the community and Boost Gil in general :",
+    "Proposed milestones and schedule"
+  ]
+}

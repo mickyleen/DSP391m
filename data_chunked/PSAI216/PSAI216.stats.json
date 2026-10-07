@@ -1,0 +1,31 @@
+{
+  "doc_id": "PSAI216",
+  "num_chunks": 31,
+  "total_tokens": 2294,
+  "avg_tokens": 74.0,
+  "min_tokens": 20,
+  "max_tokens": 312,
+  "chunks_by_type": {
+    "section": 16,
+    "table_row": 15
+  },
+  "num_sections": 16,
+  "sections": [
+    "Additional Information :heavy_plus_sign: > How did you hear about the Grants Program?",
+    "Development Status :open_book:",
+    "Development Status :open_book: > Milestone 2 — Basic transaction nodes for Browser",
+    "Development Status :open_book: > Milestone 3 — Add support for Node.js",
+    "Future Plans",
+    "Project Overview :page_facing_up: > Architecture",
+    "Project Overview :page_facing_up: > Ecosystem Fit",
+    "Project Overview :page_facing_up: > Example: Listening to new blocks",
+    "Project Overview :page_facing_up: > Minimum Viable Product (MVP)",
+    "Project Overview :page_facing_up: > Overview",
+    "Project Overview :page_facing_up: > Technology stack",
+    "Team :busts_in_silhouette: > Contact",
+    "Team :busts_in_silhouette: > Team members",
+    "Team :busts_in_silhouette: > Team's experience",
+    "Team :busts_in_silhouette: > Team's experience > Team Code Repos",
+    "Team :busts_in_silhouette: > Team's experience > Team LinkedIn Profiles"
+  ]
+}

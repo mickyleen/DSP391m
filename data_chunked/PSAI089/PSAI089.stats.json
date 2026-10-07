@@ -1,0 +1,38 @@
+{
+  "doc_id": "PSAI089",
+  "num_chunks": 30,
+  "total_tokens": 5884,
+  "avg_tokens": 196.13,
+  "min_tokens": 27,
+  "max_tokens": 511,
+  "chunks_by_type": {
+    "section": 20,
+    "section_split": 10
+  },
+  "num_sections": 23,
+  "sections": [
+    "1. INTRODUCTION",
+    "2. FUNDAMENTALS",
+    "2.1. Large Language Model and Vector Based Databases",
+    "2.1. Large Language Model and Vector Based Databases > 2.2. Vector Databases and RAG as a Solution",
+    "2.3. Islamic sources",
+    "2.3. Islamic sources > 3. RELATED WORKS",
+    "4. METHOD",
+    "4. METHOD > 4.1. Forming knowledgebase",
+    "4.2. Creating Vector Store",
+    "4.3. Vector Search",
+    "4.3. Vector Search > 4.4. Tuning Prompt",
+    "5. IMPLEMENTATION",
+    "5. IMPLEMENTATION > 6. RESULTS AND DISCUSSION",
+    "7. LIMITATIONS OF THE STUDY",
+    "7. LIMITATIONS OF THE STUDY > 8. CONCLUSION",
+    "7. LIMITATIONS OF THE STUDY > ACKNOWLEDGMENT",
+    "A RAG-based Question Answering System Proposal for Understanding Islam: MufassirQAS LLM",
+    "A RAG-based Question Answering System Proposal for Understanding Islam: MufassirQAS LLM > Abstract:",
+    "APPENDIX - TURKİSH VERSIONS OF THE SAMPLES",
+    "AUTHORS` CONTRIBUTIONS",
+    "AUTHORS` CONTRIBUTIONS > CONFLICT OF INTEREST",
+    "FUNDING",
+    "REFERENCES"
+  ]
+}

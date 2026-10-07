@@ -1,0 +1,19 @@
+{
+  "doc_id": "PSAI127",
+  "num_chunks": 5,
+  "total_tokens": 1221,
+  "avg_tokens": 244.2,
+  "min_tokens": 127,
+  "max_tokens": 443,
+  "chunks_by_type": {
+    "section": 5
+  },
+  "num_sections": 5,
+  "sections": [
+    "ABOUT ME > My Previous projects",
+    "IMPLEMENTATION",
+    "INTRODUCTION",
+    "PROJECT GOALS",
+    "TIMELINE"
+  ]
+}

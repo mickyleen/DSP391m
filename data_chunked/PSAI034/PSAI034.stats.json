@@ -1,0 +1,22 @@
+{
+  "doc_id": "PSAI034",
+  "num_chunks": 11,
+  "total_tokens": 2374,
+  "avg_tokens": 215.82,
+  "min_tokens": 30,
+  "max_tokens": 436,
+  "chunks_by_type": {
+    "section": 5,
+    "section_split": 6
+  },
+  "num_sections": 7,
+  "sections": [
+    "",
+    "I. Introduction",
+    "II. Preliminary Research",
+    "II. Preliminary Research > III. Methods and Test Examples",
+    "II. Preliminary Research > IV. Steps for Completion",
+    "II. Preliminary Research > V. Potential Roadblocks and Questions",
+    "II. Preliminary Research > V. Potential Roadblocks and Questions > VI. Citations"
+  ]
+}

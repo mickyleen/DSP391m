@@ -1,0 +1,30 @@
+{
+  "doc_id": "PSAI192",
+  "num_chunks": 75,
+  "total_tokens": 3860,
+  "avg_tokens": 51.47,
+  "min_tokens": 20,
+  "max_tokens": 503,
+  "chunks_by_type": {
+    "section": 14,
+    "section_split": 3,
+    "table_row": 58
+  },
+  "num_sections": 14,
+  "sections": [
+    "Additional Information :heavy_plus_sign:",
+    "CoinFabrik On Ink Integration Tests 2 > Project Overview :page_facing_up: > Ecosystem Fit",
+    "CoinFabrik On Ink Integration Tests 2 > Project Overview :page_facing_up: > Overview",
+    "CoinFabrik On Ink Integration Tests 2 > Project Overview :page_facing_up: > Project Details",
+    "CoinFabrik On Ink Integration Tests 2 > Team :busts_in_silhouette: > Development Status :open_book:",
+    "CoinFabrik On Ink Integration Tests 2 > Team :busts_in_silhouette: > Legal Structure",
+    "CoinFabrik On Ink Integration Tests 2 > Team :busts_in_silhouette: > Legal Structure > Team's experience",
+    "CoinFabrik On Ink Integration Tests 2 > Team :busts_in_silhouette: > Team LinkedIn Profiles (if available)",
+    "CoinFabrik On Ink Integration Tests 2 > Team :busts_in_silhouette: > Team members",
+    "CoinFabrik On Ink Integration Tests 2 > Team :busts_in_silhouette: > Team members > Contact",
+    "Development Roadmap :nut_and_bolt: > Future Plans",
+    "Development Roadmap :nut_and_bolt: > Future Plans > Next Milestone: Execution",
+    "Development Roadmap :nut_and_bolt: > Milestone 1: Execution and Further Analysis",
+    "Development Roadmap :nut_and_bolt: > Overview"
+  ]
+}

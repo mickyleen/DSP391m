@@ -1,0 +1,22 @@
+{
+  "doc_id": "PSAI157",
+  "num_chunks": 26,
+  "total_tokens": 1883,
+  "avg_tokens": 72.42,
+  "min_tokens": 20,
+  "max_tokens": 475,
+  "chunks_by_type": {
+    "section": 6,
+    "table_row": 20
+  },
+  "num_sections": 7,
+  "sections": [
+    "Google Summer of Code project proposal 2025 - OSIPI > Contact details",
+    "Google Summer of Code project proposal 2025 - OSIPI > GSOC information > Have you participated in the Google Summer of Code previously?",
+    "Google Summer of Code project proposal 2025 - OSIPI > Project Idea",
+    "Google Summer of Code project proposal 2025 - OSIPI > Project Idea > How are your previous experiences useful in your contribution to OSIPI?",
+    "Google Summer of Code project proposal 2025 - OSIPI > Project Idea > How will your project benefit OSIPI",
+    "Google Summer of Code project proposal 2025 - OSIPI > Project Idea > Project plan (max 750 words)",
+    "Google Summer of Code project proposal 2025 - OSIPI > Project Idea > Project plan (max 750 words) > Milestones:"
+  ]
+}

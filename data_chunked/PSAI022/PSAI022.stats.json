@@ -1,0 +1,24 @@
+{
+  "doc_id": "PSAI022",
+  "num_chunks": 10,
+  "total_tokens": 1191,
+  "avg_tokens": 119.1,
+  "min_tokens": 21,
+  "max_tokens": 309,
+  "chunks_by_type": {
+    "section": 10
+  },
+  "num_sections": 10,
+  "sections": [
+    "Additional Information",
+    "Project Description",
+    "Project Description > Deliverables",
+    "Project Description > Development Roadmap > Milestone 1: Generator:Docs",
+    "Project Description > Development Roadmap > Milestone 2: Generator:Client",
+    "Project Description > Development Roadmap > Milestone 3: Testing tool",
+    "Project Description > Total Budget Requested",
+    "Project Description > Value",
+    "Team > Team Website > Relevant Experience",
+    "Team > Team Website > Relevant Experience > Team code repositories"
+  ]
+}

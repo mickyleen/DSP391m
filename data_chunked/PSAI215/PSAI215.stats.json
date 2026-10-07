@@ -1,0 +1,30 @@
+{
+  "doc_id": "PSAI215",
+  "num_chunks": 41,
+  "total_tokens": 2700,
+  "avg_tokens": 65.85,
+  "min_tokens": 20,
+  "max_tokens": 460,
+  "chunks_by_type": {
+    "section": 13,
+    "section_split": 3,
+    "table_row": 25
+  },
+  "num_sections": 14,
+  "sections": [
+    "BD Wallet > Additional Information",
+    "BD Wallet > Development Roadmap :nut_and_bolt:",
+    "BD Wallet > Development Roadmap :nut_and_bolt: > Milestone 1 — Complete fully support of cloud wallet for Polkadot ecology",
+    "BD Wallet > Development Roadmap :nut_and_bolt: > Milestone 2 — Complete bd-wallet-core development",
+    "BD Wallet > Development Roadmap :nut_and_bolt: > Milestone 3 — Complete bd-wallet development",
+    "BD Wallet > Future Plans",
+    "BD Wallet > Project Overview :page_facing_up:",
+    "BD Wallet > Project Overview :page_facing_up: > Overview",
+    "BD Wallet > Project Overview :page_facing_up: > Project Details",
+    "BD Wallet > Team :busts_in_silhouette: > Legal Structure",
+    "BD Wallet > Team :busts_in_silhouette: > Team Code Repos",
+    "BD Wallet > Team :busts_in_silhouette: > Team Website",
+    "BD Wallet > Team :busts_in_silhouette: > Team experience",
+    "BD Wallet > Team :busts_in_silhouette: > Team members"
+  ]
+}

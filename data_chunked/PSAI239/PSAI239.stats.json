@@ -1,0 +1,24 @@
+{
+  "doc_id": "PSAI239",
+  "num_chunks": 15,
+  "total_tokens": 878,
+  "avg_tokens": 58.53,
+  "min_tokens": 20,
+  "max_tokens": 212,
+  "chunks_by_type": {
+    "section": 9,
+    "table_row": 6
+  },
+  "num_sections": 9,
+  "sections": [
+    "PHP RPC Lib Follow up > Development Roadmap :nut_and_bolt: > Milestone 1",
+    "PHP RPC Lib Follow up > Development Roadmap :nut_and_bolt: > Overview",
+    "PHP RPC Lib Follow up > Future Plans",
+    "PHP RPC Lib Follow up > Project Overview :page_facing_up: > Ecosystem Fit",
+    "PHP RPC Lib Follow up > Project Overview :page_facing_up: > Legal Structure",
+    "PHP RPC Lib Follow up > Project Overview :page_facing_up: > Overview",
+    "PHP RPC Lib Follow up > Project Overview :page_facing_up: > Project Details",
+    "PHP RPC Lib Follow up > Project Overview :page_facing_up: > Team Code Repos",
+    "PHP RPC Lib Follow up > Project Overview :page_facing_up: > Team's experience"
+  ]
+}

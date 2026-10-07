@@ -1,0 +1,28 @@
+{
+  "doc_id": "PSAI110",
+  "num_chunks": 19,
+  "total_tokens": 2305,
+  "avg_tokens": 121.32,
+  "min_tokens": 20,
+  "max_tokens": 422,
+  "chunks_by_type": {
+    "section": 13,
+    "table_row": 6
+  },
+  "num_sections": 13,
+  "sections": [
+    "Additional Information",
+    "Project Description",
+    "Project Description > Total Budget Requested",
+    "Project Description > Total Budget Requested > Maintenance and Upgrade Plans",
+    "Project Description > Value",
+    "Project Description > Value > Milestone #1 - v1 Geo Web Spatial Browser",
+    "Project Description > Value > Milestone #2 - v2 Cadastre UI",
+    "Project Description > Value > Milestone #3 - Filecoin storage",
+    "Project Description > Value > Milestone #4 - Mainnet-ready smart contracts",
+    "Project Description > Value > Milestone #5 - Public documentation site",
+    "Team > Relevant Experience",
+    "Team > Relevant Experience > Team code repositories",
+    "Team > Team Member LinkedIn Profiles"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "doc_id": "PSAI159",
+  "num_chunks": 83,
+  "total_tokens": 9968,
+  "avg_tokens": 120.1,
+  "min_tokens": 21,
+  "max_tokens": 509,
+  "chunks_by_type": {
+    "section": 25,
+    "table_row": 52,
+    "section_split": 6
+  },
+  "num_sections": 27,
+  "sections": [
+    "<span id=\"page-13-0\"></span>2.2. Testing and evaluation > <span id=\"page-14-0\"></span>2.3. Deliverables and outcomes > The deliverables that I can suggest are :",
+    "<span id=\"page-13-0\"></span>2.2. Testing and evaluation > Evaluation/benchmarking :",
+    "<span id=\"page-13-0\"></span>2.2. Testing and evaluation > Testing :",
+    "<span id=\"page-15-0\"></span>3.Timeline > <span id=\"page-15-1\"></span>3.1. Community bonding phase",
+    "<span id=\"page-16-0\"></span>3.2. First coding phase",
+    "<span id=\"page-17-0\"></span>3.3. Second coding phase",
+    "<span id=\"page-18-0\"></span>4.Background and experience > <span id=\"page-18-1\"></span>4.1. About me",
+    "<span id=\"page-18-0\"></span>4.Background and experience > <span id=\"page-18-2\"></span>4.2. Professional",
+    "<span id=\"page-18-0\"></span>4.Background and experience > <span id=\"page-18-2\"></span>4.2. Professional > <span id=\"page-19-0\"></span>4.3. Contributions to the Mesa community",
+    "<span id=\"page-18-0\"></span>4.Background and experience > <span id=\"page-18-2\"></span>4.2. Professional > AI on-the-edge Hackathon (October 2024)",
+    "<span id=\"page-2-0\"></span>1. Project overview > <span id=\"page-2-1\"></span>1.1. Introduction and motivation",
+    "<span id=\"page-2-2\"></span>1.2. Benefits to the Mesa community",
+    "<span id=\"page-2-2\"></span>1.2. Benefits to the Mesa community > <span id=\"page-3-0\"></span>1.3. Scope and philosophy",
+    "<span id=\"page-20-0\"></span>4.4. Long-Term Vision",
+    "<span id=\"page-22-0\"></span>5. Appendix > Chain-of-Thought",
+    "<span id=\"page-22-0\"></span>5. Appendix > ReAct (Reason + Act)",
+    "<span id=\"page-22-0\"></span>5. Appendix > ReWOO (Reasoning Without Observation)",
+    "<span id=\"page-25-1\"></span><span id=\"page-25-0\"></span>5.2. LLM integration > module_llm.py",
+    "<span id=\"page-26-0\"></span>5.3. References",
+    "<span id=\"page-4-1\"></span>2.1. Architecture API Design",
+    "<span id=\"page-4-1\"></span>2.1. Architecture API Design > About agent communication :",
+    "<span id=\"page-4-1\"></span>2.1. Architecture API Design > llm_agent.py",
+    "<span id=\"page-4-1\"></span>2.1. Architecture API Design > memory.py",
+    "<span id=\"page-4-1\"></span>2.1. Architecture API Design > model.py",
+    "<span id=\"page-4-1\"></span>2.1. Architecture API Design > paradigm.py",
+    "<span id=\"page-4-1\"></span>2.1. Architecture API Design > reasoning.py",
+    "Mesa-LLM"
+  ]
+}

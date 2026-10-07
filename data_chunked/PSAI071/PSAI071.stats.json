@@ -1,0 +1,34 @@
+{
+  "doc_id": "PSAI071",
+  "num_chunks": 74,
+  "total_tokens": 18107,
+  "avg_tokens": 244.69,
+  "min_tokens": 20,
+  "max_tokens": 511,
+  "chunks_by_type": {
+    "section": 16,
+    "section_split": 26,
+    "table_row": 32
+  },
+  "num_sections": 18,
+  "sections": [
+    "Limitations",
+    "Limitations > References",
+    "Thesis Proposal: LLMs post-training for multilingual medical tasks. Instruction-Tuning, Continual-Pretraining or Reasoning?",
+    "Thesis Proposal: LLMs post-training for multilingual medical tasks. Instruction-Tuning, Continual-Pretraining or Reasoning? > 1 Introduction",
+    "Thesis Proposal: LLMs post-training for multilingual medical tasks. Instruction-Tuning, Continual-Pretraining or Reasoning? > 3.2 Continual Pretraining",
+    "Thesis Proposal: LLMs post-training for multilingual medical tasks. Instruction-Tuning, Continual-Pretraining or Reasoning? > 3.2 Continual Pretraining > <span id=\"page-3-2\"></span>3.3 Reasoning-oriented Training",
+    "Thesis Proposal: LLMs post-training for multilingual medical tasks. Instruction-Tuning, Continual-Pretraining or Reasoning? > 5 Experimental comparison",
+    "Thesis Proposal: LLMs post-training for multilingual medical tasks. Instruction-Tuning, Continual-Pretraining or Reasoning? > 5 Experimental comparison > 5.1 Method impact by task",
+    "Thesis Proposal: LLMs post-training for multilingual medical tasks. Instruction-Tuning, Continual-Pretraining or Reasoning? > 5 Experimental comparison > 5.2 Data size impact",
+    "Thesis Proposal: LLMs post-training for multilingual medical tasks. Instruction-Tuning, Continual-Pretraining or Reasoning? > 5 Experimental comparison > 5.3 Data differences among methods",
+    "Thesis Proposal: LLMs post-training for multilingual medical tasks. Instruction-Tuning, Continual-Pretraining or Reasoning? > 5 Experimental comparison > 5.4 Model size impact",
+    "Thesis Proposal: LLMs post-training for multilingual medical tasks. Instruction-Tuning, Continual-Pretraining or Reasoning? > 5 Experimental comparison > 5.4 Model size impact > 5.5 Language impact",
+    "Thesis Proposal: LLMs post-training for multilingual medical tasks. Instruction-Tuning, Continual-Pretraining or Reasoning? > 6 Conclusion",
+    "Thesis Proposal: LLMs post-training for multilingual medical tasks. Instruction-Tuning, Continual-Pretraining or Reasoning? > <span id=\"page-1-0\"></span>2 Related work",
+    "Thesis Proposal: LLMs post-training for multilingual medical tasks. Instruction-Tuning, Continual-Pretraining or Reasoning? > <span id=\"page-2-0\"></span>3 Methods",
+    "Thesis Proposal: LLMs post-training for multilingual medical tasks. Instruction-Tuning, Continual-Pretraining or Reasoning? > <span id=\"page-2-0\"></span>3 Methods > 3.1 Instruction Tuning",
+    "Thesis Proposal: LLMs post-training for multilingual medical tasks. Instruction-Tuning, Continual-Pretraining or Reasoning? > <span id=\"page-4-0\"></span>4 Multilingual Medical NLP Tasks",
+    "Thesis Proposal: LLMs post-training for multilingual medical tasks. Instruction-Tuning, Continual-Pretraining or Reasoning? > Abstract"
+  ]
+}

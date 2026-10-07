@@ -1,0 +1,31 @@
+{
+  "doc_id": "PSAI136",
+  "num_chunks": 17,
+  "total_tokens": 2148,
+  "avg_tokens": 126.35,
+  "min_tokens": 26,
+  "max_tokens": 285,
+  "chunks_by_type": {
+    "section": 17
+  },
+  "num_sections": 17,
+  "sections": [
+    "API: -",
+    "API: - > API: -",
+    "API: - > Extended Idea: -",
+    "API: - > Pushing the tagged image to Docker Hub",
+    "Containers for Automated Grading with Kata Containers and Live Container Preview",
+    "Containers for Automated Grading with Kata Containers and Live Container Preview > Synopsis: -",
+    "Deliverables: -",
+    "Education: - > Non-Course experience: -",
+    "Education: - > Non-Course experience: - > Submitty Contribtions: -",
+    "Kata Containers: -",
+    "Kata Editor",
+    "Motivation: -",
+    "Official Coding Period",
+    "Official Coding Period > Commitment: -",
+    "Project Details: -",
+    "UI Changes: -",
+    "UI Changes: - > Dockerfile Editor"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "doc_id": "PSAI062",
+  "num_chunks": 158,
+  "total_tokens": 28810,
+  "avg_tokens": 182.34,
+  "min_tokens": 20,
+  "max_tokens": 511,
+  "chunks_by_type": {
+    "section": 20,
+    "section_split": 64,
+    "table_row": 74
+  },
+  "num_sections": 19,
+  "sections": [
+    "<span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing",
+    "<span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing > 1 Introduction",
+    "<span id=\"page-0-0\"></span>Thesis Proposal: Cross-Lingual Transfer of Linguistic and Metalinguistic Knowledge via Lexical Borrowing > <span id=\"page-3-0\"></span>2 Background and Motivation",
+    "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing",
+    "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > 3.3 Learning Constraint Weights",
+    "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > 3.4 Adapting the Model to a New Language",
+    "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > 3.5 Intrinsic Evaluation of Models of Lexical Borrowing",
+    "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation",
+    "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation > 4.1 Pivoting via Borrowing for Translating OOV Words",
+    "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-13-0\"></span>4 Models of Lexical Borrowing in Statistical Machine Translation > 4.2 Evaluation of Pivoting via Borrowing in MT",
+    "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-18-2\"></span>5 Future Work > <span id=\"page-18-0\"></span>5.1 Models of Lexical Borrowing for Typologically Diverse Languages",
+    "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-18-2\"></span>5 Future Work > <span id=\"page-18-1\"></span>5.2 Models of Lexical Borrowing in Cross-Lingual Core-NLP",
+    "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-18-2\"></span>5 Future Work > <span id=\"page-20-0\"></span>5.3 Modeling the Sociolinguistic Aspects of Lexical Borrowing",
+    "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-18-2\"></span>5 Future Work > <span id=\"page-20-0\"></span>5.3 Modeling the Sociolinguistic Aspects of Lexical Borrowing > 5.3.1 Emergence and Diffusion of Borrowing",
+    "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-18-2\"></span>5 Future Work > <span id=\"page-20-0\"></span>5.3 Modeling the Sociolinguistic Aspects of Lexical Borrowing > 5.3.2 Relation between Prestige and Sentiment Polarity in Borrowing",
+    "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-21-0\"></span>6 Timeline",
+    "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-6-1\"></span>3.1 Case Study: Arabic–Swahili Borrowing",
+    "<span id=\"page-5-0\"></span>3 Constraint-Based Models of Lexical Borrowing > <span id=\"page-7-1\"></span>3.2 Arabic–Swahili Borrowing Transducers",
+    "References"
+  ]
+}

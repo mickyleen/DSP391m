@@ -1,0 +1,318 @@
+[
+  {
+    "chunk_id": "PSAI004-C0000",
+    "doc_id": "PSAI004",
+    "chunk_index": 0,
+    "section": "Project Description",
+    "heading_path": [
+      "Project Description"
+    ],
+    "block_type": "section",
+    "token_count": 258,
+    "hash": "f5653ceb2dba5c0f",
+    "text": "# Project Description\n\nThe \\$40T/yr Human Capital Management market will move on-chain. We refer to this as the future-of-work ecosystem. We are building a dApp designed to enable protocol and DAO grants programs to move on-chain. This solution will combine the ERC-1155 Conditional Token Framework with solutions like Filecoin. The roadmap for this is to move \"business\" on-chain with a halcyon future that would see a company like Coca Cola fund a smart contract to get water to a new bottling plant. There is a small but passionate ecosystem of projects working in and around DAO tooling, governance, and contracting. We are seeking to develop in a community first, open-source manner that is additive to the solutions around us. We believe we have a unique and important vision – that of accountable centralization or the decentralization of middle management.\n\nWe are starting with low hanging fruits. Bringing smart contracts to the grants process used by Filecoin and other protocols. The Conditional Token Framework is the right solution to enable Digital Organizations to fairly connect human judgment and on-chain components together for doing business, but this solution needs to be decentralized from the ground up. We believe this approach is aligned with Filecoin and we would be thrilled to have the opportunity to build together."
+  },
+  {
+    "chunk_id": "PSAI004-C0001",
+    "doc_id": "PSAI004",
+    "chunk_index": 1,
+    "section": "Value",
+    "heading_path": [
+      "Project Description",
+      "Value"
+    ],
+    "block_type": "section",
+    "token_count": 306,
+    "hash": "8088a2916313eac7",
+    "text": "# Project Description > Value\n\nWhat are the benefits to getting this right? Decentralization struggles to compete with hierarchical centralized organizations' abilities to deploy resources. For decentralized businesses to win they must be permissionless, trustless, and programmable. But they also must find a way to enable human coordination. The key to this is to allow for new forms of accountable centralization to serve DAOs. There are several benefits to getting this right. One is the opportunity to decrease the impact of externalities. If the condition for payment is tied to the success of the DAO, centralized organizations will need to evolve how they approach opportunities. Another will be increased meritocracy and open access which will lead to better outcomes with less rent. Another will be less competition and more collaboration. And lastly, optimal inter-organizational sharing of data (including massive Filecoin implementations) and thus better costs and more gains from AI.\n\nWhat are the risks if you don't get it right? The risks are we continue in a world without decentralization. Human coordination is the super-power of our species. If decentralized organizations do not absorb centralization and evolve new forms of centralization, decentralization will not be competitive. Increased data silos, increased costs and reduced gains from machine learning and AI.\n\nWhat are the risks that will make executing on this project difficult? This project requires building on Ethereum as well as other web 3 solutions which creates platform risk. The long-term goals of the project could run up against regulatory risks related to token use."
+  },
+  {
+    "chunk_id": "PSAI004-C0002",
+    "doc_id": "PSAI004",
+    "chunk_index": 2,
+    "section": "Deliverables",
+    "heading_path": [
+      "Project Description",
+      "Deliverables"
+    ],
+    "block_type": "section",
+    "token_count": 262,
+    "hash": "eb3dd911eecee7b4",
+    "text": "# Project Description > Deliverables\n\nCambrian Protocol employs the conditional tokens framework (CTF) to allow complex, secure interactions between participants. CTF is an ERC1155-compliant, powerful event-based digital asset class developed by Gnosis. Through enabling conditional logic (\"If this, then that\") for digital assets, fungible conditional tokens can be minted with value contingent on arbitrarily complex logic derived from realworld and on-chain information. Originally conceived to power prediction markets and futarchic governance, the CTF allows us to conditionalize remuneration of service providers and thus hold them accountable to their benefactors.\n\nConditional tokens (CTs) are minted when a proposal meets its funding goal to represent the escrowed funds. These CTs are distributed to participants according to the Proposal's Solution and gain their value at its conclusion, after which they can be redeemed for the escrowed collateral. A Solution is concluded when all of its component \"Solver\" smart contracts have reported outcomes, and these outcomes have been confirmed without dispute or settled after dispute.\n\nOur MVP will be a set of re-useable smart contracts that Filecoin will be able to leverage to coordinate the funding of grants. Following the MVP and this grant, we will be extending the tech to support a wider range of use cases."
+  },
+  {
+    "chunk_id": "PSAI004-C0003",
+    "doc_id": "PSAI004",
+    "chunk_index": 3,
+    "section": "Filecoin / IPFS",
+    "heading_path": [
+      "Project Description",
+      "Filecoin / IPFS"
+    ],
+    "block_type": "section",
+    "token_count": 380,
+    "hash": "9926726e3d2802e9",
+    "text": "# Project Description > Filecoin / IPFS\n\nAn immutable data layer is a critical piece of this infrastructure, now and in the future. Our MVP intends to use IPFS in 2 ways: 1. Committing verbose descriptions for Proposals and their associated Conditions to IPFS. 2. Committing atomic elements of front-end code used to interact with our smart contracts to IPFS.\n\nRegarding point 1, it is important that the terms of a Proposal being funded are known to be the same for all participants. By utilizing IPFS, we can ensure immutability and consistency. We can store the IPFS hash of the details of a Proposal on-chain to inexorably a configuration of smart contract code to human-readable agreements.\n\nRegarding point 2, we are developing various \"Solvers\", userinterfaced smart contracts with unique functions for aiding the execution of Proposals. The UI of a Solver must be known and immutable to ensure predictable behaviour. IPFS is the best way to do this in a decentralized fashion. By loading front-end code from IPFS, or checking it against IPFS, users can be confident that what worked yesterday will work the same today as they configure a Proposal in a \"no-code\" environment.\n\nIn our roadmap beyond the scope of this grant, the development of Solvers will be open source and will include additional functionality such as reputation tracking and fraud detection. These functions too will depend on a reliable data layer, and we believe Filecoin is the best solution in the ecosystem to support this. Further, as the development of these smart contracts becomes decentralized, it is crucial in our view that their interfaces are immutably decentralized as well.\n\nTo summarize, we believe that IPFS/Filecoin is not only useful for the exchange of large corpuses of text, but critical for the functionality of data-dependant smart contracts and the secure decentralization of"
+  },
+  {
+    "chunk_id": "PSAI004-C0004",
+    "doc_id": "PSAI004",
+    "chunk_index": 4,
+    "section": "Development Roadmap",
+    "heading_path": [
+      "Project Description",
+      "Filecoin / IPFS",
+      "Development Roadmap"
+    ],
+    "block_type": "section",
+    "token_count": 142,
+    "hash": "b6b45048925cd453",
+    "text": "# Project Description > Filecoin / IPFS > Development Roadmap\n\nOur roadmap identifies four major milestones: 1. Minimum viable dev-friendly stage:\n- Basic \"Solver\" smart contract functionality for proposing and funding work on a conditional lump-sum basis. 2. Minimum viable human-friendly stage\n- Basic interface for creating and funding proposals, reporting conditions and redeeming funding 3. Improved utility stage\n- Supporting contracts to provide functionality for recurring funding, redeemable funding over multiple milestones, and more sophisticated arbitration. Corresponding interface development. 4. DAO-friendly stage\n- Developing more robust, onchain methods for negotiating Proposals to replace the Minimally Viable \"propose-only\" system."
+  },
+  {
+    "chunk_id": "PSAI004-C0005",
+    "doc_id": "PSAI004",
+    "chunk_index": 5,
+    "section": "Minimum Viable \"Dev-Friendly\" Stage",
+    "heading_path": [
+      "Project Description",
+      "Filecoin / IPFS",
+      "Minimum Viable \"Dev-Friendly\" Stage"
+    ],
+    "block_type": "section",
+    "token_count": 294,
+    "hash": "dd870bf377fdb896",
+    "text": "# Project Description > Filecoin / IPFS > Minimum Viable \"Dev-Friendly\" Stage\n\nThis milestone represents a functional proof-of-concept which may be used to allocate lump-sum funding to escrow which may be redeemed when conditions are met.:\n- An entity can interact with a smart contract to create a \"Proposal\" with a funding goal. This Proposal identifies:\n- An entity to receive funding.\n- The ERC-20 token used as funding.\n- An amount to be funded.\n- The conditions which must be met for the funding to be redeemed.\n- A \"Keeper\" address responsible for reporting on the conditions.\n- An \"Arbiter\" address responsible for ruling over a dispute.\n- A \"Solver\" contract which manages the scheme when the funding goal is achieved.\n- The configuration of the Solver contract instance for the Proposal.\n\nThis stage includes one minimally viable Solver contract. This contract:\n- Interacts with a Conditional Tokens contract to generate fungible conditional tokens (CTs) redeemable for the project funding, contingent on the corresponding outcomes of the specified conditions.\n- Distributes CTs to the parties specified in the Proposal.\n- Provides a method for the Keeper to report on the results of conditions.\n- Provides a method for raising a dispute to arbitration before condition results are confirmed.\n- Provides a method for the Arbiter to modify the reported results of conditions. Buidlers: Nic Wickman & Ryan Walker, both Solidity developers."
+  },
+  {
+    "chunk_id": "PSAI004-C0006",
+    "doc_id": "PSAI004",
+    "chunk_index": 6,
+    "section": "Timeline:",
+    "heading_path": [
+      "Project Description",
+      "Filecoin / IPFS",
+      "Minimum Viable \"Dev-Friendly\" Stage",
+      "Timeline:"
+    ],
+    "block_type": "section",
+    "token_count": 30,
+    "hash": "bb8293d3901ef912",
+    "text": "# Project Description > Filecoin / IPFS > Minimum Viable \"Dev-Friendly\" Stage > Timeline:\n\nOctober 1st 2021."
+  },
+  {
+    "chunk_id": "PSAI004-C0007",
+    "doc_id": "PSAI004",
+    "chunk_index": 7,
+    "section": "Funding Breakdown:",
+    "heading_path": [
+      "Project Description",
+      "Filecoin / IPFS",
+      "Minimum Viable \"Dev-Friendly\" Stage",
+      "Funding Breakdown:"
+    ],
+    "block_type": "section",
+    "token_count": 50,
+    "hash": "f1c2649c9a33a33d",
+    "text": "# Project Description > Filecoin / IPFS > Minimum Viable \"Dev-Friendly\" Stage > Funding Breakdown:\n\n\\$5000/mo developer pay, x2 developers, x2 months = \\$20,000 \\$20,000 total."
+  },
+  {
+    "chunk_id": "PSAI004-C0008",
+    "doc_id": "PSAI004",
+    "chunk_index": 8,
+    "section": "Minimum Viable \"Human-Friendly\" Stage",
+    "heading_path": [
+      "Project Description",
+      "Filecoin / IPFS",
+      "Minimum Viable \"Human-Friendly\" Stage"
+    ],
+    "block_type": "section",
+    "token_count": 57,
+    "hash": "c0fece5ec6f48e55",
+    "text": "# Project Description > Filecoin / IPFS > Minimum Viable \"Human-Friendly\" Stage\n\nThis milestone represents a functional and enjoyable user interface for non-developers to utilize the software developed in Stage 1. Development will run mostly concurrently with the latter half of Stage 1."
+  },
+  {
+    "chunk_id": "PSAI004-C0009",
+    "doc_id": "PSAI004",
+    "chunk_index": 9,
+    "section": "Buidlers:",
+    "heading_path": [
+      "Project Description",
+      "Filecoin / IPFS",
+      "Minimum Viable \"Human-Friendly\" Stage",
+      "Buidlers:"
+    ],
+    "block_type": "section",
+    "token_count": 40,
+    "hash": "5381b6ff8ee702a6",
+    "text": "# Project Description > Filecoin / IPFS > Minimum Viable \"Human-Friendly\" Stage > Buidlers:\n\nFuture Front-End Hire\n\nTimeline:\n\nOctober 15th 2021."
+  },
+  {
+    "chunk_id": "PSAI004-C0010",
+    "doc_id": "PSAI004",
+    "chunk_index": 10,
+    "section": "Funding Breakdown:",
+    "heading_path": [
+      "Project Description",
+      "Filecoin / IPFS",
+      "Minimum Viable \"Human-Friendly\" Stage",
+      "Funding Breakdown:"
+    ],
+    "block_type": "section",
+    "token_count": 217,
+    "hash": "4347fc5dbce1a74b",
+    "text": "# Project Description > Filecoin / IPFS > Minimum Viable \"Human-Friendly\" Stage > Funding Breakdown:\n\n\\$5000/mo front-end developer pay for future hire \\$5,000 total\n\nThis milestone represents modular additions to Stage 1 and Stage 2, allowing greater utility than the minimally viable \"lump-sum\" payment scheme. Following this milestone, the interoperability of Solvers should be proven and entities procuring work can opt for more flexible schemes. We intend to build: - An additional Solver contract\n\nto be used in conjunction with others, which adds a condition to release a proportion of funding over time.:\n- A contract(s) to support a recurring funding scheme, such that subsequent Proposals are automatically funded and their solutions set in motion as previous milestones are met.\n- This allows redemption of conditional tokens in stages.\n- Purpose-built contracts to serve as Arbiters and Keepers, allowing for consensus-based and hierarchal levels of executing Keeper and Arbiter functions.\n- New interfaces for non-developers to make use of this added functionality."
+  },
+  {
+    "chunk_id": "PSAI004-C0011",
+    "doc_id": "PSAI004",
+    "chunk_index": 11,
+    "section": "Buidlers:",
+    "heading_path": [
+      "Project Description",
+      "Filecoin / IPFS",
+      "Minimum Viable \"Human-Friendly\" Stage",
+      "Buidlers:"
+    ],
+    "block_type": "section",
+    "token_count": 36,
+    "hash": "88ca5bf2452a6ad5",
+    "text": "# Project Description > Filecoin / IPFS > Minimum Viable \"Human-Friendly\" Stage > Buidlers:\n\nNic Wickman, Ryan Walker, Future Front-End Hire"
+  },
+  {
+    "chunk_id": "PSAI004-C0012",
+    "doc_id": "PSAI004",
+    "chunk_index": 12,
+    "section": "Timeline:",
+    "heading_path": [
+      "Project Description",
+      "Filecoin / IPFS",
+      "Minimum Viable \"Human-Friendly\" Stage",
+      "Timeline:"
+    ],
+    "block_type": "section",
+    "token_count": 63,
+    "hash": "c7e194ac5d15f142",
+    "text": "# Project Description > Filecoin / IPFS > Minimum Viable \"Human-Friendly\" Stage > Timeline:\n\nDecember 31st 2021\n\nFunding Breakdown:\n\n\\$5000/mo developer pay 3x, for 1.5 months = \\$22,500\n\n\\$22,500 total"
+  },
+  {
+    "chunk_id": "PSAI004-C0013",
+    "doc_id": "PSAI004",
+    "chunk_index": 13,
+    "section": "DAO-Friendly Stage",
+    "heading_path": [
+      "Project Description",
+      "Filecoin / IPFS",
+      "DAO-Friendly Stage"
+    ],
+    "block_type": "section",
+    "token_count": 131,
+    "hash": "7dea3d07d2e9abdd",
+    "text": "# Project Description > Filecoin / IPFS > DAO-Friendly Stage\n\nThis milestone represents making our technology more easily usable by decentralized organizations by improving the minimal Proposals process with revisionary functionality. While the minimum version permits all-or-nothing Proposals created by a single entity, the upgrades version will permit atomic changes to an existing Proposal. This should allow DAOs to better negotiate terms and incorporate the system into their regular operations. This stage involves:\n- Upgrading the Proposal contract(s) with functionality to receive revisions to existing Proposals.\n- Upgrading the Proposal contract(s) to be extensible with DAO-specific methods for invoking their revisionary functions."
+  },
+  {
+    "chunk_id": "PSAI004-C0014",
+    "doc_id": "PSAI004",
+    "chunk_index": 14,
+    "section": "Buidlers:",
+    "heading_path": [
+      "Project Description",
+      "Filecoin / IPFS",
+      "DAO-Friendly Stage",
+      "Buidlers:"
+    ],
+    "block_type": "section",
+    "token_count": 31,
+    "hash": "06c7515c2f853028",
+    "text": "# Project Description > Filecoin / IPFS > DAO-Friendly Stage > Buidlers:\n\nNic Wickman, Ryan Walker, Future Front-End Hire"
+  },
+  {
+    "chunk_id": "PSAI004-C0015",
+    "doc_id": "PSAI004",
+    "chunk_index": 15,
+    "section": "Timeline:",
+    "heading_path": [
+      "Project Description",
+      "Filecoin / IPFS",
+      "DAO-Friendly Stage",
+      "Timeline:"
+    ],
+    "block_type": "section",
+    "token_count": 66,
+    "hash": "250baf1217a83025",
+    "text": "# Project Description > Filecoin / IPFS > DAO-Friendly Stage > Timeline:\n\nJanuary 31st 2021\n\nFunding breakdown:\n\n\\$5000/mo developer pay 3x, for 1.5 months = \\$22,500\n\nSmart contract audits = \\$15,000\n\n\\$37,500 total"
+  },
+  {
+    "chunk_id": "PSAI004-C0016",
+    "doc_id": "PSAI004",
+    "chunk_index": 16,
+    "section": "Total Budget Requested",
+    "heading_path": [
+      "Project Description",
+      "Filecoin / IPFS",
+      "Total Budget Requested"
+    ],
+    "block_type": "section",
+    "token_count": 84,
+    "hash": "fca521cb49b7cc5f",
+    "text": "# Project Description > Filecoin / IPFS > Total Budget Requested\n\n\\$85,000\n\nAt this stage, we believe smart contract audits are prudent given the resource-handling nature of the technology. If these are omitted from the calculations, our total funding requested is \\$70,000\n\nSmart contract development: \\$50,000\n\nFront-end development: \\$20,000\n\nSecurity auditing: \\$15,000"
+  },
+  {
+    "chunk_id": "PSAI004-C0017",
+    "doc_id": "PSAI004",
+    "chunk_index": 17,
+    "section": "Maintenance and Upgrade Plans",
+    "heading_path": [
+      "Project Description",
+      "Maintenance and Upgrade Plans"
+    ],
+    "block_type": "section",
+    "token_count": 195,
+    "hash": "24782936272fe661",
+    "text": "# Project Description > Maintenance and Upgrade Plans\n\nWe have a very extensive vision for Cambrian Protocol. We also are committed to working in an open-source manner that takes careful consideration of other future-of-work projects. We believe there will be opportunity for projects to merge and for an exit to community. The goal for this software is to power business going forward as part of the larger web 3 ecosystem.\n\nIn the immediate future following the scope of this grant, we will be soliciting DAOs and protocols to understand their operational and resource allocation needs. Our development team will build new Solvers and other supporting functionality to meet these needs, making them accessible to the broader community as we go. Our longterm plan involves incentivizing the community to develop and curate Solvers through a staking scheme to distribute minimally extractive fees. We intend to ultimately exit to the community through the launch of a DAO when it appears continued support of the technology will be sustainable without centralized leadership."
+  },
+  {
+    "chunk_id": "PSAI004-C0018",
+    "doc_id": "PSAI004",
+    "chunk_index": 18,
+    "section": "Team Members",
+    "heading_path": [
+      "Project Description",
+      "Maintenance and Upgrade Plans",
+      "Team Members"
+    ],
+    "block_type": "section",
+    "token_count": 255,
+    "hash": "6d340262d98619ce",
+    "text": "# Project Description > Maintenance and Upgrade Plans > Team Members\n\nNic Wickman is a devout futurist hailing from the intersection of art and technology in VFX. His trajectory has seen him lead VFX teams on award-winning projects, develop VR for the real estate space, publish consumer apps, and design and deploy novel AI into production. More builder than speculator, he came to appreciate the potential of blockchain as the Ethereum ecosystem flourished. Paul Malin is an entrepreneur with multiple exits under his belt. His career has focused on accounts, strategic alliances, sales and other business development efforts. He discovered Bitcoin at \\$70 and is dutifully obsessed with the potential of blockchain technology to create an internet of value. He spent his 20s in a rock band, holds an MBA from the University Toronto, and a BSc in Chemistry from the University of Alberta. Ryan Walker studied robotics and electrical engineering in college while maintaining a key interest in emerging technologies. He's an industry professional of 10 years with a formidable side-project portfolio, including the blockchain-based MMO ecosystem \"Worlds\", which allows digital assets to be transferred between several independently developed games. Outside of his collaboration with the Cambrian team, he develops for Oculus on cutting-edge Augmented Reality technologies."
+  },
+  {
+    "chunk_id": "PSAI004-C0019",
+    "doc_id": "PSAI004",
+    "chunk_index": 19,
+    "section": "Team Member LinkedIn Profiles",
+    "heading_path": [
+      "Project Description",
+      "Maintenance and Upgrade Plans",
+      "Team Member LinkedIn Profiles"
+    ],
+    "block_type": "section",
+    "token_count": 36,
+    "hash": "d5427a3ce091b261",
+    "text": "# Project Description > Maintenance and Upgrade Plans > Team Member LinkedIn Profiles\n\nhttps://www.linkedin.com/in/nicholaswickman/ https://www.linkedin.com/in/pmalin/"
+  },
+  {
+    "chunk_id": "PSAI004-C0020",
+    "doc_id": "PSAI004",
+    "chunk_index": 20,
+    "section": "Relevant Experience",
+    "heading_path": [
+      "Project Description",
+      "Relevant Experience"
+    ],
+    "block_type": "section",
+    "token_count": 304,
+    "hash": "8bf2e25e31be1df4",
+    "text": "# Project Description > Relevant Experience\n\nNick and Ryan bring strong and varied development chops to the team. Both are talented solidity engineers. Nick's background is in VFX and AI engineering, and his blockchain work includes a fairnesscentric \"Mechanical Turk\" implementation for crowdsourcing work on-chain. Ryan's prior expertise is in firmware and open-source hardware, who's blockchain portfolio includes \"Worlds\", a protocol for managing assets in a massively decentralized MMO game. This team has a unique approach to the future of work – the decentralization of middle management that speaks to the vision of the team. It's one thing to build the token platform to enable on-chain services transactions, it's entirely another to rethink how business coordination can be optimized in response to blockchain technology. We're very proud of where we're starting.\n\nAs well, as the blockchain space evolves it increasingly needs to engage with the traditional corporate environment. It needs to engage with people. Not only does this team include outstanding development talent, it also includes a co-founder with extensive corporate development experience. The ability to onboard digital organizations is going to be essential to the success of Cambrian Protocol and to the growth of Filecoin.\n\nWe are seeking grants from protocols we see as foundational to Web 3, but we are also in the process of raising a \\$500k seed round. In the interest of offering a variety of options to Filecoin, we would certainly welcome participation in our seed round. As well, we are open to issuing credits against future fees."
+  }
+]

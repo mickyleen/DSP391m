@@ -1,0 +1,25 @@
+{
+  "doc_id": "PSAI010",
+  "num_chunks": 13,
+  "total_tokens": 1443,
+  "avg_tokens": 111.0,
+  "min_tokens": 23,
+  "max_tokens": 404,
+  "chunks_by_type": {
+    "section_split": 3,
+    "section": 7,
+    "table_row": 3
+  },
+  "num_sections": 9,
+  "sections": [
+    "Project Description",
+    "Project Description > Additional Beneifts of Storaging Open Algorithms",
+    "Project Description > Deliverables",
+    "Project Description > Development Roadmap",
+    "Project Description > Maintenance and Upgrade Plans",
+    "Project Description > Risks:",
+    "Project Description > Team > Relevant Experience",
+    "Project Description > Team > Team Member LinkedIn Profiles",
+    "Project Description > Team > Team Members"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "doc_id": "PSAI014",
+  "num_chunks": 8,
+  "total_tokens": 660,
+  "avg_tokens": 82.5,
+  "min_tokens": 20,
+  "max_tokens": 235,
+  "chunks_by_type": {
+    "section": 8
+  },
+  "num_sections": 8,
+  "sections": [
+    "Project description",
+    "Project description > Deliverables",
+    "Project description > Milestone 1 - API&UI Design - 2 Weeks > Milestone 2 - Linux/Mac/Windows version initial release - 1 Month",
+    "Project description > Milestone 1 - API&UI Design - 2 Weeks > Milestone 3 - Desktop version core functions update - 1 Month",
+    "Project description > Total Budget Requested",
+    "Project description > Total Budget Requested > Maintenance and Upgrade Plans",
+    "Project description > Value to the Filecoin ecosystem",
+    "Team > Team Members"
+  ]
+}

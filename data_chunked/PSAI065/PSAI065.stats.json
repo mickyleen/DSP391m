@@ -1,0 +1,42 @@
+{
+  "doc_id": "PSAI065",
+  "num_chunks": 147,
+  "total_tokens": 39391,
+  "avg_tokens": 267.97,
+  "min_tokens": 26,
+  "max_tokens": 512,
+  "chunks_by_type": {
+    "section": 10,
+    "section_split": 100,
+    "table_row": 37
+  },
+  "num_sections": 26,
+  "sections": [
+    "",
+    "1 INTRODUCTION",
+    "1 INTRODUCTION > 2 OVERVIEW",
+    "1 INTRODUCTION > 3 SYNTAX AND COST SEMANTICS",
+    "1 INTRODUCTION > 3.1 Syntax",
+    "1 INTRODUCTION > 3.1 Syntax > 3.2 Cost Semantics",
+    "1 INTRODUCTION > 3.1 Syntax > <span id=\"page-7-2\"></span>3.3 Data Collection",
+    "1 INTRODUCTION > 4.2 Polynomial AARA",
+    "1 INTRODUCTION > 4.2 Polynomial AARA > <span id=\"page-10-1\"></span>5.1 Optimization",
+    "1 INTRODUCTION > 4.2 Polynomial AARA > <span id=\"page-9-0\"></span>5 DATA-DRIVEN BAYESIAN RESOURCE ANALYSIS",
+    "1 INTRODUCTION > 5.4 Generalizations",
+    "1 INTRODUCTION > 5.4 Generalizations > <span id=\"page-13-0\"></span>6 HYBRID RESOURCE ANALYSIS",
+    "1 INTRODUCTION > 5.4 Generalizations > <span id=\"page-14-0\"></span>6.1 Hybrid BayesWC and Opt",
+    "1 INTRODUCTION > <span id=\"page-10-0\"></span>5.2 Bayesian Inference on Worst-Case Costs",
+    "1 INTRODUCTION > <span id=\"page-10-0\"></span>5.2 Bayesian Inference on Worst-Case Costs > <span id=\"page-12-0\"></span>5.3 Bayesian Inference on Polynomial Coefficients",
+    "1 INTRODUCTION > <span id=\"page-14-1\"></span>6.2 Hybrid BayesPC",
+    "1 INTRODUCTION > <span id=\"page-14-1\"></span>6.2 Hybrid BayesPC > 6.3 Soundness",
+    "1 INTRODUCTION > <span id=\"page-17-0\"></span>7 EVALUATION",
+    "1 INTRODUCTION > <span id=\"page-7-0\"></span>4 BACKGROUND ON STATIC RESOURCE ANALYSIS",
+    "1 INTRODUCTION > <span id=\"page-7-0\"></span>4 BACKGROUND ON STATIC RESOURCE ANALYSIS > 4.1 Linear AARA",
+    "8 RELATED WORK",
+    "8 RELATED WORK > 9 CONCLUSION",
+    "8 RELATED WORK > ACKNOWLEDGMENTS",
+    "8 RELATED WORK > REFERENCES",
+    "Robust Resource Bounds with Static Analysis and Bayesian Inference",
+    "Robust Resource Bounds with Static Analysis and Bayesian Inference > ACM Reference Format:"
+  ]
+}

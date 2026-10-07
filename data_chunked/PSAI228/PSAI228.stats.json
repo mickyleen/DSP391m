@@ -1,0 +1,29 @@
+{
+  "doc_id": "PSAI228",
+  "num_chunks": 30,
+  "total_tokens": 2904,
+  "avg_tokens": 96.8,
+  "min_tokens": 20,
+  "max_tokens": 499,
+  "chunks_by_type": {
+    "section": 13,
+    "section_split": 3,
+    "table_row": 14
+  },
+  "num_sections": 13,
+  "sections": [
+    "Additional Information :heavy_plus_sign:",
+    "Development Roadmap :nut_and_bolt: > Milestone 1 Pool Lending Module",
+    "Development Roadmap :nut_and_bolt: > Overview",
+    "Future Plans",
+    "Konomi",
+    "Project Overview :page_facing_up: > Ecosystem Fit",
+    "Project Overview :page_facing_up: > Ecosystem Fit > Team Code Repos",
+    "Project Overview :page_facing_up: > Ecosystem Fit > Team's experience",
+    "Project Overview :page_facing_up: > Overview",
+    "Project Overview :page_facing_up: > Project Details",
+    "Project Overview :page_facing_up: > Project Details > Components",
+    "Project Overview :page_facing_up: > Project Details > Details of the lending module",
+    "Project Overview :page_facing_up: > Team LinkedIn Profiles"
+  ]
+}

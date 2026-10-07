@@ -1,0 +1,36 @@
+{
+  "doc_id": "PSAI055",
+  "num_chunks": 68,
+  "total_tokens": 17922,
+  "avg_tokens": 263.56,
+  "min_tokens": 23,
+  "max_tokens": 511,
+  "chunks_by_type": {
+    "section": 9,
+    "table_row": 9,
+    "section_split": 50
+  },
+  "num_sections": 20,
+  "sections": [
+    "1 Introduction",
+    "1 Introduction > 1.1 Thesis Statement",
+    "1 Introduction > 2 The CRF Autoencoder Framework",
+    "1 Introduction > 2 The CRF Autoencoder Framework > 2.1 Case Study: Modeling Parts of Speech [status: 100%]",
+    "1 Introduction > 2 The CRF Autoencoder Framework > 2.2 Learning from Unlabeled Examples [status: 100%]",
+    "1 Introduction > 2 The CRF Autoencoder Framework > 2.3 Are Manually-Defined Features Really Necessary? [status: 0%]",
+    "3 Integration With Existing Methods for Partial Supervision",
+    "3 Integration With Existing Methods for Partial Supervision > 3.1 Supervision Opportunities in Low-Resource Settings",
+    "3.2 Modeling Extra Supervision [status: 10%]",
+    "4 NLP Tasks",
+    "4 NLP Tasks > 4.1 Part of Speech Tagging [status: 80%]",
+    "4 NLP Tasks > 4.1 Part of Speech Tagging [status: 80%] > 4.2 Word Alignment [status: 50%]",
+    "4 NLP Tasks > 4.3 Code Switching [status: 50%]",
+    "4.4 Dependency Parsing [status: 5%]",
+    "4.4 Dependency Parsing [status: 5%] > 4.5 Frame Semantics [status: 0%]",
+    "4.4 Dependency Parsing [status: 5%] > A Timeline",
+    "Contents",
+    "Thesis Proposal: CRF Autoencoder Models for Structured Prediction with Partial Supervision",
+    "Thesis Proposal: CRF Autoencoder Models for Structured Prediction with Partial Supervision > Thesis committee",
+    "……… > B References"
+  ]
+}

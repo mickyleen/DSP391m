@@ -1,0 +1,28 @@
+{
+  "doc_id": "PSAI018",
+  "num_chunks": 19,
+  "total_tokens": 2304,
+  "avg_tokens": 121.26,
+  "min_tokens": 20,
+  "max_tokens": 422,
+  "chunks_by_type": {
+    "section": 13,
+    "table_row": 6
+  },
+  "num_sections": 13,
+  "sections": [
+    "Additional Information",
+    "Project Description",
+    "Project Description > Deliverables",
+    "Project Description > Development Roadmap > Milestone #1 - v1 Geo Web Spatial Browser",
+    "Project Description > Development Roadmap > Milestone #2 - v2 Cadastre UI",
+    "Project Description > Maintenance and Upgrade Plans",
+    "Project Description > Milestone #3 - Filecoin storage",
+    "Project Description > Milestone #3 - Filecoin storage > Milestone #5 - Public documentation site",
+    "Project Description > Relevant Experience",
+    "Project Description > Team Member LinkedIn Profiles",
+    "Project Description > Team code repositories",
+    "Project Description > Total Budget Requested",
+    "Project Description > Value"
+  ]
+}

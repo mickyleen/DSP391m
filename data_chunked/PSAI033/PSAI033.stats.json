@@ -1,0 +1,30 @@
+{
+  "doc_id": "PSAI033",
+  "num_chunks": 19,
+  "total_tokens": 2207,
+  "avg_tokens": 116.16,
+  "min_tokens": 22,
+  "max_tokens": 352,
+  "chunks_by_type": {
+    "section": 19
+  },
+  "num_sections": 16,
+  "sections": [
+    "Additional Information > Benefits to the Filecoin ecosystem",
+    "Additional Information > Benefits to the NEAR ecosystem",
+    "Project Description",
+    "Project Description > Deliverables",
+    "Project Description > Development Roadmap > 1.) Development of registry contract",
+    "Project Description > Development Roadmap > 1.) Development of registry contract > Team:",
+    "Project Description > Development Roadmap > 2.) Golang NEAR API client",
+    "Project Description > Development Roadmap > 2.) Golang NEAR API client > 4.) Provide documentation for installing nearcore with valist as an alternative to nearup",
+    "Project Description > Development Roadmap > 2.) Golang NEAR API client > 5.) (Optional) Modifying nearup to pull directly from web3 registry",
+    "Project Description > Development Roadmap > 2.) Golang NEAR API client > Team:",
+    "RFP Proposal: Valist on NEAR",
+    "Team > Relevant Experience",
+    "Team > Team Member LinkedIn Profiles",
+    "Team > Team Members",
+    "Team > Team code repositories",
+    "Total Budget Requested"
+  ]
+}

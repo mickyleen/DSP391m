@@ -1,0 +1,33 @@
+{
+  "doc_id": "PSAI176",
+  "num_chunks": 23,
+  "total_tokens": 3465,
+  "avg_tokens": 150.65,
+  "min_tokens": 24,
+  "max_tokens": 472,
+  "chunks_by_type": {
+    "section": 14,
+    "section_split": 6,
+    "table_row": 3
+  },
+  "num_sections": 17,
+  "sections": [
+    "",
+    "Casbin GSoC 2021 Proposal",
+    "Casbin GSoC 2021 Proposal > About me",
+    "Contributions prior to GSoC",
+    "Contributions prior to GSoC > PR , , , - feat: Added SyncedEnforcer #89 #90 #93 #94",
+    "Contributions prior to GSoC > PR- feat: Replaced Travis-CI with GitHub Actions #92",
+    "Contributions prior to GSoC > PR- feat: Replaced pragma with include guards #82",
+    "Implementation Details > /casbin/bindings/python/py_enforcer.cpp",
+    "Implementation Details > Detailed Timeline",
+    "Implementation Details > Implement Python bindings for Casbin-CPP using pybind11 library",
+    "Implementation Details > Milestone 2 (Deliverable before Phase 1 Evaluation)",
+    "Implementation Details > Milestone 3 (Deliverable before Final Evaluation)",
+    "Implementation Details > Milestones",
+    "Implementation Details > Primary Goals",
+    "Implementation Details > Secondary Goals",
+    "Project Ideas",
+    "Why me for the project?"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "_page_0_Picture_0.jpeg": {
+    "safe_filename": "_page_0_Picture_0.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_0_Picture_1.jpeg": {
+    "safe_filename": "_page_0_Picture_1.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_0_Picture_14.jpeg": {
+    "safe_filename": "_page_0_Picture_14.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_4_Figure_2.jpeg": {
+    "safe_filename": "_page_4_Figure_2.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_9_Figure_2.jpeg": {
+    "safe_filename": "_page_9_Figure_2.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_13_Diagram_2.jpeg": {
+    "safe_filename": "_page_13_Diagram_2.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_15_Figure_2.jpeg": {
+    "safe_filename": "_page_15_Figure_2.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_18_Figure_4.jpeg": {
+    "safe_filename": "_page_18_Figure_4.jpeg",
+    "description": "Hình ảnh gồm 5 biểu đồ phụ (subplots) được xếp hàng ngang, so sánh sai số tương đối (\"Relative Gap in Inferred Cost Bound\") của các phương pháp phân tích chi phí khác nhau trên 5 thuật toán: `QuickSort`, `QuickSelect`, `MedianOfMedians`, `Round`, và `EvenOddTail`.\n\n**Các thành phần chính trong hình:**\n1. **Chú thích (Legend) ở phía trên cùng:**\n   - Chấm tròn đỏ đặc: `OPT Data-Driven`",
+    "ocr": ""
+  },
+  "_page_19_Figure_2.jpeg": {
+    "safe_filename": "_page_19_Figure_2.jpeg",
+    "description": "",
+    "ocr": ""
+  },
+  "_page_19_Figure_4.jpeg": {
+    "safe_filename": "_page_19_Figure_4.jpeg",
+    "description": "Hình ảnh hiển thị hai nhóm biểu đồ không gian 3 chiều (3D plots) so sánh các phương pháp phân tích tài nguyên khác nhau, được chia thành hai phần (a) và (b):\n\n*   **Nhóm (a) Data-Driven Resource Analysis**: Gồm 3 biểu đồ tương ứng với các phương pháp:\n    *   **OPT**: Hiển thị các điểm dữ liệu màu đen nằm dưới hai mặt phẳng bán trong suốt (màu hồng và màu xanh lam) có độ dốc vừa phải và khá sát nhau.\n    *   **BAYESWC**: Tương tự như OPT, hai mặt phẳng bao phủ các điểm dữ liệu với độ dốc thấp.\n    *   **BAYESPC**: Mặt phẳng màu xanh lam dốc lên rất cao về phía góc xa (đạt giá trị gần 60 trên trục đứng), trong khi mặt phẳng màu hồng giữ độ dốc thấp.\n*   **Nhóm (b) Hybrid Resource Analysis**: Gồm 3 biểu đồ tương ứng với các phương pháp:\n    *   **OPT**: Tương tự như biểu đồ OPT ở nhóm (a).\n    *   **BAYESWC**: Khác với nhóm (a), mặt phẳng màu xanh lam ở đây dốc lên rất cao và dốc đứng hơn hẳn.\n    *   **BAYESPC**: Mặt phẳng màu xanh lam dốc lên cao tương tự như biểu đồ BAYESPC ở nhóm (a).\n\n**Các thành phần chung của mỗi biểu đồ 3D:**\n*   **Trục X (phía dưới bên trái):** Nhãn \"Input Size 1\" với các giá trị chia độ từ 0 đến 40.\n*   **Trục Y (phía dưới bên phải):** Nhãn \"Input Size 2\" với các giá trị chia độ từ 0 đến 40.\n*   **Trục Z (thẳng đứng bên phải):** Thể hiện giá trị từ 0 đến 60 (với các vạch chia 0, 20, 40, 60).\n*   **Dữ liệu:** Các chấm tròn màu đen biểu thị các điểm dữ liệu thực tế phân bố ở góc dưới của đồ thị.",
+    "ocr": "OPT\nBAYESWC\nBAYESPC\n\n0 10 20 30 40\nInput Size 1\n\n0 10 20 30 40\nInput Size 2\n\n60\n40\n20\n0\n\n(a) Data-Driven Resource Analysis\n\nOPT\nBAYESWC\nBAYESPC\n\n0 10 20 30 40\nInput Size 1\n\n0 10 20 30 40\nInput Size 2\n\n60\n40\n20\n0\n\n(b) Hybrid Resource Analysis"
+  }
+}

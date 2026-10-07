@@ -1,0 +1,35 @@
+{
+  "doc_id": "PSAI172",
+  "num_chunks": 59,
+  "total_tokens": 5290,
+  "avg_tokens": 89.66,
+  "min_tokens": 23,
+  "max_tokens": 471,
+  "chunks_by_type": {
+    "section": 18,
+    "table_row": 38,
+    "section_split": 3
+  },
+  "num_sections": 19,
+  "sections": [
+    "BeagleBoard/GSoC/2021 Proposal/bela on bbai",
+    "BeagleBoard/GSoC/2021 Proposal/bela on bbai > Proposal",
+    "Proposal",
+    "Proposal > About your project > Description",
+    "Proposal > About your project > Experience and approach",
+    "Proposal > About your project > Hardware required",
+    "Proposal > About your project > PINMUXING",
+    "Proposal > About your project > PRU",
+    "Proposal > About your project > PRU transitioning from libprussdrv to rproc",
+    "Proposal > About your project > Programming languages and tools to be used",
+    "Proposal > About your project > Proposed method of Implementation",
+    "Proposal > About your project > Syntax Analysis",
+    "Proposal > About your project > Timeline",
+    "Proposal > About your project > Workflow for building the existing pasm PRU code with clpru",
+    "Proposal > About your project > XENOMAI kernel",
+    "Proposal > Contents",
+    "Proposal > Contents > Applications of Bela",
+    "Proposal > Contents > What is Bela?",
+    "Proposal-Bela support for BBAI"
+  ]
+}

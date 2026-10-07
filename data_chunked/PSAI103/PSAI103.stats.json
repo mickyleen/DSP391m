@@ -1,0 +1,41 @@
+{
+  "doc_id": "PSAI103",
+  "num_chunks": 114,
+  "total_tokens": 18619,
+  "avg_tokens": 163.32,
+  "min_tokens": 30,
+  "max_tokens": 511,
+  "chunks_by_type": {
+    "section": 23,
+    "section_split": 33,
+    "table_row": 58
+  },
+  "num_sections": 25,
+  "sections": [
+    "1 Introduction",
+    "2 Background",
+    "4.4 Future direction",
+    "<span id=\"page-2-0\"></span>3 Multi-Perspective Datasets > 3.1 Related work",
+    "<span id=\"page-2-0\"></span>3 Multi-Perspective Datasets > 3.1 Related work > 3.3 Future direction",
+    "<span id=\"page-2-0\"></span>3 Multi-Perspective Datasets > 3.1 Related work > <span id=\"page-3-2\"></span>3.2 Preliminary results",
+    "<span id=\"page-2-0\"></span>3 Multi-Perspective Datasets > 4.2 Future direction",
+    "<span id=\"page-2-0\"></span>3 Multi-Perspective Datasets > 4.2 Future direction > <span id=\"page-5-7\"></span>4.3 In-context learning: Multi-Perspective Priming",
+    "<span id=\"page-2-0\"></span>3 Multi-Perspective Datasets > <span id=\"page-4-0\"></span>4 Perspective-Aware by design models > 4.1 Related work",
+    "<span id=\"page-2-0\"></span>3 Multi-Perspective Datasets > <span id=\"page-4-0\"></span>4 Perspective-Aware by design models > <span id=\"page-4-4\"></span>4.1.1 Fine-tuning: A Multi-Perspective approach with Soft labels",
+    "<span id=\"page-2-0\"></span>3 Multi-Perspective Datasets > <span id=\"page-6-2\"></span>Our MP Prompt Template",
+    "<span id=\"page-6-0\"></span>5 XAI and Human Disagreement",
+    "<span id=\"page-6-0\"></span>5 XAI and Human Disagreement > 5.1 Related Work",
+    "<span id=\"page-6-0\"></span>5 XAI and Human Disagreement > 5.1 Related Work > 5.3 Future direction",
+    "<span id=\"page-6-0\"></span>5 XAI and Human Disagreement > 5.1 Related Work > <span id=\"page-7-1\"></span>5.2 Preliminary results",
+    "<span id=\"page-6-0\"></span>5 XAI and Human Disagreement > 7 Limitation",
+    "<span id=\"page-6-0\"></span>5 XAI and Human Disagreement > <span id=\"page-8-0\"></span>6 Conclusion",
+    "<span id=\"page-6-1\"></span>Example MP Prompt for Hate Speech",
+    "Acknowledgments",
+    "B RQ2 Results",
+    "B RQ2 Results > <span id=\"page-13-3\"></span>C RQ3 Results",
+    "References",
+    "References > <span id=\"page-13-0\"></span>A RQ1 Results",
+    "Towards Multi-Perspective NLP Systems: A Thesis Proposal",
+    "Towards Multi-Perspective NLP Systems: A Thesis Proposal > Abstract"
+  ]
+}

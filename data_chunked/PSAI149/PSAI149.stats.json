@@ -1,0 +1,34 @@
+{
+  "doc_id": "PSAI149",
+  "num_chunks": 36,
+  "total_tokens": 2579,
+  "avg_tokens": 71.64,
+  "min_tokens": 20,
+  "max_tokens": 252,
+  "chunks_by_type": {
+    "section": 18,
+    "table_row": 18
+  },
+  "num_sections": 19,
+  "sections": [
+    "About me",
+    "Abstract > Enhancing Knative Functions with AI Agent Integration via MCP",
+    "Commitments and Availability",
+    "Directory Structure",
+    "Implementation",
+    "Implementation > - Phase I",
+    "Implementation > - Phase I > - Phase II",
+    "Implementation > - Phase IV (Optional)",
+    "Implementation > demo.mp4",
+    "Implementation > demo.mp4 > SSE v/s STDIO",
+    "Implementation > demo.mp4 > Stand-alone tools (optional)",
+    "Implementation > demo.mp4 > pkg",
+    "Kapil Sareen",
+    "Projects > RELICS.ai [[link]](https://github.com/KapilSareen/RELICS.ai)",
+    "Projects > memer.ai [link]",
+    "Projects > memer.ai [link] > GopherLibrary [[link]](https://github.com/KapilSareen/GopherLibrary)",
+    "Projects > memer.ai [link] > ShellFox [[link]](https://github.com/KapilSareen/ShellFox) (ongoing)",
+    "Timeline",
+    "Why me?"
+  ]
+}

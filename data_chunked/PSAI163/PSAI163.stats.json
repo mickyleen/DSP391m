@@ -1,0 +1,41 @@
+{
+  "doc_id": "PSAI163",
+  "num_chunks": 27,
+  "total_tokens": 3048,
+  "avg_tokens": 112.89,
+  "min_tokens": 29,
+  "max_tokens": 244,
+  "chunks_by_type": {
+    "section": 27
+  },
+  "num_sections": 27,
+  "sections": [
+    "",
+    "Benefits to Community",
+    "Biographical Information",
+    "Deliverables > Deliverable 3 Due Sep 1 - Integration into LivePose",
+    "Deliverables > Milestone 1: Research and Planning > Before official start Apr 8 - May 7 (4w)",
+    "Deliverables > Milestone 1: Research and Planning > Before official start May 26 - Jun 1 (1w)",
+    "Deliverables > Milestone 1: Research and Planning > Before official start May 8 - May 25 (2w)",
+    "Deliverables > Milestone 1: Research and Planning > Deliverable 1 Due Jun 8 - Research and Planning",
+    "Deliverables > Milestone 1: Research and Planning > Week 1 Jun 2 - Jun 8",
+    "Deliverables > Milestone 2: Prototyping Pipeline",
+    "Deliverables > Milestone 2: Prototyping Pipeline > Deliverable 2 Due Aug 3 - Prototyping Pipeline",
+    "Deliverables > Milestone 2: Prototyping Pipeline > Week 12 Aug 18 - Aug 24",
+    "Deliverables > Milestone 2: Prototyping Pipeline > Week 13 Aug 25 - Sep 1",
+    "Deliverables > Milestone 2: Prototyping Pipeline > Week 2-3 Jun 9 - Jun 22",
+    "Deliverables > Milestone 2: Prototyping Pipeline > Week 2-3 Jun 9 - Jun 22 > Week 5-6 Jun 30 - Jul 13",
+    "Deliverables > Milestone 2: Prototyping Pipeline > Week 7 Jul 14 - Jul 20",
+    "Deliverables > Milestone 2: Prototyping Pipeline > Week 8 Jul 21 - Jul 27",
+    "Deliverables > Milestone 2: Prototyping Pipeline > Week 8 Jul 21 - Jul 27 > Week 9 Jul 28 - Aug 3",
+    "Name and Contact Information",
+    "Related Work",
+    "Related Work > Deep Learning Models for 3D Object Detection",
+    "Related Work > Model Inference with ONNX",
+    "Related Work > Point Cloud Acquisition: Sensors and SDKs",
+    "Related Work > Point Cloud Processing Libraries",
+    "Related Work > References",
+    "Skills",
+    "Synopsis"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "doc_id": "PSAI245",
+  "num_chunks": 25,
+  "total_tokens": 2057,
+  "avg_tokens": 82.28,
+  "min_tokens": 20,
+  "max_tokens": 447,
+  "chunks_by_type": {
+    "section": 14,
+    "table_row": 11
+  },
+  "num_sections": 13,
+  "sections": [
+    "Additional Information :heavy_plus_sign:",
+    "Development Roadmap :nut_and_bolt: > Milestone 1 - Liquid staked DOT token",
+    "Development Roadmap :nut_and_bolt: > Overview",
+    "Stone Index on Substrate > Project Overview :page_facing_up: > High level architecture",
+    "Stone Index on Substrate > Project Overview :page_facing_up: > MockUI",
+    "Stone Index on Substrate > Project Overview :page_facing_up: > Overview",
+    "Stone Index on Substrate > Project Overview :page_facing_up: > Public exposed methods",
+    "Stone Index on Substrate > Project Overview :page_facing_up: > Runtime storage",
+    "Stone Index on Substrate > Project Overview :page_facing_up: > System flow",
+    "Stone Index on Substrate > Project Overview :page_facing_up: > Use case diagram",
+    "Team :busts_in_silhouette: > Legal Structure",
+    "Team :busts_in_silhouette: > Team LinkedIn Profiles",
+    "Team :busts_in_silhouette: > Team members"
+  ]
+}

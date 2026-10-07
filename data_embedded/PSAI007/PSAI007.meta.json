@@ -1,0 +1,101 @@
+[
+  {
+    "chunk_id": "PSAI007-C0000",
+    "doc_id": "PSAI007",
+    "chunk_index": 0,
+    "section": "Project Description",
+    "heading_path": [
+      "Project Description"
+    ],
+    "block_type": "section",
+    "token_count": 189,
+    "hash": "4ef2e2a27f66b9bc",
+    "text": "# Project Description\n\nThe owner wallet is the most important wallet in Filecoin. It must be kept securely. If it is lost or changed illegally, the storage provider will get nothing. All FILs including available, vesting, the expected future rewards, and pledged will be out of control. So it is NOT recommended to import the owner key into a lotus daemon node. People MUST NOT keep the owner key in an IDC, and it's not a good idea to keep it in an office computer. The best way is to use a multisig wallets, or some cold wallet solutions. If you think those methods are complicated and want to use a simpler solution, then using offline signature commands is also a good choice.\n\nWe provide an set of interactive commands that allow the user to do owner tasks in the local shell without importing the owner key into lotus daemon. Messages are packaged locally and sent to a remote FullNode for message processing."
+  },
+  {
+    "chunk_id": "PSAI007-C0001",
+    "doc_id": "PSAI007",
+    "chunk_index": 1,
+    "section": "We implement these commands:",
+    "heading_path": [
+      "Project Description",
+      "We implement these commands:"
+    ],
+    "block_type": "section",
+    "token_count": 86,
+    "hash": "03315ca17fb591da",
+    "text": "# Project Description > We implement these commands:\n\n- actorSetOwnerCmd – change the owner key - mpoolReplaceCmd – replace the message in mpool with more GAS; - sendCmd – send message from the owner wallet - withdrawCmd – withdraw available balance - actorControlSet – set the control addresss; actorProposeChangeWorker – propose to change the worker address actorConfirmChangeWorker – confirm to change the worker address"
+  },
+  {
+    "chunk_id": "PSAI007-C0002",
+    "doc_id": "PSAI007",
+    "chunk_index": 2,
+    "section": "Development Roadmap",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap"
+    ],
+    "block_type": "section",
+    "token_count": 53,
+    "hash": "a22669d8697b905f",
+    "text": "# Project Description > Development Roadmap\n\nWeek 1 Complete the formal specification Week 2 Design API and start development Week 3 Development Week 4 Test, Fix bugs and Do some optimization Week 5 Test more and Submit it for official review Week 6 Release"
+  },
+  {
+    "chunk_id": "PSAI007-C0003",
+    "doc_id": "PSAI007",
+    "chunk_index": 3,
+    "section": "Maintenance and Upgrade Plans",
+    "heading_path": [
+      "Project Description",
+      "Development Roadmap",
+      "Maintenance and Upgrade Plans"
+    ],
+    "block_type": "section",
+    "token_count": 60,
+    "hash": "09c6d99246c97d67",
+    "text": "# Project Description > Development Roadmap > Maintenance and Upgrade Plans\n\nWe plan to continue supporting and maintaining the off-line Signature program for at least the next two years (24 months); At the same time, we also pay attention to the new requirements of the community for offline Signature and continue to improvement."
+  },
+  {
+    "chunk_id": "PSAI007-C0004",
+    "doc_id": "PSAI007",
+    "chunk_index": 4,
+    "section": "Relevant Experience",
+    "heading_path": [
+      "Project Description",
+      "Team",
+      "Relevant Experience"
+    ],
+    "block_type": "section",
+    "token_count": 98,
+    "hash": "0171d5bf7f551cce",
+    "text": "# Project Description > Team > Relevant Experience\n\nOur team start to research and develop for Web3 two years ago. We have implemented the optmized version of PoREP/PoST code, worker task secheduling code, devops management system, and so on. From the very beginning, we have been focused on Filecoin security solutions. We research offline signature, cold wallet and multisig solutions. We also develop a framework to ensure the security of devops for Filecoin clusters."
+  },
+  {
+    "chunk_id": "PSAI007-C0005",
+    "doc_id": "PSAI007",
+    "chunk_index": 5,
+    "section": "Team code repositories",
+    "heading_path": [
+      "Project Description",
+      "Team",
+      "Team code repositories"
+    ],
+    "block_type": "section",
+    "token_count": 31,
+    "hash": "952287826327bb32",
+    "text": "# Project Description > Team > Team code repositories\n\n<https://github.com/storswift> <https://github.com/storswiftlabs>"
+  },
+  {
+    "chunk_id": "PSAI007-C0006",
+    "doc_id": "PSAI007",
+    "chunk_index": 6,
+    "section": "Additional Information",
+    "heading_path": [
+      "Additional Information"
+    ],
+    "block_type": "section",
+    "token_count": 25,
+    "hash": "7009aaaff7907113",
+    "text": "# Additional Information\n\nWe believe Web3 is the future. The best way to predict the future is to create the future."
+  }
+]

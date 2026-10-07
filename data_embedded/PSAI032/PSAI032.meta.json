@@ -1,0 +1,195 @@
+[
+  {
+    "chunk_id": "PSAI032-C0000",
+    "doc_id": "PSAI032",
+    "chunk_index": 0,
+    "section": "RFP Proposal: P2P task transcript",
+    "heading_path": [
+      "RFP Proposal: P2P task transcript"
+    ],
+    "block_type": "section",
+    "token_count": 355,
+    "hash": "72556a7f790cb14d",
+    "text": "# RFP Proposal: P2P task transcript\n\nto RFP: Hedera x Filecoin RFP\n\nRFP Category: devtools-libraries\n\nThe underlying project proposes the building of a decentralized storage solution that will enable intermediate use of HFS (Hedera File Service) for temporary storage and simple deletion of temporary/intermediate/unnecessary metadata and based on condition, transfer the transcript file into permanence on IPFS with Filecoin - web3.storage and include all the metadata into a Hedera smart contract to facilitate auditing.\n\nThe transcript is used for documenting all the Taskbar gig-economy interactions to facilitate permanent, transparent storage reach respective task and reputational system consequences inside the Taskbar decentralized skills ecosystem. The idea behind the project came from observing early user interactions on the Taskbar gigeconomy freelancing platform which require the related data to be retained as permanent proof of reputation and/or in the event of a need to trigger a referral to the DAO (Decentralized Autonomous Organization) dispute resolution process.\n\nUsing HBARs for payment of native HFS services such as: FileCreate, FileUpdate, FileAppend; the relevant intermediate metadata will be stored iteratively, documenting all interaction and relevant events for the duration of the task's lifetime (task creating, bidding, acceptance, payment to escrow, duration of task, final completion or dispute resolution, user reputation adjustment), where HFS data would be deleted in the event that the task is not accepted by both parties, canceled or expired. The final contents of the transcript for a completed task would be uploaded to IPFS using Filecoin web3.storage with its associated metadata being stored on Hedera. (Considering an option for including metadata with 2 privacy levels for transcripts, public or confidential)"
+  },
+  {
+    "chunk_id": "PSAI032-C0001",
+    "doc_id": "PSAI032",
+    "chunk_index": 1,
+    "section": "Value",
+    "heading_path": [
+      "Value"
+    ],
+    "block_type": "section",
+    "token_count": 142,
+    "hash": "9c23f3654c0d1f02",
+    "text": "# Value\n\nThe project sets the path for a permanent juxtaposition and intertwining of Hedera and Filecoin ecosystems, where more temporary data is stored intermittently on HFS while encouraging permanent storage of data, especially where the data is linked to user reputation, on IPFS.\n\nAnd additional value for Filecoin & Hedera would represent the application of this use case across the Taskbar gig-economy, freelancing platform which if successfully implements the project's full utility, stands to increase in notoriety and use, bringing along more utilization for Filecoin & Hedera protocols.\n\nThe functionality described will be open-sourced as JavaScript/TypeScript as a scaffold service that can be integrated separately in other solutions."
+  },
+  {
+    "chunk_id": "PSAI032-C0002",
+    "doc_id": "PSAI032",
+    "chunk_index": 2,
+    "section": "Development Roadmap",
+    "heading_path": [
+      "Value",
+      "Development Roadmap"
+    ],
+    "block_type": "section",
+    "token_count": 22,
+    "hash": "478ef1fdb87baa42",
+    "text": "# Value > Development Roadmap\n\nOverall development time – 2.5 months split across the following milestones:"
+  },
+  {
+    "chunk_id": "PSAI032-C0003",
+    "doc_id": "PSAI032",
+    "chunk_index": 3,
+    "section": "Milestone 1 (1 weeks)",
+    "heading_path": [
+      "Value",
+      "Development Roadmap",
+      "Milestone 1 (1 weeks)"
+    ],
+    "block_type": "section",
+    "token_count": 66,
+    "hash": "715f2af9ca2866a2",
+    "text": "# Value > Development Roadmap > Milestone 1 (1 weeks)\n\n2000\\$:\n- pro-rata at 50\\$/hr\n- 40 hrs + 2500\\$ Taskbar dev team Finalize the requirements and specifications\n\nFormulate all parameters of Transcript file along with their metadata SDK hierarchy and initial setup"
+  },
+  {
+    "chunk_id": "PSAI032-C0004",
+    "doc_id": "PSAI032",
+    "chunk_index": 4,
+    "section": "Milestone 2 (3 weeks)",
+    "heading_path": [
+      "Value",
+      "Development Roadmap",
+      "Milestone 2 (3 weeks)"
+    ],
+    "block_type": "section",
+    "token_count": 80,
+    "hash": "acc7d1d803606bda",
+    "text": "# Value > Development Roadmap > Milestone 2 (3 weeks)\n\n6000\\$:\n- pro-rata at 50\\$/hr\n- 120hrs + 7500\\$ Taskbar dev team + 1000\\$ frontend\n\nSDK – Hedera HFS integration SDK – Integration with Hedera smart contracts SDK - Integration with Filecoin web3.storage for transcript storage Frontend development"
+  },
+  {
+    "chunk_id": "PSAI032-C0005",
+    "doc_id": "PSAI032",
+    "chunk_index": 5,
+    "section": "Milestone 3 (2 weeks)",
+    "heading_path": [
+      "Value",
+      "Milestone 3 (2 weeks)"
+    ],
+    "block_type": "section",
+    "token_count": 67,
+    "hash": "a05044a7cd8890eb",
+    "text": "# Value > Milestone 3 (2 weeks)\n\n2000\\$:\n- pro-rata at 50\\$/hr\n- 40hrs + 5000\\$ Taskbar dev team + 2000\\$ frontend\n\nWebapp template UX design SDK testing SDK integration with frontend Define and implement test suite Website integration & backend support"
+  },
+  {
+    "chunk_id": "PSAI032-C0006",
+    "doc_id": "PSAI032",
+    "chunk_index": 6,
+    "section": "Milestone 4 (2 weeks)",
+    "heading_path": [
+      "Value",
+      "Milestone 3 (2 weeks)",
+      "Milestone 4 (2 weeks)"
+    ],
+    "block_type": "section",
+    "token_count": 70,
+    "hash": "be18307b6c5f310a",
+    "text": "# Value > Milestone 3 (2 weeks) > Milestone 4 (2 weeks)\n\n2000\\$:\n- pro-rata at 50\\$/hr\n- 40hrs + 5000\\$ Taskbar dev team Application implementation\n- fully functional interactive UI according to the UX design local environment & associated testnets Staging deployment"
+  },
+  {
+    "chunk_id": "PSAI032-C0007",
+    "doc_id": "PSAI032",
+    "chunk_index": 7,
+    "section": "Milestone 5 (2 weeks)",
+    "heading_path": [
+      "Value",
+      "Milestone 5 (2 weeks)"
+    ],
+    "block_type": "section",
+    "token_count": 56,
+    "hash": "6bfed0f31da5b424",
+    "text": "# Value > Milestone 5 (2 weeks)\n\n2000\\$:\n- pro-rata at 50\\$/hr\n- 40hrs + 5000\\$ Taskbar dev team\n\nRegression testing Feedback collection, and potential bug fixes Improvements based on feedback Production deployment"
+  },
+  {
+    "chunk_id": "PSAI032-C0008",
+    "doc_id": "PSAI032",
+    "chunk_index": 8,
+    "section": "Maintenance and Upgrade Plans",
+    "heading_path": [
+      "Maintenance and Upgrade Plans"
+    ],
+    "block_type": "section",
+    "token_count": 89,
+    "hash": "0825b336a23f9099",
+    "text": "# Maintenance and Upgrade Plans\n\nTaskbar FZ-LLC commits to the SDK's and software's maintenance for the period of 2 years based on dependent Hedera and Filecoin SDK & API modifications, support in enhancing the solution based on demand. Taskbar will maintain an open feedback stream to facilitate identification of new features. This process will influence our future development.\n\ntudor@mytaskbar.com\n\nhello@mytaskbar.com"
+  },
+  {
+    "chunk_id": "PSAI032-C0009",
+    "doc_id": "PSAI032",
+    "chunk_index": 9,
+    "section": "Team Members",
+    "heading_path": [
+      "Team Members"
+    ],
+    "block_type": "section",
+    "token_count": 87,
+    "hash": "a71aeb6b387fd39a",
+    "text": "# Team Members\n\n- 1. Victor Holotescu https://github.com/victorholo\n- 2. Iosif Peterfi https://github.com/iosifpeterfi\n- 3. Vishal Dharmawat https://github.com/vshall20\n- 4. Alex Taylor\n- 5. Tudor Holotescu\n- 6. Taskbar development team"
+  },
+  {
+    "chunk_id": "PSAI032-C0010",
+    "doc_id": "PSAI032",
+    "chunk_index": 10,
+    "section": "Team Member LinkedIn Profiles",
+    "heading_path": [
+      "Team Members",
+      "Team Member LinkedIn Profiles"
+    ],
+    "block_type": "section",
+    "token_count": 130,
+    "hash": "bbd9c3b3179ccd74",
+    "text": "# Team Members > Team Member LinkedIn Profiles\n\n- 1. Victor Holotescu https://www.linkedin.com/in/victor-holotescu/\n- 2. Iosif Peterfi https://www.linkedin.com/in/iosifpeterfi/\n- 3. Vishal Dharmawat https://www.linkedin.com/in/vishaldharmawat/\n- 4. Alex Taylor https://www.linkedin.com/in/alexpaultaylor/\n- 5. Tudor Holotescu https://www.linkedin.com/in/tudor-holotescu/\n- 6. Taskbar Development Team"
+  },
+  {
+    "chunk_id": "PSAI032-C0011",
+    "doc_id": "PSAI032",
+    "chunk_index": 11,
+    "section": "Relevant Experience",
+    "heading_path": [
+      "Relevant Experience"
+    ],
+    "block_type": "section",
+    "token_count": 50,
+    "hash": "f7526327f8e572e3",
+    "text": "# Relevant Experience\n\nTaskbar has compiled a strong team that has been directly involved in multiple Hedera Hashgraph based projects since 2018 and along with the support of the Taskbar development team that has experience in delivering end-to-end software solutions."
+  },
+  {
+    "chunk_id": "PSAI032-C0012",
+    "doc_id": "PSAI032",
+    "chunk_index": 12,
+    "section": "Team code repositories",
+    "heading_path": [
+      "Relevant Experience",
+      "Team code repositories"
+    ],
+    "block_type": "section",
+    "token_count": 86,
+    "hash": "ec04de748ed2ade4",
+    "text": "# Relevant Experience > Team code repositories\n\nTaskbar source code has yet to have been published but below are the account of some of the team members:\n\n- 1. Victor Holotescu https://github.com/victorholo\n- 2. Iosif Peterfi https://github.com/iosifpeterfi\n- 3. Vishal Dharmawat https://github.com/vshall20"
+  },
+  {
+    "chunk_id": "PSAI032-C0013",
+    "doc_id": "PSAI032",
+    "chunk_index": 13,
+    "section": "Additional Information",
+    "heading_path": [
+      "Additional Information"
+    ],
+    "block_type": "section",
+    "token_count": 55,
+    "hash": "4e148633b51297df",
+    "text": "# Additional Information\n\nThank you for the review and consideration.\n\nWe stand available to clarify any queries or scope enhancement proposals through our contact info or through our official communication channels listed at mytaskbar.com.\n\nAny delta cost for delivering the project will be insourced by Taskbar."
+  }
+]
